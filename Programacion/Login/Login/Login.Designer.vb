@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -36,9 +36,13 @@ Partial Class Form1
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lblBienvenido = New System.Windows.Forms.Label()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
+        Me.IconPictureBox2 = New FontAwesome.Sharp.IconPictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -132,6 +136,7 @@ Partial Class Form1
         'btnLogin
         '
         Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
@@ -169,11 +174,39 @@ Partial Class Form1
         Me.lblBienvenido.TabIndex = 0
         Me.lblBienvenido.Text = "Bienvenido"
         '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.IconPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.IconPictureBox1.IconColor = System.Drawing.Color.White
+        Me.IconPictureBox1.IconSize = 30
+        Me.IconPictureBox1.Location = New System.Drawing.Point(770, 3)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(30, 37)
+        Me.IconPictureBox1.TabIndex = 2
+        Me.IconPictureBox1.TabStop = False
+        '
+        'IconPictureBox2
+        '
+        Me.IconPictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.IconPictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.IconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
+        Me.IconPictureBox2.IconColor = System.Drawing.Color.White
+        Me.IconPictureBox2.IconSize = 27
+        Me.IconPictureBox2.Location = New System.Drawing.Point(736, 1)
+        Me.IconPictureBox2.Name = "IconPictureBox2"
+        Me.IconPictureBox2.Size = New System.Drawing.Size(27, 39)
+        Me.IconPictureBox2.TabIndex = 3
+        Me.IconPictureBox2.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.IconPictureBox2)
+        Me.Controls.Add(Me.IconPictureBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -184,6 +217,8 @@ Partial Class Form1
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -201,4 +236,6 @@ Partial Class Form1
     Friend WithEvents Panel5 As Panel
     Friend WithEvents txtContraseña As TextBox
     Friend WithEvents BindingSource1 As BindingSource
+    Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents IconPictureBox2 As FontAwesome.Sharp.IconPictureBox
 End Class
