@@ -105,4 +105,8 @@ Public Class Ventana_Principal
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
+
+    Private Sub ipbLogOut_Click(sender As Object, e As EventArgs) Handles ipbLogOut.Click
+
+    End Sub
 End Class
