@@ -71,10 +71,21 @@ Public Class Ventana_Principal
         childForm.Show()
         lblFormTitle.Text = currentBtn.Text
     End Sub
+    Private Sub Reset()
+        DisableButton()
+        leftBorderBtn.Visible = False
+        IconCurrentForm.IconChar = IconChar.Home
+        IconCurrentForm.IconColor = Color.FromArgb(255, 176, 1)
+        lblFormTitle.Text = "Inicio"
+
+    End Sub
 
     Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
         ActivateButton(sender, Color.FromArgb(255, 176, 1))
-        OpenChildForm(New ChildForm_Prueba)
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
+        Reset()
     End Sub
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
@@ -108,5 +119,19 @@ Public Class Ventana_Principal
 
     Private Sub ipbLogOut_Click(sender As Object, e As EventArgs) Handles ipbLogOut.Click
 
+    End Sub
+
+    Private Sub bntHora_Tick(sender As Object, e As EventArgs) Handles bntHora.Tick
+        lblHora.Text = DateTime.Now.ToString("HH:mm:ss")
+        lblFecha.Text = DateTime.Now.ToLongDateString()
+
+    End Sub
+
+    Private Sub ipbMinimizar_Click(sender As Object, e As EventArgs) Handles ipbMinimizar.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub ipbSalir_Click(sender As Object, e As EventArgs) Handles ipbSalir.Click
+        Application.Exit()
     End Sub
 End Class

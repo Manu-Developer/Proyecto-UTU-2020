@@ -32,8 +32,12 @@ Partial Class Login
         Me.panelFinal = New System.Windows.Forms.Panel()
         Me.panelBienvenido = New System.Windows.Forms.Panel()
         Me.lblBienvenido = New System.Windows.Forms.Label()
+        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
+        Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
         CType(Me.pcbLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pcbLogin
@@ -147,11 +151,39 @@ Partial Class Login
         Me.lblBienvenido.TabIndex = 0
         Me.lblBienvenido.Text = "Bienvenido"
         '
+        'ipbSalir
+        '
+        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.ipbSalir.IconColor = System.Drawing.Color.White
+        Me.ipbSalir.IconSize = 34
+        Me.ipbSalir.Location = New System.Drawing.Point(844, 3)
+        Me.ipbSalir.Name = "ipbSalir"
+        Me.ipbSalir.Size = New System.Drawing.Size(38, 34)
+        Me.ipbSalir.TabIndex = 2
+        Me.ipbSalir.TabStop = False
+        '
+        'ipbMinimizar
+        '
+        Me.ipbMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.ipbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
+        Me.ipbMinimizar.IconColor = System.Drawing.Color.White
+        Me.ipbMinimizar.IconSize = 34
+        Me.ipbMinimizar.Location = New System.Drawing.Point(810, 1)
+        Me.ipbMinimizar.Name = "ipbMinimizar"
+        Me.ipbMinimizar.Size = New System.Drawing.Size(38, 34)
+        Me.ipbMinimizar.TabIndex = 3
+        Me.ipbMinimizar.TabStop = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(877, 499)
+        Me.Controls.Add(Me.ipbMinimizar)
+        Me.Controls.Add(Me.ipbSalir)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pcbLogin)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -161,6 +193,8 @@ Partial Class Login
         CType(Me.pcbLogin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -175,4 +209,6 @@ Partial Class Login
     Friend WithEvents btnLogin As Button
     Friend WithEvents txtContraseña As TextBox
     Friend WithEvents lblContraseña As Label
+    Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents ipbMinimizar As FontAwesome.Sharp.IconPictureBox
 End Class
