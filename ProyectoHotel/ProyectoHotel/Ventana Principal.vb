@@ -72,8 +72,6 @@ Public Class Ventana_Principal
         lblFormTitle.Text = currentBtn.Text
     End Sub
     Private Sub Reset()
-        DisableButton()
-        leftBorderBtn.Visible = False
         IconCurrentForm.IconChar = IconChar.Home
         IconCurrentForm.IconColor = Color.FromArgb(255, 176, 1)
         lblFormTitle.Text = "Inicio"
