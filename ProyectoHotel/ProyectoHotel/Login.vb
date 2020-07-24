@@ -12,7 +12,15 @@ Public Class Login
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
-    'Fin del codigo para draggear'
+
+    Private Sub ipbSalir_Click(sender As Object, e As EventArgs) Handles ipbSalir.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub ipbMinimizar_Click(sender As Object, e As EventArgs) Handles ipbMinimizar.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
 
 
 

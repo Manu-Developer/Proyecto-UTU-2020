@@ -22,6 +22,7 @@ Partial Class Ventana_Principal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.ipbLogOut = New FontAwesome.Sharp.IconPictureBox()
         Me.ibUsuario = New FontAwesome.Sharp.IconButton()
@@ -36,12 +37,20 @@ Partial Class Ventana_Principal
         Me.lblFormTitle = New System.Windows.Forms.Label()
         Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.PanelDesktop = New System.Windows.Forms.Panel()
+        Me.lblFecha = New System.Windows.Forms.Label()
+        Me.lblHora = New System.Windows.Forms.Label()
+        Me.bntHora = New System.Windows.Forms.Timer(Me.components)
+        Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
+        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
         Me.PanelMenu.SuspendLayout()
         CType(Me.ipbLogOut, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.pbLogoEmpresa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelDesktop.SuspendLayout()
+        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelMenu
@@ -233,6 +242,8 @@ Partial Class Ventana_Principal
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.ipbMinimizar)
+        Me.Panel3.Controls.Add(Me.ipbSalir)
         Me.Panel3.Controls.Add(Me.lblFormTitle)
         Me.Panel3.Controls.Add(Me.IconCurrentForm)
         Me.Panel3.Cursor = System.Windows.Forms.Cursors.Arrow
@@ -267,11 +278,65 @@ Partial Class Ventana_Principal
         '
         'PanelDesktop
         '
+        Me.PanelDesktop.Controls.Add(Me.lblFecha)
+        Me.PanelDesktop.Controls.Add(Me.lblHora)
         Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelDesktop.Location = New System.Drawing.Point(211, 45)
         Me.PanelDesktop.Name = "PanelDesktop"
         Me.PanelDesktop.Size = New System.Drawing.Size(589, 405)
         Me.PanelDesktop.TabIndex = 3
+        '
+        'lblFecha
+        '
+        Me.lblFecha.AutoSize = True
+        Me.lblFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!)
+        Me.lblFecha.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.lblFecha.Location = New System.Drawing.Point(60, 223)
+        Me.lblFecha.Name = "lblFecha"
+        Me.lblFecha.Size = New System.Drawing.Size(506, 46)
+        Me.lblFecha.TabIndex = 1
+        Me.lblFecha.Text = "viernes, 24 de julio de 2020"
+        '
+        'lblHora
+        '
+        Me.lblHora.AutoSize = True
+        Me.lblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.0!)
+        Me.lblHora.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.lblHora.Location = New System.Drawing.Point(152, 124)
+        Me.lblHora.Name = "lblHora"
+        Me.lblHora.Size = New System.Drawing.Size(293, 76)
+        Me.lblHora.TabIndex = 0
+        Me.lblHora.Text = "00:00:00"
+        '
+        'bntHora
+        '
+        Me.bntHora.Enabled = True
+        '
+        'ipbMinimizar
+        '
+        Me.ipbMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
+        Me.ipbMinimizar.IconColor = System.Drawing.Color.White
+        Me.ipbMinimizar.IconSize = 34
+        Me.ipbMinimizar.Location = New System.Drawing.Point(523, 3)
+        Me.ipbMinimizar.Name = "ipbMinimizar"
+        Me.ipbMinimizar.Size = New System.Drawing.Size(38, 34)
+        Me.ipbMinimizar.TabIndex = 5
+        Me.ipbMinimizar.TabStop = False
+        '
+        'ipbSalir
+        '
+        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.ipbSalir.IconColor = System.Drawing.Color.White
+        Me.ipbSalir.IconSize = 34
+        Me.ipbSalir.Location = New System.Drawing.Point(557, 5)
+        Me.ipbSalir.Name = "ipbSalir"
+        Me.ipbSalir.Size = New System.Drawing.Size(38, 34)
+        Me.ipbSalir.TabIndex = 4
+        Me.ipbSalir.TabStop = False
         '
         'Ventana_Principal
         '
@@ -292,6 +357,10 @@ Partial Class Ventana_Principal
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelDesktop.ResumeLayout(False)
+        Me.PanelDesktop.PerformLayout()
+        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -310,4 +379,9 @@ Partial Class Ventana_Principal
     Friend WithEvents ipbLogOut As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ibUsuario As FontAwesome.Sharp.IconButton
     Friend WithEvents PanelDesktop As Panel
+    Friend WithEvents lblHora As Label
+    Friend WithEvents bntHora As Timer
+    Friend WithEvents lblFecha As Label
+    Friend WithEvents ipbMinimizar As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
 End Class
