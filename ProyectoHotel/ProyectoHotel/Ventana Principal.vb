@@ -69,12 +69,12 @@ Public Class Ventana_Principal
         PanelDesktop.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
-        lblFormTitle.Text = currentBtn.Text
+        lblGeneral.Text = currentBtn.Text
     End Sub
     Private Sub Reset()
         IconCurrentForm.IconChar = IconChar.Home
         IconCurrentForm.IconColor = Color.FromArgb(255, 176, 1)
-        lblFormTitle.Text = "Inicio"
+        lblGeneral.Text = "Inicio"
 
     End Sub
 
@@ -115,7 +115,7 @@ Public Class Ventana_Principal
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub ipbLogOut_Click(sender As Object, e As EventArgs) Handles ipbLogOut.Click
+    Private Sub ipbLogOut_Click(sender As Object, e As EventArgs)
 
     End Sub
 
