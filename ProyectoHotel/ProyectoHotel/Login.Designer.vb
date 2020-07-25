@@ -90,6 +90,7 @@ Partial Class Login
         Me.txtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtContraseña.Size = New System.Drawing.Size(193, 29)
         Me.txtContraseña.TabIndex = 6
+        Me.txtContraseña.UseSystemPasswordChar = True
         '
         'lblContraseña
         '
