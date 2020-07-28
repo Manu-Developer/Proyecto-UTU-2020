@@ -24,11 +24,11 @@ Partial Class Formulario_Alerta
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,6 +54,16 @@ Partial Class Formulario_Alerta
         Me.Label1.Size = New System.Drawing.Size(153, 70)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "AVISO"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.Informarcion
+        Me.PictureBox1.Location = New System.Drawing.Point(69, 17)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(39, 152)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Label2
         '
@@ -106,16 +116,6 @@ Partial Class Formulario_Alerta
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.Informarcion
-        Me.PictureBox1.Location = New System.Drawing.Point(69, 17)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(39, 152)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Formulario_Alerta
         '

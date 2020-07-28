@@ -14,6 +14,10 @@ Public Class Ventana_Principal
     Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     End Sub
 
+    Private Sub Ventana_Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ActivateButton(btnInicio, Color.FromArgb(255, 255, 255))
+    End Sub
+
 
     Public Sub New()
         ' This call is required by the designer.'
@@ -29,7 +33,7 @@ Public Class Ventana_Principal
             DisableButton()
             'Button'
             currentBtn = CType(senderBtn, IconButton)
-            currentBtn.BackColor = Color.FromArgb(238, 126, 44)
+            currentBtn.BackColor = Color.FromArgb(0, 141, 252)
             currentBtn.ForeColor = customColor
             currentBtn.IconColor = customColor
             currentBtn.TextAlign = ContentAlignment.MiddleCenter
@@ -47,7 +51,7 @@ Public Class Ventana_Principal
     End Sub
     Private Sub DisableButton()
         If currentBtn IsNot Nothing Then
-            currentBtn.BackColor = Color.FromArgb(238, 126, 44)
+            currentBtn.BackColor = Color.FromArgb(0, 118, 210)
             currentBtn.ForeColor = Color.Gainsboro
             currentBtn.IconColor = Color.Gainsboro
             currentBtn.TextAlign = ContentAlignment.MiddleLeft
@@ -73,13 +77,13 @@ Public Class Ventana_Principal
     End Sub
     Private Sub Reset()
         IconCurrentForm.IconChar = IconChar.Home
-        IconCurrentForm.IconColor = Color.FromArgb(255, 176, 1)
+        IconCurrentForm.IconColor = Color.FromArgb(255, 255, 255)
         lblGeneral.Text = "Inicio"
 
     End Sub
 
     Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
-        ActivateButton(sender, Color.FromArgb(255, 176, 1))
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
@@ -87,22 +91,22 @@ Public Class Ventana_Principal
     End Sub
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
-        ActivateButton(sender, Color.FromArgb(255, 176, 1))
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
         OpenChildForm(New ChildForm_Prueba)
     End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
-        ActivateButton(sender, Color.FromArgb(255, 176, 1))
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
         OpenChildForm(New ChildForm_Prueba)
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
-        ActivateButton(sender, Color.FromArgb(255, 176, 1))
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
         OpenChildForm(New ChildForm_Prueba)
     End Sub
 
     Private Sub btnDelivery_Click(sender As Object, e As EventArgs) Handles btnDelivery.Click
-        ActivateButton(sender, Color.FromArgb(255, 176, 1))
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
         OpenChildForm(New ChildForm_Prueba)
     End Sub
 
