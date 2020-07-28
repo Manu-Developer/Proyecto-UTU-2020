@@ -23,9 +23,9 @@ Partial Class Formulario_Exitosamente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -40,6 +40,16 @@ Partial Class Formulario_Exitosamente
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(332, 199)
         Me.Panel1.TabIndex = 6
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.Check
+        Me.PictureBox1.Location = New System.Drawing.Point(124, 24)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(92, 153)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Label3
         '
@@ -64,16 +74,6 @@ Partial Class Formulario_Exitosamente
         Me.Label2.Size = New System.Drawing.Size(102, 28)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "GUARDADO"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.Check
-        Me.PictureBox1.Location = New System.Drawing.Point(124, 24)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(92, 153)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Button1
         '

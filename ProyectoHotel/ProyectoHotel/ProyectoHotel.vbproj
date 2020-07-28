@@ -148,6 +148,11 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fuentes\Poppins-Bold.ttf" />
+    <Content Include="Fuentes\Poppins-Light.ttf" />
+    <Content Include="Fuentes\Poppins-Regular.ttf" />
+    <Content Include="Fuentes\Poppins-SemiBold.ttf" />
+    <Content Include="Fuentes\Poppins-SemiBoldItalic.ttf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
