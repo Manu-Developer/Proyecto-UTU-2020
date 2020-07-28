@@ -82,6 +82,18 @@
     <Compile Include="ChildForm_Prueba.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formulario_Alerta.Designer.vb">
+      <DependentUpon>Formulario_Alerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Alerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Exitosamente.Designer.vb">
+      <DependentUpon>Formulario_Exitosamente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Exitosamente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +127,12 @@
   <ItemGroup>
     <EmbeddedResource Include="ChildForm_Prueba.resx">
       <DependentUpon>ChildForm_Prueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Alerta.resx">
+      <DependentUpon>Formulario_Alerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Exitosamente.resx">
+      <DependentUpon>Formulario_Exitosamente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -156,6 +174,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imagenPrueba2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Informarcion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
