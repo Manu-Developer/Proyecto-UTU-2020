@@ -21,7 +21,8 @@ Public Class Login
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-
-
-
+    Private Sub Login_MouseMove(sender As Object, e As MouseEventArgs) Handles MyBase.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
 End Class

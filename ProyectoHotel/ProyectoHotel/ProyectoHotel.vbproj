@@ -139,9 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventana Principal.resx">
       <DependentUpon>Ventana Principal.vb</DependentUpon>
@@ -153,6 +153,9 @@
     <Content Include="Fuentes\Poppins-Regular.ttf" />
     <Content Include="Fuentes\Poppins-SemiBold.ttf" />
     <Content Include="Fuentes\Poppins-SemiBoldItalic.ttf" />
+    <None Include="Resources\iconoPassword.png" />
+    <None Include="Resources\iconoUser.png" />
+    <None Include="Resources\ImagenInicioSesion.jpg" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -166,16 +169,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Resources\Diseño_Login.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo_HotelCanino.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imagenPrueba.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imagenPrueba2.png" />

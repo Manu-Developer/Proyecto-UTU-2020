@@ -16,6 +16,17 @@ Public Class Ventana_Principal
 
     Private Sub Ventana_Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ActivateButton(btnInicio, Color.FromArgb(255, 255, 255))
+        DataGridView1.Rows.Add("0", "Gonzalo", "Perez", "094656804", "Julio y Herrera", "US$ 1500")
+        DataGridView1.Rows.Add("1", "Manuel", "Muñiz", "095202365", "Calle 4 de Julio", "US$ 2000")
+        DataGridView1.Rows.Add("2", "Agustin", "Robaina", "093246566", "Calle Hotelero", "US$ 3000")
+        DataGridView1.Rows.Add("3", "Fabrizio", "Bravo", "093547687", "Julio y Herrera", "US$ 1500")
+        DataGridView1.Rows.Add("4", "Ignacio", "De Mello", "097823546", "Calle Sauce", "US$ 150")
+        DataGridView1.Rows.Add("5", "Fabrizio", "Bravo", "093547687", "Julio y Herrera", "US$ 1500")
+        DataGridView1.Rows.Add("6", "Manuel", "Muñiz", "095202365", "Calle 4 de Julio", "US$ 2000")
+        DataGridView1.Rows.Add("7", "Gonzalo", "Perez", "094656804", "Julio y Herrera", "US$ 1500")
+        DataGridView1.Rows.Add("8", "Ignacio", "De Mello", "097823546", "Calle Sauce", "US$ 150")
+        DataGridView1.Rows.Add("9", "Fabrizio", "Bravo", "093547687", "Julio y Herrera", "US$ 1500")
+        DataGridView1.Rows.Add("10", "Gonzalo", "Perez", "094656804", "Julio y Herrera", "US$ 1500")
     End Sub
 
 
@@ -59,7 +70,7 @@ Public Class Ventana_Principal
             currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText
         End If
     End Sub
-    Private Sub OpenChildForm(childForm As Form)
+    Private Sub OpenChildForm(childForm As Form, textoDeseado As String)
         'Open only form'
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
@@ -92,22 +103,22 @@ Public Class Ventana_Principal
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ChildForm_Prueba)
+        OpenChildForm(New ChildForm_Prueba, "Agregar Reserva")
     End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ChildForm_Prueba)
+        OpenChildForm(New ChildForm_Prueba, "Modificar Reserva")
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ChildForm_Prueba)
+        OpenChildForm(New ChildForm_Prueba, "Eliminar Reserva")
     End Sub
 
     Private Sub btnDelivery_Click(sender As Object, e As EventArgs) Handles btnDelivery.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ChildForm_Prueba)
+        OpenChildForm(New ChildForm_Prueba, "Diliver Reserva")
     End Sub
 
     Private Sub Panel3_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel3.MouseMove
@@ -136,4 +147,6 @@ Public Class Ventana_Principal
     Private Sub ipbSalir_Click(sender As Object, e As EventArgs) Handles ipbSalir.Click
         Application.Exit()
     End Sub
+
+
 End Class
