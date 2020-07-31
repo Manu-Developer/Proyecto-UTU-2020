@@ -26,6 +26,8 @@ Partial Class Login
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblContraseña = New System.Windows.Forms.Label()
@@ -35,14 +37,12 @@ Partial Class Login
         Me.lblBienvenido = New System.Windows.Forms.Label()
         Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
         Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pcbLogin = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pcbLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -84,6 +84,26 @@ Partial Class Login
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(232, 4)
         Me.Panel3.TabIndex = 3
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(32, 247)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(34, 34)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 9
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.iconoUser
+        Me.PictureBox1.Location = New System.Drawing.Point(31, 126)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(34, 34)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
         '
         'Panel2
         '
@@ -188,26 +208,6 @@ Partial Class Login
         Me.ipbSalir.TabIndex = 2
         Me.ipbSalir.TabStop = False
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(32, 247)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(34, 34)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 9
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.iconoUser
-        Me.PictureBox1.Location = New System.Drawing.Point(31, 126)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(34, 34)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 8
-        Me.PictureBox1.TabStop = False
-        '
         'pcbLogin
         '
         Me.pcbLogin.Image = CType(resources.GetObject("pcbLogin.Image"), System.Drawing.Image)
@@ -234,10 +234,10 @@ Partial Class Login
         Me.Text = "Iniciar Sesion"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pcbLogin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
