@@ -97,7 +97,7 @@ Partial Class Ventana_Principal
         Me.btnCerarSesion.FlatAppearance.BorderSize = 0
         Me.btnCerarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerarSesion.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnCerarSesion.Font = New System.Drawing.Font("Poppins SemiBold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnCerarSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.btnCerarSesion.ForeColor = System.Drawing.Color.White
         Me.btnCerarSesion.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
         Me.btnCerarSesion.IconColor = System.Drawing.Color.White
@@ -121,7 +121,7 @@ Partial Class Ventana_Principal
         Me.btnDelivery.FlatAppearance.BorderSize = 0
         Me.btnDelivery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDelivery.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnDelivery.Font = New System.Drawing.Font("Poppins SemiBold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnDelivery.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.btnDelivery.ForeColor = System.Drawing.Color.White
         Me.btnDelivery.IconChar = FontAwesome.Sharp.IconChar.Truck
         Me.btnDelivery.IconColor = System.Drawing.Color.White
@@ -145,7 +145,7 @@ Partial Class Ventana_Principal
         Me.btnEliminar.FlatAppearance.BorderSize = 0
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnEliminar.Font = New System.Drawing.Font("Poppins SemiBold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.btnEliminar.ForeColor = System.Drawing.Color.White
         Me.btnEliminar.IconChar = FontAwesome.Sharp.IconChar.CalendarTimes
         Me.btnEliminar.IconColor = System.Drawing.Color.White
@@ -169,7 +169,7 @@ Partial Class Ventana_Principal
         Me.btnModificar.FlatAppearance.BorderSize = 0
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnModificar.Font = New System.Drawing.Font("Poppins SemiBold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.btnModificar.ForeColor = System.Drawing.Color.White
         Me.btnModificar.IconChar = FontAwesome.Sharp.IconChar.Edit
         Me.btnModificar.IconColor = System.Drawing.Color.White
@@ -193,7 +193,7 @@ Partial Class Ventana_Principal
         Me.btnInsertar.FlatAppearance.BorderSize = 0
         Me.btnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnInsertar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnInsertar.Font = New System.Drawing.Font("Poppins SemiBold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnInsertar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.btnInsertar.ForeColor = System.Drawing.Color.White
         Me.btnInsertar.IconChar = FontAwesome.Sharp.IconChar.AddressBook
         Me.btnInsertar.IconColor = System.Drawing.Color.White
@@ -217,7 +217,7 @@ Partial Class Ventana_Principal
         Me.btnInicio.FlatAppearance.BorderSize = 0
         Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnInicio.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnInicio.Font = New System.Drawing.Font("Poppins SemiBold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.btnInicio.ForeColor = System.Drawing.Color.White
         Me.btnInicio.IconChar = FontAwesome.Sharp.IconChar.Home
         Me.btnInicio.IconColor = System.Drawing.Color.White
@@ -270,11 +270,11 @@ Partial Class Ventana_Principal
         'lblGeneral
         '
         Me.lblGeneral.AutoSize = True
-        Me.lblGeneral.Font = New System.Drawing.Font("Poppins SemiBold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblGeneral.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.lblGeneral.ForeColor = System.Drawing.Color.White
         Me.lblGeneral.Location = New System.Drawing.Point(40, 13)
         Me.lblGeneral.Name = "lblGeneral"
-        Me.lblGeneral.Size = New System.Drawing.Size(50, 25)
+        Me.lblGeneral.Size = New System.Drawing.Size(46, 17)
         Me.lblGeneral.TabIndex = 6
         Me.lblGeneral.Text = "Inicio"
         '
@@ -323,22 +323,22 @@ Partial Class Ventana_Principal
         'lblHora
         '
         Me.lblHora.AutoSize = True
-        Me.lblHora.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.lblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.lblHora.ForeColor = System.Drawing.Color.White
         Me.lblHora.Location = New System.Drawing.Point(678, 14)
         Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(65, 28)
+        Me.lblHora.Size = New System.Drawing.Size(71, 20)
         Me.lblHora.TabIndex = 0
         Me.lblHora.Text = "17:43:12"
         '
         'lblFecha
         '
         Me.lblFecha.AutoSize = True
-        Me.lblFecha.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.lblFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.lblFecha.ForeColor = System.Drawing.Color.White
         Me.lblFecha.Location = New System.Drawing.Point(522, 40)
         Me.lblFecha.Name = "lblFecha"
-        Me.lblFecha.Size = New System.Drawing.Size(223, 28)
+        Me.lblFecha.Size = New System.Drawing.Size(200, 20)
         Me.lblFecha.TabIndex = 1
         Me.lblFecha.Text = "viernes, 24 de julio de 2020"
         '
@@ -362,7 +362,7 @@ Partial Class Ventana_Principal
         Me.bntAgregarReserva1.FlatAppearance.BorderSize = 0
         Me.bntAgregarReserva1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bntAgregarReserva1.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.bntAgregarReserva1.Font = New System.Drawing.Font("Poppins SemiBold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bntAgregarReserva1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bntAgregarReserva1.ForeColor = System.Drawing.Color.White
         Me.bntAgregarReserva1.IconChar = FontAwesome.Sharp.IconChar.Plus
         Me.bntAgregarReserva1.IconColor = System.Drawing.Color.White
@@ -429,7 +429,7 @@ Partial Class Ventana_Principal
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 10.0!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -461,7 +461,7 @@ Partial Class Ventana_Principal
         Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.DataGridView1.RowHeadersVisible = False
         DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(602, 350)
@@ -515,33 +515,33 @@ Partial Class Ventana_Principal
         'lblCargo
         '
         Me.lblCargo.AutoSize = True
-        Me.lblCargo.Font = New System.Drawing.Font("Poppins Light", 9.75!)
+        Me.lblCargo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
         Me.lblCargo.ForeColor = System.Drawing.Color.White
         Me.lblCargo.Location = New System.Drawing.Point(65, 47)
         Me.lblCargo.Name = "lblCargo"
-        Me.lblCargo.Size = New System.Drawing.Size(149, 23)
+        Me.lblCargo.Size = New System.Drawing.Size(134, 16)
         Me.lblCargo.TabIndex = 3
         Me.lblCargo.Text = "Cargo: Administrador"
         '
         'lblApellido
         '
         Me.lblApellido.AutoSize = True
-        Me.lblApellido.Font = New System.Drawing.Font("Poppins Light", 9.75!)
+        Me.lblApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
         Me.lblApellido.ForeColor = System.Drawing.Color.White
         Me.lblApellido.Location = New System.Drawing.Point(65, 26)
         Me.lblApellido.Name = "lblApellido"
-        Me.lblApellido.Size = New System.Drawing.Size(191, 23)
+        Me.lblApellido.Size = New System.Drawing.Size(180, 16)
         Me.lblApellido.TabIndex = 2
         Me.lblApellido.Text = "Apellidos: Varela Hernandez"
         '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Poppins Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.ForeColor = System.Drawing.Color.White
         Me.lblNombre.Location = New System.Drawing.Point(65, 5)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(172, 23)
+        Me.lblNombre.Size = New System.Drawing.Size(161, 16)
         Me.lblNombre.TabIndex = 1
         Me.lblNombre.Text = "Nombres: Nora Alejandra"
         '

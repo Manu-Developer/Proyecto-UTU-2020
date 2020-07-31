@@ -1,4 +1,5 @@
 ﻿Imports System.Runtime.InteropServices
+Imports System.Windows
 Imports FontAwesome.Sharp
 
 Public Class Ventana_Principal
@@ -148,5 +149,11 @@ Public Class Ventana_Principal
         Application.Exit()
     End Sub
 
+    Private Sub bntAgregarReserva1_Click(sender As Object, e As EventArgs) Handles bntAgregarReserva1.Click
+        Formulario_Alerta.ShowDialog()
+    End Sub
 
+    Private Sub btnCerarSesion_Click(sender As Object, e As EventArgs) Handles btnCerarSesion.Click
+
+    End Sub
 End Class
