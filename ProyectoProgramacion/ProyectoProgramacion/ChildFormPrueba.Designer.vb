@@ -27,9 +27,9 @@ Partial Class ChildFormPrueba
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(310, 31)
+        Me.Button1.Location = New System.Drawing.Point(353, 101)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(231, 157)
+        Me.Button1.Size = New System.Drawing.Size(288, 166)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True

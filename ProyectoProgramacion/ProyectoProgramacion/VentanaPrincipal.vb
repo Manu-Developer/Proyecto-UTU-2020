@@ -93,14 +93,12 @@ Public Class VentanaPrincipal
 
     End Sub
 
-
-    Private Sub Panel3_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel3.MouseMove
-        ReleaseCapture()
-        SendMessage(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
-    Private Sub PanelMenu_MouseMove(sender As Object, e As MouseEventArgs) Handles PanelMenu.MouseMove
-        ReleaseCapture()
-        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
+        Reset()
     End Sub
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
@@ -123,23 +121,20 @@ Public Class VentanaPrincipal
         OpenChildForm(New ChildFormPrueba, "Diliver Reserva")
     End Sub
 
-    Private Sub ipbSalir_Click(sender As Object, e As EventArgs) Handles ipbSalir.Click
-        Application.Exit()
-    End Sub
-
     Private Sub ipbMinimizar_Click(sender As Object, e As EventArgs) Handles ipbMinimizar.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
-        ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        If currentChildForm IsNot Nothing Then
-            currentChildForm.Close()
-        End If
-        Reset()
+    Private Sub ipbSalir_Click(sender As Object, e As EventArgs) Handles ipbSalir.Click
+        Application.Exit()
     End Sub
 
-    Private Sub pbLogoEmpresa_MouseMove(sender As Object, e As MouseEventArgs) Handles pbLogoEmpresa.MouseMove
+    Private Sub Panel3_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel3.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+    Private Sub PanelMenu_MouseMove(sender As Object, e As MouseEventArgs) Handles PanelMenu.MouseMove
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub

@@ -22,10 +22,10 @@ Partial Class VentanaPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.btnDelivery = New FontAwesome.Sharp.IconButton()
         Me.btnEliminar = New FontAwesome.Sharp.IconButton()
@@ -40,13 +40,6 @@ Partial Class VentanaPrincipal
         Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
         Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
-        Me.panelUsuario = New System.Windows.Forms.Panel()
-        Me.lblCargo = New System.Windows.Forms.Label()
-        Me.lblApellido = New System.Windows.Forms.Label()
-        Me.lblNombre = New System.Windows.Forms.Label()
-        Me.pbImagenUsuario = New System.Windows.Forms.PictureBox()
-        Me.lblFecha = New System.Windows.Forms.Label()
-        Me.lblHora = New System.Windows.Forms.Label()
         Me.PanelDesktop = New System.Windows.Forms.Panel()
         Me.bntAgregarReserva1 = New FontAwesome.Sharp.IconButton()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -59,6 +52,13 @@ Partial Class VentanaPrincipal
         Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.panelUsuario = New System.Windows.Forms.Panel()
+        Me.lblCargo = New System.Windows.Forms.Label()
+        Me.lblApellido = New System.Windows.Forms.Label()
+        Me.lblNombre = New System.Windows.Forms.Label()
+        Me.pbImagenUsuario = New System.Windows.Forms.PictureBox()
+        Me.lblFecha = New System.Windows.Forms.Label()
+        Me.lblHora = New System.Windows.Forms.Label()
         Me.PanelMenu.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.pbLogoEmpresa, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,10 +66,10 @@ Partial Class VentanaPrincipal
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.panelUsuario.SuspendLayout()
-        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelDesktop.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelUsuario.SuspendLayout()
+        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelMenu
@@ -86,7 +86,7 @@ Partial Class VentanaPrincipal
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(218, 581)
-        Me.PanelMenu.TabIndex = 1
+        Me.PanelMenu.TabIndex = 2
         '
         'btnDelivery
         '
@@ -243,7 +243,7 @@ Partial Class VentanaPrincipal
         '
         'pbLogoEmpresa
         '
-        Me.pbLogoEmpresa.Image = Global.WindowsApp1.My.Resources.Resources.Logo_HotelCanino
+        Me.pbLogoEmpresa.Image = Global.ProyectoProgramacion.My.Resources.Resources.Logo_HotelCanino
         Me.pbLogoEmpresa.Location = New System.Drawing.Point(3, 3)
         Me.pbLogoEmpresa.Name = "pbLogoEmpresa"
         Me.pbLogoEmpresa.Size = New System.Drawing.Size(205, 88)
@@ -263,7 +263,7 @@ Partial Class VentanaPrincipal
         Me.Panel3.Location = New System.Drawing.Point(218, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(736, 42)
-        Me.Panel3.TabIndex = 3
+        Me.Panel3.TabIndex = 4
         '
         'lblGeneral
         '
@@ -295,7 +295,7 @@ Partial Class VentanaPrincipal
         Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
         Me.ipbSalir.IconColor = System.Drawing.Color.White
         Me.ipbSalir.IconSize = 34
-        Me.ipbSalir.Location = New System.Drawing.Point(703, 6)
+        Me.ipbSalir.Location = New System.Drawing.Point(699, 4)
         Me.ipbSalir.Name = "ipbSalir"
         Me.ipbSalir.Size = New System.Drawing.Size(38, 34)
         Me.ipbSalir.TabIndex = 4
@@ -308,91 +308,11 @@ Partial Class VentanaPrincipal
         Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
         Me.ipbMinimizar.IconColor = System.Drawing.Color.White
         Me.ipbMinimizar.IconSize = 34
-        Me.ipbMinimizar.Location = New System.Drawing.Point(668, 5)
+        Me.ipbMinimizar.Location = New System.Drawing.Point(663, 5)
         Me.ipbMinimizar.Name = "ipbMinimizar"
         Me.ipbMinimizar.Size = New System.Drawing.Size(38, 34)
         Me.ipbMinimizar.TabIndex = 5
         Me.ipbMinimizar.TabStop = False
-        '
-        'panelUsuario
-        '
-        Me.panelUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.panelUsuario.Controls.Add(Me.lblCargo)
-        Me.panelUsuario.Controls.Add(Me.lblApellido)
-        Me.panelUsuario.Controls.Add(Me.lblNombre)
-        Me.panelUsuario.Controls.Add(Me.pbImagenUsuario)
-        Me.panelUsuario.Controls.Add(Me.lblFecha)
-        Me.panelUsuario.Controls.Add(Me.lblHora)
-        Me.panelUsuario.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.panelUsuario.Location = New System.Drawing.Point(218, 511)
-        Me.panelUsuario.Name = "panelUsuario"
-        Me.panelUsuario.Size = New System.Drawing.Size(736, 70)
-        Me.panelUsuario.TabIndex = 5
-        '
-        'lblCargo
-        '
-        Me.lblCargo.AutoSize = True
-        Me.lblCargo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.lblCargo.ForeColor = System.Drawing.Color.White
-        Me.lblCargo.Location = New System.Drawing.Point(65, 47)
-        Me.lblCargo.Name = "lblCargo"
-        Me.lblCargo.Size = New System.Drawing.Size(134, 16)
-        Me.lblCargo.TabIndex = 3
-        Me.lblCargo.Text = "Cargo: Administrador"
-        '
-        'lblApellido
-        '
-        Me.lblApellido.AutoSize = True
-        Me.lblApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.lblApellido.ForeColor = System.Drawing.Color.White
-        Me.lblApellido.Location = New System.Drawing.Point(65, 26)
-        Me.lblApellido.Name = "lblApellido"
-        Me.lblApellido.Size = New System.Drawing.Size(180, 16)
-        Me.lblApellido.TabIndex = 2
-        Me.lblApellido.Text = "Apellidos: Varela Hernandez"
-        '
-        'lblNombre
-        '
-        Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.ForeColor = System.Drawing.Color.White
-        Me.lblNombre.Location = New System.Drawing.Point(65, 5)
-        Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(161, 16)
-        Me.lblNombre.TabIndex = 1
-        Me.lblNombre.Text = "Nombres: Nora Alejandra"
-        '
-        'pbImagenUsuario
-        '
-        Me.pbImagenUsuario.Image = Global.WindowsApp1.My.Resources.Resources.imagenPrueba2
-        Me.pbImagenUsuario.Location = New System.Drawing.Point(3, 8)
-        Me.pbImagenUsuario.Name = "pbImagenUsuario"
-        Me.pbImagenUsuario.Size = New System.Drawing.Size(58, 60)
-        Me.pbImagenUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbImagenUsuario.TabIndex = 1
-        Me.pbImagenUsuario.TabStop = False
-        '
-        'lblFecha
-        '
-        Me.lblFecha.AutoSize = True
-        Me.lblFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lblFecha.ForeColor = System.Drawing.Color.White
-        Me.lblFecha.Location = New System.Drawing.Point(533, 41)
-        Me.lblFecha.Name = "lblFecha"
-        Me.lblFecha.Size = New System.Drawing.Size(200, 20)
-        Me.lblFecha.TabIndex = 1
-        Me.lblFecha.Text = "viernes, 24 de julio de 2020"
-        '
-        'lblHora
-        '
-        Me.lblHora.AutoSize = True
-        Me.lblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lblHora.ForeColor = System.Drawing.Color.White
-        Me.lblHora.Location = New System.Drawing.Point(662, 8)
-        Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(71, 20)
-        Me.lblHora.TabIndex = 0
-        Me.lblHora.Text = "17:43:12"
         '
         'PanelDesktop
         '
@@ -404,8 +324,8 @@ Partial Class VentanaPrincipal
         Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelDesktop.Location = New System.Drawing.Point(218, 42)
         Me.PanelDesktop.Name = "PanelDesktop"
-        Me.PanelDesktop.Size = New System.Drawing.Size(736, 468)
-        Me.PanelDesktop.TabIndex = 6
+        Me.PanelDesktop.Size = New System.Drawing.Size(736, 471)
+        Me.PanelDesktop.TabIndex = 7
         '
         'bntAgregarReserva1
         '
@@ -433,7 +353,7 @@ Partial Class VentanaPrincipal
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
         Me.TextBox1.Location = New System.Drawing.Point(67, 45)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -448,11 +368,14 @@ Partial Class VentanaPrincipal
         Me.image.IconChar = FontAwesome.Sharp.IconChar.Search
         Me.image.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.image.IconSize = 26
+        Me.image.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.image.Location = New System.Drawing.Point(30, 44)
         Me.image.Name = "image"
         Me.image.Rotation = 0R
         Me.image.Size = New System.Drawing.Size(34, 34)
         Me.image.TabIndex = 4
+        Me.image.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.image.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.image.UseVisualStyleBackColor = True
         '
         'btnDesactivado
@@ -487,46 +410,46 @@ Partial Class VentanaPrincipal
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle33.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle33.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle33
         Me.DataGridView1.ColumnHeadersHeight = 27
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.Nombre, Me.Apellido, Me.Telefono, Me.Direccion, Me.Precio})
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle34.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle34.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle34.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle34
         Me.DataGridView1.EnableHeadersVisualStyles = False
         Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.DataGridView1.Location = New System.Drawing.Point(30, 110)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle35.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle35.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle35.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
+        DataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
+        DataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
+        DataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle35
         Me.DataGridView1.RowHeadersVisible = False
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle36.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle36.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(81, Byte), Integer))
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle36
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(677, 272)
+        Me.DataGridView1.Size = New System.Drawing.Size(677, 275)
         Me.DataGridView1.TabIndex = 1
         '
         'id
@@ -575,13 +498,93 @@ Partial Class VentanaPrincipal
         Me.Precio.Name = "Precio"
         Me.Precio.ReadOnly = True
         '
+        'panelUsuario
+        '
+        Me.panelUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.panelUsuario.Controls.Add(Me.lblCargo)
+        Me.panelUsuario.Controls.Add(Me.lblApellido)
+        Me.panelUsuario.Controls.Add(Me.lblNombre)
+        Me.panelUsuario.Controls.Add(Me.pbImagenUsuario)
+        Me.panelUsuario.Controls.Add(Me.lblFecha)
+        Me.panelUsuario.Controls.Add(Me.lblHora)
+        Me.panelUsuario.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.panelUsuario.Location = New System.Drawing.Point(218, 511)
+        Me.panelUsuario.Name = "panelUsuario"
+        Me.panelUsuario.Size = New System.Drawing.Size(736, 70)
+        Me.panelUsuario.TabIndex = 8
+        '
+        'lblCargo
+        '
+        Me.lblCargo.AutoSize = True
+        Me.lblCargo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.lblCargo.ForeColor = System.Drawing.Color.White
+        Me.lblCargo.Location = New System.Drawing.Point(65, 47)
+        Me.lblCargo.Name = "lblCargo"
+        Me.lblCargo.Size = New System.Drawing.Size(134, 16)
+        Me.lblCargo.TabIndex = 3
+        Me.lblCargo.Text = "Cargo: Administrador"
+        '
+        'lblApellido
+        '
+        Me.lblApellido.AutoSize = True
+        Me.lblApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.lblApellido.ForeColor = System.Drawing.Color.White
+        Me.lblApellido.Location = New System.Drawing.Point(65, 26)
+        Me.lblApellido.Name = "lblApellido"
+        Me.lblApellido.Size = New System.Drawing.Size(180, 16)
+        Me.lblApellido.TabIndex = 2
+        Me.lblApellido.Text = "Apellidos: Varela Hernandez"
+        '
+        'lblNombre
+        '
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.ForeColor = System.Drawing.Color.White
+        Me.lblNombre.Location = New System.Drawing.Point(65, 5)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(161, 16)
+        Me.lblNombre.TabIndex = 1
+        Me.lblNombre.Text = "Nombres: Nora Alejandra"
+        '
+        'pbImagenUsuario
+        '
+        Me.pbImagenUsuario.Image = Global.ProyectoProgramacion.My.Resources.Resources.imagenPrueba2
+        Me.pbImagenUsuario.Location = New System.Drawing.Point(3, 8)
+        Me.pbImagenUsuario.Name = "pbImagenUsuario"
+        Me.pbImagenUsuario.Size = New System.Drawing.Size(58, 60)
+        Me.pbImagenUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbImagenUsuario.TabIndex = 1
+        Me.pbImagenUsuario.TabStop = False
+        '
+        'lblFecha
+        '
+        Me.lblFecha.AutoSize = True
+        Me.lblFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lblFecha.ForeColor = System.Drawing.Color.White
+        Me.lblFecha.Location = New System.Drawing.Point(533, 41)
+        Me.lblFecha.Name = "lblFecha"
+        Me.lblFecha.Size = New System.Drawing.Size(200, 20)
+        Me.lblFecha.TabIndex = 1
+        Me.lblFecha.Text = "viernes, 24 de julio de 2020"
+        '
+        'lblHora
+        '
+        Me.lblHora.AutoSize = True
+        Me.lblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lblHora.ForeColor = System.Drawing.Color.White
+        Me.lblHora.Location = New System.Drawing.Point(662, 8)
+        Me.lblHora.Name = "lblHora"
+        Me.lblHora.Size = New System.Drawing.Size(71, 20)
+        Me.lblHora.TabIndex = 0
+        Me.lblHora.Text = "17:43:12"
+        '
         'VentanaPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(954, 581)
-        Me.Controls.Add(Me.PanelDesktop)
         Me.Controls.Add(Me.panelUsuario)
+        Me.Controls.Add(Me.PanelDesktop)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.PanelMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -596,17 +599,22 @@ Partial Class VentanaPrincipal
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.panelUsuario.ResumeLayout(False)
-        Me.panelUsuario.PerformLayout()
-        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelDesktop.ResumeLayout(False)
         Me.PanelDesktop.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelUsuario.ResumeLayout(False)
+        Me.panelUsuario.PerformLayout()
+        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents PanelMenu As Panel
+    Friend WithEvents btnDelivery As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnEliminar As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnModificar As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnInsertar As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnInicio As FontAwesome.Sharp.IconButton
     Friend WithEvents btnCerarSesion As FontAwesome.Sharp.IconButton
     Friend WithEvents Panel2 As Panel
     Friend WithEvents pbLogoEmpresa As PictureBox
@@ -615,13 +623,6 @@ Partial Class VentanaPrincipal
     Friend WithEvents IconCurrentForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ipbMinimizar As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents panelUsuario As Panel
-    Friend WithEvents lblCargo As Label
-    Friend WithEvents lblApellido As Label
-    Friend WithEvents lblNombre As Label
-    Friend WithEvents pbImagenUsuario As PictureBox
-    Friend WithEvents lblFecha As Label
-    Friend WithEvents lblHora As Label
     Friend WithEvents PanelDesktop As Panel
     Friend WithEvents bntAgregarReserva1 As FontAwesome.Sharp.IconButton
     Friend WithEvents TextBox1 As TextBox
@@ -634,9 +635,11 @@ Partial Class VentanaPrincipal
     Friend WithEvents Telefono As DataGridViewTextBoxColumn
     Friend WithEvents Direccion As DataGridViewTextBoxColumn
     Friend WithEvents Precio As DataGridViewTextBoxColumn
-    Friend WithEvents btnDelivery As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnEliminar As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnModificar As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnInsertar As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnInicio As FontAwesome.Sharp.IconButton
+    Friend WithEvents panelUsuario As Panel
+    Friend WithEvents lblCargo As Label
+    Friend WithEvents lblApellido As Label
+    Friend WithEvents lblNombre As Label
+    Friend WithEvents pbImagenUsuario As PictureBox
+    Friend WithEvents lblFecha As Label
+    Friend WithEvents lblHora As Label
 End Class

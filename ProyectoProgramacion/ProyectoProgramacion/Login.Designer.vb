@@ -32,22 +32,22 @@ Partial Class Login
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblBienvenido = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
         Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
+        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
         CType(Me.pcbImagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelPrincipal.SuspendLayout()
-        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pcbImagen
         '
-        Me.pcbImagen.Image = Global.WindowsApp1.My.Resources.Resources.Diseño_Login
-        Me.pcbImagen.Location = New System.Drawing.Point(-1, -2)
+        Me.pcbImagen.Image = Global.ProyectoProgramacion.My.Resources.Resources.Diseño_Login
+        Me.pcbImagen.Location = New System.Drawing.Point(-1, 0)
         Me.pcbImagen.Name = "pcbImagen"
-        Me.pcbImagen.Size = New System.Drawing.Size(830, 459)
+        Me.pcbImagen.Size = New System.Drawing.Size(831, 445)
         Me.pcbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pcbImagen.TabIndex = 0
+        Me.pcbImagen.TabIndex = 1
         Me.pcbImagen.TabStop = False
         '
         'panelPrincipal
@@ -61,10 +61,10 @@ Partial Class Login
         Me.panelPrincipal.Controls.Add(Me.btnLogin)
         Me.panelPrincipal.Controls.Add(Me.lblBienvenido)
         Me.panelPrincipal.Controls.Add(Me.txtNombre)
-        Me.panelPrincipal.Location = New System.Drawing.Point(470, 42)
+        Me.panelPrincipal.Location = New System.Drawing.Point(479, 38)
         Me.panelPrincipal.Name = "panelPrincipal"
         Me.panelPrincipal.Size = New System.Drawing.Size(282, 390)
-        Me.panelPrincipal.TabIndex = 1
+        Me.panelPrincipal.TabIndex = 2
         '
         'txtContrasena
         '
@@ -152,19 +152,6 @@ Partial Class Login
         Me.txtNombre.Size = New System.Drawing.Size(192, 29)
         Me.txtNombre.TabIndex = 0
         '
-        'ipbSalir
-        '
-        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
-        Me.ipbSalir.IconColor = System.Drawing.Color.White
-        Me.ipbSalir.IconSize = 34
-        Me.ipbSalir.Location = New System.Drawing.Point(796, 3)
-        Me.ipbSalir.Name = "ipbSalir"
-        Me.ipbSalir.Size = New System.Drawing.Size(32, 32)
-        Me.ipbSalir.TabIndex = 2
-        Me.ipbSalir.TabStop = False
-        '
         'ipbMinimizar
         '
         Me.ipbMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(82, Byte), Integer))
@@ -172,11 +159,24 @@ Partial Class Login
         Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
         Me.ipbMinimizar.IconColor = System.Drawing.Color.White
         Me.ipbMinimizar.IconSize = 34
-        Me.ipbMinimizar.Location = New System.Drawing.Point(764, 1)
+        Me.ipbMinimizar.Location = New System.Drawing.Point(762, -2)
         Me.ipbMinimizar.Name = "ipbMinimizar"
         Me.ipbMinimizar.Size = New System.Drawing.Size(32, 32)
-        Me.ipbMinimizar.TabIndex = 3
+        Me.ipbMinimizar.TabIndex = 5
         Me.ipbMinimizar.TabStop = False
+        '
+        'ipbSalir
+        '
+        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.ipbSalir.IconColor = System.Drawing.Color.White
+        Me.ipbSalir.IconSize = 34
+        Me.ipbSalir.Location = New System.Drawing.Point(793, 0)
+        Me.ipbSalir.Name = "ipbSalir"
+        Me.ipbSalir.Size = New System.Drawing.Size(32, 32)
+        Me.ipbSalir.TabIndex = 4
+        Me.ipbSalir.TabStop = False
         '
         'Login
         '
@@ -194,14 +194,15 @@ Partial Class Login
         CType(Me.pcbImagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelPrincipal.ResumeLayout(False)
         Me.panelPrincipal.PerformLayout()
-        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents pcbImagen As PictureBox
     Friend WithEvents panelPrincipal As Panel
+    Friend WithEvents txtContrasena As TextBox
     Friend WithEvents lblContraseña As Label
     Friend WithEvents lblNombre As Label
     Friend WithEvents panelDebajo As Panel
@@ -209,7 +210,6 @@ Partial Class Login
     Friend WithEvents btnLogin As Button
     Friend WithEvents lblBienvenido As Label
     Friend WithEvents txtNombre As TextBox
-    Friend WithEvents txtContrasena As TextBox
-    Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ipbMinimizar As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
 End Class
