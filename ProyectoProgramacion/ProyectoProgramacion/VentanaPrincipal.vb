@@ -28,7 +28,7 @@ Public Class VentanaPrincipal
         DataGridView1.Rows.Add("8", "Ignacio", "De Mello", "097823546", "Calle Sauce", "US$ 150")
         DataGridView1.Rows.Add("9", "Fabrizio", "Bravo", "093547687", "Julio y Herrera", "US$ 1500")
         DataGridView1.Rows.Add("10", "Gonzalo", "Perez", "094656804", "Julio y Herrera", "US$ 1500")
-
+        UseCustomFont("name", 1, lblGeneral)
     End Sub
 
 
@@ -142,6 +142,18 @@ Public Class VentanaPrincipal
     End Sub
 
     Private Sub bntAgregarReserva1_Click(sender As Object, e As EventArgs) Handles bntAgregarReserva1.Click
+
+    End Sub
+
+    Private Sub UseCustomFont(name As String, size As Integer, label As Label)
+
+
+        Dim modernFont As New PrivateFontCollection()
+
+        modernFont.AddFontFile(name)
+
+        label.Font = New Font(modernFont.Families(0), size)
+
 
     End Sub
 

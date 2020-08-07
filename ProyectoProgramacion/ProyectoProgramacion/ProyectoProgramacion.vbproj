@@ -119,6 +119,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ValidacionesBasicas.vb" />
     <Compile Include="VentanaPrincipal.Designer.vb">
       <DependentUpon>VentanaPrincipal.vb</DependentUpon>
     </Compile>
