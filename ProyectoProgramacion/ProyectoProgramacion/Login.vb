@@ -26,4 +26,15 @@ Public Class Login
     Private Sub ipbMinimizar_Click(sender As Object, e As EventArgs) Handles ipbMinimizar.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
+    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        If usuario.Text = "gerente" And contraseña.Text = "1234" Then
+            Dim ventana As VentanaPrincipal = New VentanaPrincipal
+            Me.Visible = False
+            ventana.Show()
+        Else
+            MessageBox.Show("Contraseña o Usuario incorrectos!")
+        End If
+
+    End Sub
 End Class

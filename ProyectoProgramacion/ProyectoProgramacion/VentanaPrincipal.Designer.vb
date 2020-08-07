@@ -272,9 +272,10 @@ Partial Class VentanaPrincipal
         Me.lblGeneral.ForeColor = System.Drawing.Color.White
         Me.lblGeneral.Location = New System.Drawing.Point(40, 13)
         Me.lblGeneral.Name = "lblGeneral"
-        Me.lblGeneral.Size = New System.Drawing.Size(46, 17)
+        Me.lblGeneral.Size = New System.Drawing.Size(39, 20)
         Me.lblGeneral.TabIndex = 6
         Me.lblGeneral.Text = "Inicio"
+        Me.lblGeneral.UseCompatibleTextRendering = True
         '
         'IconCurrentForm
         '

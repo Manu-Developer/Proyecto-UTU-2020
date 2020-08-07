@@ -24,14 +24,14 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.pcbImagen = New System.Windows.Forms.PictureBox()
         Me.panelPrincipal = New System.Windows.Forms.Panel()
-        Me.txtContrasena = New System.Windows.Forms.TextBox()
+        Me.contraseña = New System.Windows.Forms.TextBox()
         Me.lblContraseña = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.panelDebajo = New System.Windows.Forms.Panel()
         Me.panelBienvenido = New System.Windows.Forms.Panel()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblBienvenido = New System.Windows.Forms.Label()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.usuario = New System.Windows.Forms.TextBox()
         Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
         Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
         CType(Me.pcbImagen, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,50 +53,51 @@ Partial Class Login
         'panelPrincipal
         '
         Me.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.panelPrincipal.Controls.Add(Me.txtContrasena)
+        Me.panelPrincipal.Controls.Add(Me.contraseña)
         Me.panelPrincipal.Controls.Add(Me.lblContraseña)
         Me.panelPrincipal.Controls.Add(Me.lblNombre)
         Me.panelPrincipal.Controls.Add(Me.panelDebajo)
         Me.panelPrincipal.Controls.Add(Me.panelBienvenido)
         Me.panelPrincipal.Controls.Add(Me.btnLogin)
         Me.panelPrincipal.Controls.Add(Me.lblBienvenido)
-        Me.panelPrincipal.Controls.Add(Me.txtNombre)
+        Me.panelPrincipal.Controls.Add(Me.usuario)
         Me.panelPrincipal.Location = New System.Drawing.Point(479, 38)
         Me.panelPrincipal.Name = "panelPrincipal"
         Me.panelPrincipal.Size = New System.Drawing.Size(282, 390)
         Me.panelPrincipal.TabIndex = 2
         '
-        'txtContrasena
+        'contraseña
         '
-        Me.txtContrasena.Font = New System.Drawing.Font("Poppins Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContrasena.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtContrasena.Location = New System.Drawing.Point(49, 243)
-        Me.txtContrasena.Multiline = True
-        Me.txtContrasena.Name = "txtContrasena"
-        Me.txtContrasena.Size = New System.Drawing.Size(192, 29)
-        Me.txtContrasena.TabIndex = 8
+        Me.contraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.contraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.contraseña.Location = New System.Drawing.Point(49, 243)
+        Me.contraseña.Multiline = True
+        Me.contraseña.Name = "contraseña"
+        Me.contraseña.Size = New System.Drawing.Size(192, 29)
+        Me.contraseña.TabIndex = 1
+        Me.contraseña.UseSystemPasswordChar = True
         '
         'lblContraseña
         '
         Me.lblContraseña.AutoSize = True
-        Me.lblContraseña.Font = New System.Drawing.Font("Poppins Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblContraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.lblContraseña.Location = New System.Drawing.Point(44, 212)
         Me.lblContraseña.Name = "lblContraseña"
-        Me.lblContraseña.Size = New System.Drawing.Size(114, 28)
-        Me.lblContraseña.TabIndex = 7
+        Me.lblContraseña.Size = New System.Drawing.Size(100, 20)
+        Me.lblContraseña.TabIndex = 11
         Me.lblContraseña.Text = "Constraseña"
         '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Poppins Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.lblNombre.Location = New System.Drawing.Point(44, 98)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(79, 28)
-        Me.lblNombre.TabIndex = 5
-        Me.lblNombre.Text = "Nombre:"
+        Me.lblNombre.Size = New System.Drawing.Size(68, 20)
+        Me.lblNombre.TabIndex = 10
+        Me.lblNombre.Text = "Usuario:"
         '
         'panelDebajo
         '
@@ -122,35 +123,36 @@ Partial Class Login
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.FlatAppearance.BorderSize = 0
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogin.Font = New System.Drawing.Font("Poppins SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
         Me.btnLogin.Location = New System.Drawing.Point(49, 322)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(192, 36)
         Me.btnLogin.TabIndex = 2
+        Me.btnLogin.TabStop = False
         Me.btnLogin.Text = "Iniciar Sesión"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
         'lblBienvenido
         '
         Me.lblBienvenido.AutoSize = True
-        Me.lblBienvenido.Font = New System.Drawing.Font("Poppins SemiBold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBienvenido.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBienvenido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.lblBienvenido.Location = New System.Drawing.Point(66, 24)
         Me.lblBienvenido.Name = "lblBienvenido"
-        Me.lblBienvenido.Size = New System.Drawing.Size(154, 42)
+        Me.lblBienvenido.Size = New System.Drawing.Size(144, 29)
         Me.lblBienvenido.TabIndex = 1
         Me.lblBienvenido.Text = "Bienvenido"
         '
-        'txtNombre
+        'usuario
         '
-        Me.txtNombre.Font = New System.Drawing.Font("Poppins Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtNombre.Location = New System.Drawing.Point(49, 129)
-        Me.txtNombre.Multiline = True
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(192, 29)
-        Me.txtNombre.TabIndex = 0
+        Me.usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.usuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.usuario.Location = New System.Drawing.Point(49, 129)
+        Me.usuario.Multiline = True
+        Me.usuario.Name = "usuario"
+        Me.usuario.Size = New System.Drawing.Size(192, 29)
+        Me.usuario.TabIndex = 0
         '
         'ipbMinimizar
         '
@@ -202,14 +204,14 @@ Partial Class Login
 
     Friend WithEvents pcbImagen As PictureBox
     Friend WithEvents panelPrincipal As Panel
-    Friend WithEvents txtContrasena As TextBox
+    Friend WithEvents contraseña As TextBox
     Friend WithEvents lblContraseña As Label
     Friend WithEvents lblNombre As Label
     Friend WithEvents panelDebajo As Panel
     Friend WithEvents panelBienvenido As Panel
     Friend WithEvents btnLogin As Button
     Friend WithEvents lblBienvenido As Label
-    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents usuario As TextBox
     Friend WithEvents ipbMinimizar As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
 End Class
