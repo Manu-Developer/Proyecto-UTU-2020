@@ -91,8 +91,13 @@ Public Class VentanaPrincipal
     End Sub
 
     Private Sub btnCerarSesion_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
-        Me.Close()
-        Login.Visible = True
+        Dim result As DialogResult = New DialogResult()
+        result = FormWarn.callFormWithMessage("AVISO", "Estas seguro de querer cerrar sesion?")
+        If result = DialogResult.OK Then
+            Me.Close()
+            Login.Visible = True
+        End If
+
     End Sub
 
     Private Sub VentanaPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load

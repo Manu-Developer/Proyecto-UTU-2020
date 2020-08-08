@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class VentanaPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class VentanaPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VentanaPrincipal))
@@ -65,13 +65,13 @@ Partial Class VentanaPrincipal
         Me.PanelMenu.Controls.Add(Me.btnDelivery)
         Me.PanelMenu.Controls.Add(Me.btnInsertar)
         Me.PanelMenu.Controls.Add(Me.btnInicio)
-        Me.PanelMenu.Controls.Add(Me.PictureBox1)
         Me.PanelMenu.Controls.Add(Me.BunifuSeparator4)
         Me.PanelMenu.Controls.Add(Me.BunifuSeparator2)
         Me.PanelMenu.Controls.Add(Me.BunifuSeparator5)
         Me.PanelMenu.Controls.Add(Me.BunifuSeparator3)
         Me.PanelMenu.Controls.Add(Me.nombre)
         Me.PanelMenu.Controls.Add(Me.BunifuSeparator1)
+        Me.PanelMenu.Controls.Add(Me.PictureBox1)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
@@ -443,6 +443,7 @@ Partial Class VentanaPrincipal
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.ProyectoProgramacion.My.Resources.Resources.imagenPrueba2
         Me.PictureBox1.Location = New System.Drawing.Point(26, 42)
         Me.PictureBox1.Name = "PictureBox1"
