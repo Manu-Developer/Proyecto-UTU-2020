@@ -98,7 +98,7 @@ Public Class VentanaPrincipal
 
     Private Sub btnDelivery_Click(sender As Object, e As EventArgs) Handles btnDelivery.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-
+        OpenChildForm(New ReservasConfirmadas, "Gestionar Reservas")
     End Sub
 
     Private Sub ipbMinimizar_Click(sender As Object, e As EventArgs) Handles ipbMinimizar.Click
@@ -119,6 +119,10 @@ Public Class VentanaPrincipal
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
+    Private Sub btnModificarPrecio_Click(sender As Object, e As EventArgs) Handles btnModificarPrecio.Click
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
+        OpenChildForm(New ModificarPrecioHabitacion, "Gestionar Reservas")
+    End Sub
     Private Sub bntAgregarReserva1_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -127,4 +131,6 @@ Public Class VentanaPrincipal
         Me.Close()
         Login.Visible = True
     End Sub
+
+
 End Class

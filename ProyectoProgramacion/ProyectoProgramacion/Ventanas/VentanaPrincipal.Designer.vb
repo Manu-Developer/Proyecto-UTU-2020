@@ -23,40 +23,42 @@ Partial Class VentanaPrincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.btnDelivery = New FontAwesome.Sharp.IconButton()
+        Me.btnModificarPrecio = New FontAwesome.Sharp.IconButton()
+        Me.btnInsertar = New FontAwesome.Sharp.IconButton()
+        Me.btnInicio = New FontAwesome.Sharp.IconButton()
+        Me.btnCerarSesion = New FontAwesome.Sharp.IconButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.pbLogoEmpresa = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.lblGeneral = New System.Windows.Forms.Label()
+        Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
+        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
+        Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
         Me.PanelDesktop = New System.Windows.Forms.Panel()
         Me.panelUsuario = New System.Windows.Forms.Panel()
         Me.lblCargo = New System.Windows.Forms.Label()
         Me.lblApellido = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
+        Me.pbImagenUsuario = New System.Windows.Forms.PictureBox()
         Me.lblFecha = New System.Windows.Forms.Label()
         Me.lblHora = New System.Windows.Forms.Label()
-        Me.pbImagenUsuario = New System.Windows.Forms.PictureBox()
-        Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
-        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
-        Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
-        Me.btnDelivery = New FontAwesome.Sharp.IconButton()
-        Me.btnInsertar = New FontAwesome.Sharp.IconButton()
-        Me.btnInicio = New FontAwesome.Sharp.IconButton()
-        Me.btnCerarSesion = New FontAwesome.Sharp.IconButton()
-        Me.pbLogoEmpresa = New System.Windows.Forms.PictureBox()
         Me.PanelMenu.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.pbLogoEmpresa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
-        Me.panelUsuario.SuspendLayout()
-        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbLogoEmpresa, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelUsuario.SuspendLayout()
+        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.PanelMenu.Controls.Add(Me.btnDelivery)
+        Me.PanelMenu.Controls.Add(Me.btnModificarPrecio)
         Me.PanelMenu.Controls.Add(Me.btnInsertar)
         Me.PanelMenu.Controls.Add(Me.btnInicio)
         Me.PanelMenu.Controls.Add(Me.btnCerarSesion)
@@ -67,6 +69,126 @@ Partial Class VentanaPrincipal
         Me.PanelMenu.Size = New System.Drawing.Size(218, 581)
         Me.PanelMenu.TabIndex = 2
         '
+        'btnDelivery
+        '
+        Me.btnDelivery.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDelivery.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnDelivery.FlatAppearance.BorderSize = 0
+        Me.btnDelivery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelivery.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnDelivery.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelivery.ForeColor = System.Drawing.Color.White
+        Me.btnDelivery.IconChar = FontAwesome.Sharp.IconChar.Truck
+        Me.btnDelivery.IconColor = System.Drawing.Color.White
+        Me.btnDelivery.IconSize = 32
+        Me.btnDelivery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDelivery.Location = New System.Drawing.Point(0, 244)
+        Me.btnDelivery.Name = "btnDelivery"
+        Me.btnDelivery.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnDelivery.Rotation = 0R
+        Me.btnDelivery.Size = New System.Drawing.Size(218, 46)
+        Me.btnDelivery.TabIndex = 16
+        Me.btnDelivery.Text = "Reservas confirmadas"
+        Me.btnDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDelivery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnDelivery.UseVisualStyleBackColor = True
+        '
+        'btnModificarPrecio
+        '
+        Me.btnModificarPrecio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificarPrecio.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnModificarPrecio.FlatAppearance.BorderSize = 0
+        Me.btnModificarPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificarPrecio.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnModificarPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificarPrecio.ForeColor = System.Drawing.Color.White
+        Me.btnModificarPrecio.IconChar = FontAwesome.Sharp.IconChar.Truck
+        Me.btnModificarPrecio.IconColor = System.Drawing.Color.White
+        Me.btnModificarPrecio.IconSize = 32
+        Me.btnModificarPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnModificarPrecio.Location = New System.Drawing.Point(0, 198)
+        Me.btnModificarPrecio.Name = "btnModificarPrecio"
+        Me.btnModificarPrecio.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnModificarPrecio.Rotation = 0R
+        Me.btnModificarPrecio.Size = New System.Drawing.Size(218, 46)
+        Me.btnModificarPrecio.TabIndex = 17
+        Me.btnModificarPrecio.Text = "Modificar precio de las habitaciones"
+        Me.btnModificarPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnModificarPrecio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnModificarPrecio.UseVisualStyleBackColor = True
+        '
+        'btnInsertar
+        '
+        Me.btnInsertar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnInsertar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnInsertar.FlatAppearance.BorderSize = 0
+        Me.btnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInsertar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnInsertar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInsertar.ForeColor = System.Drawing.Color.White
+        Me.btnInsertar.IconChar = FontAwesome.Sharp.IconChar.AddressBook
+        Me.btnInsertar.IconColor = System.Drawing.Color.White
+        Me.btnInsertar.IconSize = 32
+        Me.btnInsertar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInsertar.Location = New System.Drawing.Point(0, 152)
+        Me.btnInsertar.Name = "btnInsertar"
+        Me.btnInsertar.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnInsertar.Rotation = 0R
+        Me.btnInsertar.Size = New System.Drawing.Size(218, 46)
+        Me.btnInsertar.TabIndex = 13
+        Me.btnInsertar.Text = "Gestionar Reservas"
+        Me.btnInsertar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInsertar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnInsertar.UseVisualStyleBackColor = True
+        '
+        'btnInicio
+        '
+        Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnInicio.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnInicio.FlatAppearance.BorderSize = 0
+        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInicio.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInicio.ForeColor = System.Drawing.Color.White
+        Me.btnInicio.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.btnInicio.IconColor = System.Drawing.Color.White
+        Me.btnInicio.IconSize = 32
+        Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInicio.Location = New System.Drawing.Point(0, 106)
+        Me.btnInicio.Name = "btnInicio"
+        Me.btnInicio.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnInicio.Rotation = 0R
+        Me.btnInicio.Size = New System.Drawing.Size(218, 46)
+        Me.btnInicio.TabIndex = 7
+        Me.btnInicio.Text = "Inicio"
+        Me.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnInicio.UseVisualStyleBackColor = True
+        '
+        'btnCerarSesion
+        '
+        Me.btnCerarSesion.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCerarSesion.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnCerarSesion.FlatAppearance.BorderSize = 0
+        Me.btnCerarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerarSesion.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnCerarSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnCerarSesion.ForeColor = System.Drawing.Color.White
+        Me.btnCerarSesion.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
+        Me.btnCerarSesion.IconColor = System.Drawing.Color.White
+        Me.btnCerarSesion.IconSize = 32
+        Me.btnCerarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCerarSesion.Location = New System.Drawing.Point(0, 535)
+        Me.btnCerarSesion.Name = "btnCerarSesion"
+        Me.btnCerarSesion.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnCerarSesion.Rotation = 0R
+        Me.btnCerarSesion.Size = New System.Drawing.Size(218, 46)
+        Me.btnCerarSesion.TabIndex = 12
+        Me.btnCerarSesion.Text = "Cerrar Sesion"
+        Me.btnCerarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCerarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnCerarSesion.UseVisualStyleBackColor = True
+        '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.pbLogoEmpresa)
@@ -75,6 +197,16 @@ Partial Class VentanaPrincipal
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(218, 106)
         Me.Panel2.TabIndex = 1
+        '
+        'pbLogoEmpresa
+        '
+        Me.pbLogoEmpresa.Image = Global.ProyectoProgramacion.My.Resources.Resources.Logo_HotelCanino
+        Me.pbLogoEmpresa.Location = New System.Drawing.Point(3, 3)
+        Me.pbLogoEmpresa.Name = "pbLogoEmpresa"
+        Me.pbLogoEmpresa.Size = New System.Drawing.Size(205, 88)
+        Me.pbLogoEmpresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbLogoEmpresa.TabIndex = 1
+        Me.pbLogoEmpresa.TabStop = False
         '
         'Panel3
         '
@@ -101,6 +233,44 @@ Partial Class VentanaPrincipal
         Me.lblGeneral.TabIndex = 6
         Me.lblGeneral.Text = "Inicio"
         Me.lblGeneral.UseCompatibleTextRendering = True
+        '
+        'IconCurrentForm
+        '
+        Me.IconCurrentForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.IconCurrentForm.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconCurrentForm.IconColor = System.Drawing.Color.White
+        Me.IconCurrentForm.IconSize = 35
+        Me.IconCurrentForm.Location = New System.Drawing.Point(5, 7)
+        Me.IconCurrentForm.Name = "IconCurrentForm"
+        Me.IconCurrentForm.Size = New System.Drawing.Size(38, 35)
+        Me.IconCurrentForm.TabIndex = 0
+        Me.IconCurrentForm.TabStop = False
+        '
+        'ipbSalir
+        '
+        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.ipbSalir.IconColor = System.Drawing.Color.White
+        Me.ipbSalir.IconSize = 34
+        Me.ipbSalir.Location = New System.Drawing.Point(699, 4)
+        Me.ipbSalir.Name = "ipbSalir"
+        Me.ipbSalir.Size = New System.Drawing.Size(38, 34)
+        Me.ipbSalir.TabIndex = 4
+        Me.ipbSalir.TabStop = False
+        '
+        'ipbMinimizar
+        '
+        Me.ipbMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
+        Me.ipbMinimizar.IconColor = System.Drawing.Color.White
+        Me.ipbMinimizar.IconSize = 34
+        Me.ipbMinimizar.Location = New System.Drawing.Point(663, 5)
+        Me.ipbMinimizar.Name = "ipbMinimizar"
+        Me.ipbMinimizar.Size = New System.Drawing.Size(38, 34)
+        Me.ipbMinimizar.TabIndex = 5
+        Me.ipbMinimizar.TabStop = False
         '
         'PanelDesktop
         '
@@ -158,6 +328,16 @@ Partial Class VentanaPrincipal
         Me.lblNombre.TabIndex = 1
         Me.lblNombre.Text = "Nombres: Nora Alejandra"
         '
+        'pbImagenUsuario
+        '
+        Me.pbImagenUsuario.Image = Global.ProyectoProgramacion.My.Resources.Resources.imagenPrueba2
+        Me.pbImagenUsuario.Location = New System.Drawing.Point(3, 8)
+        Me.pbImagenUsuario.Name = "pbImagenUsuario"
+        Me.pbImagenUsuario.Size = New System.Drawing.Size(58, 60)
+        Me.pbImagenUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbImagenUsuario.TabIndex = 1
+        Me.pbImagenUsuario.TabStop = False
+        '
         'lblFecha
         '
         Me.lblFecha.AutoSize = True
@@ -180,160 +360,6 @@ Partial Class VentanaPrincipal
         Me.lblHora.TabIndex = 0
         Me.lblHora.Text = "17:43:12"
         '
-        'pbImagenUsuario
-        '
-        Me.pbImagenUsuario.Image = Global.ProyectoProgramacion.My.Resources.Resources.imagenPrueba2
-        Me.pbImagenUsuario.Location = New System.Drawing.Point(3, 8)
-        Me.pbImagenUsuario.Name = "pbImagenUsuario"
-        Me.pbImagenUsuario.Size = New System.Drawing.Size(58, 60)
-        Me.pbImagenUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbImagenUsuario.TabIndex = 1
-        Me.pbImagenUsuario.TabStop = False
-        '
-        'IconCurrentForm
-        '
-        Me.IconCurrentForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.IconCurrentForm.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconCurrentForm.IconColor = System.Drawing.Color.White
-        Me.IconCurrentForm.IconSize = 35
-        Me.IconCurrentForm.Location = New System.Drawing.Point(5, 7)
-        Me.IconCurrentForm.Name = "IconCurrentForm"
-        Me.IconCurrentForm.Size = New System.Drawing.Size(38, 35)
-        Me.IconCurrentForm.TabIndex = 0
-        Me.IconCurrentForm.TabStop = False
-        '
-        'ipbSalir
-        '
-        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
-        Me.ipbSalir.IconColor = System.Drawing.Color.White
-        Me.ipbSalir.IconSize = 34
-        Me.ipbSalir.Location = New System.Drawing.Point(699, 4)
-        Me.ipbSalir.Name = "ipbSalir"
-        Me.ipbSalir.Size = New System.Drawing.Size(38, 34)
-        Me.ipbSalir.TabIndex = 4
-        Me.ipbSalir.TabStop = False
-        '
-        'ipbMinimizar
-        '
-        Me.ipbMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
-        Me.ipbMinimizar.IconColor = System.Drawing.Color.White
-        Me.ipbMinimizar.IconSize = 34
-        Me.ipbMinimizar.Location = New System.Drawing.Point(663, 5)
-        Me.ipbMinimizar.Name = "ipbMinimizar"
-        Me.ipbMinimizar.Size = New System.Drawing.Size(38, 34)
-        Me.ipbMinimizar.TabIndex = 5
-        Me.ipbMinimizar.TabStop = False
-        '
-        'btnDelivery
-        '
-        Me.btnDelivery.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDelivery.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnDelivery.FlatAppearance.BorderSize = 0
-        Me.btnDelivery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelivery.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnDelivery.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelivery.ForeColor = System.Drawing.Color.White
-        Me.btnDelivery.IconChar = FontAwesome.Sharp.IconChar.Truck
-        Me.btnDelivery.IconColor = System.Drawing.Color.White
-        Me.btnDelivery.IconSize = 32
-        Me.btnDelivery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDelivery.Location = New System.Drawing.Point(0, 198)
-        Me.btnDelivery.Name = "btnDelivery"
-        Me.btnDelivery.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnDelivery.Rotation = 0R
-        Me.btnDelivery.Size = New System.Drawing.Size(218, 46)
-        Me.btnDelivery.TabIndex = 16
-        Me.btnDelivery.Text = "Entregas a domicilio"
-        Me.btnDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDelivery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnDelivery.UseVisualStyleBackColor = True
-        '
-        'btnInsertar
-        '
-        Me.btnInsertar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnInsertar.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnInsertar.FlatAppearance.BorderSize = 0
-        Me.btnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInsertar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnInsertar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInsertar.ForeColor = System.Drawing.Color.White
-        Me.btnInsertar.IconChar = FontAwesome.Sharp.IconChar.AddressBook
-        Me.btnInsertar.IconColor = System.Drawing.Color.White
-        Me.btnInsertar.IconSize = 32
-        Me.btnInsertar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInsertar.Location = New System.Drawing.Point(0, 152)
-        Me.btnInsertar.Name = "btnInsertar"
-        Me.btnInsertar.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnInsertar.Rotation = 0R
-        Me.btnInsertar.Size = New System.Drawing.Size(218, 46)
-        Me.btnInsertar.TabIndex = 13
-        Me.btnInsertar.Text = "Gestiona Reservas"
-        Me.btnInsertar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInsertar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnInsertar.UseVisualStyleBackColor = True
-        '
-        'btnInicio
-        '
-        Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnInicio.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnInicio.FlatAppearance.BorderSize = 0
-        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInicio.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInicio.ForeColor = System.Drawing.Color.White
-        Me.btnInicio.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.btnInicio.IconColor = System.Drawing.Color.White
-        Me.btnInicio.IconSize = 32
-        Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInicio.Location = New System.Drawing.Point(0, 106)
-        Me.btnInicio.Name = "btnInicio"
-        Me.btnInicio.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnInicio.Rotation = 0R
-        Me.btnInicio.Size = New System.Drawing.Size(218, 46)
-        Me.btnInicio.TabIndex = 7
-        Me.btnInicio.Text = "Inicio"
-        Me.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnInicio.UseVisualStyleBackColor = True
-        '
-        'btnCerarSesion
-        '
-        Me.btnCerarSesion.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCerarSesion.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnCerarSesion.FlatAppearance.BorderSize = 0
-        Me.btnCerarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerarSesion.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnCerarSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnCerarSesion.ForeColor = System.Drawing.Color.White
-        Me.btnCerarSesion.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
-        Me.btnCerarSesion.IconColor = System.Drawing.Color.White
-        Me.btnCerarSesion.IconSize = 32
-        Me.btnCerarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCerarSesion.Location = New System.Drawing.Point(0, 535)
-        Me.btnCerarSesion.Name = "btnCerarSesion"
-        Me.btnCerarSesion.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnCerarSesion.Rotation = 0R
-        Me.btnCerarSesion.Size = New System.Drawing.Size(218, 46)
-        Me.btnCerarSesion.TabIndex = 12
-        Me.btnCerarSesion.Text = "Cerrar Sesion"
-        Me.btnCerarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCerarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnCerarSesion.UseVisualStyleBackColor = True
-        '
-        'pbLogoEmpresa
-        '
-        Me.pbLogoEmpresa.Image = Global.ProyectoProgramacion.My.Resources.Resources.Logo_HotelCanino
-        Me.pbLogoEmpresa.Location = New System.Drawing.Point(3, 3)
-        Me.pbLogoEmpresa.Name = "pbLogoEmpresa"
-        Me.pbLogoEmpresa.Size = New System.Drawing.Size(205, 88)
-        Me.pbLogoEmpresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbLogoEmpresa.TabIndex = 1
-        Me.pbLogoEmpresa.TabStop = False
-        '
         'VentanaPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -349,15 +375,15 @@ Partial Class VentanaPrincipal
         Me.Text = "VentanaPrincipal"
         Me.PanelMenu.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
+        CType(Me.pbLogoEmpresa, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        Me.panelUsuario.ResumeLayout(False)
-        Me.panelUsuario.PerformLayout()
-        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbLogoEmpresa, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelUsuario.ResumeLayout(False)
+        Me.panelUsuario.PerformLayout()
+        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -382,4 +408,5 @@ Partial Class VentanaPrincipal
     Friend WithEvents pbImagenUsuario As PictureBox
     Friend WithEvents lblFecha As Label
     Friend WithEvents lblHora As Label
+    Friend WithEvents btnModificarPrecio As FontAwesome.Sharp.IconButton
 End Class

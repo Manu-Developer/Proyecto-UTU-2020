@@ -39,4 +39,16 @@ Public Class Login
         End If
 
     End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub lblNombre_Click(sender As Object, e As EventArgs) Handles lblNombre.Click
+
+    End Sub
+
+    Private Sub usuario_TextChanged(sender As Object, e As EventArgs) Handles usuario.TextChanged
+
+    End Sub
 End Class
