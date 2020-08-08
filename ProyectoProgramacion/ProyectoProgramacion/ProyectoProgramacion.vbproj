@@ -91,16 +91,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChildFormPrueba.Designer.vb">
-      <DependentUpon>ChildFormPrueba.vb</DependentUpon>
+    <Compile Include="Ventanas\GestionReservas.Designer.vb">
+      <DependentUpon>GestionReservas.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChildFormPrueba.vb">
+    <Compile Include="Ventanas\GestionReservas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="Login\Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.vb">
+    <Compile Include="Login\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -119,19 +119,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ValidacionesBasicas.vb" />
-    <Compile Include="VentanaPrincipal.Designer.vb">
+    <Compile Include="Modulos\ValidacionesBasicas.vb" />
+    <Compile Include="Ventanas\VentanaPrincipal.Designer.vb">
       <DependentUpon>VentanaPrincipal.vb</DependentUpon>
     </Compile>
-    <Compile Include="VentanaPrincipal.vb">
+    <Compile Include="Ventanas\VentanaPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ChildFormPrueba.resx">
-      <DependentUpon>ChildFormPrueba.vb</DependentUpon>
+    <EmbeddedResource Include="Ventanas\GestionReservas.resx">
+      <DependentUpon>GestionReservas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -140,7 +140,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentanaPrincipal.resx">
+    <EmbeddedResource Include="Ventanas\VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -177,6 +177,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

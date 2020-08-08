@@ -28,6 +28,8 @@ Public Class Login
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        Dim validacion As ValidacionesBasicas = New ValidacionesBasicas
+
         If usuario.Text = "gerente" And contraseña.Text = "1234" Then
             Dim ventana As VentanaPrincipal = New VentanaPrincipal
             Me.Visible = False
