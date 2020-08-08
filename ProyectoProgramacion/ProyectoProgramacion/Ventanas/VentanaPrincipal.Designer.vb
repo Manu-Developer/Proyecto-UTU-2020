@@ -22,242 +22,203 @@ Partial Class VentanaPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VentanaPrincipal))
         Me.PanelMenu = New System.Windows.Forms.Panel()
-        Me.btnDelivery = New FontAwesome.Sharp.IconButton()
-        Me.btnModificarPrecio = New FontAwesome.Sharp.IconButton()
-        Me.btnInsertar = New FontAwesome.Sharp.IconButton()
-        Me.btnInicio = New FontAwesome.Sharp.IconButton()
-        Me.btnCerarSesion = New FontAwesome.Sharp.IconButton()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.pbLogoEmpresa = New System.Windows.Forms.PictureBox()
+        Me.BunifuSeparator4 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.BunifuSeparator2 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.BunifuSeparator5 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.BunifuSeparator3 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.nombre = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.lblGeneral = New System.Windows.Forms.Label()
-        Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
-        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
-        Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
-        Me.PanelDesktop = New System.Windows.Forms.Panel()
-        Me.panelUsuario = New System.Windows.Forms.Panel()
-        Me.lblCargo = New System.Windows.Forms.Label()
-        Me.lblApellido = New System.Windows.Forms.Label()
-        Me.lblNombre = New System.Windows.Forms.Label()
-        Me.pbImagenUsuario = New System.Windows.Forms.PictureBox()
-        Me.lblFecha = New System.Windows.Forms.Label()
+        Me.linicio = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.PanelDesktop = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.lblHora = New System.Windows.Forms.Label()
+        Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
+        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
+        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.flecha = New System.Windows.Forms.PictureBox()
+        Me.btnModificarPrecio = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnDelivery = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnInsertar = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnInicio = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelMenu.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.pbLogoEmpresa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
-        CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelDesktop.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.panelUsuario.SuspendLayout()
-        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.flecha, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.PanelMenu.Controls.Add(Me.btnDelivery)
+        Me.PanelMenu.Controls.Add(Me.BunifuFlatButton1)
+        Me.PanelMenu.Controls.Add(Me.flecha)
         Me.PanelMenu.Controls.Add(Me.btnModificarPrecio)
+        Me.PanelMenu.Controls.Add(Me.btnDelivery)
         Me.PanelMenu.Controls.Add(Me.btnInsertar)
         Me.PanelMenu.Controls.Add(Me.btnInicio)
-        Me.PanelMenu.Controls.Add(Me.btnCerarSesion)
-        Me.PanelMenu.Controls.Add(Me.Panel2)
+        Me.PanelMenu.Controls.Add(Me.PictureBox1)
+        Me.PanelMenu.Controls.Add(Me.BunifuSeparator4)
+        Me.PanelMenu.Controls.Add(Me.BunifuSeparator2)
+        Me.PanelMenu.Controls.Add(Me.BunifuSeparator5)
+        Me.PanelMenu.Controls.Add(Me.BunifuSeparator3)
+        Me.PanelMenu.Controls.Add(Me.nombre)
+        Me.PanelMenu.Controls.Add(Me.BunifuSeparator1)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(218, 581)
+        Me.PanelMenu.Size = New System.Drawing.Size(233, 750)
         Me.PanelMenu.TabIndex = 2
         '
-        'btnDelivery
+        'BunifuSeparator4
         '
-        Me.btnDelivery.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDelivery.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnDelivery.FlatAppearance.BorderSize = 0
-        Me.btnDelivery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelivery.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnDelivery.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelivery.ForeColor = System.Drawing.Color.White
-        Me.btnDelivery.IconChar = FontAwesome.Sharp.IconChar.Truck
-        Me.btnDelivery.IconColor = System.Drawing.Color.White
-        Me.btnDelivery.IconSize = 32
-        Me.btnDelivery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDelivery.Location = New System.Drawing.Point(0, 244)
-        Me.btnDelivery.Name = "btnDelivery"
-        Me.btnDelivery.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnDelivery.Rotation = 0R
-        Me.btnDelivery.Size = New System.Drawing.Size(218, 46)
-        Me.btnDelivery.TabIndex = 16
-        Me.btnDelivery.Text = "Reservas confirmadas"
-        Me.btnDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDelivery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnDelivery.UseVisualStyleBackColor = True
+        Me.BunifuSeparator4.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator4.LineThickness = 2
+        Me.BunifuSeparator4.Location = New System.Drawing.Point(13, 267)
+        Me.BunifuSeparator4.Name = "BunifuSeparator4"
+        Me.BunifuSeparator4.Size = New System.Drawing.Size(205, 35)
+        Me.BunifuSeparator4.TabIndex = 23
+        Me.BunifuSeparator4.Transparency = 255
+        Me.BunifuSeparator4.Vertical = False
         '
-        'btnModificarPrecio
+        'BunifuSeparator2
         '
-        Me.btnModificarPrecio.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnModificarPrecio.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnModificarPrecio.FlatAppearance.BorderSize = 0
-        Me.btnModificarPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModificarPrecio.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnModificarPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificarPrecio.ForeColor = System.Drawing.Color.White
-        Me.btnModificarPrecio.IconChar = FontAwesome.Sharp.IconChar.Truck
-        Me.btnModificarPrecio.IconColor = System.Drawing.Color.White
-        Me.btnModificarPrecio.IconSize = 32
-        Me.btnModificarPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarPrecio.Location = New System.Drawing.Point(0, 198)
-        Me.btnModificarPrecio.Name = "btnModificarPrecio"
-        Me.btnModificarPrecio.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnModificarPrecio.Rotation = 0R
-        Me.btnModificarPrecio.Size = New System.Drawing.Size(218, 46)
-        Me.btnModificarPrecio.TabIndex = 17
-        Me.btnModificarPrecio.Text = "Modificar precio de las habitaciones"
-        Me.btnModificarPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarPrecio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnModificarPrecio.UseVisualStyleBackColor = True
+        Me.BunifuSeparator2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator2.LineThickness = 1
+        Me.BunifuSeparator2.Location = New System.Drawing.Point(13, 710)
+        Me.BunifuSeparator2.Name = "BunifuSeparator2"
+        Me.BunifuSeparator2.Size = New System.Drawing.Size(205, 37)
+        Me.BunifuSeparator2.TabIndex = 22
+        Me.BunifuSeparator2.Transparency = 255
+        Me.BunifuSeparator2.Vertical = False
         '
-        'btnInsertar
+        'BunifuSeparator5
         '
-        Me.btnInsertar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnInsertar.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnInsertar.FlatAppearance.BorderSize = 0
-        Me.btnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInsertar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnInsertar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInsertar.ForeColor = System.Drawing.Color.White
-        Me.btnInsertar.IconChar = FontAwesome.Sharp.IconChar.AddressBook
-        Me.btnInsertar.IconColor = System.Drawing.Color.White
-        Me.btnInsertar.IconSize = 32
-        Me.btnInsertar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInsertar.Location = New System.Drawing.Point(0, 152)
-        Me.btnInsertar.Name = "btnInsertar"
-        Me.btnInsertar.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnInsertar.Rotation = 0R
-        Me.btnInsertar.Size = New System.Drawing.Size(218, 46)
-        Me.btnInsertar.TabIndex = 13
-        Me.btnInsertar.Text = "Gestionar Reservas"
-        Me.btnInsertar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInsertar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnInsertar.UseVisualStyleBackColor = True
+        Me.BunifuSeparator5.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator5.LineThickness = 1
+        Me.BunifuSeparator5.Location = New System.Drawing.Point(211, 21)
+        Me.BunifuSeparator5.Name = "BunifuSeparator5"
+        Me.BunifuSeparator5.Size = New System.Drawing.Size(14, 708)
+        Me.BunifuSeparator5.TabIndex = 21
+        Me.BunifuSeparator5.Transparency = 255
+        Me.BunifuSeparator5.Vertical = True
         '
-        'btnInicio
+        'BunifuSeparator3
         '
-        Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnInicio.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnInicio.FlatAppearance.BorderSize = 0
-        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInicio.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInicio.ForeColor = System.Drawing.Color.White
-        Me.btnInicio.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.btnInicio.IconColor = System.Drawing.Color.White
-        Me.btnInicio.IconSize = 32
-        Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInicio.Location = New System.Drawing.Point(0, 106)
-        Me.btnInicio.Name = "btnInicio"
-        Me.btnInicio.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnInicio.Rotation = 0R
-        Me.btnInicio.Size = New System.Drawing.Size(218, 46)
-        Me.btnInicio.TabIndex = 7
-        Me.btnInicio.Text = "Inicio"
-        Me.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnInicio.UseVisualStyleBackColor = True
+        Me.BunifuSeparator3.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator3.LineThickness = 1
+        Me.BunifuSeparator3.Location = New System.Drawing.Point(3, 21)
+        Me.BunifuSeparator3.Name = "BunifuSeparator3"
+        Me.BunifuSeparator3.Size = New System.Drawing.Size(18, 708)
+        Me.BunifuSeparator3.TabIndex = 19
+        Me.BunifuSeparator3.Transparency = 255
+        Me.BunifuSeparator3.Vertical = True
         '
-        'btnCerarSesion
+        'nombre
         '
-        Me.btnCerarSesion.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCerarSesion.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnCerarSesion.FlatAppearance.BorderSize = 0
-        Me.btnCerarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerarSesion.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnCerarSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnCerarSesion.ForeColor = System.Drawing.Color.White
-        Me.btnCerarSesion.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
-        Me.btnCerarSesion.IconColor = System.Drawing.Color.White
-        Me.btnCerarSesion.IconSize = 32
-        Me.btnCerarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCerarSesion.Location = New System.Drawing.Point(0, 535)
-        Me.btnCerarSesion.Name = "btnCerarSesion"
-        Me.btnCerarSesion.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnCerarSesion.Rotation = 0R
-        Me.btnCerarSesion.Size = New System.Drawing.Size(218, 46)
-        Me.btnCerarSesion.TabIndex = 12
-        Me.btnCerarSesion.Text = "Cerrar Sesion"
-        Me.btnCerarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCerarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnCerarSesion.UseVisualStyleBackColor = True
+        Me.nombre.AutoSize = True
+        Me.nombre.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nombre.ForeColor = System.Drawing.Color.White
+        Me.nombre.Location = New System.Drawing.Point(59, 244)
+        Me.nombre.Name = "nombre"
+        Me.nombre.Size = New System.Drawing.Size(115, 21)
+        Me.nombre.TabIndex = 2
+        Me.nombre.Text = "Nora Alejandra"
         '
-        'Panel2
+        'BunifuSeparator1
         '
-        Me.Panel2.Controls.Add(Me.pbLogoEmpresa)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(218, 106)
-        Me.Panel2.TabIndex = 1
-        '
-        'pbLogoEmpresa
-        '
-        Me.pbLogoEmpresa.Image = Global.ProyectoProgramacion.My.Resources.Resources.Logo_HotelCanino
-        Me.pbLogoEmpresa.Location = New System.Drawing.Point(3, 3)
-        Me.pbLogoEmpresa.Name = "pbLogoEmpresa"
-        Me.pbLogoEmpresa.Size = New System.Drawing.Size(205, 88)
-        Me.pbLogoEmpresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbLogoEmpresa.TabIndex = 1
-        Me.pbLogoEmpresa.TabStop = False
+        Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator1.LineThickness = 1
+        Me.BunifuSeparator1.Location = New System.Drawing.Point(12, 2)
+        Me.BunifuSeparator1.Name = "BunifuSeparator1"
+        Me.BunifuSeparator1.Size = New System.Drawing.Size(207, 35)
+        Me.BunifuSeparator1.TabIndex = 2
+        Me.BunifuSeparator1.Transparency = 255
+        Me.BunifuSeparator1.Vertical = False
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.lblGeneral)
-        Me.Panel3.Controls.Add(Me.IconCurrentForm)
-        Me.Panel3.Controls.Add(Me.ipbSalir)
+        Me.Panel3.Controls.Add(Me.linicio)
         Me.Panel3.Controls.Add(Me.ipbMinimizar)
+        Me.Panel3.Controls.Add(Me.ipbSalir)
         Me.Panel3.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(218, 0)
+        Me.Panel3.Location = New System.Drawing.Point(233, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(736, 42)
+        Me.Panel3.Size = New System.Drawing.Size(1011, 47)
         Me.Panel3.TabIndex = 4
         '
-        'lblGeneral
+        'linicio
         '
-        Me.lblGeneral.AutoSize = True
-        Me.lblGeneral.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblGeneral.ForeColor = System.Drawing.Color.White
-        Me.lblGeneral.Location = New System.Drawing.Point(40, 13)
-        Me.lblGeneral.Name = "lblGeneral"
-        Me.lblGeneral.Size = New System.Drawing.Size(39, 20)
-        Me.lblGeneral.TabIndex = 6
-        Me.lblGeneral.Text = "Inicio"
-        Me.lblGeneral.UseCompatibleTextRendering = True
+        Me.linicio.AutoSize = True
+        Me.linicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.linicio.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.linicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.linicio.Location = New System.Drawing.Point(16, 13)
+        Me.linicio.Name = "linicio"
+        Me.linicio.Size = New System.Drawing.Size(64, 23)
+        Me.linicio.TabIndex = 27
+        Me.linicio.Text = "Inicio"
         '
-        'IconCurrentForm
+        'BunifuElipse1
         '
-        Me.IconCurrentForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.IconCurrentForm.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconCurrentForm.IconColor = System.Drawing.Color.White
-        Me.IconCurrentForm.IconSize = 35
-        Me.IconCurrentForm.Location = New System.Drawing.Point(5, 7)
-        Me.IconCurrentForm.Name = "IconCurrentForm"
-        Me.IconCurrentForm.Size = New System.Drawing.Size(38, 35)
-        Me.IconCurrentForm.TabIndex = 0
-        Me.IconCurrentForm.TabStop = False
+        Me.BunifuElipse1.ElipseRadius = 5
+        Me.BunifuElipse1.TargetControl = Me
         '
-        'ipbSalir
+        'PanelDesktop
         '
-        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
-        Me.ipbSalir.IconColor = System.Drawing.Color.White
-        Me.ipbSalir.IconSize = 34
-        Me.ipbSalir.Location = New System.Drawing.Point(699, 4)
-        Me.ipbSalir.Name = "ipbSalir"
-        Me.ipbSalir.Size = New System.Drawing.Size(38, 34)
-        Me.ipbSalir.TabIndex = 4
-        Me.ipbSalir.TabStop = False
+        Me.PanelDesktop.BackColor = System.Drawing.Color.Transparent
+        Me.PanelDesktop.BackgroundImage = CType(resources.GetObject("PanelDesktop.BackgroundImage"), System.Drawing.Image)
+        Me.PanelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PanelDesktop.Controls.Add(Me.PictureBox2)
+        Me.PanelDesktop.Controls.Add(Me.lblHora)
+        Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelDesktop.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.PanelDesktop.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.PanelDesktop.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.PanelDesktop.GradientTopRight = System.Drawing.Color.White
+        Me.PanelDesktop.Location = New System.Drawing.Point(233, 47)
+        Me.PanelDesktop.Name = "PanelDesktop"
+        Me.PanelDesktop.Quality = 10
+        Me.PanelDesktop.Size = New System.Drawing.Size(1011, 703)
+        Me.PanelDesktop.TabIndex = 2
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.ProyectoProgramacion.My.Resources.Resources.Logo_HotelCanino
+        Me.PictureBox2.Location = New System.Drawing.Point(173, 154)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(657, 335)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'lblHora
+        '
+        Me.lblHora.AutoSize = True
+        Me.lblHora.BackColor = System.Drawing.Color.Transparent
+        Me.lblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHora.ForeColor = System.Drawing.Color.White
+        Me.lblHora.Location = New System.Drawing.Point(418, 646)
+        Me.lblHora.Name = "lblHora"
+        Me.lblHora.Size = New System.Drawing.Size(212, 55)
+        Me.lblHora.TabIndex = 0
+        Me.lblHora.Text = "17:43:12"
         '
         'ipbMinimizar
         '
@@ -266,106 +227,235 @@ Partial Class VentanaPrincipal
         Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
         Me.ipbMinimizar.IconColor = System.Drawing.Color.White
         Me.ipbMinimizar.IconSize = 34
-        Me.ipbMinimizar.Location = New System.Drawing.Point(663, 5)
+        Me.ipbMinimizar.Location = New System.Drawing.Point(940, 5)
         Me.ipbMinimizar.Name = "ipbMinimizar"
         Me.ipbMinimizar.Size = New System.Drawing.Size(38, 34)
         Me.ipbMinimizar.TabIndex = 5
         Me.ipbMinimizar.TabStop = False
         '
-        'PanelDesktop
+        'ipbSalir
         '
-        Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelDesktop.Location = New System.Drawing.Point(218, 42)
-        Me.PanelDesktop.Name = "PanelDesktop"
-        Me.PanelDesktop.Size = New System.Drawing.Size(736, 471)
-        Me.PanelDesktop.TabIndex = 7
+        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.ipbSalir.IconColor = System.Drawing.Color.White
+        Me.ipbSalir.IconSize = 34
+        Me.ipbSalir.Location = New System.Drawing.Point(972, 5)
+        Me.ipbSalir.Name = "ipbSalir"
+        Me.ipbSalir.Size = New System.Drawing.Size(38, 34)
+        Me.ipbSalir.TabIndex = 4
+        Me.ipbSalir.TabStop = False
         '
-        'panelUsuario
+        'BunifuFlatButton1
         '
-        Me.panelUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.panelUsuario.Controls.Add(Me.lblCargo)
-        Me.panelUsuario.Controls.Add(Me.lblApellido)
-        Me.panelUsuario.Controls.Add(Me.lblNombre)
-        Me.panelUsuario.Controls.Add(Me.pbImagenUsuario)
-        Me.panelUsuario.Controls.Add(Me.lblFecha)
-        Me.panelUsuario.Controls.Add(Me.lblHora)
-        Me.panelUsuario.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.panelUsuario.Location = New System.Drawing.Point(218, 511)
-        Me.panelUsuario.Name = "panelUsuario"
-        Me.panelUsuario.Size = New System.Drawing.Size(736, 70)
-        Me.panelUsuario.TabIndex = 8
+        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuFlatButton1.BorderRadius = 0
+        Me.BunifuFlatButton1.ButtonText = "Cerrar Sesion"
+        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.BunifuFlatButton1.ForeColor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.Iconimage = Global.ProyectoProgramacion.My.Resources.Resources.icons8_salida_52
+        Me.BunifuFlatButton1.Iconimage_right = Nothing
+        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton1.IconMarginLeft = 0
+        Me.BunifuFlatButton1.IconMarginRight = 0
+        Me.BunifuFlatButton1.IconRightVisible = True
+        Me.BunifuFlatButton1.IconRightZoom = 0R
+        Me.BunifuFlatButton1.IconVisible = True
+        Me.BunifuFlatButton1.IconZoom = 60.0R
+        Me.BunifuFlatButton1.IsTab = False
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(19, 673)
+        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
+        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BunifuFlatButton1.selected = False
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(185, 46)
+        Me.BunifuFlatButton1.TabIndex = 27
+        Me.BunifuFlatButton1.Text = "Cerrar Sesion"
+        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
         '
-        'lblCargo
+        'flecha
         '
-        Me.lblCargo.AutoSize = True
-        Me.lblCargo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.lblCargo.ForeColor = System.Drawing.Color.White
-        Me.lblCargo.Location = New System.Drawing.Point(65, 47)
-        Me.lblCargo.Name = "lblCargo"
-        Me.lblCargo.Size = New System.Drawing.Size(134, 16)
-        Me.lblCargo.TabIndex = 3
-        Me.lblCargo.Text = "Cargo: Administrador"
+        Me.flecha.Image = CType(resources.GetObject("flecha.Image"), System.Drawing.Image)
+        Me.flecha.Location = New System.Drawing.Point(192, 302)
+        Me.flecha.Name = "flecha"
+        Me.flecha.Size = New System.Drawing.Size(61, 46)
+        Me.flecha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.flecha.TabIndex = 2
+        Me.flecha.TabStop = False
         '
-        'lblApellido
+        'btnModificarPrecio
         '
-        Me.lblApellido.AutoSize = True
-        Me.lblApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.lblApellido.ForeColor = System.Drawing.Color.White
-        Me.lblApellido.Location = New System.Drawing.Point(65, 26)
-        Me.lblApellido.Name = "lblApellido"
-        Me.lblApellido.Size = New System.Drawing.Size(180, 16)
-        Me.lblApellido.TabIndex = 2
-        Me.lblApellido.Text = "Apellidos: Varela Hernandez"
+        Me.btnModificarPrecio.Activecolor = System.Drawing.Color.Transparent
+        Me.btnModificarPrecio.BackColor = System.Drawing.Color.Transparent
+        Me.btnModificarPrecio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnModificarPrecio.BorderRadius = 0
+        Me.btnModificarPrecio.ButtonText = "Modificar precio de las habitaciones"
+        Me.btnModificarPrecio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificarPrecio.DisabledColor = System.Drawing.Color.Transparent
+        Me.btnModificarPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.btnModificarPrecio.ForeColor = System.Drawing.Color.White
+        Me.btnModificarPrecio.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnModificarPrecio.Iconimage = Global.ProyectoProgramacion.My.Resources.Resources.icons8_autobús_96
+        Me.btnModificarPrecio.Iconimage_right = Nothing
+        Me.btnModificarPrecio.Iconimage_right_Selected = Nothing
+        Me.btnModificarPrecio.Iconimage_Selected = Nothing
+        Me.btnModificarPrecio.IconMarginLeft = 0
+        Me.btnModificarPrecio.IconMarginRight = 0
+        Me.btnModificarPrecio.IconRightVisible = True
+        Me.btnModificarPrecio.IconRightZoom = 0R
+        Me.btnModificarPrecio.IconVisible = True
+        Me.btnModificarPrecio.IconZoom = 60.0R
+        Me.btnModificarPrecio.IsTab = False
+        Me.btnModificarPrecio.Location = New System.Drawing.Point(13, 477)
+        Me.btnModificarPrecio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnModificarPrecio.Name = "btnModificarPrecio"
+        Me.btnModificarPrecio.Normalcolor = System.Drawing.Color.Transparent
+        Me.btnModificarPrecio.OnHovercolor = System.Drawing.Color.Transparent
+        Me.btnModificarPrecio.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnModificarPrecio.selected = False
+        Me.btnModificarPrecio.Size = New System.Drawing.Size(206, 46)
+        Me.btnModificarPrecio.TabIndex = 26
+        Me.btnModificarPrecio.Text = "Modificar precio de las habitaciones"
+        Me.btnModificarPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnModificarPrecio.Textcolor = System.Drawing.Color.White
+        Me.btnModificarPrecio.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
         '
-        'lblNombre
+        'btnDelivery
         '
-        Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.ForeColor = System.Drawing.Color.White
-        Me.lblNombre.Location = New System.Drawing.Point(65, 5)
-        Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(161, 16)
-        Me.lblNombre.TabIndex = 1
-        Me.lblNombre.Text = "Nombres: Nora Alejandra"
+        Me.btnDelivery.Activecolor = System.Drawing.Color.Transparent
+        Me.btnDelivery.BackColor = System.Drawing.Color.Transparent
+        Me.btnDelivery.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnDelivery.BorderRadius = 0
+        Me.btnDelivery.ButtonText = "Reservas confirmadas"
+        Me.btnDelivery.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDelivery.DisabledColor = System.Drawing.Color.Transparent
+        Me.btnDelivery.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.btnDelivery.ForeColor = System.Drawing.Color.White
+        Me.btnDelivery.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnDelivery.Iconimage = Global.ProyectoProgramacion.My.Resources.Resources.icons8_reserva_2_100
+        Me.btnDelivery.Iconimage_right = Nothing
+        Me.btnDelivery.Iconimage_right_Selected = Nothing
+        Me.btnDelivery.Iconimage_Selected = Nothing
+        Me.btnDelivery.IconMarginLeft = 0
+        Me.btnDelivery.IconMarginRight = 0
+        Me.btnDelivery.IconRightVisible = True
+        Me.btnDelivery.IconRightZoom = 0R
+        Me.btnDelivery.IconVisible = True
+        Me.btnDelivery.IconZoom = 60.0R
+        Me.btnDelivery.IsTab = False
+        Me.btnDelivery.Location = New System.Drawing.Point(13, 421)
+        Me.btnDelivery.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnDelivery.Name = "btnDelivery"
+        Me.btnDelivery.Normalcolor = System.Drawing.Color.Transparent
+        Me.btnDelivery.OnHovercolor = System.Drawing.Color.Transparent
+        Me.btnDelivery.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnDelivery.selected = False
+        Me.btnDelivery.Size = New System.Drawing.Size(206, 46)
+        Me.btnDelivery.TabIndex = 25
+        Me.btnDelivery.Text = "Reservas confirmadas"
+        Me.btnDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDelivery.Textcolor = System.Drawing.Color.White
+        Me.btnDelivery.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
         '
-        'pbImagenUsuario
+        'btnInsertar
         '
-        Me.pbImagenUsuario.Image = Global.ProyectoProgramacion.My.Resources.Resources.imagenPrueba2
-        Me.pbImagenUsuario.Location = New System.Drawing.Point(3, 8)
-        Me.pbImagenUsuario.Name = "pbImagenUsuario"
-        Me.pbImagenUsuario.Size = New System.Drawing.Size(58, 60)
-        Me.pbImagenUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbImagenUsuario.TabIndex = 1
-        Me.pbImagenUsuario.TabStop = False
+        Me.btnInsertar.Activecolor = System.Drawing.Color.Transparent
+        Me.btnInsertar.BackColor = System.Drawing.Color.Transparent
+        Me.btnInsertar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnInsertar.BorderRadius = 0
+        Me.btnInsertar.ButtonText = "Gestionar Reservas"
+        Me.btnInsertar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnInsertar.DisabledColor = System.Drawing.Color.Transparent
+        Me.btnInsertar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.btnInsertar.ForeColor = System.Drawing.Color.White
+        Me.btnInsertar.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnInsertar.Iconimage = Global.ProyectoProgramacion.My.Resources.Resources.icons8_reserva_2_96
+        Me.btnInsertar.Iconimage_right = Nothing
+        Me.btnInsertar.Iconimage_right_Selected = Nothing
+        Me.btnInsertar.Iconimage_Selected = Nothing
+        Me.btnInsertar.IconMarginLeft = 0
+        Me.btnInsertar.IconMarginRight = 0
+        Me.btnInsertar.IconRightVisible = True
+        Me.btnInsertar.IconRightZoom = 0R
+        Me.btnInsertar.IconVisible = True
+        Me.btnInsertar.IconZoom = 60.0R
+        Me.btnInsertar.IsTab = False
+        Me.btnInsertar.Location = New System.Drawing.Point(13, 365)
+        Me.btnInsertar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnInsertar.Name = "btnInsertar"
+        Me.btnInsertar.Normalcolor = System.Drawing.Color.Transparent
+        Me.btnInsertar.OnHovercolor = System.Drawing.Color.Transparent
+        Me.btnInsertar.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnInsertar.selected = False
+        Me.btnInsertar.Size = New System.Drawing.Size(206, 46)
+        Me.btnInsertar.TabIndex = 24
+        Me.btnInsertar.Text = "Gestionar Reservas"
+        Me.btnInsertar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInsertar.Textcolor = System.Drawing.Color.White
+        Me.btnInsertar.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
         '
-        'lblFecha
+        'btnInicio
         '
-        Me.lblFecha.AutoSize = True
-        Me.lblFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lblFecha.ForeColor = System.Drawing.Color.White
-        Me.lblFecha.Location = New System.Drawing.Point(533, 41)
-        Me.lblFecha.Name = "lblFecha"
-        Me.lblFecha.Size = New System.Drawing.Size(200, 20)
-        Me.lblFecha.TabIndex = 1
-        Me.lblFecha.Text = "viernes, 24 de julio de 2020"
+        Me.btnInicio.Activecolor = System.Drawing.Color.Transparent
+        Me.btnInicio.BackColor = System.Drawing.Color.Transparent
+        Me.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnInicio.BorderRadius = 0
+        Me.btnInicio.ButtonText = "Inicio"
+        Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnInicio.DisabledColor = System.Drawing.Color.Transparent
+        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.btnInicio.ForeColor = System.Drawing.Color.White
+        Me.btnInicio.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnInicio.Iconimage = Global.ProyectoProgramacion.My.Resources.Resources.icons8_casa_208
+        Me.btnInicio.Iconimage_right = Nothing
+        Me.btnInicio.Iconimage_right_Selected = Nothing
+        Me.btnInicio.Iconimage_Selected = Nothing
+        Me.btnInicio.IconMarginLeft = 0
+        Me.btnInicio.IconMarginRight = 0
+        Me.btnInicio.IconRightVisible = True
+        Me.btnInicio.IconRightZoom = 0R
+        Me.btnInicio.IconVisible = True
+        Me.btnInicio.IconZoom = 60.0R
+        Me.btnInicio.IsTab = False
+        Me.btnInicio.Location = New System.Drawing.Point(13, 303)
+        Me.btnInicio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnInicio.Name = "btnInicio"
+        Me.btnInicio.Normalcolor = System.Drawing.Color.Transparent
+        Me.btnInicio.OnHovercolor = System.Drawing.Color.Transparent
+        Me.btnInicio.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnInicio.selected = False
+        Me.btnInicio.Size = New System.Drawing.Size(206, 46)
+        Me.btnInicio.TabIndex = 2
+        Me.btnInicio.Text = "Inicio"
+        Me.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInicio.Textcolor = System.Drawing.Color.White
+        Me.btnInicio.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
         '
-        'lblHora
+        'PictureBox1
         '
-        Me.lblHora.AutoSize = True
-        Me.lblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lblHora.ForeColor = System.Drawing.Color.White
-        Me.lblHora.Location = New System.Drawing.Point(662, 8)
-        Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(71, 20)
-        Me.lblHora.TabIndex = 0
-        Me.lblHora.Text = "17:43:12"
+        Me.PictureBox1.Image = Global.ProyectoProgramacion.My.Resources.Resources.imagenPrueba2
+        Me.PictureBox1.Location = New System.Drawing.Point(26, 42)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(178, 181)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 4
+        Me.PictureBox1.TabStop = False
         '
         'VentanaPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(954, 581)
-        Me.Controls.Add(Me.panelUsuario)
+        Me.ClientSize = New System.Drawing.Size(1244, 750)
         Me.Controls.Add(Me.PanelDesktop)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.PanelMenu)
@@ -374,39 +464,40 @@ Partial Class VentanaPrincipal
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "VentanaPrincipal"
         Me.PanelMenu.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.pbLogoEmpresa, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelMenu.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelDesktop.ResumeLayout(False)
+        Me.PanelDesktop.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.panelUsuario.ResumeLayout(False)
-        Me.panelUsuario.PerformLayout()
-        CType(Me.pbImagenUsuario, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.flecha, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents PanelMenu As Panel
-    Friend WithEvents btnDelivery As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnInsertar As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnInicio As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnCerarSesion As FontAwesome.Sharp.IconButton
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents pbLogoEmpresa As PictureBox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents lblGeneral As Label
-    Friend WithEvents IconCurrentForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ipbMinimizar As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents PanelDesktop As Panel
-    Friend WithEvents panelUsuario As Panel
-    Friend WithEvents lblCargo As Label
-    Friend WithEvents lblApellido As Label
-    Friend WithEvents lblNombre As Label
-    Friend WithEvents pbImagenUsuario As PictureBox
-    Friend WithEvents lblFecha As Label
     Friend WithEvents lblHora As Label
-    Friend WithEvents btnModificarPrecio As FontAwesome.Sharp.IconButton
+    Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents BunifuSeparator1 As Bunifu.Framework.UI.BunifuSeparator
+    Friend WithEvents BunifuSeparator5 As Bunifu.Framework.UI.BunifuSeparator
+    Friend WithEvents BunifuSeparator3 As Bunifu.Framework.UI.BunifuSeparator
+    Friend WithEvents nombre As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents PanelDesktop As Bunifu.Framework.UI.BunifuGradientPanel
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BunifuSeparator4 As Bunifu.Framework.UI.BunifuSeparator
+    Friend WithEvents BunifuSeparator2 As Bunifu.Framework.UI.BunifuSeparator
+    Friend WithEvents flecha As PictureBox
+    Friend WithEvents btnInicio As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnModificarPrecio As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnDelivery As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnInsertar As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents linicio As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
 End Class

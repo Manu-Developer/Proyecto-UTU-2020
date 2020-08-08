@@ -63,6 +63,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.14.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.14.0\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -91,6 +94,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Ventanas\GestionReservas.Designer.vb">
       <DependentUpon>GestionReservas.vb</DependentUpon>
     </Compile>
@@ -108,11 +116,6 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -148,9 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\ModificarPrecioHabitacion.resx">
       <DependentUpon>ModificarPrecioHabitacion.vb</DependentUpon>
@@ -201,6 +204,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\instalaciones6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clasificar-izquierda-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-casa-208.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salida-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reserva-2-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reserva-2-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-autobús-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
