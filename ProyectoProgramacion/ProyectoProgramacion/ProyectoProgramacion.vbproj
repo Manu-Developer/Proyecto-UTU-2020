@@ -153,10 +153,10 @@
     <Compile Include="Ventanas\ReservasConfirmadas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\VentanaPrincipal.Designer.vb">
-      <DependentUpon>VentanaPrincipal.vb</DependentUpon>
+    <Compile Include="Ventanas\VentanaGerente.Designer.vb">
+      <DependentUpon>VentanaGerente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\VentanaPrincipal.vb">
+    <Compile Include="Ventanas\VentanaGerente.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -188,8 +188,8 @@
     <EmbeddedResource Include="Ventanas\ReservasConfirmadas.resx">
       <DependentUpon>ReservasConfirmadas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\VentanaPrincipal.resx">
-      <DependentUpon>VentanaPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="Ventanas\VentanaGerente.resx">
+      <DependentUpon>VentanaGerente.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

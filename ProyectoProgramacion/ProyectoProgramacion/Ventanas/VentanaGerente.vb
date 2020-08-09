@@ -2,7 +2,7 @@
 Imports System.Runtime.InteropServices
 Imports FontAwesome.Sharp
 
-Public Class VentanaPrincipal
+Public Class VentanaGerente
     Private currentBtn As Bunifu.Framework.UI.BunifuFlatButton
     Private leftBorderBtn As Panel
     Private currentChildForm As Form
