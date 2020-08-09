@@ -27,6 +27,7 @@ Public Class VentanaPrincipal
 
     Private Sub FollowButton(button As Bunifu.Framework.UI.BunifuFlatButton)
         flecha.Top = button.Top
+        flecha.Visible = True
         linicio.Text = button.Text
     End Sub
 
@@ -100,7 +101,23 @@ Public Class VentanaPrincipal
 
     End Sub
 
-    Private Sub VentanaPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        FollowButton(btnInicio)
+    Private Sub PictureBox1_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox1.MouseEnter
+        photo.Visible = True
+    End Sub
+
+    Private Sub edit_Click(sender As Object, e As EventArgs)
+        photo.Visible = False
+    End Sub
+
+    Private Sub photo_Click(sender As Object, e As EventArgs) Handles photo.Click
+        photo.Visible = False
+    End Sub
+
+    Private Sub PanelMenu_MouseEnter(sender As Object, e As EventArgs) Handles PanelMenu.MouseEnter
+        photo.Visible = False
+    End Sub
+
+    Private Sub PanelDesktop_MouseEnter(sender As Object, e As EventArgs) Handles PanelDesktop.MouseEnter
+        photo.Visible = False
     End Sub
 End Class

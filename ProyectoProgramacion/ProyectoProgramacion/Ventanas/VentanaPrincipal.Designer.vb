@@ -23,38 +23,58 @@ Partial Class VentanaPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim edit As Bunifu.Framework.UI.BunifuCustomLabel
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VentanaPrincipal))
         Me.PanelMenu = New System.Windows.Forms.Panel()
-        Me.BunifuSeparator4 = New Bunifu.Framework.UI.BunifuSeparator()
-        Me.BunifuSeparator2 = New Bunifu.Framework.UI.BunifuSeparator()
-        Me.BunifuSeparator5 = New Bunifu.Framework.UI.BunifuSeparator()
-        Me.BunifuSeparator3 = New Bunifu.Framework.UI.BunifuSeparator()
-        Me.nombre = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.linicio = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
-        Me.PanelDesktop = New Bunifu.Framework.UI.BunifuGradientPanel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.lblHora = New System.Windows.Forms.Label()
-        Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
-        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.flecha = New System.Windows.Forms.PictureBox()
         Me.btnModificarPrecio = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnDelivery = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnInsertar = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnInicio = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuSeparator4 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.BunifuSeparator2 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.BunifuSeparator5 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.BunifuSeparator3 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.nombre = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.photo = New System.Windows.Forms.PictureBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.linicio = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
+        Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.PanelDesktop = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.lblHora = New System.Windows.Forms.Label()
+        Me.phototrasparent = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        edit = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PanelMenu.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.PanelDesktop.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.flecha, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1.SuspendLayout()
+        CType(Me.photo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.photo.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelDesktop.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'edit
+        '
+        edit.AutoSize = True
+        edit.BackColor = System.Drawing.Color.Transparent
+        edit.Font = New System.Drawing.Font("PMingLiU-ExtB", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        edit.Location = New System.Drawing.Point(50, 80)
+        edit.Name = "edit"
+        edit.Size = New System.Drawing.Size(82, 16)
+        edit.TabIndex = 2
+        edit.Text = "Click aqui"
+        edit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        AddHandler edit.Click, AddressOf Me.edit_Click
         '
         'PanelMenu
         '
@@ -77,174 +97,6 @@ Partial Class VentanaPrincipal
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(233, 750)
         Me.PanelMenu.TabIndex = 2
-        '
-        'BunifuSeparator4
-        '
-        Me.BunifuSeparator4.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuSeparator4.LineThickness = 2
-        Me.BunifuSeparator4.Location = New System.Drawing.Point(13, 267)
-        Me.BunifuSeparator4.Name = "BunifuSeparator4"
-        Me.BunifuSeparator4.Size = New System.Drawing.Size(205, 35)
-        Me.BunifuSeparator4.TabIndex = 23
-        Me.BunifuSeparator4.Transparency = 255
-        Me.BunifuSeparator4.Vertical = False
-        '
-        'BunifuSeparator2
-        '
-        Me.BunifuSeparator2.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuSeparator2.LineThickness = 1
-        Me.BunifuSeparator2.Location = New System.Drawing.Point(13, 710)
-        Me.BunifuSeparator2.Name = "BunifuSeparator2"
-        Me.BunifuSeparator2.Size = New System.Drawing.Size(205, 37)
-        Me.BunifuSeparator2.TabIndex = 22
-        Me.BunifuSeparator2.Transparency = 255
-        Me.BunifuSeparator2.Vertical = False
-        '
-        'BunifuSeparator5
-        '
-        Me.BunifuSeparator5.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuSeparator5.LineThickness = 1
-        Me.BunifuSeparator5.Location = New System.Drawing.Point(211, 21)
-        Me.BunifuSeparator5.Name = "BunifuSeparator5"
-        Me.BunifuSeparator5.Size = New System.Drawing.Size(14, 708)
-        Me.BunifuSeparator5.TabIndex = 21
-        Me.BunifuSeparator5.Transparency = 255
-        Me.BunifuSeparator5.Vertical = True
-        '
-        'BunifuSeparator3
-        '
-        Me.BunifuSeparator3.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuSeparator3.LineThickness = 1
-        Me.BunifuSeparator3.Location = New System.Drawing.Point(3, 21)
-        Me.BunifuSeparator3.Name = "BunifuSeparator3"
-        Me.BunifuSeparator3.Size = New System.Drawing.Size(18, 708)
-        Me.BunifuSeparator3.TabIndex = 19
-        Me.BunifuSeparator3.Transparency = 255
-        Me.BunifuSeparator3.Vertical = True
-        '
-        'nombre
-        '
-        Me.nombre.AutoSize = True
-        Me.nombre.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nombre.ForeColor = System.Drawing.Color.White
-        Me.nombre.Location = New System.Drawing.Point(59, 244)
-        Me.nombre.Name = "nombre"
-        Me.nombre.Size = New System.Drawing.Size(115, 21)
-        Me.nombre.TabIndex = 2
-        Me.nombre.Text = "Nora Alejandra"
-        '
-        'BunifuSeparator1
-        '
-        Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuSeparator1.LineThickness = 1
-        Me.BunifuSeparator1.Location = New System.Drawing.Point(12, 2)
-        Me.BunifuSeparator1.Name = "BunifuSeparator1"
-        Me.BunifuSeparator1.Size = New System.Drawing.Size(207, 35)
-        Me.BunifuSeparator1.TabIndex = 2
-        Me.BunifuSeparator1.Transparency = 255
-        Me.BunifuSeparator1.Vertical = False
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.linicio)
-        Me.Panel3.Controls.Add(Me.ipbMinimizar)
-        Me.Panel3.Controls.Add(Me.ipbSalir)
-        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(233, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1011, 47)
-        Me.Panel3.TabIndex = 4
-        '
-        'linicio
-        '
-        Me.linicio.AutoSize = True
-        Me.linicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.linicio.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.linicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.linicio.Location = New System.Drawing.Point(16, 13)
-        Me.linicio.Name = "linicio"
-        Me.linicio.Size = New System.Drawing.Size(64, 23)
-        Me.linicio.TabIndex = 27
-        Me.linicio.Text = "Inicio"
-        '
-        'BunifuElipse1
-        '
-        Me.BunifuElipse1.ElipseRadius = 5
-        Me.BunifuElipse1.TargetControl = Me
-        '
-        'PanelDesktop
-        '
-        Me.PanelDesktop.BackColor = System.Drawing.Color.Transparent
-        Me.PanelDesktop.BackgroundImage = CType(resources.GetObject("PanelDesktop.BackgroundImage"), System.Drawing.Image)
-        Me.PanelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PanelDesktop.Controls.Add(Me.PictureBox2)
-        Me.PanelDesktop.Controls.Add(Me.lblHora)
-        Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelDesktop.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.PanelDesktop.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.PanelDesktop.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.PanelDesktop.GradientTopRight = System.Drawing.Color.White
-        Me.PanelDesktop.Location = New System.Drawing.Point(233, 47)
-        Me.PanelDesktop.Name = "PanelDesktop"
-        Me.PanelDesktop.Quality = 10
-        Me.PanelDesktop.Size = New System.Drawing.Size(1011, 703)
-        Me.PanelDesktop.TabIndex = 2
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = Global.ProyectoProgramacion.My.Resources.Resources.Logo_HotelCanino
-        Me.PictureBox2.Location = New System.Drawing.Point(173, 154)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(657, 335)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
-        '
-        'lblHora
-        '
-        Me.lblHora.AutoSize = True
-        Me.lblHora.BackColor = System.Drawing.Color.Transparent
-        Me.lblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHora.ForeColor = System.Drawing.Color.White
-        Me.lblHora.Location = New System.Drawing.Point(418, 646)
-        Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(212, 55)
-        Me.lblHora.TabIndex = 0
-        Me.lblHora.Text = "17:43:12"
-        '
-        'ipbMinimizar
-        '
-        Me.ipbMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
-        Me.ipbMinimizar.IconColor = System.Drawing.Color.White
-        Me.ipbMinimizar.IconSize = 34
-        Me.ipbMinimizar.Location = New System.Drawing.Point(940, 5)
-        Me.ipbMinimizar.Name = "ipbMinimizar"
-        Me.ipbMinimizar.Size = New System.Drawing.Size(38, 34)
-        Me.ipbMinimizar.TabIndex = 5
-        Me.ipbMinimizar.TabStop = False
-        '
-        'ipbSalir
-        '
-        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
-        Me.ipbSalir.IconColor = System.Drawing.Color.White
-        Me.ipbSalir.IconSize = 34
-        Me.ipbSalir.Location = New System.Drawing.Point(972, 5)
-        Me.ipbSalir.Name = "ipbSalir"
-        Me.ipbSalir.Size = New System.Drawing.Size(38, 34)
-        Me.ipbSalir.TabIndex = 4
-        Me.ipbSalir.TabStop = False
         '
         'BunifuFlatButton1
         '
@@ -292,6 +144,7 @@ Partial Class VentanaPrincipal
         Me.flecha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.flecha.TabIndex = 2
         Me.flecha.TabStop = False
+        Me.flecha.Visible = False
         '
         'btnModificarPrecio
         '
@@ -441,9 +294,81 @@ Partial Class VentanaPrincipal
         Me.btnInicio.Textcolor = System.Drawing.Color.White
         Me.btnInicio.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
         '
+        'BunifuSeparator4
+        '
+        Me.BunifuSeparator4.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator4.LineThickness = 2
+        Me.BunifuSeparator4.Location = New System.Drawing.Point(13, 267)
+        Me.BunifuSeparator4.Name = "BunifuSeparator4"
+        Me.BunifuSeparator4.Size = New System.Drawing.Size(205, 35)
+        Me.BunifuSeparator4.TabIndex = 23
+        Me.BunifuSeparator4.Transparency = 255
+        Me.BunifuSeparator4.Vertical = False
+        '
+        'BunifuSeparator2
+        '
+        Me.BunifuSeparator2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator2.LineThickness = 1
+        Me.BunifuSeparator2.Location = New System.Drawing.Point(13, 710)
+        Me.BunifuSeparator2.Name = "BunifuSeparator2"
+        Me.BunifuSeparator2.Size = New System.Drawing.Size(205, 37)
+        Me.BunifuSeparator2.TabIndex = 22
+        Me.BunifuSeparator2.Transparency = 255
+        Me.BunifuSeparator2.Vertical = False
+        '
+        'BunifuSeparator5
+        '
+        Me.BunifuSeparator5.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator5.LineThickness = 1
+        Me.BunifuSeparator5.Location = New System.Drawing.Point(211, 21)
+        Me.BunifuSeparator5.Name = "BunifuSeparator5"
+        Me.BunifuSeparator5.Size = New System.Drawing.Size(14, 708)
+        Me.BunifuSeparator5.TabIndex = 21
+        Me.BunifuSeparator5.Transparency = 255
+        Me.BunifuSeparator5.Vertical = True
+        '
+        'BunifuSeparator3
+        '
+        Me.BunifuSeparator3.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator3.LineThickness = 1
+        Me.BunifuSeparator3.Location = New System.Drawing.Point(3, 21)
+        Me.BunifuSeparator3.Name = "BunifuSeparator3"
+        Me.BunifuSeparator3.Size = New System.Drawing.Size(18, 708)
+        Me.BunifuSeparator3.TabIndex = 19
+        Me.BunifuSeparator3.Transparency = 255
+        Me.BunifuSeparator3.Vertical = True
+        '
+        'nombre
+        '
+        Me.nombre.AutoSize = True
+        Me.nombre.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nombre.ForeColor = System.Drawing.Color.White
+        Me.nombre.Location = New System.Drawing.Point(59, 244)
+        Me.nombre.Name = "nombre"
+        Me.nombre.Size = New System.Drawing.Size(115, 21)
+        Me.nombre.TabIndex = 2
+        Me.nombre.Text = "Nora Alejandra"
+        '
+        'BunifuSeparator1
+        '
+        Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator1.LineThickness = 1
+        Me.BunifuSeparator1.Location = New System.Drawing.Point(12, 2)
+        Me.BunifuSeparator1.Name = "BunifuSeparator1"
+        Me.BunifuSeparator1.Size = New System.Drawing.Size(207, 35)
+        Me.BunifuSeparator1.TabIndex = 2
+        Me.BunifuSeparator1.Transparency = 255
+        Me.BunifuSeparator1.Vertical = False
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Controls.Add(Me.photo)
         Me.PictureBox1.Image = Global.ProyectoProgramacion.My.Resources.Resources.imagenPrueba2
         Me.PictureBox1.Location = New System.Drawing.Point(26, 42)
         Me.PictureBox1.Name = "PictureBox1"
@@ -451,6 +376,120 @@ Partial Class VentanaPrincipal
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
+        '
+        'photo
+        '
+        Me.photo.BackColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.photo.Controls.Add(edit)
+        Me.photo.Location = New System.Drawing.Point(0, 0)
+        Me.photo.Name = "photo"
+        Me.photo.Size = New System.Drawing.Size(178, 181)
+        Me.photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.photo.TabIndex = 3
+        Me.photo.TabStop = False
+        Me.photo.Visible = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.linicio)
+        Me.Panel3.Controls.Add(Me.ipbMinimizar)
+        Me.Panel3.Controls.Add(Me.ipbSalir)
+        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(233, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1011, 47)
+        Me.Panel3.TabIndex = 4
+        '
+        'linicio
+        '
+        Me.linicio.AutoSize = True
+        Me.linicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.linicio.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.linicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.linicio.Location = New System.Drawing.Point(16, 13)
+        Me.linicio.Name = "linicio"
+        Me.linicio.Size = New System.Drawing.Size(64, 23)
+        Me.linicio.TabIndex = 27
+        Me.linicio.Text = "Inicio"
+        '
+        'ipbMinimizar
+        '
+        Me.ipbMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
+        Me.ipbMinimizar.IconColor = System.Drawing.Color.White
+        Me.ipbMinimizar.IconSize = 34
+        Me.ipbMinimizar.Location = New System.Drawing.Point(940, 5)
+        Me.ipbMinimizar.Name = "ipbMinimizar"
+        Me.ipbMinimizar.Size = New System.Drawing.Size(38, 34)
+        Me.ipbMinimizar.TabIndex = 5
+        Me.ipbMinimizar.TabStop = False
+        '
+        'ipbSalir
+        '
+        Me.ipbSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.ipbSalir.IconColor = System.Drawing.Color.White
+        Me.ipbSalir.IconSize = 34
+        Me.ipbSalir.Location = New System.Drawing.Point(972, 5)
+        Me.ipbSalir.Name = "ipbSalir"
+        Me.ipbSalir.Size = New System.Drawing.Size(38, 34)
+        Me.ipbSalir.TabIndex = 4
+        Me.ipbSalir.TabStop = False
+        '
+        'BunifuElipse1
+        '
+        Me.BunifuElipse1.ElipseRadius = 5
+        Me.BunifuElipse1.TargetControl = Me
+        '
+        'PanelDesktop
+        '
+        Me.PanelDesktop.BackColor = System.Drawing.Color.Transparent
+        Me.PanelDesktop.BackgroundImage = CType(resources.GetObject("PanelDesktop.BackgroundImage"), System.Drawing.Image)
+        Me.PanelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PanelDesktop.Controls.Add(Me.PictureBox2)
+        Me.PanelDesktop.Controls.Add(Me.lblHora)
+        Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelDesktop.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.PanelDesktop.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.PanelDesktop.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.PanelDesktop.GradientTopRight = System.Drawing.Color.White
+        Me.PanelDesktop.Location = New System.Drawing.Point(233, 47)
+        Me.PanelDesktop.Name = "PanelDesktop"
+        Me.PanelDesktop.Quality = 10
+        Me.PanelDesktop.Size = New System.Drawing.Size(1011, 703)
+        Me.PanelDesktop.TabIndex = 2
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.ProyectoProgramacion.My.Resources.Resources.Logo_HotelCanino
+        Me.PictureBox2.Location = New System.Drawing.Point(173, 154)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(657, 335)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'lblHora
+        '
+        Me.lblHora.AutoSize = True
+        Me.lblHora.BackColor = System.Drawing.Color.Transparent
+        Me.lblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHora.ForeColor = System.Drawing.Color.White
+        Me.lblHora.Location = New System.Drawing.Point(418, 646)
+        Me.lblHora.Name = "lblHora"
+        Me.lblHora.Size = New System.Drawing.Size(212, 55)
+        Me.lblHora.TabIndex = 0
+        Me.lblHora.Text = "17:43:12"
+        '
+        'phototrasparent
+        '
+        Me.phototrasparent.ElipseRadius = 175
+        Me.phototrasparent.TargetControl = Me.photo
         '
         'VentanaPrincipal
         '
@@ -466,15 +505,19 @@ Partial Class VentanaPrincipal
         Me.Text = "VentanaPrincipal"
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelMenu.PerformLayout()
+        CType(Me.flecha, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PictureBox1.ResumeLayout(False)
+        CType(Me.photo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.photo.ResumeLayout(False)
+        Me.photo.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelDesktop.ResumeLayout(False)
         Me.PanelDesktop.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.flecha, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -492,7 +535,6 @@ Partial Class VentanaPrincipal
     Friend WithEvents PanelDesktop As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents BunifuSeparator4 As Bunifu.Framework.UI.BunifuSeparator
     Friend WithEvents BunifuSeparator2 As Bunifu.Framework.UI.BunifuSeparator
     Friend WithEvents flecha As PictureBox
     Friend WithEvents btnInicio As Bunifu.Framework.UI.BunifuFlatButton
@@ -501,4 +543,7 @@ Partial Class VentanaPrincipal
     Friend WithEvents btnInsertar As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents linicio As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuSeparator4 As Bunifu.Framework.UI.BunifuSeparator
+    Friend WithEvents photo As PictureBox
+    Friend WithEvents phototrasparent As Bunifu.Framework.UI.BunifuElipse
 End Class
