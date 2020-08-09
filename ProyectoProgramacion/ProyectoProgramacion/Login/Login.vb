@@ -35,7 +35,7 @@ Public Class Login
             Me.Visible = False
             ventana.Show()
         Else
-            MessageBox.Show("Contraseña o Usuario incorrectos!")
+            FormInfo.callFormWithMessage("Contraseña o Usuario incorrectos!")
         End If
 
     End Sub

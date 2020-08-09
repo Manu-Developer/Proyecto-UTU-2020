@@ -94,6 +94,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dialogos\FormInfo.Designer.vb">
+      <DependentUpon>FormInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\FormInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dialogos\FormWarn.Designer.vb">
       <DependentUpon>FormWarn.vb</DependentUpon>
     </Compile>
@@ -155,6 +161,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Dialogos\FormInfo.resx">
+      <DependentUpon>FormInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogos\FormWarn.resx">
       <DependentUpon>FormWarn.vb</DependentUpon>
     </EmbeddedResource>
