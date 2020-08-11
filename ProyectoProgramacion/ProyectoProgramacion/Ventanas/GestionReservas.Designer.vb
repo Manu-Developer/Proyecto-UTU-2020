@@ -37,8 +37,8 @@ Partial Class GestionReservas
         Me.bntAgregarReserva1 = New FontAwesome.Sharp.IconButton()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.IconButton2 = New FontAwesome.Sharp.IconButton()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.image = New FontAwesome.Sharp.IconButton()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -74,9 +74,10 @@ Partial Class GestionReservas
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DataGridView1.EnableHeadersVisualStyles = False
         Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.DataGridView1.Location = New System.Drawing.Point(17, 79)
+        Me.DataGridView1.Location = New System.Drawing.Point(17, 132)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -89,12 +90,14 @@ Partial Class GestionReservas
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(712, 340)
+        Me.DataGridView1.ShowEditingIcon = False
+        Me.DataGridView1.Size = New System.Drawing.Size(982, 559)
         Me.DataGridView1.TabIndex = 2
         '
         'id
@@ -163,7 +166,7 @@ Partial Class GestionReservas
         Me.bntAgregarReserva1.IconChar = FontAwesome.Sharp.IconChar.CalendarTimes
         Me.bntAgregarReserva1.IconColor = System.Drawing.Color.White
         Me.bntAgregarReserva1.IconSize = 25
-        Me.bntAgregarReserva1.Location = New System.Drawing.Point(582, 426)
+        Me.bntAgregarReserva1.Location = New System.Drawing.Point(854, 92)
         Me.bntAgregarReserva1.Name = "bntAgregarReserva1"
         Me.bntAgregarReserva1.Rotation = 0R
         Me.bntAgregarReserva1.Size = New System.Drawing.Size(145, 34)
@@ -184,7 +187,7 @@ Partial Class GestionReservas
         Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Plus
         Me.IconButton1.IconColor = System.Drawing.Color.White
         Me.IconButton1.IconSize = 25
-        Me.IconButton1.Location = New System.Drawing.Point(18, 426)
+        Me.IconButton1.Location = New System.Drawing.Point(854, 12)
         Me.IconButton1.Name = "IconButton1"
         Me.IconButton1.Rotation = 0R
         Me.IconButton1.Size = New System.Drawing.Size(145, 34)
@@ -205,7 +208,7 @@ Partial Class GestionReservas
         Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Edit
         Me.IconButton2.IconColor = System.Drawing.Color.White
         Me.IconButton2.IconSize = 25
-        Me.IconButton2.Location = New System.Drawing.Point(295, 426)
+        Me.IconButton2.Location = New System.Drawing.Point(854, 52)
         Me.IconButton2.Name = "IconButton2"
         Me.IconButton2.Rotation = 0R
         Me.IconButton2.Size = New System.Drawing.Size(145, 34)
@@ -213,17 +216,6 @@ Partial Class GestionReservas
         Me.IconButton2.Text = "Modificar Reserva"
         Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton2.UseVisualStyleBackColor = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(59, 31)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(654, 32)
-        Me.TextBox1.TabIndex = 11
         '
         'image
         '
@@ -234,20 +226,31 @@ Partial Class GestionReservas
         Me.image.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.image.IconSize = 26
         Me.image.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.image.Location = New System.Drawing.Point(22, 30)
+        Me.image.Location = New System.Drawing.Point(671, 92)
         Me.image.Name = "image"
         Me.image.Rotation = 0R
-        Me.image.Size = New System.Drawing.Size(34, 34)
+        Me.image.Size = New System.Drawing.Size(31, 32)
         Me.image.TabIndex = 10
         Me.image.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.image.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.image.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.TextBox1.Location = New System.Drawing.Point(17, 92)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(654, 32)
+        Me.TextBox1.TabIndex = 11
+        '
         'GestionReservas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(736, 471)
+        Me.ClientSize = New System.Drawing.Size(1011, 703)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.image)
         Me.Controls.Add(Me.IconButton2)
@@ -274,6 +277,6 @@ Partial Class GestionReservas
     Friend WithEvents bntAgregarReserva1 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents image As FontAwesome.Sharp.IconButton
+    Friend WithEvents TextBox1 As TextBox
 End Class
