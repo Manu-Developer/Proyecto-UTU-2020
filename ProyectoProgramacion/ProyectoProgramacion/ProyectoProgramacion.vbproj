@@ -63,6 +63,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.14.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.14.0\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -91,17 +95,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ventanas\GestionReservas.Designer.vb">
-      <DependentUpon>GestionReservas.vb</DependentUpon>
+    <Compile Include="Dialogos\FormInfo.Designer.vb">
+      <DependentUpon>FormInfo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\GestionReservas.vb">
+    <Compile Include="Dialogos\FormInfo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\Login.vb">
+    <Compile Include="Dialogos\FormSucess.Designer.vb">
+      <DependentUpon>FormSucess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\FormSucess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\FormWarn.Designer.vb">
+      <DependentUpon>FormWarn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\FormWarn.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\GestionReservas.Designer.vb">
+      <DependentUpon>GestionReservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\GestionReservas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -132,19 +153,34 @@
     <Compile Include="Ventanas\ReservasConfirmadas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\VentanaPrincipal.Designer.vb">
-      <DependentUpon>VentanaPrincipal.vb</DependentUpon>
+    <Compile Include="Ventanas\Ventana.Designer.vb">
+      <DependentUpon>Ventana.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\VentanaPrincipal.vb">
+    <Compile Include="Ventanas\Ventana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\VentanaGerente.Designer.vb">
+      <DependentUpon>VentanaGerente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\VentanaGerente.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Ventanas\GestionReservas.resx">
-      <DependentUpon>GestionReservas.vb</DependentUpon>
+    <EmbeddedResource Include="Dialogos\FormInfo.resx">
+      <DependentUpon>FormInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\FormSucess.resx">
+      <DependentUpon>FormSucess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\FormWarn.resx">
+      <DependentUpon>FormWarn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\GestionReservas.resx">
+      <DependentUpon>GestionReservas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -158,8 +194,8 @@
     <EmbeddedResource Include="Ventanas\ReservasConfirmadas.resx">
       <DependentUpon>ReservasConfirmadas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\VentanaPrincipal.resx">
-      <DependentUpon>VentanaPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="Ventanas\VentanaGerente.resx">
+      <DependentUpon>VentanaGerente.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +237,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\instalaciones6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clasificar-izquierda-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Informarcion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shadow Notificaciones.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

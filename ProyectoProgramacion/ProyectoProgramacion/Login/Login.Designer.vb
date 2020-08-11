@@ -22,60 +22,66 @@ Partial Class Login
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.pcbImagen = New System.Windows.Forms.PictureBox()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.panelPrincipal = New System.Windows.Forms.Panel()
-        Me.contraseña = New System.Windows.Forms.TextBox()
+        Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.lblContraseña = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.panelDebajo = New System.Windows.Forms.Panel()
         Me.panelBienvenido = New System.Windows.Forms.Panel()
-        Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblBienvenido = New System.Windows.Forms.Label()
-        Me.usuario = New System.Windows.Forms.TextBox()
+        Me.btnLogin = New System.Windows.Forms.Button()
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.usuario = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.contraseña = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
         Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
-        CType(Me.pcbImagen, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pcbImagen = New System.Windows.Forms.PictureBox()
         Me.panelPrincipal.SuspendLayout()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pcbImagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'pcbImagen
-        '
-        Me.pcbImagen.Image = Global.ProyectoProgramacion.My.Resources.Resources.Diseño_Login
-        Me.pcbImagen.Location = New System.Drawing.Point(-1, 0)
-        Me.pcbImagen.Name = "pcbImagen"
-        Me.pcbImagen.Size = New System.Drawing.Size(831, 445)
-        Me.pcbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pcbImagen.TabIndex = 1
-        Me.pcbImagen.TabStop = False
         '
         'panelPrincipal
         '
-        Me.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.panelPrincipal.Controls.Add(Me.contraseña)
+        Me.panelPrincipal.BackColor = System.Drawing.Color.Transparent
+        Me.panelPrincipal.Controls.Add(Me.BunifuThinButton21)
         Me.panelPrincipal.Controls.Add(Me.lblContraseña)
         Me.panelPrincipal.Controls.Add(Me.lblNombre)
         Me.panelPrincipal.Controls.Add(Me.panelDebajo)
         Me.panelPrincipal.Controls.Add(Me.panelBienvenido)
-        Me.panelPrincipal.Controls.Add(Me.btnLogin)
         Me.panelPrincipal.Controls.Add(Me.lblBienvenido)
-        Me.panelPrincipal.Controls.Add(Me.usuario)
         Me.panelPrincipal.Location = New System.Drawing.Point(479, 38)
         Me.panelPrincipal.Name = "panelPrincipal"
         Me.panelPrincipal.Size = New System.Drawing.Size(282, 390)
         Me.panelPrincipal.TabIndex = 2
         '
-        'contraseña
+        'BunifuThinButton21
         '
-        Me.contraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.contraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.contraseña.Location = New System.Drawing.Point(49, 243)
-        Me.contraseña.Multiline = True
-        Me.contraseña.Name = "contraseña"
-        Me.contraseña.Size = New System.Drawing.Size(192, 29)
-        Me.contraseña.TabIndex = 1
-        Me.contraseña.UseSystemPasswordChar = True
+        Me.BunifuThinButton21.ActiveBorderThickness = 1
+        Me.BunifuThinButton21.ActiveCornerRadius = 25
+        Me.BunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent
+        Me.BunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuThinButton21.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuThinButton21.BackgroundImage = CType(resources.GetObject("BunifuThinButton21.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuThinButton21.ButtonText = "Iniciar Sesión"
+        Me.BunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuThinButton21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuThinButton21.ForeColor = System.Drawing.Color.White
+        Me.BunifuThinButton21.IdleBorderThickness = 1
+        Me.BunifuThinButton21.IdleCornerRadius = 25
+        Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.White
+        Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(49, 310)
+        Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(5)
+        Me.BunifuThinButton21.Name = "BunifuThinButton21"
+        Me.BunifuThinButton21.Size = New System.Drawing.Size(181, 41)
+        Me.BunifuThinButton21.TabIndex = 11
+        Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblContraseña
         '
@@ -117,22 +123,6 @@ Partial Class Login
         Me.panelBienvenido.Size = New System.Drawing.Size(150, 4)
         Me.panelBienvenido.TabIndex = 3
         '
-        'btnLogin
-        '
-        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLogin.FlatAppearance.BorderSize = 0
-        Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(49, 322)
-        Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(192, 36)
-        Me.btnLogin.TabIndex = 2
-        Me.btnLogin.TabStop = False
-        Me.btnLogin.Text = "Iniciar Sesión"
-        Me.btnLogin.UseVisualStyleBackColor = False
-        '
         'lblBienvenido
         '
         Me.lblBienvenido.AutoSize = True
@@ -144,15 +134,70 @@ Partial Class Login
         Me.lblBienvenido.TabIndex = 1
         Me.lblBienvenido.Text = "Bienvenido"
         '
+        'btnLogin
+        '
+        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLogin.FlatAppearance.BorderSize = 0
+        Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.ForeColor = System.Drawing.Color.White
+        Me.btnLogin.Location = New System.Drawing.Point(239, 281)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(192, 36)
+        Me.btnLogin.TabIndex = 2
+        Me.btnLogin.TabStop = False
+        Me.btnLogin.Text = "Iniciar Sesión"
+        Me.btnLogin.UseVisualStyleBackColor = False
+        '
+        'BunifuElipse1
+        '
+        Me.BunifuElipse1.ElipseRadius = 12
+        Me.BunifuElipse1.TargetControl = Me
+        '
         'usuario
         '
-        Me.usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.usuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.usuario.Location = New System.Drawing.Point(49, 129)
-        Me.usuario.Multiline = True
+        Me.usuario.AutoSize = True
+        Me.usuario.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.usuario.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.usuario.ForeColor = System.Drawing.Color.Black
+        Me.usuario.HintForeColor = System.Drawing.Color.Black
+        Me.usuario.HintText = "Ingrese Usuario"
+        Me.usuario.isPassword = False
+        Me.usuario.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.usuario.LineIdleColor = System.Drawing.Color.Transparent
+        Me.usuario.LineMouseHoverColor = System.Drawing.Color.Transparent
+        Me.usuario.LineThickness = 1
+        Me.usuario.Location = New System.Drawing.Point(528, 173)
+        Me.usuario.Margin = New System.Windows.Forms.Padding(4)
         Me.usuario.Name = "usuario"
-        Me.usuario.Size = New System.Drawing.Size(192, 29)
-        Me.usuario.TabIndex = 0
+        Me.usuario.Size = New System.Drawing.Size(181, 33)
+        Me.usuario.TabIndex = 8
+        Me.usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'contraseña
+        '
+        Me.contraseña.AutoSize = True
+        Me.contraseña.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.contraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.contraseña.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.contraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.contraseña.ForeColor = System.Drawing.Color.Black
+        Me.contraseña.HintForeColor = System.Drawing.Color.Black
+        Me.contraseña.HintText = "Ingrese Contraseña"
+        Me.contraseña.isPassword = True
+        Me.contraseña.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.contraseña.LineIdleColor = System.Drawing.Color.Transparent
+        Me.contraseña.LineMouseHoverColor = System.Drawing.Color.Transparent
+        Me.contraseña.LineThickness = 1
+        Me.contraseña.Location = New System.Drawing.Point(528, 293)
+        Me.contraseña.Margin = New System.Windows.Forms.Padding(4)
+        Me.contraseña.Name = "contraseña"
+        Me.contraseña.Size = New System.Drawing.Size(181, 31)
+        Me.contraseña.TabIndex = 9
+        Me.contraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'ipbMinimizar
         '
@@ -161,9 +206,10 @@ Partial Class Login
         Me.ipbMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
         Me.ipbMinimizar.IconColor = System.Drawing.Color.White
         Me.ipbMinimizar.IconSize = 34
-        Me.ipbMinimizar.Location = New System.Drawing.Point(762, -2)
+        Me.ipbMinimizar.Location = New System.Drawing.Point(768, -1)
         Me.ipbMinimizar.Name = "ipbMinimizar"
         Me.ipbMinimizar.Size = New System.Drawing.Size(32, 32)
+        Me.ipbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ipbMinimizar.TabIndex = 5
         Me.ipbMinimizar.TabStop = False
         '
@@ -174,11 +220,22 @@ Partial Class Login
         Me.ipbSalir.IconChar = FontAwesome.Sharp.IconChar.Times
         Me.ipbSalir.IconColor = System.Drawing.Color.White
         Me.ipbSalir.IconSize = 34
-        Me.ipbSalir.Location = New System.Drawing.Point(793, 0)
+        Me.ipbSalir.Location = New System.Drawing.Point(794, -1)
         Me.ipbSalir.Name = "ipbSalir"
         Me.ipbSalir.Size = New System.Drawing.Size(32, 32)
+        Me.ipbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ipbSalir.TabIndex = 4
         Me.ipbSalir.TabStop = False
+        '
+        'pcbImagen
+        '
+        Me.pcbImagen.Image = Global.ProyectoProgramacion.My.Resources.Resources.Diseño_Login
+        Me.pcbImagen.Location = New System.Drawing.Point(-1, 0)
+        Me.pcbImagen.Name = "pcbImagen"
+        Me.pcbImagen.Size = New System.Drawing.Size(831, 471)
+        Me.pcbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pcbImagen.TabIndex = 1
+        Me.pcbImagen.TabStop = False
         '
         'Login
         '
@@ -186,32 +243,38 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(829, 469)
         Me.Controls.Add(Me.ipbMinimizar)
+        Me.Controls.Add(Me.contraseña)
+        Me.Controls.Add(Me.usuario)
         Me.Controls.Add(Me.ipbSalir)
         Me.Controls.Add(Me.panelPrincipal)
         Me.Controls.Add(Me.pcbImagen)
+        Me.Controls.Add(Me.btnLogin)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
-        CType(Me.pcbImagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelPrincipal.ResumeLayout(False)
         Me.panelPrincipal.PerformLayout()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ipbSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pcbImagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents pcbImagen As PictureBox
     Friend WithEvents panelPrincipal As Panel
-    Friend WithEvents contraseña As TextBox
     Friend WithEvents lblContraseña As Label
     Friend WithEvents lblNombre As Label
     Friend WithEvents panelDebajo As Panel
     Friend WithEvents panelBienvenido As Panel
     Friend WithEvents btnLogin As Button
     Friend WithEvents lblBienvenido As Label
-    Friend WithEvents usuario As TextBox
     Friend WithEvents ipbMinimizar As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents usuario As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents contraseña As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents BunifuThinButton21 As Bunifu.Framework.UI.BunifuThinButton2
 End Class

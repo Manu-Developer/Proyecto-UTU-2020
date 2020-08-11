@@ -2,7 +2,7 @@
 Imports System.Runtime.InteropServices
 Imports FontAwesome.Sharp
 
-Public Class VentanaPrincipal
+Public Class VentanaGerente
     Private currentBtn As IconButton
     Private leftBorderBtn As Panel
     Private currentChildForm As Form
@@ -26,7 +26,7 @@ Public Class VentanaPrincipal
         ' Add any initialization after the InitializeComponent() call.'
         leftBorderBtn = New Panel()
         leftBorderBtn.Size = New Size(7, 46)
-        PanelMenu.Controls.Add(leftBorderBtn)
+        Panel1.Controls.Add(leftBorderBtn)
         'Form'
     End Sub
     Private Sub ActivateButton(senderBtn As Object, customColor As Color)
@@ -42,7 +42,7 @@ Public Class VentanaPrincipal
             currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage
             'Left Border'
             leftBorderBtn.BackColor = customColor
-            leftBorderBtn.Location = New Point(0, currentBtn.Location.Y)
+            leftBorderBtn.Top = senderBtn.Top
             leftBorderBtn.Visible = True
             leftBorderBtn.BringToFront()
             'current Form icon'
@@ -128,9 +128,31 @@ Public Class VentanaPrincipal
     End Sub
 
     Private Sub btnCerarSesion_Click(sender As Object, e As EventArgs) Handles btnCerarSesion.Click
-        Me.Close()
-        Login.Visible = True
+        Dim result As DialogResult = New DialogResult()
+        result = FormWarn.callFormWithMessage("AVISO", "Estas seguro de querer cerrar sesion?")
+        If result = DialogResult.OK Then
+            Me.Close()
+            Login.Visible = True
+        End If
     End Sub
 
+    Private Sub PictureBox1_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox1.MouseEnter
+        photo.Visible = True
+    End Sub
 
+    Private Sub edit_Click(sender As Object, e As EventArgs) Handles edit.Click
+        photo.Visible = False
+    End Sub
+
+    Private Sub photo_Click(sender As Object, e As EventArgs) Handles photo.Click
+        photo.Visible = False
+    End Sub
+
+    Private Sub PanelMenu_MouseEnter(sender As Object, e As EventArgs) Handles PanelMenu.MouseEnter
+        photo.Visible = False
+    End Sub
+
+    Private Sub PanelDesktop_MouseEnter(sender As Object, e As EventArgs) Handles PanelDesktop.MouseEnter
+        photo.Visible = False
+    End Sub
 End Class
