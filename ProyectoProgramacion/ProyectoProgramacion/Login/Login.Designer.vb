@@ -86,10 +86,10 @@ Partial Class Login
         Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(52, 333)
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(52, 329)
         Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(5)
         Me.BunifuThinButton21.Name = "BunifuThinButton21"
-        Me.BunifuThinButton21.Size = New System.Drawing.Size(181, 41)
+        Me.BunifuThinButton21.Size = New System.Drawing.Size(181, 45)
         Me.BunifuThinButton21.TabIndex = 11
         Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -199,18 +199,18 @@ Partial Class Login
         Me.usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.usuario.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.usuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.usuario.HintForeColor = System.Drawing.Color.Silver
+        Me.usuario.ForeColor = System.Drawing.Color.Black
+        Me.usuario.HintForeColor = System.Drawing.Color.Black
         Me.usuario.HintText = "Ingrese Usuario"
         Me.usuario.isPassword = False
         Me.usuario.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.usuario.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.usuario.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.usuario.LineThickness = 3
+        Me.usuario.LineIdleColor = System.Drawing.Color.Transparent
+        Me.usuario.LineMouseHoverColor = System.Drawing.Color.Transparent
+        Me.usuario.LineThickness = 1
         Me.usuario.Location = New System.Drawing.Point(528, 171)
         Me.usuario.Margin = New System.Windows.Forms.Padding(4)
         Me.usuario.Name = "usuario"
-        Me.usuario.Size = New System.Drawing.Size(193, 45)
+        Me.usuario.Size = New System.Drawing.Size(195, 45)
         Me.usuario.TabIndex = 8
         Me.usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
@@ -220,14 +220,14 @@ Partial Class Login
         Me.contraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.contraseña.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.contraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.contraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.contraseña.HintForeColor = System.Drawing.Color.Silver
+        Me.contraseña.ForeColor = System.Drawing.Color.Black
+        Me.contraseña.HintForeColor = System.Drawing.Color.Black
         Me.contraseña.HintText = "Ingrese Contraseña"
         Me.contraseña.isPassword = True
         Me.contraseña.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.contraseña.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.contraseña.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.contraseña.LineThickness = 3
+        Me.contraseña.LineIdleColor = System.Drawing.Color.Transparent
+        Me.contraseña.LineMouseHoverColor = System.Drawing.Color.Transparent
+        Me.contraseña.LineThickness = 1
         Me.contraseña.Location = New System.Drawing.Point(528, 293)
         Me.contraseña.Margin = New System.Windows.Forms.Padding(4)
         Me.contraseña.Name = "contraseña"

@@ -491,7 +491,7 @@ Partial Class VentanaGerente
         Me.phototrasparent.ElipseRadius = 175
         Me.phototrasparent.TargetControl = Me.photo
         '
-        'VentanaPrincipal
+        'VentanaGerente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -500,7 +500,7 @@ Partial Class VentanaGerente
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.PanelMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "VentanaPrincipal"
+        Me.Name = "VentanaGerente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "VentanaPrincipal"
         Me.PanelMenu.ResumeLayout(False)
