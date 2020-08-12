@@ -15,7 +15,34 @@ Public Class VentanaGerente
     Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     End Sub
 
+    'Resizable'
+    Const WM As Integer = &H84
+    Const HTClient As Integer = 1
+    Const HTCaption As Integer = 2
+
+    Protected Overrides Sub WndProc(ByRef m As Message)
+        MyBase.WndProc(m)
+
+        Select Case m.Msg
+            Case WM
+                If m.Result = CType(HTClient, IntPtr) Then
+                    m.Result = CType(HTCaption, IntPtr)
+                End If
+        End Select
+    End Sub
+
+    Protected Overrides ReadOnly Property CreateParams As CreateParams
+        Get
+            Dim cp As CreateParams = MyBase.CreateParams
+            cp.Style = cp.Style Or &H40000
+            Return cp
+        End Get
+    End Property
+
     Private Sub Ventana_Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.Width = SystemInformation.VirtualScreen.Width - 250
+        Me.Height = SystemInformation.VirtualScreen.Height - 250
         ActivateButton(btnInicio, Color.FromArgb(255, 255, 255))
     End Sub
 
@@ -27,6 +54,8 @@ Public Class VentanaGerente
         leftBorderBtn = New Panel()
         leftBorderBtn.Size = New Size(7, 46)
         Panel1.Controls.Add(leftBorderBtn)
+        DoubleBuffered = True
+
         'Form'
     End Sub
     Private Sub ActivateButton(senderBtn As Object, customColor As Color)
@@ -91,11 +120,11 @@ Public Class VentanaGerente
         Reset()
     End Sub
 
-    Private Sub ipbMinimizar_Click(sender As Object, e As EventArgs) Handles ipbMinimizar.Click
+    Private Sub ipbMinimizar_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub ipbSalir_Click(sender As Object, e As EventArgs) Handles ipbSalir.Click
+    Private Sub ipbSalir_Click(sender As Object, e As EventArgs)
         Application.Exit()
     End Sub
 

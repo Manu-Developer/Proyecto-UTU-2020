@@ -195,6 +195,9 @@
     <EmbeddedResource Include="Ventanas\ReservasConfirmadas.resx">
       <DependentUpon>ReservasConfirmadas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\VentanaGerente.aa.resx">
+      <DependentUpon>VentanaGerente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\VentanaGerente.resx">
       <DependentUpon>VentanaGerente.vb</DependentUpon>
     </EmbeddedResource>
