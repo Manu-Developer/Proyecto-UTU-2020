@@ -91,16 +91,6 @@ Public Class VentanaGerente
         Reset()
     End Sub
 
-    Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
-        ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New GestionReservas, "Gestionar Reservas")
-    End Sub
-
-    Private Sub btnDelivery_Click(sender As Object, e As EventArgs) Handles btnDelivery.Click
-        ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ReservasConfirmadas, "Gestionar Reservas")
-    End Sub
-
     Private Sub ipbMinimizar_Click(sender As Object, e As EventArgs) Handles ipbMinimizar.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -123,8 +113,10 @@ Public Class VentanaGerente
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
         OpenChildForm(New ModificarPrecioHabitacion, "Gestionar Reservas")
     End Sub
-    Private Sub bntAgregarReserva1_Click(sender As Object, e As EventArgs)
 
+    Private Sub btnDelivery_Click(sender As Object, e As EventArgs) Handles btnReservas.Click
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
+        OpenChildForm(New ReservasConfirmadas, "Gestionar Reservas")
     End Sub
 
     Private Sub btnCerarSesion_Click(sender As Object, e As EventArgs) Handles btnCerarSesion.Click
@@ -154,5 +146,24 @@ Public Class VentanaGerente
 
     Private Sub PanelDesktop_MouseEnter(sender As Object, e As EventArgs) Handles PanelDesktop.MouseEnter
         photo.Visible = False
+    End Sub
+
+    Private Sub horayfecha_Tick(sender As Object, e As EventArgs) Handles horayfecha.Tick
+        lblhora.Text = DateTime.Now.ToString("HH:mm:ss")
+        lblfecha.Text = DateTime.Now.ToLongDateString
+
+    End Sub
+
+    Private Sub gerenteSalir_Click(sender As Object, e As EventArgs) Handles gerenteSalir.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub gerenteMinimizar_Click(sender As Object, e As EventArgs) Handles gerenteMinimizar.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnGestion.Click
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
+        OpenChildForm(New GestionReservas, "Gestionar Reservas")
     End Sub
 End Class

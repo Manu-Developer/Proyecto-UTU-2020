@@ -27,10 +27,10 @@ Public Class Login
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click, BunifuThinButton21.Click
+    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click, btnIniciar.Click
         Dim validacion As ValidacionesBasicas = New ValidacionesBasicas
 
-        If usuario.Text = "1" And contraseña.Text = "1" Then
+        If txtUsuario.Text = "1" And txtContraseña.Text = "1" Then
             Dim ventana As VentanaGerente = New VentanaGerente
             Me.Visible = False
             ventana.Show()
