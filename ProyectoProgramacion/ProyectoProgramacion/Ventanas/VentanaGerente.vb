@@ -16,28 +16,7 @@ Public Class VentanaGerente
     End Sub
 
     'Resizable'
-    Const WM As Integer = &H84
-    Const HTClient As Integer = 1
-    Const HTCaption As Integer = 2
 
-    Protected Overrides Sub WndProc(ByRef m As Message)
-        MyBase.WndProc(m)
-
-        Select Case m.Msg
-            Case WM
-                If m.Result = CType(HTClient, IntPtr) Then
-                    m.Result = CType(HTCaption, IntPtr)
-                End If
-        End Select
-    End Sub
-
-    Protected Overrides ReadOnly Property CreateParams As CreateParams
-        Get
-            Dim cp As CreateParams = MyBase.CreateParams
-            cp.Style = cp.Style Or &H40000
-            Return cp
-        End Get
-    End Property
 
     Private Sub Ventana_Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -55,7 +34,6 @@ Public Class VentanaGerente
         leftBorderBtn.Size = New Size(7, 46)
         Panel1.Controls.Add(leftBorderBtn)
         DoubleBuffered = True
-
         'Form'
     End Sub
     Private Sub ActivateButton(senderBtn As Object, customColor As Color)

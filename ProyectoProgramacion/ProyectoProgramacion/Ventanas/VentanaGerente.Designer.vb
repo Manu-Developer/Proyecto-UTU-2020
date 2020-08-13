@@ -294,6 +294,7 @@ Partial Class VentanaGerente
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.Controls.Add(Me.PanelDesktop)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.PanelMenu)
