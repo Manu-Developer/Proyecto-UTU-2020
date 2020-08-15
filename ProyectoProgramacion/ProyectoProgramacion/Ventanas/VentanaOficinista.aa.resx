@@ -117,29 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="edit.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="flecha.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAABGdBTUEAALGPC/xhBQAAAk9JREFUeF7t
-        nD9KA0EchaMWFhZiZ2tr7wG8gCfwCPbewsY6HkDwAh7AA9jaWgSU/DEBC5H1LUxgGcZkJu+XJTPzPniQ
-        pNr5yCa7b2dmIITog/F4fOxeilQmk8nldDodurciBci7grxv5NF9JGKZzWbXEPeDNBKYCOTdQNqvkyeB
-        KUDWbUecBMbSNM0+fvPuA/IkcB2QdwBJQ09aNxL4H5B3CEFPnjA/EhhiNBodQc6zJysUCfSBlBPkpSNp
-        VSSwy2KxOIWUV0/SqkjgEsg4Q946cmIigS3z+fwcMt49OTGRQNxdXEDEhycmNnULdI3KlyclJfUK7DQq
-        ITGxqVOg16gwqU9goFFhUpdADDjUqDCpQyDua/fwzbsLCGBTvsCIRoVJ2QIjGxUm5QpMaFSYlCkQA0tp
-        VJiUJ3CDRoVJWQIxoE0aFSblCCQaFSZlCHSNyqc3uD6Sv0CDRoVJ3gKNGhUm+Qo0bFSY5CnQuFFhkp9A
-        HLR1o8IkH4FbbFSY5CHQNSoP3sHvQnZfYA+NCpPdFthTo8JEAsnoFCajPxEyeQhs0WWMEThoXUiz6FbO
-        AJUJBqjOMkCFqgE4nVXps+ihkgEYkB5rsujBugEYmKZ2sGhykQE9NDllC2xxTY4mWDJsscmpQ+ASDFiT
-        zFmMm5z6BLYYNjl1CmzRUi8DDJqcugW2uCZHy10ZtODaAMjQkn8WbTphAKRo2xMWbbxjQGSTI4GriGhy
-        JHAdkKjt7yyALG3AyBJociQwFa/JkcBN6DQ5ErgprsnRRtwM2gpelMhg8AfmcEnad00DuQAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <metadata name="BunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="PanelDesktop.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -147,7 +125,4 @@
         f16S/f/L6rL/Xzc2/P+6o/v/qEK6Kuz+DwB/oiIuegOzmAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="phototrasparent.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>141, 17</value>
-  </metadata>
 </root>

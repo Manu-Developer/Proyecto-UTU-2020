@@ -236,16 +236,34 @@
     <Compile Include="Ventanas\ModificarPrecioHabitacion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ventanas\ReservasSalidaConfirmada.Designer.vb">
+      <DependentUpon>ReservasSalidaConfirmada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\ReservasSalidaConfirmada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\ReservasEntradaConfirmada.Designer.vb">
+      <DependentUpon>ReservasEntradaConfirmada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\ReservasEntradaConfirmada.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventanas\ReservasConfirmadas.Designer.vb">
       <DependentUpon>ReservasConfirmadas.vb</DependentUpon>
     </Compile>
     <Compile Include="Ventanas\ReservasConfirmadas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\Ventana.Designer.vb">
-      <DependentUpon>Ventana.vb</DependentUpon>
+    <Compile Include="Ventanas\VentanaReceptionista.Designer.vb">
+      <DependentUpon>VentanaReceptionista.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\Ventana.vb">
+    <Compile Include="Ventanas\VentanaReceptionista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\VentanaOficinista.Designer.vb">
+      <DependentUpon>VentanaOficinista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\VentanaOficinista.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventanas\VentanaGerente.Designer.vb">
@@ -280,8 +298,26 @@
     <EmbeddedResource Include="Ventanas\ModificarPrecioHabitacion.resx">
       <DependentUpon>ModificarPrecioHabitacion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\ReservasSalidaConfirmada.resx">
+      <DependentUpon>ReservasSalidaConfirmada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\ReservasEntradaConfirmada.resx">
+      <DependentUpon>ReservasEntradaConfirmada.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\ReservasConfirmadas.resx">
       <DependentUpon>ReservasConfirmadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\VentanaReceptionista.aa.resx">
+      <DependentUpon>VentanaReceptionista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\VentanaReceptionista.resx">
+      <DependentUpon>VentanaReceptionista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\VentanaOficinista.aa.resx">
+      <DependentUpon>VentanaOficinista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\VentanaOficinista.resx">
+      <DependentUpon>VentanaOficinista.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\VentanaGerente.aa.resx">
       <DependentUpon>VentanaGerente.vb</DependentUpon>
@@ -341,6 +377,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Shadow Notificaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

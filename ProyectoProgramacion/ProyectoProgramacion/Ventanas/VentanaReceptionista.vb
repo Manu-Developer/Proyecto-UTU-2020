@@ -2,7 +2,7 @@
 Imports System.Runtime.InteropServices
 Imports FontAwesome.Sharp
 
-Public Class VentanaGerente
+Public Class VentanaReceptionista
     Private currentBtn As IconButton
     Private leftBorderBtn As Panel
     Private currentChildForm As Form
@@ -116,15 +116,6 @@ Public Class VentanaGerente
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub btnModificarPrecio_Click(sender As Object, e As EventArgs) Handles btnModificarPrecio.Click
-        ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ModificarPrecioHabitacion, "Gestionar Reservas")
-    End Sub
-
-    Private Sub btnDelivery_Click(sender As Object, e As EventArgs) Handles btnReservas.Click
-        ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ReservasConfirmadas, "Gestionar Reservas")
-    End Sub
 
     Private Sub btnCerarSesion_Click(sender As Object, e As EventArgs) Handles btnCerarSesion.Click
         Dim result As DialogResult = New DialogResult()
@@ -161,18 +152,6 @@ Public Class VentanaGerente
 
     End Sub
 
-    Private Sub gerenteSalir_Click(sender As Object, e As EventArgs) Handles gerenteSalir.Click
-        Application.Exit()
-    End Sub
-
-    Private Sub gerenteMinimizar_Click(sender As Object, e As EventArgs) Handles gerenteMinimizar.Click
-        Me.WindowState = FormWindowState.Minimized
-    End Sub
-
-    Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnGestion.Click
-        ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New GestionReservas, "Gestionar Reservas")
-    End Sub
 
     Private Sub btnHEntrada_Click(sender As Object, e As EventArgs) Handles btnHEntrada.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
@@ -182,5 +161,18 @@ Public Class VentanaGerente
     Private Sub btnHSalida_Click(sender As Object, e As EventArgs) Handles btnHSalida.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
         OpenChildForm(New ReservasSalidaConfirmada, "Salidas Confirmadas")
+    End Sub
+
+    Private Sub btnReservas_Click(sender As Object, e As EventArgs) Handles btnReservas.Click
+        ActivateButton(sender, Color.FromArgb(255, 255, 255))
+        OpenChildForm(New ReservasConfirmadas, "Gestionar Reservas")
+    End Sub
+
+    Private Sub receptionistaMinimizar_Click(sender As Object, e As EventArgs) Handles receptionistaMinimizar.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub receptionistaSalir_Click(sender As Object, e As EventArgs) Handles receptionistaSalir.Click
+        Application.Exit()
     End Sub
 End Class

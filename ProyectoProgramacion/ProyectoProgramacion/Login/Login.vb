@@ -28,16 +28,32 @@ Public Class Login
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click, btnIniciar.Click
-        Dim validacion As ValidacionesBasicas = New ValidacionesBasicas
+        Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
 
-        If txtUsuario.Text = "1" And txtContraseña.Text = "1" Then
-            Dim ventana As VentanaGerente = New VentanaGerente
-            Me.Visible = False
-            ventana.Show()
-        Else
-            FormInfo.callFormWithMessage("Contraseña o Usuario incorrectos!")
+        If Validaciones.validarTexto(txtUsuario) = True Then
+            If Validaciones.validarContraseña(txtContraseña) = True Then
+                If txtUsuario.Text = "gerentexd" And txtContraseña.Text = "12345678" Then
+                    Dim ventana As VentanaGerente = New VentanaGerente
+                    Me.Visible = False
+                    ventana.Show()
+                ElseIf txtUsuario.Text = "oficinistaxd" And txtContraseña.Text = "12345678" Then
+                    Dim ventana As VentanaOficinista = New VentanaOficinista
+                    Me.Visible = False
+                    ventana.Show()
+                ElseIf txtUsuario.Text = "receptionstaxd" And txtContraseña.Text = "12345678" Then
+                    Dim ventana As VentanaReceptionista = New VentanaReceptionista
+                    Me.Visible = False
+                    ventana.Show()
+                Else
+                    FormInfo.callFormWithMessage("Contraseña o Usuario incorrectos!")
+                    txtUsuario.Text = ""
+                    txtContraseña.Text = ""
+                End If
+            End If
+
         End If
 
-    End Sub
 
+
+    End Sub
 End Class
