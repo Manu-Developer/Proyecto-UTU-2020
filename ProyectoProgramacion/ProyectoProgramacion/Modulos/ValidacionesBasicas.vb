@@ -40,7 +40,7 @@ Friend Class ValidacionesBasicas
             MessageBox.Show("El campo de texto no puede estar vacio", "Error al digitar", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
             verdaderoFalso = False
         ElseIf Not validador.IsMatch(txtValidarTexto.Text) Then
-            MessageBox.Show("El formato debe de ser solo alfanumérico y tiene que tener un minimo de 8 caracteres", "Error al digitar", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
+            MessageBox.Show("El campo de texto debe ser solo alfanumérico y tiene que tener un minimo de 8 caracteres", "Error al digitar", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
             verdaderoFalso = False
         Else
             verdaderoFalso = True
