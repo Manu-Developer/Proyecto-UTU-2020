@@ -17,5 +17,7 @@
         DataGridView1.Rows.Add("10", "Gonzalo", "Perez", "094656804", "Julio y Herrera", "US$ 1500", "Contado")
     End Sub
 
-
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
+        AgregarReserva.Show()
+    End Sub
 End Class

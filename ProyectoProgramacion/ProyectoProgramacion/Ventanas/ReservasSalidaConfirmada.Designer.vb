@@ -37,6 +37,7 @@ Partial Class ReservasSalidaConfirmada
         Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tpago = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaSalida = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,7 +64,7 @@ Partial Class ReservasSalidaConfirmada
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeight = 27
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.Nombre, Me.Apellido, Me.Telefono, Me.Direccion, Me.Precio, Me.tpago})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.Nombre, Me.Apellido, Me.Telefono, Me.Direccion, Me.Precio, Me.tpago, Me.FechaSalida})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -199,6 +200,12 @@ Partial Class ReservasSalidaConfirmada
         Me.tpago.Name = "tpago"
         Me.tpago.ReadOnly = True
         '
+        'FechaSalida
+        '
+        Me.FechaSalida.HeaderText = "Fecha de Salida"
+        Me.FechaSalida.Name = "FechaSalida"
+        Me.FechaSalida.ReadOnly = True
+        '
         'ReservasSalidaConfirmada
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -227,4 +234,5 @@ Partial Class ReservasSalidaConfirmada
     Friend WithEvents Direccion As DataGridViewTextBoxColumn
     Friend WithEvents Precio As DataGridViewTextBoxColumn
     Friend WithEvents tpago As DataGridViewTextBoxColumn
+    Friend WithEvents FechaSalida As DataGridViewTextBoxColumn
 End Class

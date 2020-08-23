@@ -208,6 +208,12 @@
     <Compile Include="Login\Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ventanas\AgregarReserva.Designer.vb">
+      <DependentUpon>AgregarReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\AgregarReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventanas\GestionReservas.Designer.vb">
       <DependentUpon>GestionReservas.vb</DependentUpon>
     </Compile>
@@ -285,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\AgregarReserva.resx">
+      <DependentUpon>AgregarReserva.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\GestionReservas.resx">
       <DependentUpon>GestionReservas.vb</DependentUpon>
