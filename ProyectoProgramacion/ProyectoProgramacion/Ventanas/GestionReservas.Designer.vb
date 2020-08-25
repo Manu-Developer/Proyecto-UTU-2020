@@ -28,6 +28,11 @@ Partial Class GestionReservas
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GestionReservas))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.bntAgregarReserva1 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
+        Me.image = New FontAwesome.Sharp.IconButton()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -51,11 +56,6 @@ Partial Class GestionReservas
         Me.HoraEntrega = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ModoRetiro = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.HorarioRetiro = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.bntAgregarReserva1 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
-        Me.image = New FontAwesome.Sharp.IconButton()
-        Me.txtBuscar = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -116,157 +116,6 @@ Partial Class GestionReservas
         Me.DataGridView1.ShowEditingIcon = False
         Me.DataGridView1.Size = New System.Drawing.Size(928, 430)
         Me.DataGridView1.TabIndex = 2
-        '
-        'id
-        '
-        Me.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.id.HeaderText = "ID"
-        Me.id.Name = "id"
-        Me.id.ReadOnly = True
-        Me.id.Width = 47
-        '
-        'Nombre
-        '
-        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        Me.Nombre.Width = 88
-        '
-        'Apellido
-        '
-        Me.Apellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Apellido.HeaderText = "Apellido"
-        Me.Apellido.Name = "Apellido"
-        Me.Apellido.ReadOnly = True
-        Me.Apellido.Width = 90
-        '
-        'Nac
-        '
-        Me.Nac.HeaderText = "Fecha Nacimiento"
-        Me.Nac.Name = "Nac"
-        Me.Nac.ReadOnly = True
-        '
-        'Telefono
-        '
-        Me.Telefono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.ReadOnly = True
-        Me.Telefono.Width = 96
-        '
-        'Direccion
-        '
-        Me.Direccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        '
-        'Precio
-        '
-        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Precio.HeaderText = "Precio"
-        Me.Precio.Name = "Precio"
-        Me.Precio.ReadOnly = True
-        Me.Precio.Width = 78
-        '
-        'Monto
-        '
-        Me.Monto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Monto.HeaderText = "Monto"
-        Me.Monto.Name = "Monto"
-        Me.Monto.ReadOnly = True
-        Me.Monto.Width = 76
-        '
-        'FechaEntrada
-        '
-        Me.FechaEntrada.HeaderText = "Entrada"
-        Me.FechaEntrada.Name = "FechaEntrada"
-        Me.FechaEntrada.ReadOnly = True
-        '
-        'FechaSalida
-        '
-        Me.FechaSalida.HeaderText = "Salida"
-        Me.FechaSalida.Name = "FechaSalida"
-        Me.FechaSalida.ReadOnly = True
-        '
-        'Habitacion
-        '
-        Me.Habitacion.HeaderText = "Habitacion"
-        Me.Habitacion.Name = "Habitacion"
-        Me.Habitacion.ReadOnly = True
-        '
-        'NombreMascota
-        '
-        Me.NombreMascota.HeaderText = "Mascota"
-        Me.NombreMascota.Name = "NombreMascota"
-        Me.NombreMascota.ReadOnly = True
-        '
-        'MascotaNac
-        '
-        Me.MascotaNac.HeaderText = "MascotaNac"
-        Me.MascotaNac.Name = "MascotaNac"
-        Me.MascotaNac.ReadOnly = True
-        '
-        'Vacunas
-        '
-        Me.Vacunas.HeaderText = "Vacunas"
-        Me.Vacunas.Name = "Vacunas"
-        Me.Vacunas.ReadOnly = True
-        '
-        'Dosis
-        '
-        Me.Dosis.HeaderText = "Dosis"
-        Me.Dosis.Name = "Dosis"
-        Me.Dosis.ReadOnly = True
-        '
-        'Horario
-        '
-        Me.Horario.HeaderText = "Horario"
-        Me.Horario.Name = "Horario"
-        Me.Horario.ReadOnly = True
-        '
-        'Peso
-        '
-        Me.Peso.HeaderText = "Peso"
-        Me.Peso.Name = "Peso"
-        Me.Peso.ReadOnly = True
-        '
-        'Raza
-        '
-        Me.Raza.HeaderText = "Raza"
-        Me.Raza.Name = "Raza"
-        Me.Raza.ReadOnly = True
-        '
-        'Alimetancion
-        '
-        Me.Alimetancion.HeaderText = "Alimetancion"
-        Me.Alimetancion.Name = "Alimetancion"
-        Me.Alimetancion.ReadOnly = True
-        '
-        'ModoEntrega
-        '
-        Me.ModoEntrega.HeaderText = "Modo Entrega"
-        Me.ModoEntrega.Name = "ModoEntrega"
-        Me.ModoEntrega.ReadOnly = True
-        '
-        'HoraEntrega
-        '
-        Me.HoraEntrega.HeaderText = "Hora Entrega"
-        Me.HoraEntrega.Name = "HoraEntrega"
-        Me.HoraEntrega.ReadOnly = True
-        '
-        'ModoRetiro
-        '
-        Me.ModoRetiro.HeaderText = "Modo Retiro"
-        Me.ModoRetiro.Name = "ModoRetiro"
-        Me.ModoRetiro.ReadOnly = True
-        '
-        'HorarioRetiro
-        '
-        Me.HorarioRetiro.HeaderText = "Horario Retiro"
-        Me.HorarioRetiro.Name = "HorarioRetiro"
-        Me.HorarioRetiro.ReadOnly = True
         '
         'bntAgregarReserva1
         '
@@ -362,6 +211,169 @@ Partial Class GestionReservas
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(654, 32)
         Me.txtBuscar.TabIndex = 11
+        '
+        'id
+        '
+        Me.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.id.HeaderText = "ID"
+        Me.id.Name = "id"
+        Me.id.ReadOnly = True
+        Me.id.Width = 47
+        '
+        'Nombre
+        '
+        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 88
+        '
+        'Apellido
+        '
+        Me.Apellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Apellido.HeaderText = "Apellido"
+        Me.Apellido.Name = "Apellido"
+        Me.Apellido.ReadOnly = True
+        Me.Apellido.Width = 90
+        '
+        'Nac
+        '
+        Me.Nac.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Nac.HeaderText = "Fecha Nacimiento"
+        Me.Nac.Name = "Nac"
+        Me.Nac.ReadOnly = True
+        Me.Nac.Width = 161
+        '
+        'Telefono
+        '
+        Me.Telefono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Telefono.HeaderText = "Telefono"
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.ReadOnly = True
+        Me.Telefono.Width = 96
+        '
+        'Direccion
+        '
+        Me.Direccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        '
+        'Precio
+        '
+        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Precio.HeaderText = "Precio"
+        Me.Precio.Name = "Precio"
+        Me.Precio.ReadOnly = True
+        Me.Precio.Width = 78
+        '
+        'Monto
+        '
+        Me.Monto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Monto.HeaderText = "Monto"
+        Me.Monto.Name = "Monto"
+        Me.Monto.ReadOnly = True
+        Me.Monto.Width = 76
+        '
+        'FechaEntrada
+        '
+        Me.FechaEntrada.HeaderText = "Entrada"
+        Me.FechaEntrada.Name = "FechaEntrada"
+        Me.FechaEntrada.ReadOnly = True
+        '
+        'FechaSalida
+        '
+        Me.FechaSalida.HeaderText = "Salida"
+        Me.FechaSalida.Name = "FechaSalida"
+        Me.FechaSalida.ReadOnly = True
+        '
+        'Habitacion
+        '
+        Me.Habitacion.HeaderText = "Habitacion"
+        Me.Habitacion.Name = "Habitacion"
+        Me.Habitacion.ReadOnly = True
+        '
+        'NombreMascota
+        '
+        Me.NombreMascota.HeaderText = "Mascota"
+        Me.NombreMascota.Name = "NombreMascota"
+        Me.NombreMascota.ReadOnly = True
+        '
+        'MascotaNac
+        '
+        Me.MascotaNac.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.MascotaNac.HeaderText = "Nacimiento Mascota"
+        Me.MascotaNac.Name = "MascotaNac"
+        Me.MascotaNac.ReadOnly = True
+        Me.MascotaNac.Width = 177
+        '
+        'Vacunas
+        '
+        Me.Vacunas.HeaderText = "Vacunas"
+        Me.Vacunas.Name = "Vacunas"
+        Me.Vacunas.ReadOnly = True
+        '
+        'Dosis
+        '
+        Me.Dosis.HeaderText = "Dosis"
+        Me.Dosis.Name = "Dosis"
+        Me.Dosis.ReadOnly = True
+        '
+        'Horario
+        '
+        Me.Horario.HeaderText = "Horario"
+        Me.Horario.Name = "Horario"
+        Me.Horario.ReadOnly = True
+        '
+        'Peso
+        '
+        Me.Peso.HeaderText = "Peso"
+        Me.Peso.Name = "Peso"
+        Me.Peso.ReadOnly = True
+        '
+        'Raza
+        '
+        Me.Raza.HeaderText = "Raza"
+        Me.Raza.Name = "Raza"
+        Me.Raza.ReadOnly = True
+        '
+        'Alimetancion
+        '
+        Me.Alimetancion.HeaderText = "Alimetancion"
+        Me.Alimetancion.Name = "Alimetancion"
+        Me.Alimetancion.ReadOnly = True
+        '
+        'ModoEntrega
+        '
+        Me.ModoEntrega.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.ModoEntrega.HeaderText = "Modo Entrega"
+        Me.ModoEntrega.Name = "ModoEntrega"
+        Me.ModoEntrega.ReadOnly = True
+        Me.ModoEntrega.Width = 133
+        '
+        'HoraEntrega
+        '
+        Me.HoraEntrega.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.HoraEntrega.HeaderText = "Hora Entrega"
+        Me.HoraEntrega.Name = "HoraEntrega"
+        Me.HoraEntrega.ReadOnly = True
+        Me.HoraEntrega.Width = 129
+        '
+        'ModoRetiro
+        '
+        Me.ModoRetiro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.ModoRetiro.HeaderText = "Modo Retiro"
+        Me.ModoRetiro.Name = "ModoRetiro"
+        Me.ModoRetiro.ReadOnly = True
+        Me.ModoRetiro.Width = 120
+        '
+        'HorarioRetiro
+        '
+        Me.HorarioRetiro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.HorarioRetiro.HeaderText = "Horario Retiro"
+        Me.HorarioRetiro.Name = "HorarioRetiro"
+        Me.HorarioRetiro.ReadOnly = True
+        Me.HorarioRetiro.Width = 135
         '
         'GestionReservas
         '
