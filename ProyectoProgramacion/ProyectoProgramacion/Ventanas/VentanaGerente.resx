@@ -1763,7 +1763,7 @@
 </value>
   </data>
   <data name="PanelDesktop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+    <value>Center</value>
   </data>
   <data name="BunifuSeparator5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
