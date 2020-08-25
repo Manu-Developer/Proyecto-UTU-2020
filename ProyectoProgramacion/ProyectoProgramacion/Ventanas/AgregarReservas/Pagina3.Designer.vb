@@ -25,11 +25,11 @@ Partial Class Pagina3
         Me.ipbAnteriorFoto = New FontAwesome.Sharp.IconPictureBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.horaretiro = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.horaentrega = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
@@ -72,14 +72,14 @@ Partial Class Pagina3
         Me.Label13.TabIndex = 88
         Me.Label13.Text = "Hora de Retiro"
         '
-        'ComboBox4
+        'horaretiro
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
-        Me.ComboBox4.Location = New System.Drawing.Point(228, 250)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(192, 21)
-        Me.ComboBox4.TabIndex = 87
+        Me.horaretiro.FormattingEnabled = True
+        Me.horaretiro.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
+        Me.horaretiro.Location = New System.Drawing.Point(228, 250)
+        Me.horaretiro.Name = "horaretiro"
+        Me.horaretiro.Size = New System.Drawing.Size(192, 21)
+        Me.horaretiro.TabIndex = 87
         '
         'ComboBox1
         '
@@ -110,14 +110,14 @@ Partial Class Pagina3
         Me.Label22.TabIndex = 84
         Me.Label22.Text = "Hora de Entrega"
         '
-        'ComboBox2
+        'horaentrega
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
-        Me.ComboBox2.Location = New System.Drawing.Point(228, 132)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(192, 21)
-        Me.ComboBox2.TabIndex = 83
+        Me.horaentrega.FormattingEnabled = True
+        Me.horaentrega.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
+        Me.horaentrega.Location = New System.Drawing.Point(228, 132)
+        Me.horaentrega.Name = "horaentrega"
+        Me.horaentrega.Size = New System.Drawing.Size(192, 21)
+        Me.horaentrega.TabIndex = 83
         '
         'Label19
         '
@@ -170,11 +170,11 @@ Partial Class Pagina3
         Me.ClientSize = New System.Drawing.Size(452, 669)
         Me.Controls.Add(Me.IconButton1)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.horaretiro)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.horaentrega)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label17)
@@ -192,11 +192,11 @@ Partial Class Pagina3
     Friend WithEvents ipbAnteriorFoto As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents Label17 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents horaretiro As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents Label22 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents horaentrega As ComboBox
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
