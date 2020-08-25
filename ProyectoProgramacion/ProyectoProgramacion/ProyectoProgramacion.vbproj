@@ -62,6 +62,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hnet.com-image.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.3.0.1\lib\Bunifu.Licensing.dll</HintPath>
@@ -208,10 +211,22 @@
     <Compile Include="Login\Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\AgregarReserva.Designer.vb">
-      <DependentUpon>AgregarReserva.vb</DependentUpon>
+    <Compile Include="Ventanas\AgregarReservas\Pagina1.Designer.vb">
+      <DependentUpon>Pagina1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\AgregarReserva.vb">
+    <Compile Include="Ventanas\AgregarReservas\Pagina1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\AgregarReservas\Pagina2.Designer.vb">
+      <DependentUpon>Pagina2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\AgregarReservas\Pagina2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\AgregarReservas\Pagina3.Designer.vb">
+      <DependentUpon>Pagina3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\AgregarReservas\Pagina3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventanas\GestionReservas.Designer.vb">
@@ -292,8 +307,14 @@
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\AgregarReserva.resx">
-      <DependentUpon>AgregarReserva.vb</DependentUpon>
+    <EmbeddedResource Include="Ventanas\AgregarReservas\Pagina1.resx">
+      <DependentUpon>Pagina1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\AgregarReservas\Pagina2.resx">
+      <DependentUpon>Pagina2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\AgregarReservas\Pagina3.resx">
+      <DependentUpon>Pagina3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\GestionReservas.resx">
       <DependentUpon>GestionReservas.vb</DependentUpon>
@@ -389,6 +410,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hnet.com-image.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

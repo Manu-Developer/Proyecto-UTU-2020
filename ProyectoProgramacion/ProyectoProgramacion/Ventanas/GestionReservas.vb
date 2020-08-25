@@ -18,6 +18,6 @@
     End Sub
 
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
-        AgregarReserva.Show()
+        Pagina1.ShowDialog()
     End Sub
 End Class

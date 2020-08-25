@@ -6,10 +6,10 @@ Friend Class ValidacionesBasicas
         Dim verdaderoFalso As Boolean
 
         If txtValidarContraseña.Text.Trim = "" Then
-            MessageBox.Show("El campo para la contraseña no puede estar vacio", "Error al digitar", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
+            FormInfo.callFormWithMessage("El campo para la contraseña no puede estar vacio")
             verdaderoFalso = False
         ElseIf Not validador.IsMatch(txtValidarContraseña.Text) Then
-            MessageBox.Show("El formato debe de ser solo numérico y tiene que tener un minimo de 8 caracteres", "Error al digitar", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
+            FormInfo.callFormWithMessage("El formato debe de ser solo numérico y tiene que tener un minimo de 8 caracteres")
             verdaderoFalso = False
         Else
             verdaderoFalso = True
@@ -22,10 +22,10 @@ Friend Class ValidacionesBasicas
         Dim verdaderoFalso As Boolean
 
         If txtValidarTelefono.Text.Trim = "" Then
-            MessageBox.Show("El campo númerico puede estar vacio", "Error al digitar", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
+            FormInfo.callFormWithMessage("El campo númerico puede estar vacio")
             verdaderoFalso = False
         ElseIf Not validador.IsMatch(txtValidarTelefono.Text) Then
-            MessageBox.Show("El formato debe de ser solo numérico y tiene que tener estrictamente 8 caracteres", "Error al digitar", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
+            FormInfo.callFormWithMessage("El formato debe de ser solo numérico y tiene que tener estrictamente 8 caracteres")
             verdaderoFalso = False
         Else
             verdaderoFalso = True
@@ -37,10 +37,10 @@ Friend Class ValidacionesBasicas
         Dim validador As New Regex("^[a-zA-Z]{7,}$")
         Dim verdaderoFalso As Boolean
         If txtValidarTexto.Text.Trim = "" Then
-            MessageBox.Show("El campo de texto no puede estar vacio", "Error al digitar", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
+            FormInfo.callFormWithMessage("El campo de texto no puede estar vacio")
             verdaderoFalso = False
         ElseIf Not validador.IsMatch(txtValidarTexto.Text) Then
-            MessageBox.Show("El campo de texto debe ser solo alfanumérico y tiene que tener un minimo de 8 caracteres", "Error al digitar", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
+            FormInfo.callFormWithMessage("El campo de texto debe ser solo alfanumérico y tiene que tener un minimo de 8 caracteres")
             verdaderoFalso = False
         Else
             verdaderoFalso = True

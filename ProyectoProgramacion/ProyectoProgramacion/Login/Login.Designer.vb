@@ -219,9 +219,10 @@ Partial Class Login
         Me.Controls.Add(Me.pcbImagen)
         Me.Controls.Add(Me.btnLogin)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Hotel Canino"
         Me.panelPrincipal.ResumeLayout(False)
         Me.panelPrincipal.PerformLayout()
         CType(Me.ipbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()

@@ -26,6 +26,7 @@ Partial Class GestionReservas
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GestionReservas))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -97,7 +98,7 @@ Partial Class GestionReservas
         Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.ShowEditingIcon = False
-        Me.DataGridView1.Size = New System.Drawing.Size(831, 275)
+        Me.DataGridView1.Size = New System.Drawing.Size(928, 430)
         Me.DataGridView1.TabIndex = 2
         '
         'id
@@ -156,6 +157,7 @@ Partial Class GestionReservas
         '
         'bntAgregarReserva1
         '
+        Me.bntAgregarReserva1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.bntAgregarReserva1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.bntAgregarReserva1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.bntAgregarReserva1.FlatAppearance.BorderSize = 0
@@ -166,7 +168,7 @@ Partial Class GestionReservas
         Me.bntAgregarReserva1.IconChar = FontAwesome.Sharp.IconChar.CalendarTimes
         Me.bntAgregarReserva1.IconColor = System.Drawing.Color.White
         Me.bntAgregarReserva1.IconSize = 25
-        Me.bntAgregarReserva1.Location = New System.Drawing.Point(674, 428)
+        Me.bntAgregarReserva1.Location = New System.Drawing.Point(674, 551)
         Me.bntAgregarReserva1.Name = "bntAgregarReserva1"
         Me.bntAgregarReserva1.Rotation = 0R
         Me.bntAgregarReserva1.Size = New System.Drawing.Size(174, 37)
@@ -177,6 +179,7 @@ Partial Class GestionReservas
         '
         'IconButton1
         '
+        Me.IconButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.IconButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.IconButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.IconButton1.FlatAppearance.BorderSize = 0
@@ -187,7 +190,7 @@ Partial Class GestionReservas
         Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Plus
         Me.IconButton1.IconColor = System.Drawing.Color.White
         Me.IconButton1.IconSize = 25
-        Me.IconButton1.Location = New System.Drawing.Point(17, 428)
+        Me.IconButton1.Location = New System.Drawing.Point(12, 551)
         Me.IconButton1.Name = "IconButton1"
         Me.IconButton1.Rotation = 0R
         Me.IconButton1.Size = New System.Drawing.Size(174, 37)
@@ -198,6 +201,7 @@ Partial Class GestionReservas
         '
         'IconButton2
         '
+        Me.IconButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.IconButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.IconButton2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.IconButton2.FlatAppearance.BorderSize = 0
@@ -208,7 +212,7 @@ Partial Class GestionReservas
         Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Edit
         Me.IconButton2.IconColor = System.Drawing.Color.White
         Me.IconButton2.IconSize = 25
-        Me.IconButton2.Location = New System.Drawing.Point(350, 428)
+        Me.IconButton2.Location = New System.Drawing.Point(347, 551)
         Me.IconButton2.Name = "IconButton2"
         Me.IconButton2.Rotation = 0R
         Me.IconButton2.Size = New System.Drawing.Size(174, 37)
@@ -250,7 +254,7 @@ Partial Class GestionReservas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(860, 548)
+        Me.ClientSize = New System.Drawing.Size(967, 600)
         Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.image)
         Me.Controls.Add(Me.IconButton2)
@@ -258,6 +262,7 @@ Partial Class GestionReservas
         Me.Controls.Add(Me.bntAgregarReserva1)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "GestionReservas"
         Me.Text = "GestionReservas"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
