@@ -22,6 +22,7 @@ Partial Class Pagina1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagina1))
         Me.ipbSiguienteFoto = New FontAwesome.Sharp.IconPictureBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
@@ -277,9 +278,10 @@ Partial Class Pagina1
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.ipbSiguienteFoto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Pagina1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Pagina1"
+        Me.Text = "Hotel Canino"
         CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

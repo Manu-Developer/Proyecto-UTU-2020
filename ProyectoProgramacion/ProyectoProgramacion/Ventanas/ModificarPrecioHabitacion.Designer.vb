@@ -22,6 +22,7 @@ Partial Class ModificarPrecioHabitacion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarPrecioHabitacion))
         Me.txtIdHabitacion = New System.Windows.Forms.TextBox()
         Me.lblHabitacion = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
@@ -177,8 +178,9 @@ Partial Class ModificarPrecioHabitacion
         Me.Controls.Add(Me.lblHabitacion)
         Me.Controls.Add(Me.txtIdHabitacion)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarPrecioHabitacion"
-        Me.Text = "ModificarPrecioHabitacion"
+        Me.Text = "Hotel Canino"
         CType(Me.ipbAnteriorFoto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ptbImagen, System.ComponentModel.ISupportInitialize).EndInit()

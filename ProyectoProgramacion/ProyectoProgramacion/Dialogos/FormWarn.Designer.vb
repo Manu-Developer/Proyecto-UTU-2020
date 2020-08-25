@@ -23,14 +23,15 @@ Partial Class FormWarn
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormWarn))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.esclarecer = New Bunifu.Framework.UI.BunifuFormFadeTransition(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.aviso = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.message = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.aviso = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,6 +56,17 @@ Partial Class FormWarn
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(370, 241)
         Me.Panel1.TabIndex = 0
+        '
+        'aviso
+        '
+        Me.aviso.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.aviso.ForeColor = System.Drawing.Color.White
+        Me.aviso.Location = New System.Drawing.Point(153, 92)
+        Me.aviso.Name = "aviso"
+        Me.aviso.Size = New System.Drawing.Size(205, 43)
+        Me.aviso.TabIndex = 4
+        Me.aviso.Text = "insert"
+        Me.aviso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
         '
@@ -89,6 +101,7 @@ Partial Class FormWarn
         '
         'BunifuFlatButton1
         '
+        Me.BunifuFlatButton1.Active = False
         Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
@@ -121,19 +134,9 @@ Partial Class FormWarn
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'aviso
-        '
-        Me.aviso.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.aviso.ForeColor = System.Drawing.Color.White
-        Me.aviso.Location = New System.Drawing.Point(153, 92)
-        Me.aviso.Name = "aviso"
-        Me.aviso.Size = New System.Drawing.Size(205, 43)
-        Me.aviso.TabIndex = 4
-        Me.aviso.Text = "insert"
-        Me.aviso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'BunifuFlatButton2
         '
+        Me.BunifuFlatButton2.Active = False
         Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.BunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
@@ -181,9 +184,10 @@ Partial Class FormWarn
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormWarn"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormWarn"
+        Me.Text = "Advertencia"
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

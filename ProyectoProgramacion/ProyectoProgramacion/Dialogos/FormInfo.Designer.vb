@@ -23,6 +23,7 @@ Partial Class FormInfo
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormInfo))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.esclarecer = New Bunifu.Framework.UI.BunifuFormFadeTransition(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -74,6 +75,7 @@ Partial Class FormInfo
         '
         'BunifuFlatButton1
         '
+        Me.BunifuFlatButton1.Active = False
         Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
@@ -119,9 +121,10 @@ Partial Class FormInfo
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormInfo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormWarn"
+        Me.Text = "Informacion"
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

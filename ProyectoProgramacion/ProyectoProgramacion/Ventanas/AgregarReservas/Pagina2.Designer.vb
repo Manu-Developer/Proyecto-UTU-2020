@@ -22,6 +22,7 @@ Partial Class Pagina2
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagina2))
         Me.ipbAnteriorFoto = New FontAwesome.Sharp.IconPictureBox()
         Me.ipbSiguienteFoto = New FontAwesome.Sharp.IconPictureBox()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -302,9 +303,10 @@ Partial Class Pagina2
         Me.Controls.Add(Me.ipbAnteriorFoto)
         Me.Controls.Add(Me.ipbSiguienteFoto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Pagina2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Pagina2"
+        Me.Text = "Hotel Canino"
         CType(Me.ipbAnteriorFoto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

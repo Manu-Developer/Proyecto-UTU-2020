@@ -264,7 +264,7 @@ Partial Class GestionReservas
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "GestionReservas"
-        Me.Text = "GestionReservas"
+        Me.Text = "Hotel Canino"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -23,6 +23,7 @@ Partial Class FormSucess
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormSucess))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.esclarecer = New Bunifu.Framework.UI.BunifuFormFadeTransition(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -86,6 +87,7 @@ Partial Class FormSucess
         '
         'BunifuFlatButton1
         '
+        Me.BunifuFlatButton1.Active = False
         Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
@@ -132,9 +134,10 @@ Partial Class FormSucess
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormSucess"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormSucess"
+        Me.Text = "Correcto"
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

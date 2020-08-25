@@ -117,156 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
-    <value>PanelMenu</value>
-  </data>
-  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtNombreUsuario.Name" xml:space="preserve">
-    <value>txtNombreUsuario</value>
-  </data>
-  <data name="&gt;&gt;txtNombreUsuario.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
-  </data>
-  <data name="&gt;&gt;txtNombreUsuario.Parent" xml:space="preserve">
-    <value>PanelMenu</value>
-  </data>
-  <data name="&gt;&gt;txtNombreUsuario.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnCerarSesion.Name" xml:space="preserve">
-    <value>btnCerarSesion</value>
-  </data>
-  <data name="&gt;&gt;btnCerarSesion.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.14.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnCerarSesion.Parent" xml:space="preserve">
-    <value>PanelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnCerarSesion.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
-    <value>PictureBox1</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
-    <value>PanelMenu</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PanelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PanelMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 642</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PanelMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;PanelMenu.Name" xml:space="preserve">
-    <value>PanelMenu</value>
-  </data>
-  <data name="&gt;&gt;PanelMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelMenu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PanelMenu.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnHSalida.Name" xml:space="preserve">
-    <value>btnHSalida</value>
-  </data>
-  <data name="&gt;&gt;btnHSalida.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.14.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnHSalida.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;btnHSalida.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnHEntrada.Name" xml:space="preserve">
-    <value>btnHEntrada</value>
-  </data>
-  <data name="&gt;&gt;btnHEntrada.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.14.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnHEntrada.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;btnHEntrada.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnReservas.Name" xml:space="preserve">
-    <value>btnReservas</value>
-  </data>
-  <data name="&gt;&gt;btnReservas.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.14.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnReservas.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;btnReservas.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnInicio.Name" xml:space="preserve">
-    <value>btnInicio</value>
-  </data>
-  <data name="&gt;&gt;btnInicio.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.14.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnInicio.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;btnInicio.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 201</value>
-  </data>
-  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 284</value>
-  </data>
-  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
-    <value>PanelMenu</value>
-  </data>
-  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btnHSalida.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="btnHSalida.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnHSalida.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
@@ -285,6 +143,7 @@
   <data name="btnHSalida.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 46</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnHSalida.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
@@ -453,6 +312,27 @@
   <data name="&gt;&gt;btnInicio.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 201</value>
+  </data>
+  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 284</value>
+  </data>
+  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+    <value>PanelMenu</value>
+  </data>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="txtNombreUsuario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -534,44 +414,29 @@
   <data name="&gt;&gt;btnCerarSesion.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;photo.Name" xml:space="preserve">
-    <value>photo</value>
+  <data name="edit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;photo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="edit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU-ExtB, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;photo.Parent" xml:space="preserve">
-    <value>PictureBox1</value>
-  </data>
-  <data name="&gt;&gt;photo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="edit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 13</value>
+  <data name="edit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 55</value>
   </data>
-  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 132</value>
+  <data name="edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 16</value>
   </data>
-  <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="edit.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="edit.Text" xml:space="preserve">
+    <value>Click aqui</value>
   </data>
-  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
-    <value>PictureBox1</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
-    <value>PanelMenu</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="edit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;edit.Name" xml:space="preserve">
     <value>edit</value>
@@ -615,41 +480,56 @@
   <data name="&gt;&gt;photo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="edit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="edit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU-ExtB, 12pt, style=Bold</value>
-  </data>
-  <data name="edit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="edit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 55</value>
+  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 13</value>
   </data>
-  <data name="edit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 16</value>
+  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 132</value>
   </data>
-  <data name="edit.TabIndex" type="System.Int32, mscorlib">
+  <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
+    <value>PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
+    <value>PanelMenu</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PanelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="PanelMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 642</value>
+  </data>
+  <data name="PanelMenu.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="edit.Text" xml:space="preserve">
-    <value>Click aqui</value>
+  <data name="&gt;&gt;PanelMenu.Name" xml:space="preserve">
+    <value>PanelMenu</value>
   </data>
-  <data name="edit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;PanelMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;edit.Name" xml:space="preserve">
-    <value>edit</value>
+  <data name="&gt;&gt;PanelMenu.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;edit.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
-  </data>
-  <data name="&gt;&gt;edit.Parent" xml:space="preserve">
-    <value>photo</value>
-  </data>
-  <data name="&gt;&gt;edit.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;PanelMenu.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="nombre.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1789,78 +1669,6 @@
   <data name="PanelDesktop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="&gt;&gt;BunifuSeparator5.Name" xml:space="preserve">
-    <value>BunifuSeparator5</value>
-  </data>
-  <data name="&gt;&gt;BunifuSeparator5.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuSeparator, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
-  </data>
-  <data name="&gt;&gt;BunifuSeparator5.Parent" xml:space="preserve">
-    <value>PanelDesktop</value>
-  </data>
-  <data name="&gt;&gt;BunifuSeparator5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblfecha.Name" xml:space="preserve">
-    <value>lblfecha</value>
-  </data>
-  <data name="&gt;&gt;lblfecha.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblfecha.Parent" xml:space="preserve">
-    <value>PanelDesktop</value>
-  </data>
-  <data name="&gt;&gt;lblfecha.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblhora.Name" xml:space="preserve">
-    <value>lblhora</value>
-  </data>
-  <data name="&gt;&gt;lblhora.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblhora.Parent" xml:space="preserve">
-    <value>PanelDesktop</value>
-  </data>
-  <data name="&gt;&gt;lblhora.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pbLogoEmpresa.Name" xml:space="preserve">
-    <value>pbLogoEmpresa</value>
-  </data>
-  <data name="&gt;&gt;pbLogoEmpresa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbLogoEmpresa.Parent" xml:space="preserve">
-    <value>PanelDesktop</value>
-  </data>
-  <data name="&gt;&gt;pbLogoEmpresa.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="PanelDesktop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelDesktop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 42</value>
-  </data>
-  <data name="PanelDesktop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>967, 600</value>
-  </data>
-  <data name="PanelDesktop.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;PanelDesktop.Name" xml:space="preserve">
-    <value>PanelDesktop</value>
-  </data>
-  <data name="&gt;&gt;PanelDesktop.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
-  </data>
-  <data name="&gt;&gt;PanelDesktop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PanelDesktop.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="BunifuSeparator5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
@@ -1987,6 +1795,30 @@
   <data name="&gt;&gt;pbLogoEmpresa.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="PanelDesktop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelDesktop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 42</value>
+  </data>
+  <data name="PanelDesktop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>967, 600</value>
+  </data>
+  <data name="PanelDesktop.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;PanelDesktop.Name" xml:space="preserve">
+    <value>PanelDesktop</value>
+  </data>
+  <data name="&gt;&gt;PanelDesktop.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;PanelDesktop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PanelDesktop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1996,6 +1828,252 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1166, 642</value>
   </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAOjwAAAEAIABoOAAAFgAAACgAAAA6AAAAeAAAAAEAIAAAAAAAYDYAABILAAASCwAAAAAAAAAA
+        AAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///yD///9A////UP///4D///+Y////oP//
+        /6z////Q////0P///9D////Q////uP///6D///+Y////gP///2D///9A////IP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8Q////QP///5D////E////6P/////////7////9///////////////////////////////////
+        ////////////////////////////////////////////9/////v////4////yf///3n///8g////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8Q////UP///6X////l////////
+        //v/////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////8T///9A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///zD////E//////////z/////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////+////8T///8Q////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///2r////7////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////7P///zD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /2r////8////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////i////EP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///yD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////5D///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///+4////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////y////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8Q////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////9////yD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////UP////v/////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////+////9A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///4D/////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////7////MP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///+A////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////UP//
+        //v/////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////8n///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///xD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////v///9A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////uP//////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////U////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///yD////5////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////4////IP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////MP////n/////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //z////i////IP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8w////7v//////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////z///+e////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///xD///+s////+///////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////n///9b////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///zD////l/////P//////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////+7///8w////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///6X////8////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////+L///8Q////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8Q////iP///+X/////////+P//
+        /87///8w////AP///wD///8A////av//////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /+L///8Q////AP///wD///8A////MP///9j///////////////j///+4////IP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8w////8P////v/////////////////////////////
+        /1v///8A////AP///wD///9g////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////+L///8Q////AP//
+        /wD///8A////av////////////////////////////////////n///9q////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8w////+f/////////////////////////////////////////4////EP//
+        /wD///8A////AP///2r////8////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////j///8g////AP///wD///8A////IP//
+        //n//////////////////////////////////////////P///1D///8A////AP///wD///8A////AP//
+        /wD///8g////+f///////////////////////////////////////////////////4L///8A////AP//
+        /wD///8A////av////z/////////////////////////////////////////////////////////////
+        //////////////////////////////////////9Q////AP///wD///8A////AP///7j/////////////
+        ///////////////////////////////////////4////IP///wD///8A////AP///wD///8A////1P//
+        ///////////////////////////////////////////////////////i////AP///wD///8A////AP//
+        /wD///95////+///////////////////////////////////////////////////////////////////
+        //////////////////r///9q////AP///wD///8A////AP///xD/////////////////////////////
+        /////////////////////////////////7j///8A////AP///wD///8A////av////3/////////////
+        /////////////////////////////////////////////////wD///8A////AP///wD///8A////AP//
+        /0D////J////////////////////////////////////////////////////////////////////////
+        /7j///8g////AP///wD///8A////AP///wD///9Q/////P//////////////////////////////////
+        ///////////////////////7////IP///wD///8A////AP////D/////////////////////////////
+        //////////////////////////////////////8A////AP///wD///8A////AP///wD///8A////AP//
+        /xD///9g////uP///+j///////////////////////////////D////E////YP///xD///8A////AP//
+        /wD///8A////AP///wD///8A////kP//////////////////////////////////////////////////
+        /////////////////57///8A////AP///2D////9////////////////////////////////////////
+        ///////////////////////3////QP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///6D/////////////////////////////////////////////////////////////
+        ///////w////AP///wD////J////////////////////////////////////////////////////////
+        /////////////////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///+g////////////////////////////////////////////////////////////////////+///
+        /yD///8A////////////////////////////////////////////////////////////////////////
+        //////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////oP//
+        //////////////////////////////////////////////////////////////////v///9A////QP//
+        //n////////////////////////////////////////////////////////////////////w////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///5D/////////////
+        ////////////////////////////////////////////////////////////gP///3D/////////////
+        ////////////////////////////////////////////////////////////uP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///9Q////////////////////////
+        /////////////////////////////////////////////////4D///+Y////////////////////////
+        /////////////////////////////////////////////P///2D///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////IP////v/////////////////////////////
+        //////////////////////////////////////+A////oP//////////////////////////////////
+        //////////////////////////////////n///8Q////AP///wD///8A////AP///wD///8g////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD////l////////////////////////////////////////
+        ////////////////////////////cP///6D/////////////////////////////////////////////
+        //////////////////////+s////AP///wD///8A////MP///8T////////////////////u////kP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////ef//////////////////////////////////////////////////
+        ////////////+f///0D///+I////////////////////////////////////////////////////////
+        ////////////IP///wD///8A////kP////v///////////////////////////////z////i////EP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////av///+X////////////////////O////QP//
+        /wD///8A////AP///xD////4////////////////////////////////////////////////////////
+        //////8A////UP////z////////////////////////////////////////////////////8////kP//
+        /wD///8A////sv////3//////////////////////////////////////////////9T///8A////AP//
+        /wD///8A////AP///wD///8Q////3/////z///////////////////////////////z///+y////AP//
+        /wD///8A////ef////3///////////////////////////////////////////////////+4////AP//
+        /xD/////////////////////////////////////////////////////////4v///wD///8A////av//
+        //z////////////////////////////////////////////////////9////av///wD///8A////AP//
+        /wD///8Q////4v///////////////////////////////////////////////P///7L///8A////AP//
+        /wD////Q///////////////////////////////////////////////7////MP///wD///8A////rP//
+        ////////////////////////////////////////////9v///yD///8A////EP////j/////////////
+        /////////////////////////////////////////////////+7///8A////AP///wD///8A////pf//
+        ///////////////////////////////////////////////////////8////iP///wD///8A////EP//
+        /+L////8///////////////////////////////+////iP///wD///8A////AP///xD////3////////
+        ///////////////////////7////4v///zD///8A////AP///5D/////////////////////////////
+        ///////////////////////////////////////5////MP///wD///8A////QP////v/////////////
+        //////////////////////////////////////////////////////8g////AP///wD///8Q////nv//
+        ////////////////////////////iP///wD///8A////AP///wD///8A////IP///9T////7////////
+        //b////4////kP///xD///8A////AP///xD////5////////////////////////////////////////
+        /////////////////////////////////4j///8A////AP///7j/////////////////////////////
+        ////////////////////////////////////////////sv///wD///8A////AP///wD///8Q////YP//
+        /4D///9g////IP///wD///8A////AP///wD///8A////AP///wD///8A////IP///0D///9A////AP//
+        /wD///8A////AP///wD///9Q/////P//////////////////////////////////////////////////
+        //////////////////////+4////AP///xD/////////////////////////////////////////////
+        //////////////////////////////////n///8Q////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////uP//////////////////////////////////////////////////////////////////
+        ////////////0P///wD///9Q/////P//////////////////////////////////////////////////
+        ///////////////////////8////UP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /9z/////////////////////////////////////////////////////////////////////////////
+        /+D///8A////mP//////////////////////////////////////////////////////////////////
+        /////////////////6X///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD////4////////
+        ///////////////////////////////////////////////////////////////////////U////AP//
+        /9D/////////////////////////////////////////////////////////////////////////////
+        ///////Y////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////////////////////////
+        ////////////////////////////////////////////////////////////rP///wD////c////////
+        ////////////////////////////////////////////////////////////////////////////6P//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP//////////////////////////////////
+        /////////////////////////////////////////////////5D///8A////4P//////////////////
+        //////////////////////////////////////////////////////////////////////8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD/////////////////////////////////////////////
+        //////////////////////////////////n///9A////AP///9z/////////////////////////////
+        ////////////////////////////////////////////////////////////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////+P//////////////////////////////////////////////////
+        ///////////////////////5////AP///wD////Q////////////////////////////////////////
+        ////////////////////////////////////////////8P///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///9T/////////////////////////////////////////////////////////////
+        ////////////sv///wD///8A////mP//////////////////////////////////////////////////
+        /////////////////////////////////9j///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///95////////////////////////////////////////////////////////////////////+///
+        /yD///8A////AP///1D////7////////////////////////////////////////////////////////
+        //////////////////////+s////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////IP//
+        /////////////////////////////////////////////////////////////////7L///8A////AP//
+        /wD///8Q////////////////////////////////////////////////////////////////////////
+        ///////8////YP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///+e////////
+        /////////////////////////////////////////////////+7///8Q////AP///wD///8A////AP//
+        /8n/////////////////////////////////////////////////////////////////////////////
+        /xD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////EP///+L/////////////
+        //////////////////////////////////n///8w////AP///wD///8A////AP///wD///9A/////f//
+        /////////////////////////////////////////////////////////////////7j///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8Q////4v////v/////////////
+        /////////////f///+L///8w////AP///wD///8A////AP///wD///8A////AP///9D/////////////
+        //////////////////////////////////////////////////////8g////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///95////3P//////////////2P//
+        /2r///8A////AP///wD///8A////AP///wD///8A////AP///wD///8Q////+P//////////////////
+        //////////////////////////////////z///+I////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///zD////5////////////////////////
+        //////////////////z///+y////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////IP///9T////7////////////////////////
+        //n///+I////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////QP///5j////Q////uP///3n///8Q////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///4AAH//wP//gAAAB//A//gAAAAB/8D/4AAAAAB/wP/AAAAAAD/A/4AAAAAAH8D/AAAAAAAfwP8A
+        AAAAAB/A/gAAAAAAD8D+AAAAAAAPwP4AAAAAAA/A/gAAAAAAH8D+AAAAAAAfwP4AAAAAAB/A/wAAAAAA
+        P8D/AAAAAAA/wP+AAAAAAH/A/8AAAAAB/8D/4AAAAAP/wP/4AAAAB//A//4AAAAP/8D8BwAAABwHwPgD
+        gAAAOAPA8AHAAABwAcDgAeAAAPAAwOAB8AAB4ADAwAH4AAPgAEDAAf4AD+AAQIAA////4ABAgAH////g
+        AACAAf///+AAAAAB////4AAAAAH////gAAAAAf///+AAAAAB9///8AAAAAOA///wAAAAAwA/wHAAQAAG
+        AD8AOABAAAwAHgAcAECACAAeAAwAwIAYAAwABgHAwDAADAAHg8Dx8AAIAAP/wP/wAAgAA//A//AACAAD
+        /8D/8AAIAAP/wP/wAAgAA//A//AACAAD/8D/8AAIAAP/wP/wABgAA//A//AAGAAD/8D/8AAYAAP/wP/w
+        ADgAA//A//gAPAAD/8D/+AB8AAf/wP/8AP4AB//A//8D/gAP/8D/////AB//wP////+AP//A/////+B/
+        /8A=
+</value>
+  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>896, 578</value>
   </data>
@@ -2003,7 +2081,7 @@
     <value>WindowsDefaultBounds</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>VentanaPrincipal</value>
+    <value>Hotel Canino</value>
   </data>
   <data name="&gt;&gt;phototrasparent.Name" xml:space="preserve">
     <value>phototrasparent</value>
