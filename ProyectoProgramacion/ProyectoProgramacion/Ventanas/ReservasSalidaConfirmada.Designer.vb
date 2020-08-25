@@ -36,7 +36,7 @@ Partial Class ReservasSalidaConfirmada
         Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tpago = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FechaSalida = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.image = New FontAwesome.Sharp.IconButton()
         Me.btnConfirmar = New FontAwesome.Sharp.IconButton()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -157,16 +157,16 @@ Partial Class ReservasSalidaConfirmada
         Me.FechaSalida.Name = "FechaSalida"
         Me.FechaSalida.ReadOnly = True
         '
-        'TextBox1
+        'txtBuscar
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(47, 22)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(654, 32)
-        Me.TextBox1.TabIndex = 14
+        Me.txtBuscar.BackColor = System.Drawing.Color.White
+        Me.txtBuscar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.txtBuscar.Location = New System.Drawing.Point(47, 22)
+        Me.txtBuscar.Multiline = True
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(654, 32)
+        Me.txtBuscar.TabIndex = 14
         '
         'image
         '
@@ -211,9 +211,10 @@ Partial Class ReservasSalidaConfirmada
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(860, 548)
         Me.Controls.Add(Me.btnConfirmar)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.image)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -226,7 +227,7 @@ Partial Class ReservasSalidaConfirmada
 
     End Sub
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtBuscar As TextBox
     Friend WithEvents image As FontAwesome.Sharp.IconButton
     Friend WithEvents btnConfirmar As FontAwesome.Sharp.IconButton
     Friend WithEvents id As DataGridViewTextBoxColumn

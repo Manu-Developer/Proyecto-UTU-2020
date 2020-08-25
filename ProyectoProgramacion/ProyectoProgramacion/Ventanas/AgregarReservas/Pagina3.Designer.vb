@@ -25,21 +25,23 @@ Partial Class Pagina3
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagina3))
         Me.ipbAnteriorFoto = New FontAwesome.Sharp.IconPictureBox()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.horaretiro = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.horaentrega = New System.Windows.Forms.ComboBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
+        Me.lblHoraRetiro = New System.Windows.Forms.Label()
+        Me.cboHoraRetiro = New System.Windows.Forms.ComboBox()
+        Me.cboModoRetiro = New System.Windows.Forms.ComboBox()
+        Me.cboModoEntrega = New System.Windows.Forms.ComboBox()
+        Me.lblHoraEntrega = New System.Windows.Forms.Label()
+        Me.cboHoraEntrega = New System.Windows.Forms.ComboBox()
+        Me.lblModoRetiro = New System.Windows.Forms.Label()
+        Me.lblModoEntrega = New System.Windows.Forms.Label()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.btnSalir = New FontAwesome.Sharp.IconPictureBox()
         CType(Me.ipbAnteriorFoto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ipbAnteriorFoto
         '
-        Me.ipbAnteriorFoto.BackColor = System.Drawing.SystemColors.Control
+        Me.ipbAnteriorFoto.BackColor = System.Drawing.Color.White
         Me.ipbAnteriorFoto.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ipbAnteriorFoto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.ipbAnteriorFoto.IconChar = FontAwesome.Sharp.IconChar.AngleLeft
@@ -56,91 +58,91 @@ Partial Class Pagina3
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(136, 9)
+        Me.Label17.Location = New System.Drawing.Point(124, 9)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(177, 24)
         Me.Label17.TabIndex = 67
         Me.Label17.Text = "Datos Adicionales"
         '
-        'Label13
+        'lblHoraRetiro
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(45, 250)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(113, 20)
-        Me.Label13.TabIndex = 88
-        Me.Label13.Text = "Hora de Retiro"
+        Me.lblHoraRetiro.AutoSize = True
+        Me.lblHoraRetiro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoraRetiro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblHoraRetiro.Location = New System.Drawing.Point(36, 241)
+        Me.lblHoraRetiro.Name = "lblHoraRetiro"
+        Me.lblHoraRetiro.Size = New System.Drawing.Size(113, 20)
+        Me.lblHoraRetiro.TabIndex = 88
+        Me.lblHoraRetiro.Text = "Hora de Retiro"
         '
-        'horaretiro
+        'cboHoraRetiro
         '
-        Me.horaretiro.FormattingEnabled = True
-        Me.horaretiro.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
-        Me.horaretiro.Location = New System.Drawing.Point(228, 250)
-        Me.horaretiro.Name = "horaretiro"
-        Me.horaretiro.Size = New System.Drawing.Size(192, 21)
-        Me.horaretiro.TabIndex = 87
+        Me.cboHoraRetiro.FormattingEnabled = True
+        Me.cboHoraRetiro.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
+        Me.cboHoraRetiro.Location = New System.Drawing.Point(219, 241)
+        Me.cboHoraRetiro.Name = "cboHoraRetiro"
+        Me.cboHoraRetiro.Size = New System.Drawing.Size(192, 21)
+        Me.cboHoraRetiro.TabIndex = 87
         '
-        'ComboBox1
+        'cboModoRetiro
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Entrega por Cliente", "Entrega por Camioneta"})
-        Me.ComboBox1.Location = New System.Drawing.Point(228, 193)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(192, 21)
-        Me.ComboBox1.TabIndex = 86
+        Me.cboModoRetiro.FormattingEnabled = True
+        Me.cboModoRetiro.Items.AddRange(New Object() {"Entrega por Cliente", "Entrega por Camioneta"})
+        Me.cboModoRetiro.Location = New System.Drawing.Point(219, 184)
+        Me.cboModoRetiro.Name = "cboModoRetiro"
+        Me.cboModoRetiro.Size = New System.Drawing.Size(192, 21)
+        Me.cboModoRetiro.TabIndex = 86
         '
-        'ComboBox3
+        'cboModoEntrega
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Entrega por Cliente", "Entrega por Camioneta"})
-        Me.ComboBox3.Location = New System.Drawing.Point(228, 70)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(192, 21)
-        Me.ComboBox3.TabIndex = 85
+        Me.cboModoEntrega.FormattingEnabled = True
+        Me.cboModoEntrega.Items.AddRange(New Object() {"Entrega por Cliente", "Entrega por Camioneta"})
+        Me.cboModoEntrega.Location = New System.Drawing.Point(219, 61)
+        Me.cboModoEntrega.Name = "cboModoEntrega"
+        Me.cboModoEntrega.Size = New System.Drawing.Size(192, 21)
+        Me.cboModoEntrega.TabIndex = 85
         '
-        'Label22
+        'lblHoraEntrega
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label22.Location = New System.Drawing.Point(45, 132)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(127, 20)
-        Me.Label22.TabIndex = 84
-        Me.Label22.Text = "Hora de Entrega"
+        Me.lblHoraEntrega.AutoSize = True
+        Me.lblHoraEntrega.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoraEntrega.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblHoraEntrega.Location = New System.Drawing.Point(36, 123)
+        Me.lblHoraEntrega.Name = "lblHoraEntrega"
+        Me.lblHoraEntrega.Size = New System.Drawing.Size(127, 20)
+        Me.lblHoraEntrega.TabIndex = 84
+        Me.lblHoraEntrega.Text = "Hora de Entrega"
         '
-        'horaentrega
+        'cboHoraEntrega
         '
-        Me.horaentrega.FormattingEnabled = True
-        Me.horaentrega.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
-        Me.horaentrega.Location = New System.Drawing.Point(228, 132)
-        Me.horaentrega.Name = "horaentrega"
-        Me.horaentrega.Size = New System.Drawing.Size(192, 21)
-        Me.horaentrega.TabIndex = 83
+        Me.cboHoraEntrega.FormattingEnabled = True
+        Me.cboHoraEntrega.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
+        Me.cboHoraEntrega.Location = New System.Drawing.Point(219, 123)
+        Me.cboHoraEntrega.Name = "cboHoraEntrega"
+        Me.cboHoraEntrega.Size = New System.Drawing.Size(192, 21)
+        Me.cboHoraEntrega.TabIndex = 83
         '
-        'Label19
+        'lblModoRetiro
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(45, 194)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(118, 20)
-        Me.Label19.TabIndex = 82
-        Me.Label19.Text = "Modo de Retiro"
+        Me.lblModoRetiro.AutoSize = True
+        Me.lblModoRetiro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModoRetiro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblModoRetiro.Location = New System.Drawing.Point(36, 185)
+        Me.lblModoRetiro.Name = "lblModoRetiro"
+        Me.lblModoRetiro.Size = New System.Drawing.Size(118, 20)
+        Me.lblModoRetiro.TabIndex = 82
+        Me.lblModoRetiro.Text = "Modo de Retiro"
         '
-        'Label20
+        'lblModoEntrega
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label20.Location = New System.Drawing.Point(45, 70)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(132, 20)
-        Me.Label20.TabIndex = 81
-        Me.Label20.Text = "Modo de Entrega"
+        Me.lblModoEntrega.AutoSize = True
+        Me.lblModoEntrega.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModoEntrega.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblModoEntrega.Location = New System.Drawing.Point(36, 61)
+        Me.lblModoEntrega.Name = "lblModoEntrega"
+        Me.lblModoEntrega.Size = New System.Drawing.Size(132, 20)
+        Me.lblModoEntrega.TabIndex = 81
+        Me.lblModoEntrega.Text = "Modo de Entrega"
         '
         'IconButton1
         '
@@ -164,20 +166,39 @@ Partial Class Pagina3
         Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton1.UseVisualStyleBackColor = False
         '
+        'btnSalir
+        '
+        Me.btnSalir.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSalir.BackColor = System.Drawing.Color.White
+        Me.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSalir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.btnSalir.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnSalir.IconSize = 34
+        Me.btnSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnSalir.Location = New System.Drawing.Point(420, 0)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(32, 32)
+        Me.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnSalir.TabIndex = 90
+        Me.btnSalir.TabStop = False
+        '
         'Pagina3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(452, 669)
+        Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.IconButton1)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.horaretiro)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.horaentrega)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.lblHoraRetiro)
+        Me.Controls.Add(Me.cboHoraRetiro)
+        Me.Controls.Add(Me.cboModoRetiro)
+        Me.Controls.Add(Me.cboModoEntrega)
+        Me.Controls.Add(Me.lblHoraEntrega)
+        Me.Controls.Add(Me.cboHoraEntrega)
+        Me.Controls.Add(Me.lblModoRetiro)
+        Me.Controls.Add(Me.lblModoEntrega)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.ipbAnteriorFoto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -186,6 +207,7 @@ Partial Class Pagina3
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hotel Canino"
         CType(Me.ipbAnteriorFoto, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -193,13 +215,14 @@ Partial Class Pagina3
 
     Friend WithEvents ipbAnteriorFoto As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents Label17 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents horaretiro As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents Label22 As Label
-    Friend WithEvents horaentrega As ComboBox
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label20 As Label
+    Friend WithEvents lblHoraRetiro As Label
+    Friend WithEvents cboHoraRetiro As ComboBox
+    Friend WithEvents cboModoRetiro As ComboBox
+    Friend WithEvents cboModoEntrega As ComboBox
+    Friend WithEvents lblHoraEntrega As Label
+    Friend WithEvents cboHoraEntrega As ComboBox
+    Friend WithEvents lblModoRetiro As Label
+    Friend WithEvents lblModoEntrega As Label
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnSalir As FontAwesome.Sharp.IconPictureBox
 End Class

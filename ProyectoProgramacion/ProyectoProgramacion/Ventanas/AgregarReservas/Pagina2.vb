@@ -34,4 +34,8 @@ Public Class Pagina2
         Pagina1.Visible = True
         Pagina1.Location = getLocation()
     End Sub
+
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        Me.Close()
+    End Sub
 End Class

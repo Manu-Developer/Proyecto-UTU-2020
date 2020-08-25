@@ -58,7 +58,7 @@ Partial Class ModificarPrecioHabitacion
         Me.lblHabitacion.Name = "lblHabitacion"
         Me.lblHabitacion.Size = New System.Drawing.Size(106, 20)
         Me.lblHabitacion.TabIndex = 10
-        Me.lblHabitacion.Text = "ID Habitacion"
+        Me.lblHabitacion.Text = "ID Habitación"
         '
         'lblNombre
         '
@@ -69,7 +69,7 @@ Partial Class ModificarPrecioHabitacion
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(145, 20)
         Me.lblNombre.TabIndex = 12
-        Me.lblNombre.Text = "Nombre Habitacion"
+        Me.lblNombre.Text = "Nombre Habitación"
         '
         'txtNombre
         '
@@ -90,7 +90,7 @@ Partial Class ModificarPrecioHabitacion
         Me.lblPrecio.Name = "lblPrecio"
         Me.lblPrecio.Size = New System.Drawing.Size(133, 20)
         Me.lblPrecio.TabIndex = 14
-        Me.lblPrecio.Text = "Precio Habitacion"
+        Me.lblPrecio.Text = "Precio Habitación"
         '
         'txtPrecio
         '
@@ -125,7 +125,7 @@ Partial Class ModificarPrecioHabitacion
         '
         'ipbAnteriorFoto
         '
-        Me.ipbAnteriorFoto.BackColor = System.Drawing.SystemColors.Control
+        Me.ipbAnteriorFoto.BackColor = System.Drawing.Color.White
         Me.ipbAnteriorFoto.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ipbAnteriorFoto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.ipbAnteriorFoto.IconChar = FontAwesome.Sharp.IconChar.AngleLeft
@@ -139,7 +139,7 @@ Partial Class ModificarPrecioHabitacion
         '
         'ipbSiguienteFoto
         '
-        Me.ipbSiguienteFoto.BackColor = System.Drawing.SystemColors.Control
+        Me.ipbSiguienteFoto.BackColor = System.Drawing.Color.White
         Me.ipbSiguienteFoto.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ipbSiguienteFoto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.ipbSiguienteFoto.IconChar = FontAwesome.Sharp.IconChar.AngleRight
@@ -165,6 +165,7 @@ Partial Class ModificarPrecioHabitacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(720, 512)
         Me.Controls.Add(Me.lblCantidad)
         Me.Controls.Add(Me.txtCantidad)

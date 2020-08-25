@@ -82,7 +82,7 @@ Partial Class FormSucess
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(346, 87)
         Me.BunifuCustomLabel2.TabIndex = 2
-        Me.BunifuCustomLabel2.Text = "Accion completada exitosamente."
+        Me.BunifuCustomLabel2.Text = "Acción completada exitosamente."
         Me.BunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BunifuFlatButton1

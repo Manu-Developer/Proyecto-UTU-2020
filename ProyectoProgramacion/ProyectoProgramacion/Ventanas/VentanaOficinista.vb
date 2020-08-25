@@ -117,7 +117,7 @@ Public Class VentanaOficinista
 
     Private Sub btnCerarSesion_Click(sender As Object, e As EventArgs) Handles btnCerarSesion.Click
         Dim result As DialogResult = New DialogResult()
-        result = FormWarn.callFormWithMessage("AVISO", "Estas seguro de querer cerrar sesion?")
+        result = FormWarn.callFormWithMessage("AVISO", "¿Estas seguro de cerrar sesión?")
         If result = DialogResult.OK Then
             Me.Close()
             Login.Visible = True

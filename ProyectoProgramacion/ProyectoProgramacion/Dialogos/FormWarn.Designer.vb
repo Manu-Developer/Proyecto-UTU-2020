@@ -96,7 +96,7 @@ Partial Class FormWarn
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(346, 87)
         Me.BunifuCustomLabel2.TabIndex = 2
-        Me.BunifuCustomLabel2.Text = "Estas seguro de que quieres hacer esto?"
+        Me.BunifuCustomLabel2.Text = "¿Esta seguro de proceder?"
         Me.BunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BunifuFlatButton1

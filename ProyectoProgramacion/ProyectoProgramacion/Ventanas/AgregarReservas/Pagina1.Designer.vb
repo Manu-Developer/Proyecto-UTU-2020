@@ -24,31 +24,33 @@ Partial Class Pagina1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagina1))
         Me.ipbSiguienteFoto = New FontAwesome.Sharp.IconPictureBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.lblDatosCliente = New System.Windows.Forms.Label()
+        Me.dateSalida = New System.Windows.Forms.DateTimePicker()
+        Me.lblSalida = New System.Windows.Forms.Label()
+        Me.dateReservar = New System.Windows.Forms.DateTimePicker()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.lblCantidad = New System.Windows.Forms.Label()
-        Me.lblPrecio = New System.Windows.Forms.Label()
-        Me.txtPrecio = New System.Windows.Forms.TextBox()
+        Me.dateNacimiento = New System.Windows.Forms.DateTimePicker()
+        Me.lblReservar = New System.Windows.Forms.Label()
+        Me.lblCelular = New System.Windows.Forms.Label()
+        Me.txtCelular = New System.Windows.Forms.TextBox()
+        Me.lblDireccion = New System.Windows.Forms.Label()
+        Me.txtDireccion = New System.Windows.Forms.TextBox()
+        Me.lblNacimiento = New System.Windows.Forms.Label()
+        Me.lblApellido = New System.Windows.Forms.Label()
+        Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.lblHabitacion = New System.Windows.Forms.Label()
-        Me.txtIdHabitacion = New System.Windows.Forms.TextBox()
+        Me.lblCI = New System.Windows.Forms.Label()
+        Me.txtCI = New System.Windows.Forms.TextBox()
+        Me.btnSalir = New FontAwesome.Sharp.IconPictureBox()
         CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ipbSiguienteFoto
         '
-        Me.ipbSiguienteFoto.BackColor = System.Drawing.SystemColors.Control
+        Me.ipbSiguienteFoto.BackColor = System.Drawing.Color.White
         Me.ipbSiguienteFoto.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ipbSiguienteFoto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.ipbSiguienteFoto.IconChar = FontAwesome.Sharp.IconChar.AngleRight
@@ -60,41 +62,41 @@ Partial Class Pagina1
         Me.ipbSiguienteFoto.TabIndex = 24
         Me.ipbSiguienteFoto.TabStop = False
         '
-        'Label15
+        'lblDatosCliente
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(144, 9)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(168, 24)
-        Me.Label15.TabIndex = 65
-        Me.Label15.Text = "Datos del Cliente"
+        Me.lblDatosCliente.AutoSize = True
+        Me.lblDatosCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDatosCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblDatosCliente.Location = New System.Drawing.Point(124, 9)
+        Me.lblDatosCliente.Name = "lblDatosCliente"
+        Me.lblDatosCliente.Size = New System.Drawing.Size(168, 24)
+        Me.lblDatosCliente.TabIndex = 65
+        Me.lblDatosCliente.Text = "Datos del Cliente"
         '
-        'DateTimePicker3
+        'dateSalida
         '
-        Me.DateTimePicker3.Location = New System.Drawing.Point(222, 510)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(192, 20)
-        Me.DateTimePicker3.TabIndex = 83
+        Me.dateSalida.Location = New System.Drawing.Point(217, 498)
+        Me.dateSalida.Name = "dateSalida"
+        Me.dateSalida.Size = New System.Drawing.Size(192, 20)
+        Me.dateSalida.TabIndex = 83
         '
-        'Label14
+        'lblSalida
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(39, 511)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(121, 20)
-        Me.Label14.TabIndex = 82
-        Me.Label14.Text = "Fecha de salida"
+        Me.lblSalida.AutoSize = True
+        Me.lblSalida.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSalida.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblSalida.Location = New System.Drawing.Point(34, 499)
+        Me.lblSalida.Name = "lblSalida"
+        Me.lblSalida.Size = New System.Drawing.Size(121, 20)
+        Me.lblSalida.TabIndex = 82
+        Me.lblSalida.Text = "Fecha de salida"
         '
-        'DateTimePicker2
+        'dateReservar
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(222, 446)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(192, 20)
-        Me.DateTimePicker2.TabIndex = 81
+        Me.dateReservar.Location = New System.Drawing.Point(217, 434)
+        Me.dateReservar.Name = "dateReservar"
+        Me.dateReservar.Size = New System.Drawing.Size(192, 20)
+        Me.dateReservar.TabIndex = 81
         '
         'Label12
         '
@@ -117,105 +119,105 @@ Partial Class Pagina1
         Me.TextBox12.Size = New System.Drawing.Size(192, 29)
         Me.TextBox12.TabIndex = 79
         '
-        'DateTimePicker1
+        'dateNacimiento
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(222, 243)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(192, 20)
-        Me.DateTimePicker1.TabIndex = 78
-        Me.DateTimePicker1.TabStop = False
+        Me.dateNacimiento.Location = New System.Drawing.Point(217, 231)
+        Me.dateNacimiento.Name = "dateNacimiento"
+        Me.dateNacimiento.Size = New System.Drawing.Size(192, 20)
+        Me.dateNacimiento.TabIndex = 78
+        Me.dateNacimiento.TabStop = False
         '
-        'Label3
+        'lblReservar
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(39, 447)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(128, 20)
-        Me.Label3.TabIndex = 77
-        Me.Label3.Text = "Fecha a reservar"
+        Me.lblReservar.AutoSize = True
+        Me.lblReservar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReservar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblReservar.Location = New System.Drawing.Point(34, 435)
+        Me.lblReservar.Name = "lblReservar"
+        Me.lblReservar.Size = New System.Drawing.Size(128, 20)
+        Me.lblReservar.TabIndex = 77
+        Me.lblReservar.Text = "Fecha a reservar"
         '
-        'Label2
+        'lblCelular
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(39, 381)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(140, 20)
-        Me.Label2.TabIndex = 76
-        Me.Label2.Text = "Numero de Celular"
+        Me.lblCelular.AutoSize = True
+        Me.lblCelular.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCelular.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblCelular.Location = New System.Drawing.Point(34, 369)
+        Me.lblCelular.Name = "lblCelular"
+        Me.lblCelular.Size = New System.Drawing.Size(140, 20)
+        Me.lblCelular.TabIndex = 76
+        Me.lblCelular.Text = "Numero de Celular"
         '
-        'TextBox2
+        'txtCelular
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.TextBox2.Location = New System.Drawing.Point(222, 374)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(192, 29)
-        Me.TextBox2.TabIndex = 75
+        Me.txtCelular.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCelular.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.txtCelular.Location = New System.Drawing.Point(217, 362)
+        Me.txtCelular.Multiline = True
+        Me.txtCelular.Name = "txtCelular"
+        Me.txtCelular.Size = New System.Drawing.Size(192, 29)
+        Me.txtCelular.TabIndex = 75
         '
-        'Label1
+        'lblDireccion
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(39, 315)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 20)
-        Me.Label1.TabIndex = 74
-        Me.Label1.Text = "Dirección"
+        Me.lblDireccion.AutoSize = True
+        Me.lblDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDireccion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblDireccion.Location = New System.Drawing.Point(34, 303)
+        Me.lblDireccion.Name = "lblDireccion"
+        Me.lblDireccion.Size = New System.Drawing.Size(75, 20)
+        Me.lblDireccion.TabIndex = 74
+        Me.lblDireccion.Text = "Dirección"
         '
-        'TextBox1
+        'txtDireccion
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(222, 308)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(192, 29)
-        Me.TextBox1.TabIndex = 73
+        Me.txtDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDireccion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.txtDireccion.Location = New System.Drawing.Point(217, 296)
+        Me.txtDireccion.Multiline = True
+        Me.txtDireccion.Name = "txtDireccion"
+        Me.txtDireccion.Size = New System.Drawing.Size(192, 29)
+        Me.txtDireccion.TabIndex = 73
         '
-        'lblCantidad
+        'lblNacimiento
         '
-        Me.lblCantidad.AutoSize = True
-        Me.lblCantidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCantidad.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblCantidad.Location = New System.Drawing.Point(39, 250)
-        Me.lblCantidad.Name = "lblCantidad"
-        Me.lblCantidad.Size = New System.Drawing.Size(159, 20)
-        Me.lblCantidad.TabIndex = 72
-        Me.lblCantidad.Text = "Fecha de Nacimiento"
+        Me.lblNacimiento.AutoSize = True
+        Me.lblNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNacimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblNacimiento.Location = New System.Drawing.Point(34, 238)
+        Me.lblNacimiento.Name = "lblNacimiento"
+        Me.lblNacimiento.Size = New System.Drawing.Size(159, 20)
+        Me.lblNacimiento.TabIndex = 72
+        Me.lblNacimiento.Text = "Fecha de Nacimiento"
         '
-        'lblPrecio
+        'lblApellido
         '
-        Me.lblPrecio.AutoSize = True
-        Me.lblPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblPrecio.Location = New System.Drawing.Point(39, 195)
-        Me.lblPrecio.Name = "lblPrecio"
-        Me.lblPrecio.Size = New System.Drawing.Size(143, 20)
-        Me.lblPrecio.TabIndex = 71
-        Me.lblPrecio.Text = "Apellido del Cliente"
+        Me.lblApellido.AutoSize = True
+        Me.lblApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblApellido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblApellido.Location = New System.Drawing.Point(34, 183)
+        Me.lblApellido.Name = "lblApellido"
+        Me.lblApellido.Size = New System.Drawing.Size(143, 20)
+        Me.lblApellido.TabIndex = 71
+        Me.lblApellido.Text = "Apellido del Cliente"
         '
-        'txtPrecio
+        'txtApellido
         '
-        Me.txtPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPrecio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtPrecio.Location = New System.Drawing.Point(222, 186)
-        Me.txtPrecio.Multiline = True
-        Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(192, 29)
-        Me.txtPrecio.TabIndex = 70
+        Me.txtApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtApellido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.txtApellido.Location = New System.Drawing.Point(217, 174)
+        Me.txtApellido.Multiline = True
+        Me.txtApellido.Name = "txtApellido"
+        Me.txtApellido.Size = New System.Drawing.Size(192, 29)
+        Me.txtApellido.TabIndex = 70
         '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblNombre.Location = New System.Drawing.Point(39, 136)
+        Me.lblNombre.Location = New System.Drawing.Point(34, 124)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(143, 20)
         Me.lblNombre.TabIndex = 69
@@ -225,57 +227,76 @@ Partial Class Pagina1
         '
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtNombre.Location = New System.Drawing.Point(222, 127)
+        Me.txtNombre.Location = New System.Drawing.Point(217, 115)
         Me.txtNombre.Multiline = True
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(192, 29)
         Me.txtNombre.TabIndex = 68
         '
-        'lblHabitacion
+        'lblCI
         '
-        Me.lblHabitacion.AutoSize = True
-        Me.lblHabitacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHabitacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblHabitacion.Location = New System.Drawing.Point(39, 74)
-        Me.lblHabitacion.Name = "lblHabitacion"
-        Me.lblHabitacion.Size = New System.Drawing.Size(103, 20)
-        Me.lblHabitacion.TabIndex = 67
-        Me.lblHabitacion.Text = "CI del Cliente"
+        Me.lblCI.AutoSize = True
+        Me.lblCI.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCI.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblCI.Location = New System.Drawing.Point(34, 62)
+        Me.lblCI.Name = "lblCI"
+        Me.lblCI.Size = New System.Drawing.Size(103, 20)
+        Me.lblCI.TabIndex = 67
+        Me.lblCI.Text = "CI del Cliente"
         '
-        'txtIdHabitacion
+        'txtCI
         '
-        Me.txtIdHabitacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIdHabitacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtIdHabitacion.Location = New System.Drawing.Point(222, 74)
-        Me.txtIdHabitacion.Multiline = True
-        Me.txtIdHabitacion.Name = "txtIdHabitacion"
-        Me.txtIdHabitacion.Size = New System.Drawing.Size(192, 29)
-        Me.txtIdHabitacion.TabIndex = 66
+        Me.txtCI.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCI.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.txtCI.Location = New System.Drawing.Point(217, 62)
+        Me.txtCI.Multiline = True
+        Me.txtCI.Name = "txtCI"
+        Me.txtCI.Size = New System.Drawing.Size(192, 29)
+        Me.txtCI.TabIndex = 66
+        '
+        'btnSalir
+        '
+        Me.btnSalir.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSalir.BackColor = System.Drawing.Color.White
+        Me.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSalir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.btnSalir.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnSalir.IconSize = 34
+        Me.btnSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnSalir.Location = New System.Drawing.Point(420, 0)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(32, 32)
+        Me.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnSalir.TabIndex = 94
+        Me.btnSalir.TabStop = False
         '
         'Pagina1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(452, 667)
-        Me.Controls.Add(Me.DateTimePicker3)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.DateTimePicker2)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.dateSalida)
+        Me.Controls.Add(Me.lblSalida)
+        Me.Controls.Add(Me.dateReservar)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.lblCantidad)
-        Me.Controls.Add(Me.lblPrecio)
-        Me.Controls.Add(Me.txtPrecio)
+        Me.Controls.Add(Me.dateNacimiento)
+        Me.Controls.Add(Me.lblReservar)
+        Me.Controls.Add(Me.lblCelular)
+        Me.Controls.Add(Me.txtCelular)
+        Me.Controls.Add(Me.lblDireccion)
+        Me.Controls.Add(Me.txtDireccion)
+        Me.Controls.Add(Me.lblNacimiento)
+        Me.Controls.Add(Me.lblApellido)
+        Me.Controls.Add(Me.txtApellido)
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.lblHabitacion)
-        Me.Controls.Add(Me.txtIdHabitacion)
-        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.lblCI)
+        Me.Controls.Add(Me.txtCI)
+        Me.Controls.Add(Me.lblDatosCliente)
         Me.Controls.Add(Me.ipbSiguienteFoto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -283,29 +304,31 @@ Partial Class Pagina1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hotel Canino"
         CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents ipbSiguienteFoto As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents DateTimePicker3 As DateTimePicker
-    Friend WithEvents Label14 As Label
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents lblDatosCliente As Label
+    Friend WithEvents dateSalida As DateTimePicker
+    Friend WithEvents lblSalida As Label
+    Friend WithEvents dateReservar As DateTimePicker
     Friend WithEvents Label12 As Label
     Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents lblCantidad As Label
-    Friend WithEvents lblPrecio As Label
-    Friend WithEvents txtPrecio As TextBox
+    Friend WithEvents dateNacimiento As DateTimePicker
+    Friend WithEvents lblReservar As Label
+    Friend WithEvents lblCelular As Label
+    Friend WithEvents txtCelular As TextBox
+    Friend WithEvents lblDireccion As Label
+    Friend WithEvents txtDireccion As TextBox
+    Friend WithEvents lblNacimiento As Label
+    Friend WithEvents lblApellido As Label
+    Friend WithEvents txtApellido As TextBox
     Friend WithEvents lblNombre As Label
     Friend WithEvents txtNombre As TextBox
-    Friend WithEvents lblHabitacion As Label
-    Friend WithEvents txtIdHabitacion As TextBox
+    Friend WithEvents lblCI As Label
+    Friend WithEvents txtCI As TextBox
+    Friend WithEvents btnSalir As FontAwesome.Sharp.IconPictureBox
 End Class
