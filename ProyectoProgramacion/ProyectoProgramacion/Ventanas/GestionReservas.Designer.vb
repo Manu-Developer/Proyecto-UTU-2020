@@ -28,18 +28,34 @@ Partial Class GestionReservas
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GestionReservas))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tpago = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.bntAgregarReserva1 = New FontAwesome.Sharp.IconButton()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.IconButton2 = New FontAwesome.Sharp.IconButton()
         Me.image = New FontAwesome.Sharp.IconButton()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
+        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nac = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tpago = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaEntrada = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaSalida = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Habitacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreMascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MascotaNac = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Vacunas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dosis = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Horario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Peso = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Raza = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Alimetancion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ModoEntrega = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HorarioSalida = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Retiro = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Entrega = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -66,7 +82,7 @@ Partial Class GestionReservas
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeight = 27
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.Nombre, Me.Apellido, Me.Telefono, Me.Direccion, Me.Precio, Me.tpago})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.Nombre, Me.Apellido, Me.Nac, Me.Telefono, Me.Direccion, Me.Precio, Me.tpago, Me.FechaEntrada, Me.FechaSalida, Me.Habitacion, Me.NombreMascota, Me.MascotaNac, Me.Vacunas, Me.Dosis, Me.Horario, Me.Peso, Me.Raza, Me.Alimetancion, Me.ModoEntrega, Me.HorarioSalida, Me.Retiro, Me.Entrega})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -100,60 +116,6 @@ Partial Class GestionReservas
         Me.DataGridView1.ShowEditingIcon = False
         Me.DataGridView1.Size = New System.Drawing.Size(928, 430)
         Me.DataGridView1.TabIndex = 2
-        '
-        'id
-        '
-        Me.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.id.HeaderText = "ID"
-        Me.id.Name = "id"
-        Me.id.ReadOnly = True
-        Me.id.Width = 47
-        '
-        'Nombre
-        '
-        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        Me.Nombre.Width = 88
-        '
-        'Apellido
-        '
-        Me.Apellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Apellido.HeaderText = "Apellido"
-        Me.Apellido.Name = "Apellido"
-        Me.Apellido.ReadOnly = True
-        Me.Apellido.Width = 90
-        '
-        'Telefono
-        '
-        Me.Telefono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.ReadOnly = True
-        Me.Telefono.Width = 96
-        '
-        'Direccion
-        '
-        Me.Direccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        '
-        'Precio
-        '
-        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Precio.HeaderText = "Precio"
-        Me.Precio.Name = "Precio"
-        Me.Precio.ReadOnly = True
-        Me.Precio.Width = 78
-        '
-        'tpago
-        '
-        Me.tpago.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.tpago.HeaderText = "Pago"
-        Me.tpago.Name = "tpago"
-        Me.tpago.ReadOnly = True
         '
         'bntAgregarReserva1
         '
@@ -250,6 +212,157 @@ Partial Class GestionReservas
         Me.txtBuscar.Size = New System.Drawing.Size(654, 32)
         Me.txtBuscar.TabIndex = 11
         '
+        'id
+        '
+        Me.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.id.HeaderText = "ID"
+        Me.id.Name = "id"
+        Me.id.ReadOnly = True
+        Me.id.Width = 47
+        '
+        'Nombre
+        '
+        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 88
+        '
+        'Apellido
+        '
+        Me.Apellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Apellido.HeaderText = "Apellido"
+        Me.Apellido.Name = "Apellido"
+        Me.Apellido.ReadOnly = True
+        Me.Apellido.Width = 90
+        '
+        'Nac
+        '
+        Me.Nac.HeaderText = "Nac"
+        Me.Nac.Name = "Nac"
+        Me.Nac.ReadOnly = True
+        '
+        'Telefono
+        '
+        Me.Telefono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Telefono.HeaderText = "Telefono"
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.ReadOnly = True
+        Me.Telefono.Width = 96
+        '
+        'Direccion
+        '
+        Me.Direccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        '
+        'Precio
+        '
+        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Precio.HeaderText = "Precio"
+        Me.Precio.Name = "Precio"
+        Me.Precio.ReadOnly = True
+        Me.Precio.Width = 78
+        '
+        'tpago
+        '
+        Me.tpago.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.tpago.HeaderText = "Pago"
+        Me.tpago.Name = "tpago"
+        Me.tpago.ReadOnly = True
+        Me.tpago.Width = 69
+        '
+        'FechaEntrada
+        '
+        Me.FechaEntrada.HeaderText = "Entrada"
+        Me.FechaEntrada.Name = "FechaEntrada"
+        Me.FechaEntrada.ReadOnly = True
+        '
+        'FechaSalida
+        '
+        Me.FechaSalida.HeaderText = "Salida"
+        Me.FechaSalida.Name = "FechaSalida"
+        Me.FechaSalida.ReadOnly = True
+        '
+        'Habitacion
+        '
+        Me.Habitacion.HeaderText = "Habitacion"
+        Me.Habitacion.Name = "Habitacion"
+        Me.Habitacion.ReadOnly = True
+        '
+        'NombreMascota
+        '
+        Me.NombreMascota.HeaderText = "Mascota"
+        Me.NombreMascota.Name = "NombreMascota"
+        Me.NombreMascota.ReadOnly = True
+        '
+        'MascotaNac
+        '
+        Me.MascotaNac.HeaderText = "MascotaNac"
+        Me.MascotaNac.Name = "MascotaNac"
+        Me.MascotaNac.ReadOnly = True
+        '
+        'Vacunas
+        '
+        Me.Vacunas.HeaderText = "Vacunas"
+        Me.Vacunas.Name = "Vacunas"
+        Me.Vacunas.ReadOnly = True
+        '
+        'Dosis
+        '
+        Me.Dosis.HeaderText = "Dosis"
+        Me.Dosis.Name = "Dosis"
+        Me.Dosis.ReadOnly = True
+        '
+        'Horario
+        '
+        Me.Horario.HeaderText = "Horario"
+        Me.Horario.Name = "Horario"
+        Me.Horario.ReadOnly = True
+        '
+        'Peso
+        '
+        Me.Peso.HeaderText = "Peso"
+        Me.Peso.Name = "Peso"
+        Me.Peso.ReadOnly = True
+        '
+        'Raza
+        '
+        Me.Raza.HeaderText = "Raza"
+        Me.Raza.Name = "Raza"
+        Me.Raza.ReadOnly = True
+        '
+        'Alimetancion
+        '
+        Me.Alimetancion.HeaderText = "Alimetancion"
+        Me.Alimetancion.Name = "Alimetancion"
+        Me.Alimetancion.ReadOnly = True
+        '
+        'ModoEntrega
+        '
+        Me.ModoEntrega.HeaderText = "Entrega"
+        Me.ModoEntrega.Name = "ModoEntrega"
+        Me.ModoEntrega.ReadOnly = True
+        '
+        'HorarioSalida
+        '
+        Me.HorarioSalida.HeaderText = "Salida"
+        Me.HorarioSalida.Name = "HorarioSalida"
+        Me.HorarioSalida.ReadOnly = True
+        '
+        'Retiro
+        '
+        Me.Retiro.HeaderText = "Retiro"
+        Me.Retiro.Name = "Retiro"
+        Me.Retiro.ReadOnly = True
+        '
+        'Entrega
+        '
+        Me.Entrega.HeaderText = "Entrega"
+        Me.Entrega.Name = "Entrega"
+        Me.Entrega.ReadOnly = True
+        '
         'GestionReservas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -272,16 +385,32 @@ Partial Class GestionReservas
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents Nombre As DataGridViewTextBoxColumn
-    Friend WithEvents Apellido As DataGridViewTextBoxColumn
-    Friend WithEvents Telefono As DataGridViewTextBoxColumn
-    Friend WithEvents Direccion As DataGridViewTextBoxColumn
-    Friend WithEvents Precio As DataGridViewTextBoxColumn
-    Friend WithEvents tpago As DataGridViewTextBoxColumn
     Friend WithEvents bntAgregarReserva1 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
     Friend WithEvents image As FontAwesome.Sharp.IconButton
     Friend WithEvents txtBuscar As TextBox
+    Friend WithEvents id As DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As DataGridViewTextBoxColumn
+    Friend WithEvents Apellido As DataGridViewTextBoxColumn
+    Friend WithEvents Nac As DataGridViewTextBoxColumn
+    Friend WithEvents Telefono As DataGridViewTextBoxColumn
+    Friend WithEvents Direccion As DataGridViewTextBoxColumn
+    Friend WithEvents Precio As DataGridViewTextBoxColumn
+    Friend WithEvents tpago As DataGridViewTextBoxColumn
+    Friend WithEvents FechaEntrada As DataGridViewTextBoxColumn
+    Friend WithEvents FechaSalida As DataGridViewTextBoxColumn
+    Friend WithEvents Habitacion As DataGridViewTextBoxColumn
+    Friend WithEvents NombreMascota As DataGridViewTextBoxColumn
+    Friend WithEvents MascotaNac As DataGridViewTextBoxColumn
+    Friend WithEvents Vacunas As DataGridViewTextBoxColumn
+    Friend WithEvents Dosis As DataGridViewTextBoxColumn
+    Friend WithEvents Horario As DataGridViewTextBoxColumn
+    Friend WithEvents Peso As DataGridViewTextBoxColumn
+    Friend WithEvents Raza As DataGridViewTextBoxColumn
+    Friend WithEvents Alimetancion As DataGridViewTextBoxColumn
+    Friend WithEvents ModoEntrega As DataGridViewTextBoxColumn
+    Friend WithEvents HorarioSalida As DataGridViewTextBoxColumn
+    Friend WithEvents Retiro As DataGridViewTextBoxColumn
+    Friend WithEvents Entrega As DataGridViewTextBoxColumn
 End Class
