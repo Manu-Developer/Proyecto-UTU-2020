@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Pagina2
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,34 +20,31 @@ Partial Class Pagina2
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagina2))
         Me.ipbAnteriorFoto = New FontAwesome.Sharp.IconPictureBox()
-        Me.ipbSiguienteFoto = New FontAwesome.Sharp.IconPictureBox()
-        Me.lblDatosMascota = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.lblRaza = New System.Windows.Forms.Label()
-        Me.txtRaza = New System.Windows.Forms.TextBox()
-        Me.lblPeso = New System.Windows.Forms.Label()
-        Me.txtPeso = New System.Windows.Forms.TextBox()
-        Me.lblMedicina = New System.Windows.Forms.Label()
-        Me.txtMedicina = New System.Windows.Forms.TextBox()
-        Me.lblDosis = New System.Windows.Forms.Label()
-        Me.txtDosis = New System.Windows.Forms.TextBox()
-        Me.lblMedicamentos = New System.Windows.Forms.Label()
-        Me.txtMedicamentos = New System.Windows.Forms.TextBox()
-        Me.lblVacunas = New System.Windows.Forms.Label()
-        Me.txtVacunas = New System.Windows.Forms.TextBox()
-        Me.lblNacimiento = New System.Windows.Forms.Label()
-        Me.txtNacimiento = New System.Windows.Forms.TextBox()
-        Me.lblNombreMascota = New System.Windows.Forms.Label()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.lblHoraRetiro = New System.Windows.Forms.Label()
+        Me.cboHoraRetiro = New System.Windows.Forms.ComboBox()
+        Me.cboModoRetiro = New System.Windows.Forms.ComboBox()
+        Me.cboModoEntrega = New System.Windows.Forms.ComboBox()
+        Me.lblHoraEntrega = New System.Windows.Forms.Label()
+        Me.cboHoraEntrega = New System.Windows.Forms.ComboBox()
+        Me.lblModoRetiro = New System.Windows.Forms.Label()
+        Me.lblModoEntrega = New System.Windows.Forms.Label()
         Me.btnSalir = New FontAwesome.Sharp.IconPictureBox()
+        Me.confirm = New FontAwesome.Sharp.IconButton()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.oficinistaSalir = New FontAwesome.Sharp.IconPictureBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.lblNacimiento = New System.Windows.Forms.Label()
+        Me.lbCosto = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.ipbAnteriorFoto, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        CType(Me.oficinistaSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ipbAnteriorFoto
@@ -58,225 +55,106 @@ Partial Class Pagina2
         Me.ipbAnteriorFoto.IconChar = FontAwesome.Sharp.IconChar.AngleLeft
         Me.ipbAnteriorFoto.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.ipbAnteriorFoto.IconSize = 34
-        Me.ipbAnteriorFoto.Location = New System.Drawing.Point(12, 621)
+        Me.ipbAnteriorFoto.Location = New System.Drawing.Point(12, 479)
         Me.ipbAnteriorFoto.Name = "ipbAnteriorFoto"
         Me.ipbAnteriorFoto.Size = New System.Drawing.Size(38, 34)
-        Me.ipbAnteriorFoto.TabIndex = 24
+        Me.ipbAnteriorFoto.TabIndex = 25
         Me.ipbAnteriorFoto.TabStop = False
         '
-        'ipbSiguienteFoto
+        'Label17
         '
-        Me.ipbSiguienteFoto.BackColor = System.Drawing.Color.White
-        Me.ipbSiguienteFoto.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ipbSiguienteFoto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbSiguienteFoto.IconChar = FontAwesome.Sharp.IconChar.AngleRight
-        Me.ipbSiguienteFoto.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbSiguienteFoto.IconSize = 34
-        Me.ipbSiguienteFoto.Location = New System.Drawing.Point(402, 621)
-        Me.ipbSiguienteFoto.Name = "ipbSiguienteFoto"
-        Me.ipbSiguienteFoto.Size = New System.Drawing.Size(38, 34)
-        Me.ipbSiguienteFoto.TabIndex = 23
-        Me.ipbSiguienteFoto.TabStop = False
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.White
+        Me.Label17.Location = New System.Drawing.Point(146, 9)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(177, 24)
+        Me.Label17.TabIndex = 67
+        Me.Label17.Text = "Datos Adicionales"
         '
-        'lblDatosMascota
+        'lblHoraRetiro
         '
-        Me.lblDatosMascota.AutoSize = True
-        Me.lblDatosMascota.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDatosMascota.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblDatosMascota.Location = New System.Drawing.Point(124, 9)
-        Me.lblDatosMascota.Name = "lblDatosMascota"
-        Me.lblDatosMascota.Size = New System.Drawing.Size(175, 24)
-        Me.lblDatosMascota.TabIndex = 66
-        Me.lblDatosMascota.Text = "Datos de Mascota"
+        Me.lblHoraRetiro.AutoSize = True
+        Me.lblHoraRetiro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoraRetiro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblHoraRetiro.Location = New System.Drawing.Point(41, 164)
+        Me.lblHoraRetiro.Name = "lblHoraRetiro"
+        Me.lblHoraRetiro.Size = New System.Drawing.Size(113, 20)
+        Me.lblHoraRetiro.TabIndex = 88
+        Me.lblHoraRetiro.Text = "Hora de Retiro"
         '
-        'Label21
+        'cboHoraRetiro
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label21.Location = New System.Drawing.Point(35, 558)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(163, 20)
-        Me.Label21.TabIndex = 91
-        Me.Label21.Text = "Alimentación Habitual"
+        Me.cboHoraRetiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cboHoraRetiro.FormattingEnabled = True
+        Me.cboHoraRetiro.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
+        Me.cboHoraRetiro.Location = New System.Drawing.Point(219, 163)
+        Me.cboHoraRetiro.Name = "cboHoraRetiro"
+        Me.cboHoraRetiro.Size = New System.Drawing.Size(192, 21)
+        Me.cboHoraRetiro.TabIndex = 87
         '
-        'TextBox15
+        'cboModoRetiro
         '
-        Me.TextBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.TextBox15.Location = New System.Drawing.Point(218, 551)
-        Me.TextBox15.Multiline = True
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(192, 29)
-        Me.TextBox15.TabIndex = 90
+        Me.cboModoRetiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cboModoRetiro.FormattingEnabled = True
+        Me.cboModoRetiro.Items.AddRange(New Object() {"Entrega por Cliente", "Entrega por Camioneta"})
+        Me.cboModoRetiro.Location = New System.Drawing.Point(219, 126)
+        Me.cboModoRetiro.Name = "cboModoRetiro"
+        Me.cboModoRetiro.Size = New System.Drawing.Size(192, 21)
+        Me.cboModoRetiro.TabIndex = 86
         '
-        'lblRaza
+        'cboModoEntrega
         '
-        Me.lblRaza.AutoSize = True
-        Me.lblRaza.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRaza.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblRaza.Location = New System.Drawing.Point(33, 498)
-        Me.lblRaza.Name = "lblRaza"
-        Me.lblRaza.Size = New System.Drawing.Size(47, 20)
-        Me.lblRaza.TabIndex = 89
-        Me.lblRaza.Text = "Raza"
+        Me.cboModoEntrega.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cboModoEntrega.FormattingEnabled = True
+        Me.cboModoEntrega.Items.AddRange(New Object() {"Entrega por Cliente", "Entrega por Camioneta"})
+        Me.cboModoEntrega.Location = New System.Drawing.Point(219, 61)
+        Me.cboModoEntrega.Name = "cboModoEntrega"
+        Me.cboModoEntrega.Size = New System.Drawing.Size(192, 21)
+        Me.cboModoEntrega.TabIndex = 85
         '
-        'txtRaza
+        'lblHoraEntrega
         '
-        Me.txtRaza.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRaza.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtRaza.Location = New System.Drawing.Point(216, 491)
-        Me.txtRaza.Multiline = True
-        Me.txtRaza.Name = "txtRaza"
-        Me.txtRaza.Size = New System.Drawing.Size(192, 29)
-        Me.txtRaza.TabIndex = 88
+        Me.lblHoraEntrega.AutoSize = True
+        Me.lblHoraEntrega.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoraEntrega.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblHoraEntrega.Location = New System.Drawing.Point(41, 95)
+        Me.lblHoraEntrega.Name = "lblHoraEntrega"
+        Me.lblHoraEntrega.Size = New System.Drawing.Size(127, 20)
+        Me.lblHoraEntrega.TabIndex = 84
+        Me.lblHoraEntrega.Text = "Hora de Entrega"
         '
-        'lblPeso
+        'cboHoraEntrega
         '
-        Me.lblPeso.AutoSize = True
-        Me.lblPeso.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPeso.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblPeso.Location = New System.Drawing.Point(33, 434)
-        Me.lblPeso.Name = "lblPeso"
-        Me.lblPeso.Size = New System.Drawing.Size(45, 20)
-        Me.lblPeso.TabIndex = 87
-        Me.lblPeso.Text = "Peso"
+        Me.cboHoraEntrega.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cboHoraEntrega.FormattingEnabled = True
+        Me.cboHoraEntrega.Items.AddRange(New Object() {"Entre 11 AM y 12 AM", "Entre 12 AM y 13 PM", "Entre 14 PM y 15 PM", "Entre 15 PM y 16:30 PM", "Entre 17 PM y 18 PM", "Entre 18 PM y 19 PM"})
+        Me.cboHoraEntrega.Location = New System.Drawing.Point(219, 94)
+        Me.cboHoraEntrega.Name = "cboHoraEntrega"
+        Me.cboHoraEntrega.Size = New System.Drawing.Size(192, 21)
+        Me.cboHoraEntrega.TabIndex = 83
         '
-        'txtPeso
+        'lblModoRetiro
         '
-        Me.txtPeso.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPeso.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtPeso.Location = New System.Drawing.Point(216, 427)
-        Me.txtPeso.Multiline = True
-        Me.txtPeso.Name = "txtPeso"
-        Me.txtPeso.Size = New System.Drawing.Size(192, 29)
-        Me.txtPeso.TabIndex = 86
+        Me.lblModoRetiro.AutoSize = True
+        Me.lblModoRetiro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModoRetiro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblModoRetiro.Location = New System.Drawing.Point(41, 127)
+        Me.lblModoRetiro.Name = "lblModoRetiro"
+        Me.lblModoRetiro.Size = New System.Drawing.Size(118, 20)
+        Me.lblModoRetiro.TabIndex = 82
+        Me.lblModoRetiro.Text = "Modo de Retiro"
         '
-        'lblMedicina
+        'lblModoEntrega
         '
-        Me.lblMedicina.AutoSize = True
-        Me.lblMedicina.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMedicina.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblMedicina.Location = New System.Drawing.Point(33, 368)
-        Me.lblMedicina.Name = "lblMedicina"
-        Me.lblMedicina.Size = New System.Drawing.Size(150, 20)
-        Me.lblMedicina.TabIndex = 85
-        Me.lblMedicina.Text = "Horario de Medicina"
-        '
-        'txtMedicina
-        '
-        Me.txtMedicina.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMedicina.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtMedicina.Location = New System.Drawing.Point(216, 361)
-        Me.txtMedicina.Multiline = True
-        Me.txtMedicina.Name = "txtMedicina"
-        Me.txtMedicina.Size = New System.Drawing.Size(192, 29)
-        Me.txtMedicina.TabIndex = 84
-        '
-        'lblDosis
-        '
-        Me.lblDosis.AutoSize = True
-        Me.lblDosis.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDosis.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblDosis.Location = New System.Drawing.Point(33, 302)
-        Me.lblDosis.Name = "lblDosis"
-        Me.lblDosis.Size = New System.Drawing.Size(49, 20)
-        Me.lblDosis.TabIndex = 83
-        Me.lblDosis.Text = "Dosis"
-        '
-        'txtDosis
-        '
-        Me.txtDosis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDosis.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtDosis.Location = New System.Drawing.Point(216, 295)
-        Me.txtDosis.Multiline = True
-        Me.txtDosis.Name = "txtDosis"
-        Me.txtDosis.Size = New System.Drawing.Size(192, 29)
-        Me.txtDosis.TabIndex = 82
-        '
-        'lblMedicamentos
-        '
-        Me.lblMedicamentos.AutoSize = True
-        Me.lblMedicamentos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMedicamentos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblMedicamentos.Location = New System.Drawing.Point(33, 237)
-        Me.lblMedicamentos.Name = "lblMedicamentos"
-        Me.lblMedicamentos.Size = New System.Drawing.Size(113, 20)
-        Me.lblMedicamentos.TabIndex = 81
-        Me.lblMedicamentos.Text = "Medicamentos"
-        '
-        'txtMedicamentos
-        '
-        Me.txtMedicamentos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMedicamentos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtMedicamentos.Location = New System.Drawing.Point(216, 230)
-        Me.txtMedicamentos.Multiline = True
-        Me.txtMedicamentos.Name = "txtMedicamentos"
-        Me.txtMedicamentos.Size = New System.Drawing.Size(192, 29)
-        Me.txtMedicamentos.TabIndex = 80
-        '
-        'lblVacunas
-        '
-        Me.lblVacunas.AutoSize = True
-        Me.lblVacunas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblVacunas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblVacunas.Location = New System.Drawing.Point(33, 182)
-        Me.lblVacunas.Name = "lblVacunas"
-        Me.lblVacunas.Size = New System.Drawing.Size(72, 20)
-        Me.lblVacunas.TabIndex = 79
-        Me.lblVacunas.Text = "Vacunas"
-        '
-        'txtVacunas
-        '
-        Me.txtVacunas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtVacunas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtVacunas.Location = New System.Drawing.Point(216, 173)
-        Me.txtVacunas.Multiline = True
-        Me.txtVacunas.Name = "txtVacunas"
-        Me.txtVacunas.Size = New System.Drawing.Size(192, 29)
-        Me.txtVacunas.TabIndex = 78
-        '
-        'lblNacimiento
-        '
-        Me.lblNacimiento.AutoSize = True
-        Me.lblNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNacimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblNacimiento.Location = New System.Drawing.Point(33, 123)
-        Me.lblNacimiento.Name = "lblNacimiento"
-        Me.lblNacimiento.Size = New System.Drawing.Size(137, 20)
-        Me.lblNacimiento.TabIndex = 77
-        Me.lblNacimiento.Text = "Fecha Nacimiento"
-        '
-        'txtNacimiento
-        '
-        Me.txtNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNacimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtNacimiento.Location = New System.Drawing.Point(216, 114)
-        Me.txtNacimiento.Multiline = True
-        Me.txtNacimiento.Name = "txtNacimiento"
-        Me.txtNacimiento.Size = New System.Drawing.Size(192, 29)
-        Me.txtNacimiento.TabIndex = 76
-        '
-        'lblNombreMascota
-        '
-        Me.lblNombreMascota.AutoSize = True
-        Me.lblNombreMascota.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombreMascota.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblNombreMascota.Location = New System.Drawing.Point(33, 61)
-        Me.lblNombreMascota.Name = "lblNombreMascota"
-        Me.lblNombreMascota.Size = New System.Drawing.Size(152, 20)
-        Me.lblNombreMascota.TabIndex = 75
-        Me.lblNombreMascota.Text = "Nombre de Mascota"
-        '
-        'txtNombre
-        '
-        Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtNombre.Location = New System.Drawing.Point(218, 61)
-        Me.txtNombre.Multiline = True
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(192, 29)
-        Me.txtNombre.TabIndex = 92
+        Me.lblModoEntrega.AutoSize = True
+        Me.lblModoEntrega.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModoEntrega.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblModoEntrega.Location = New System.Drawing.Point(41, 62)
+        Me.lblModoEntrega.Name = "lblModoEntrega"
+        Me.lblModoEntrega.Size = New System.Drawing.Size(132, 20)
+        Me.lblModoEntrega.TabIndex = 81
+        Me.lblModoEntrega.Text = "Modo de Entrega"
         '
         'btnSalir
         '
@@ -292,70 +170,155 @@ Partial Class Pagina2
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(32, 32)
         Me.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnSalir.TabIndex = 93
+        Me.btnSalir.TabIndex = 90
         Me.btnSalir.TabStop = False
         '
-        'Pagina2
+        'confirm
+        '
+        Me.confirm.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.confirm.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.confirm.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.confirm.FlatAppearance.BorderSize = 0
+        Me.confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.confirm.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.confirm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.confirm.ForeColor = System.Drawing.Color.White
+        Me.confirm.IconChar = FontAwesome.Sharp.IconChar.Paw
+        Me.confirm.IconColor = System.Drawing.Color.White
+        Me.confirm.IconSize = 25
+        Me.confirm.Location = New System.Drawing.Point(150, 476)
+        Me.confirm.Name = "confirm"
+        Me.confirm.Rotation = 0R
+        Me.confirm.Size = New System.Drawing.Size(174, 37)
+        Me.confirm.TabIndex = 96
+        Me.confirm.Text = "Confirmar"
+        Me.confirm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.confirm.UseVisualStyleBackColor = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.oficinistaSalir)
+        Me.Panel3.Controls.Add(Me.Label17)
+        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(452, 42)
+        Me.Panel3.TabIndex = 101
+        '
+        'oficinistaSalir
+        '
+        Me.oficinistaSalir.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.oficinistaSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.oficinistaSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.oficinistaSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.oficinistaSalir.IconColor = System.Drawing.Color.White
+        Me.oficinistaSalir.IconSize = 34
+        Me.oficinistaSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.oficinistaSalir.Location = New System.Drawing.Point(414, 5)
+        Me.oficinistaSalir.Name = "oficinistaSalir"
+        Me.oficinistaSalir.Size = New System.Drawing.Size(32, 32)
+        Me.oficinistaSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.oficinistaSalir.TabIndex = 8
+        Me.oficinistaSalir.TabStop = False
+        '
+        'txtNombre
+        '
+        Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.txtNombre.Location = New System.Drawing.Point(219, 195)
+        Me.txtNombre.Multiline = True
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(192, 29)
+        Me.txtNombre.TabIndex = 105
+        '
+        'lblNacimiento
+        '
+        Me.lblNacimiento.AutoSize = True
+        Me.lblNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNacimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblNacimiento.Location = New System.Drawing.Point(41, 239)
+        Me.lblNacimiento.Name = "lblNacimiento"
+        Me.lblNacimiento.Size = New System.Drawing.Size(102, 20)
+        Me.lblNacimiento.TabIndex = 104
+        Me.lblNacimiento.Text = "Tipo de Pago"
+        '
+        'lbCosto
+        '
+        Me.lbCosto.AutoSize = True
+        Me.lbCosto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbCosto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lbCosto.Location = New System.Drawing.Point(41, 204)
+        Me.lbCosto.Name = "lbCosto"
+        Me.lbCosto.Size = New System.Drawing.Size(54, 20)
+        Me.lbCosto.TabIndex = 102
+        Me.lbCosto.Text = "Monto"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Contado", "Debito", "Credito"})
+        Me.ComboBox1.Location = New System.Drawing.Point(219, 241)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(192, 21)
+        Me.ComboBox1.TabIndex = 106
+        '
+        'Pagina3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(452, 667)
-        Me.Controls.Add(Me.btnSalir)
+        Me.BackgroundImage = Global.ProyectoProgramacion.My.Resources.Resources.Shadow_Notificaciones
+        Me.ClientSize = New System.Drawing.Size(452, 519)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.Label21)
-        Me.Controls.Add(Me.TextBox15)
-        Me.Controls.Add(Me.lblRaza)
-        Me.Controls.Add(Me.txtRaza)
-        Me.Controls.Add(Me.lblPeso)
-        Me.Controls.Add(Me.txtPeso)
-        Me.Controls.Add(Me.lblMedicina)
-        Me.Controls.Add(Me.txtMedicina)
-        Me.Controls.Add(Me.lblDosis)
-        Me.Controls.Add(Me.txtDosis)
-        Me.Controls.Add(Me.lblMedicamentos)
-        Me.Controls.Add(Me.txtMedicamentos)
-        Me.Controls.Add(Me.lblVacunas)
-        Me.Controls.Add(Me.txtVacunas)
         Me.Controls.Add(Me.lblNacimiento)
-        Me.Controls.Add(Me.txtNacimiento)
-        Me.Controls.Add(Me.lblNombreMascota)
-        Me.Controls.Add(Me.lblDatosMascota)
+        Me.Controls.Add(Me.lbCosto)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.confirm)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.lblHoraRetiro)
+        Me.Controls.Add(Me.cboHoraRetiro)
+        Me.Controls.Add(Me.cboModoRetiro)
+        Me.Controls.Add(Me.cboModoEntrega)
+        Me.Controls.Add(Me.lblHoraEntrega)
+        Me.Controls.Add(Me.cboHoraEntrega)
+        Me.Controls.Add(Me.lblModoRetiro)
+        Me.Controls.Add(Me.lblModoEntrega)
         Me.Controls.Add(Me.ipbAnteriorFoto)
-        Me.Controls.Add(Me.ipbSiguienteFoto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Pagina2"
+        Me.Name = "Pagina3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hotel Canino"
         CType(Me.ipbAnteriorFoto, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        CType(Me.oficinistaSalir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents ipbAnteriorFoto As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents ipbSiguienteFoto As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents lblDatosMascota As Label
-    Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents lblRaza As Label
-    Friend WithEvents txtRaza As TextBox
-    Friend WithEvents lblPeso As Label
-    Friend WithEvents txtPeso As TextBox
-    Friend WithEvents lblMedicina As Label
-    Friend WithEvents txtMedicina As TextBox
-    Friend WithEvents lblDosis As Label
-    Friend WithEvents txtDosis As TextBox
-    Friend WithEvents lblMedicamentos As Label
-    Friend WithEvents txtMedicamentos As TextBox
-    Friend WithEvents lblVacunas As Label
-    Friend WithEvents txtVacunas As TextBox
-    Friend WithEvents lblNacimiento As Label
-    Friend WithEvents txtNacimiento As TextBox
-    Friend WithEvents lblNombreMascota As Label
-    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents lblHoraRetiro As Label
+    Friend WithEvents cboHoraRetiro As ComboBox
+    Friend WithEvents cboModoRetiro As ComboBox
+    Friend WithEvents cboModoEntrega As ComboBox
+    Friend WithEvents lblHoraEntrega As Label
+    Friend WithEvents cboHoraEntrega As ComboBox
+    Friend WithEvents lblModoRetiro As Label
+    Friend WithEvents lblModoEntrega As Label
     Friend WithEvents btnSalir As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents confirm As FontAwesome.Sharp.IconButton
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents oficinistaSalir As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents lblNacimiento As Label
+    Friend WithEvents lbCosto As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

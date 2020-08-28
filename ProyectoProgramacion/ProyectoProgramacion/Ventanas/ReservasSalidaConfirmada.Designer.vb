@@ -31,14 +31,6 @@ Partial Class ReservasSalidaConfirmada
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.image = New FontAwesome.Sharp.IconButton()
         Me.btnConfirmar = New FontAwesome.Sharp.IconButton()
-        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tpago = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaSalida = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -65,7 +57,6 @@ Partial Class ReservasSalidaConfirmada
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeight = 27
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.Nombre, Me.Apellido, Me.Telefono, Me.Direccion, Me.Precio, Me.tpago, Me.FechaSalida})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -147,69 +138,6 @@ Partial Class ReservasSalidaConfirmada
         Me.btnConfirmar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnConfirmar.UseVisualStyleBackColor = False
         '
-        'id
-        '
-        Me.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.id.HeaderText = "ID"
-        Me.id.Name = "id"
-        Me.id.ReadOnly = True
-        Me.id.Width = 47
-        '
-        'Nombre
-        '
-        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        Me.Nombre.Width = 88
-        '
-        'Apellido
-        '
-        Me.Apellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Apellido.HeaderText = "Apellido"
-        Me.Apellido.Name = "Apellido"
-        Me.Apellido.ReadOnly = True
-        Me.Apellido.Width = 90
-        '
-        'Telefono
-        '
-        Me.Telefono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.ReadOnly = True
-        Me.Telefono.Width = 96
-        '
-        'Direccion
-        '
-        Me.Direccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        '
-        'Precio
-        '
-        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Precio.HeaderText = "Nombre Perro"
-        Me.Precio.Name = "Precio"
-        Me.Precio.ReadOnly = True
-        Me.Precio.Width = 133
-        '
-        'tpago
-        '
-        Me.tpago.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.tpago.HeaderText = "Salida Confirmada"
-        Me.tpago.Name = "tpago"
-        Me.tpago.ReadOnly = True
-        Me.tpago.Width = 164
-        '
-        'FechaSalida
-        '
-        Me.FechaSalida.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.FechaSalida.HeaderText = "Fecha de Salida"
-        Me.FechaSalida.Name = "FechaSalida"
-        Me.FechaSalida.ReadOnly = True
-        Me.FechaSalida.Width = 149
-        '
         'ReservasSalidaConfirmada
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -233,12 +161,4 @@ Partial Class ReservasSalidaConfirmada
     Friend WithEvents txtBuscar As TextBox
     Friend WithEvents image As FontAwesome.Sharp.IconButton
     Friend WithEvents btnConfirmar As FontAwesome.Sharp.IconButton
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents Nombre As DataGridViewTextBoxColumn
-    Friend WithEvents Apellido As DataGridViewTextBoxColumn
-    Friend WithEvents Telefono As DataGridViewTextBoxColumn
-    Friend WithEvents Direccion As DataGridViewTextBoxColumn
-    Friend WithEvents Precio As DataGridViewTextBoxColumn
-    Friend WithEvents tpago As DataGridViewTextBoxColumn
-    Friend WithEvents FechaSalida As DataGridViewTextBoxColumn
 End Class

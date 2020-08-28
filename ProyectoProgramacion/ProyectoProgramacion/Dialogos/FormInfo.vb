@@ -1,7 +1,4 @@
 ﻿Public Class FormInfo
-    Private Sub FormSucess_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        esclarecer.ShowAsyc(Me)
-    End Sub
 
     Public Sub callFormWithMessage(message As String)
         Dim warn As FormInfo = New FormInfo

@@ -25,7 +25,6 @@ Partial Class FormWarn
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormWarn))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
-        Me.esclarecer = New Bunifu.Framework.UI.BunifuFormFadeTransition(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.aviso = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -41,10 +40,6 @@ Partial Class FormWarn
         '
         Me.BunifuElipse1.ElipseRadius = 5
         Me.BunifuElipse1.TargetControl = Me
-        '
-        'esclarecer
-        '
-        Me.esclarecer.Delay = 1
         '
         'Panel1
         '
@@ -193,7 +188,6 @@ Partial Class FormWarn
     End Sub
 
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
-    Friend WithEvents esclarecer As Bunifu.Framework.UI.BunifuFormFadeTransition
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents message As Bunifu.Framework.UI.BunifuCustomLabel

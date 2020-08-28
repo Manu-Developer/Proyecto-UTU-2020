@@ -9,19 +9,13 @@ Public Class Pagina1
     Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     End Sub
 
-    Private Sub ipbSiguienteFoto_Click(sender As Object, e As EventArgs) Handles ipbSiguienteFoto.Click
-        Me.Visible = False
-        Pagina2.ShowDialog()
-        Pagina2.Location = getLocation()
-    End Sub
-
-    Private Sub Pagina1_MouseMove(sender As Object, e As MouseEventArgs) Handles MyBase.MouseMove
+    Private Sub Pagina2_MouseMove(sender As Object, e As MouseEventArgs) Handles MyBase.MouseMove
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
 
-    Private Sub Pagina1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Pagina2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
@@ -29,7 +23,17 @@ Public Class Pagina1
         Return Me.Location
     End Function
 
+    Private Sub ipbSiguienteFoto_Click(sender As Object, e As EventArgs) Handles ipbSiguienteFoto.Click
+        Me.Visible = False
+        Pagina2.ShowDialog()
+        Pagina2.Location = getLocation()
+    End Sub
+
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        Me.Close()
+    End Sub
+
+    Private Sub oficinistaSalir_Click(sender As Object, e As EventArgs) Handles oficinistaSalir.Click
         Me.Close()
     End Sub
 End Class

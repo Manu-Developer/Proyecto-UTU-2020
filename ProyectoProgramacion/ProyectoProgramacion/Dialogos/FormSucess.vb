@@ -1,7 +1,4 @@
 ﻿Public Class FormSucess
-    Private Sub FormSucess_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        esclarecer.ShowAsyc(Me)
-    End Sub
 
     Public Sub callFormWithMessage(message As String)
         Dim sucess As FormSucess = New FormSucess

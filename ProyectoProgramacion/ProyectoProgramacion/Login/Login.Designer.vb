@@ -60,22 +60,23 @@ Partial Class Login
         '
         'txtContraseña
         '
+        Me.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtContraseña.Location = New System.Drawing.Point(48, 253)
-        Me.txtContraseña.Multiline = True
+        Me.txtContraseña.Location = New System.Drawing.Point(48, 255)
         Me.txtContraseña.Name = "txtContraseña"
-        Me.txtContraseña.Size = New System.Drawing.Size(181, 31)
+        Me.txtContraseña.Size = New System.Drawing.Size(181, 24)
         Me.txtContraseña.TabIndex = 13
+        Me.txtContraseña.UseSystemPasswordChar = True
         '
         'txtUsuario
         '
+        Me.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtUsuario.Location = New System.Drawing.Point(52, 137)
-        Me.txtUsuario.Multiline = True
+        Me.txtUsuario.Location = New System.Drawing.Point(49, 137)
         Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(181, 31)
+        Me.txtUsuario.Size = New System.Drawing.Size(181, 24)
         Me.txtUsuario.TabIndex = 12
         '
         'btnIniciar
