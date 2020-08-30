@@ -42,10 +42,10 @@ Partial Class VentanaOficinista
         Me.phototrasparent = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.horayfecha = New System.Windows.Forms.Timer(Me.components)
         Me.PanelDesktop = New Bunifu.Framework.UI.BunifuGradientPanel()
-        Me.BunifuSeparator5 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.lblfecha = New System.Windows.Forms.Label()
         Me.lblhora = New System.Windows.Forms.Label()
         Me.pbLogoEmpresa = New System.Windows.Forms.PictureBox()
+        Me.BunifuSeparator5 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.PanelMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -226,16 +226,6 @@ Partial Class VentanaOficinista
         Me.PanelDesktop.Name = "PanelDesktop"
         Me.PanelDesktop.Quality = 10
         '
-        'BunifuSeparator5
-        '
-        resources.ApplyResources(Me.BunifuSeparator5, "BunifuSeparator5")
-        Me.BunifuSeparator5.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuSeparator5.LineThickness = 3
-        Me.BunifuSeparator5.Name = "BunifuSeparator5"
-        Me.BunifuSeparator5.Transparency = 255
-        Me.BunifuSeparator5.Vertical = True
-        '
         'lblfecha
         '
         resources.ApplyResources(Me.lblfecha, "lblfecha")
@@ -257,6 +247,16 @@ Partial Class VentanaOficinista
         Me.pbLogoEmpresa.Image = Global.ProyectoProgramacion.My.Resources.Resources.Logo_HotelCanino
         Me.pbLogoEmpresa.Name = "pbLogoEmpresa"
         Me.pbLogoEmpresa.TabStop = False
+        '
+        'BunifuSeparator5
+        '
+        resources.ApplyResources(Me.BunifuSeparator5, "BunifuSeparator5")
+        Me.BunifuSeparator5.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator5.LineThickness = 3
+        Me.BunifuSeparator5.Name = "BunifuSeparator5"
+        Me.BunifuSeparator5.Transparency = 255
+        Me.BunifuSeparator5.Vertical = True
         '
         'VentanaOficinista
         '
@@ -303,11 +303,11 @@ Partial Class VentanaOficinista
     Friend WithEvents nombre As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents phototrasparent As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents txtNombreUsuario As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuSeparator5 As Bunifu.Framework.UI.BunifuSeparator
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblfecha As Label
     Friend WithEvents lblhora As Label
     Friend WithEvents horayfecha As Timer
     Friend WithEvents oficinistaMinimizar As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents oficinistaSalir As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents BunifuSeparator5 As Bunifu.Framework.UI.BunifuSeparator
 End Class

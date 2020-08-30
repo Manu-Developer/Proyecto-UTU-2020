@@ -26,7 +26,7 @@ Partial Class Login
         Me.panelPrincipal = New System.Windows.Forms.Panel()
         Me.txtContraseña = New System.Windows.Forms.TextBox()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
-        Me.btnIniciar = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.btnIniciar = New System.Windows.Forms.Button()
         Me.lblContraseña = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.panelDebajo = New System.Windows.Forms.Panel()
@@ -81,28 +81,19 @@ Partial Class Login
         '
         'btnIniciar
         '
-        Me.btnIniciar.ActiveBorderThickness = 1
-        Me.btnIniciar.ActiveCornerRadius = 25
-        Me.btnIniciar.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnIniciar.ActiveForecolor = System.Drawing.Color.Transparent
-        Me.btnIniciar.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.btnIniciar.BackColor = System.Drawing.Color.Transparent
         Me.btnIniciar.BackgroundImage = CType(resources.GetObject("btnIniciar.BackgroundImage"), System.Drawing.Image)
-        Me.btnIniciar.ButtonText = "Iniciar Sesión"
         Me.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIniciar.ForeColor = System.Drawing.Color.White
-        Me.btnIniciar.IdleBorderThickness = 1
-        Me.btnIniciar.IdleCornerRadius = 25
-        Me.btnIniciar.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnIniciar.IdleForecolor = System.Drawing.Color.White
-        Me.btnIniciar.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.btnIniciar.Location = New System.Drawing.Point(49, 313)
         Me.btnIniciar.Margin = New System.Windows.Forms.Padding(5)
         Me.btnIniciar.Name = "btnIniciar"
         Me.btnIniciar.Size = New System.Drawing.Size(181, 41)
         Me.btnIniciar.TabIndex = 11
-        Me.btnIniciar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnIniciar.Text = "Iniciar Sesión"
+        Me.btnIniciar.UseVisualStyleBackColor = False
         '
         'lblContraseña
         '
@@ -243,7 +234,7 @@ Partial Class Login
     Friend WithEvents lblBienvenido As Label
     Friend WithEvents ipbMinimizar As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents btnIniciar As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents btnIniciar As Button
     Friend WithEvents txtContraseña As TextBox
     Friend WithEvents txtUsuario As TextBox
 End Class
