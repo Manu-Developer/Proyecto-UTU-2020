@@ -97,7 +97,7 @@ Partial Class Pagina2
         '
         Me.cboModoRetiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cboModoRetiro.FormattingEnabled = True
-        Me.cboModoRetiro.Items.AddRange(New Object() {"Entrega por Cliente", "Entrega por Camioneta"})
+        Me.cboModoRetiro.Items.AddRange(New Object() {"Retiro por Cliente", "Retiro por Camioneta"})
         Me.cboModoRetiro.Location = New System.Drawing.Point(219, 126)
         Me.cboModoRetiro.Name = "cboModoRetiro"
         Me.cboModoRetiro.Size = New System.Drawing.Size(192, 21)
@@ -259,13 +259,13 @@ Partial Class Pagina2
         '
         Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Contado", "Debito", "Credito"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Contado", "Tarjeta de crédito"})
         Me.ComboBox1.Location = New System.Drawing.Point(219, 241)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(192, 21)
         Me.ComboBox1.TabIndex = 106
         '
-        'Pagina3
+        'Pagina2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -290,7 +290,7 @@ Partial Class Pagina2
         Me.Controls.Add(Me.ipbAnteriorFoto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Pagina3"
+        Me.Name = "Pagina2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hotel Canino"
         CType(Me.ipbAnteriorFoto, System.ComponentModel.ISupportInitialize).EndInit()

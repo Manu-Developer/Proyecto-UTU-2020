@@ -44,7 +44,7 @@ Partial Class Login
         '
         'panelPrincipal
         '
-        Me.panelPrincipal.BackColor = System.Drawing.Color.Transparent
+        Me.panelPrincipal.BackColor = System.Drawing.SystemColors.Control
         Me.panelPrincipal.Controls.Add(Me.txtContraseña)
         Me.panelPrincipal.Controls.Add(Me.txtUsuario)
         Me.panelPrincipal.Controls.Add(Me.btnIniciar)
@@ -81,7 +81,7 @@ Partial Class Login
         '
         'btnIniciar
         '
-        Me.btnIniciar.BackColor = System.Drawing.Color.Transparent
+        Me.btnIniciar.BackColor = System.Drawing.SystemColors.Control
         Me.btnIniciar.BackgroundImage = CType(resources.GetObject("btnIniciar.BackgroundImage"), System.Drawing.Image)
         Me.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat

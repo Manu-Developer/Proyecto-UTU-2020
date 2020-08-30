@@ -376,13 +376,13 @@ Partial Class Pagina1
         '
         Me.habitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.habitaciones.FormattingEnabled = True
-        Me.habitaciones.Items.AddRange(New Object() {"Suit", "Mini Suit", "Estandar"})
+        Me.habitaciones.Items.AddRange(New Object() {"Suite", "Junior Suite", "Mini Suite", "Estándar"})
         Me.habitaciones.Location = New System.Drawing.Point(199, 475)
         Me.habitaciones.Name = "habitaciones"
         Me.habitaciones.Size = New System.Drawing.Size(192, 21)
         Me.habitaciones.TabIndex = 101
         '
-        'Pagina2
+        'Pagina1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -418,7 +418,7 @@ Partial Class Pagina1
         Me.Controls.Add(Me.ipbSiguienteFoto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Pagina2"
+        Me.Name = "Pagina1"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hotel Canino"

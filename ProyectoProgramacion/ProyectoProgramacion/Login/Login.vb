@@ -32,7 +32,7 @@ Public Class Login
 
         If Validaciones.validarTexto(txtUsuario) = True Then
             If Validaciones.validarContraseña(txtContraseña) = True Then
-                If txtUsuario.Text = "gerente" And txtContraseña.Text = "12345678" Then
+                If txtUsuario.Text = "gerente" And txtContraseña.Text = "123456789" Then
                     Dim ventana As VentanaGerente = New VentanaGerente
                     Me.Visible = False
                     ventana.Show()
@@ -41,7 +41,7 @@ Public Class Login
                     Dim ventana As VentanaOficinista = New VentanaOficinista
                     Me.Visible = False
                     ventana.Show()
-                ElseIf txtUsuario.Text = "receptionsta" And txtContraseña.Text = "12345678" Then
+                ElseIf txtUsuario.Text = "recepcionista" And txtContraseña.Text = "1234567" Then
                     Dim ventana As VentanaReceptionista = New VentanaReceptionista
                     Me.Visible = False
                     ventana.Show()
