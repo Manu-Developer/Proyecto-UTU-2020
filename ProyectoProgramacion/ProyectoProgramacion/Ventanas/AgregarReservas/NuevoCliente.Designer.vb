@@ -37,12 +37,12 @@ Partial Class NuevoCliente
         Me.lblCI = New System.Windows.Forms.Label()
         Me.txtCI = New System.Windows.Forms.TextBox()
         Me.btnSalir = New FontAwesome.Sharp.IconPictureBox()
-        Me.save = New FontAwesome.Sharp.IconButton()
+        Me.btnGuardar = New FontAwesome.Sharp.IconButton()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.oficinistaSalir = New FontAwesome.Sharp.IconPictureBox()
+        Me.btnCerrar = New FontAwesome.Sharp.IconPictureBox()
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
-        CType(Me.oficinistaSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblDatosCliente
@@ -201,32 +201,32 @@ Partial Class NuevoCliente
         Me.btnSalir.TabIndex = 94
         Me.btnSalir.TabStop = False
         '
-        'save
+        'btnGuardar
         '
-        Me.save.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.save.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.save.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.save.FlatAppearance.BorderSize = 0
-        Me.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.save.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.save.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.save.ForeColor = System.Drawing.Color.White
-        Me.save.IconChar = FontAwesome.Sharp.IconChar.ArrowDown
-        Me.save.IconColor = System.Drawing.Color.White
-        Me.save.IconSize = 25
-        Me.save.Location = New System.Drawing.Point(140, 470)
-        Me.save.Name = "save"
-        Me.save.Rotation = 0R
-        Me.save.Size = New System.Drawing.Size(174, 37)
-        Me.save.TabIndex = 95
-        Me.save.Text = "Guardar"
-        Me.save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.save.UseVisualStyleBackColor = False
+        Me.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnGuardar.FlatAppearance.BorderSize = 0
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.ForeColor = System.Drawing.Color.White
+        Me.btnGuardar.IconChar = FontAwesome.Sharp.IconChar.ArrowDown
+        Me.btnGuardar.IconColor = System.Drawing.Color.White
+        Me.btnGuardar.IconSize = 25
+        Me.btnGuardar.Location = New System.Drawing.Point(140, 470)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Rotation = 0R
+        Me.btnGuardar.Size = New System.Drawing.Size(174, 37)
+        Me.btnGuardar.TabIndex = 95
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.oficinistaSalir)
+        Me.Panel3.Controls.Add(Me.btnCerrar)
         Me.Panel3.Controls.Add(Me.lblDatosCliente)
         Me.Panel3.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
@@ -235,23 +235,23 @@ Partial Class NuevoCliente
         Me.Panel3.Size = New System.Drawing.Size(452, 42)
         Me.Panel3.TabIndex = 96
         '
-        'oficinistaSalir
+        'btnCerrar
         '
-        Me.oficinistaSalir.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.oficinistaSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.oficinistaSalir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.oficinistaSalir.IconChar = FontAwesome.Sharp.IconChar.Times
-        Me.oficinistaSalir.IconColor = System.Drawing.Color.White
-        Me.oficinistaSalir.IconSize = 34
-        Me.oficinistaSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.oficinistaSalir.Location = New System.Drawing.Point(415, 5)
-        Me.oficinistaSalir.Name = "oficinistaSalir"
-        Me.oficinistaSalir.Size = New System.Drawing.Size(32, 32)
-        Me.oficinistaSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.oficinistaSalir.TabIndex = 8
-        Me.oficinistaSalir.TabStop = False
+        Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.btnCerrar.IconColor = System.Drawing.Color.White
+        Me.btnCerrar.IconSize = 34
+        Me.btnCerrar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnCerrar.Location = New System.Drawing.Point(415, 5)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(32, 32)
+        Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnCerrar.TabIndex = 8
+        Me.btnCerrar.TabStop = False
         '
-        'Pagina1
+        'NuevoCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -259,7 +259,7 @@ Partial Class NuevoCliente
         Me.BackgroundImage = Global.ProyectoProgramacion.My.Resources.Resources.Shadow_Notificaciones
         Me.ClientSize = New System.Drawing.Size(452, 519)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.save)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.dateNacimiento)
         Me.Controls.Add(Me.lblCelular)
@@ -275,13 +275,13 @@ Partial Class NuevoCliente
         Me.Controls.Add(Me.txtCI)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Pagina1"
+        Me.Name = "NuevoCliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hotel Canino"
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.oficinistaSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -300,7 +300,7 @@ Partial Class NuevoCliente
     Friend WithEvents lblCI As Label
     Friend WithEvents txtCI As TextBox
     Friend WithEvents btnSalir As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents save As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnGuardar As FontAwesome.Sharp.IconButton
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents oficinistaSalir As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents btnCerrar As FontAwesome.Sharp.IconPictureBox
 End Class

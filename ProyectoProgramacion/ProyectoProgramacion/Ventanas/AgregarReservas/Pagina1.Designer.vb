@@ -24,8 +24,8 @@ Partial Class Pagina1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagina1))
         Me.ipbSiguienteFoto = New FontAwesome.Sharp.IconPictureBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.lblAlimentacion = New System.Windows.Forms.Label()
+        Me.txtAlimentacion = New System.Windows.Forms.TextBox()
         Me.lblRaza = New System.Windows.Forms.Label()
         Me.txtRaza = New System.Windows.Forms.TextBox()
         Me.lblPeso = New System.Windows.Forms.Label()
@@ -47,14 +47,14 @@ Partial Class Pagina1
         Me.lblSalida = New System.Windows.Forms.Label()
         Me.dateReservar = New System.Windows.Forms.DateTimePicker()
         Me.lblReservar = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lblHabitacionReservar = New System.Windows.Forms.Label()
         Me.lblDatosMascota = New System.Windows.Forms.Label()
-        Me.oficinistaSalir = New FontAwesome.Sharp.IconPictureBox()
+        Me.btnCerrar = New FontAwesome.Sharp.IconPictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.habitaciones = New System.Windows.Forms.ComboBox()
+        Me.cboHabitaciones = New System.Windows.Forms.ComboBox()
         CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.oficinistaSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -72,26 +72,26 @@ Partial Class Pagina1
         Me.ipbSiguienteFoto.TabIndex = 23
         Me.ipbSiguienteFoto.TabStop = False
         '
-        'Label21
+        'lblAlimentacion
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label21.Location = New System.Drawing.Point(14, 345)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(163, 20)
-        Me.Label21.TabIndex = 91
-        Me.Label21.Text = "Alimentación Habitual"
+        Me.lblAlimentacion.AutoSize = True
+        Me.lblAlimentacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAlimentacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblAlimentacion.Location = New System.Drawing.Point(14, 345)
+        Me.lblAlimentacion.Name = "lblAlimentacion"
+        Me.lblAlimentacion.Size = New System.Drawing.Size(163, 20)
+        Me.lblAlimentacion.TabIndex = 91
+        Me.lblAlimentacion.Text = "Alimentación Habitual"
         '
-        'TextBox15
+        'txtAlimentacion
         '
-        Me.TextBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.TextBox15.Location = New System.Drawing.Point(199, 336)
-        Me.TextBox15.Multiline = True
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(192, 29)
-        Me.TextBox15.TabIndex = 90
+        Me.txtAlimentacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAlimentacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.txtAlimentacion.Location = New System.Drawing.Point(199, 336)
+        Me.txtAlimentacion.Multiline = True
+        Me.txtAlimentacion.Name = "txtAlimentacion"
+        Me.txtAlimentacion.Size = New System.Drawing.Size(192, 29)
+        Me.txtAlimentacion.TabIndex = 90
         '
         'lblRaza
         '
@@ -322,16 +322,16 @@ Partial Class Pagina1
         Me.lblReservar.TabIndex = 94
         Me.lblReservar.Text = "Fecha a reservar"
         '
-        'Label12
+        'lblHabitacionReservar
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(16, 474)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(159, 20)
-        Me.Label12.TabIndex = 99
-        Me.Label12.Text = "Habitacion a reservar"
+        Me.lblHabitacionReservar.AutoSize = True
+        Me.lblHabitacionReservar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHabitacionReservar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblHabitacionReservar.Location = New System.Drawing.Point(16, 474)
+        Me.lblHabitacionReservar.Name = "lblHabitacionReservar"
+        Me.lblHabitacionReservar.Size = New System.Drawing.Size(159, 20)
+        Me.lblHabitacionReservar.TabIndex = 99
+        Me.lblHabitacionReservar.Text = "Habitacion a reservar"
         '
         'lblDatosMascota
         '
@@ -344,26 +344,26 @@ Partial Class Pagina1
         Me.lblDatosMascota.TabIndex = 66
         Me.lblDatosMascota.Text = "Registro Mascota"
         '
-        'oficinistaSalir
+        'btnCerrar
         '
-        Me.oficinistaSalir.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.oficinistaSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.oficinistaSalir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.oficinistaSalir.IconChar = FontAwesome.Sharp.IconChar.Times
-        Me.oficinistaSalir.IconColor = System.Drawing.Color.White
-        Me.oficinistaSalir.IconSize = 34
-        Me.oficinistaSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.oficinistaSalir.Location = New System.Drawing.Point(414, 5)
-        Me.oficinistaSalir.Name = "oficinistaSalir"
-        Me.oficinistaSalir.Size = New System.Drawing.Size(32, 32)
-        Me.oficinistaSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.oficinistaSalir.TabIndex = 8
-        Me.oficinistaSalir.TabStop = False
+        Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.btnCerrar.IconColor = System.Drawing.Color.White
+        Me.btnCerrar.IconSize = 34
+        Me.btnCerrar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnCerrar.Location = New System.Drawing.Point(414, 5)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(32, 32)
+        Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnCerrar.TabIndex = 8
+        Me.btnCerrar.TabStop = False
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.oficinistaSalir)
+        Me.Panel3.Controls.Add(Me.btnCerrar)
         Me.Panel3.Controls.Add(Me.lblDatosMascota)
         Me.Panel3.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
@@ -372,15 +372,15 @@ Partial Class Pagina1
         Me.Panel3.Size = New System.Drawing.Size(452, 42)
         Me.Panel3.TabIndex = 100
         '
-        'habitaciones
+        'cboHabitaciones
         '
-        Me.habitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.habitaciones.FormattingEnabled = True
-        Me.habitaciones.Items.AddRange(New Object() {"Suite", "Junior Suite", "Mini Suite", "Estándar"})
-        Me.habitaciones.Location = New System.Drawing.Point(199, 475)
-        Me.habitaciones.Name = "habitaciones"
-        Me.habitaciones.Size = New System.Drawing.Size(192, 21)
-        Me.habitaciones.TabIndex = 101
+        Me.cboHabitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cboHabitaciones.FormattingEnabled = True
+        Me.cboHabitaciones.Items.AddRange(New Object() {"Suite", "Junior Suite", "Mini Suite", "Estándar"})
+        Me.cboHabitaciones.Location = New System.Drawing.Point(199, 475)
+        Me.cboHabitaciones.Name = "cboHabitaciones"
+        Me.cboHabitaciones.Size = New System.Drawing.Size(192, 21)
+        Me.cboHabitaciones.TabIndex = 101
         '
         'Pagina1
         '
@@ -389,17 +389,17 @@ Partial Class Pagina1
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.ProyectoProgramacion.My.Resources.Resources.Shadow_Notificaciones
         Me.ClientSize = New System.Drawing.Size(452, 519)
-        Me.Controls.Add(Me.habitaciones)
+        Me.Controls.Add(Me.cboHabitaciones)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.lblHabitacionReservar)
         Me.Controls.Add(Me.dateSalida)
         Me.Controls.Add(Me.lblSalida)
         Me.Controls.Add(Me.dateReservar)
         Me.Controls.Add(Me.lblReservar)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.Label21)
-        Me.Controls.Add(Me.TextBox15)
+        Me.Controls.Add(Me.lblAlimentacion)
+        Me.Controls.Add(Me.txtAlimentacion)
         Me.Controls.Add(Me.lblRaza)
         Me.Controls.Add(Me.txtRaza)
         Me.Controls.Add(Me.lblPeso)
@@ -424,7 +424,7 @@ Partial Class Pagina1
         Me.Text = "Hotel Canino"
         CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.oficinistaSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
@@ -432,8 +432,8 @@ Partial Class Pagina1
 
     End Sub
     Friend WithEvents ipbSiguienteFoto As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents lblAlimentacion As Label
+    Friend WithEvents txtAlimentacion As TextBox
     Friend WithEvents lblRaza As Label
     Friend WithEvents txtRaza As TextBox
     Friend WithEvents lblPeso As Label
@@ -455,9 +455,9 @@ Partial Class Pagina1
     Friend WithEvents lblSalida As Label
     Friend WithEvents dateReservar As DateTimePicker
     Friend WithEvents lblReservar As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lblHabitacionReservar As Label
     Friend WithEvents lblDatosMascota As Label
-    Friend WithEvents oficinistaSalir As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents btnCerrar As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents habitaciones As ComboBox
+    Friend WithEvents cboHabitaciones As ComboBox
 End Class

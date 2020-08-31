@@ -27,11 +27,7 @@ Public Class Pagina2
         Pagina1.Location = getLocation()
     End Sub
 
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        Me.Close()
-    End Sub
-
-    Private Sub oficinistaSalir_Click(sender As Object, e As EventArgs) Handles oficinistaSalir.Click
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Me.Close()
     End Sub
 End Class

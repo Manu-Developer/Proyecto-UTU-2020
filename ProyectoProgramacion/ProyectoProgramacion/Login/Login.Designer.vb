@@ -28,7 +28,7 @@ Partial Class Login
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.btnIniciar = New System.Windows.Forms.Button()
         Me.lblContraseña = New System.Windows.Forms.Label()
-        Me.lblNombre = New System.Windows.Forms.Label()
+        Me.lblUsuario = New System.Windows.Forms.Label()
         Me.panelDebajo = New System.Windows.Forms.Panel()
         Me.panelBienvenido = New System.Windows.Forms.Panel()
         Me.lblBienvenido = New System.Windows.Forms.Label()
@@ -49,7 +49,7 @@ Partial Class Login
         Me.panelPrincipal.Controls.Add(Me.txtUsuario)
         Me.panelPrincipal.Controls.Add(Me.btnIniciar)
         Me.panelPrincipal.Controls.Add(Me.lblContraseña)
-        Me.panelPrincipal.Controls.Add(Me.lblNombre)
+        Me.panelPrincipal.Controls.Add(Me.lblUsuario)
         Me.panelPrincipal.Controls.Add(Me.panelDebajo)
         Me.panelPrincipal.Controls.Add(Me.panelBienvenido)
         Me.panelPrincipal.Controls.Add(Me.lblBienvenido)
@@ -106,16 +106,16 @@ Partial Class Login
         Me.lblContraseña.TabIndex = 11
         Me.lblContraseña.Text = "Constraseña"
         '
-        'lblNombre
+        'lblUsuario
         '
-        Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblNombre.Location = New System.Drawing.Point(44, 98)
-        Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(68, 20)
-        Me.lblNombre.TabIndex = 10
-        Me.lblNombre.Text = "Usuario:"
+        Me.lblUsuario.AutoSize = True
+        Me.lblUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblUsuario.Location = New System.Drawing.Point(44, 98)
+        Me.lblUsuario.Name = "lblUsuario"
+        Me.lblUsuario.Size = New System.Drawing.Size(68, 20)
+        Me.lblUsuario.TabIndex = 10
+        Me.lblUsuario.Text = "Usuario:"
         '
         'panelDebajo
         '
@@ -227,7 +227,7 @@ Partial Class Login
     Friend WithEvents pcbImagen As PictureBox
     Friend WithEvents panelPrincipal As Panel
     Friend WithEvents lblContraseña As Label
-    Friend WithEvents lblNombre As Label
+    Friend WithEvents lblUsuario As Label
     Friend WithEvents panelDebajo As Panel
     Friend WithEvents panelBienvenido As Panel
     Friend WithEvents btnLogin As Button

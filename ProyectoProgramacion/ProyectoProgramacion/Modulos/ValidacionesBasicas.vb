@@ -22,7 +22,7 @@ Friend Class ValidacionesBasicas
         Dim verdaderoFalso As Boolean
 
         If txtValidarTelefono.Text.Trim = "" Then
-            FormInfo.callFormWithMessage("El campo númerico puede estar vacìo")
+            FormInfo.callFormWithMessage("El campo númerico no puede estar vacío")
             verdaderoFalso = False
         ElseIf Not validador.IsMatch(txtValidarTelefono.Text) Then
             FormInfo.callFormWithMessage("El formato debe de ser solo numérico y tiene que tener estrictamente 9 carácteres")
@@ -37,7 +37,7 @@ Friend Class ValidacionesBasicas
         Dim validador As New Regex("^[a-zA-Z]{7,}$")
         Dim verdaderoFalso As Boolean
         If txtValidarTexto.Text.Trim = "" Then
-            FormInfo.callFormWithMessage("El campo de texto no puede estar vacìo")
+            FormInfo.callFormWithMessage("El campo de texto no puede estar vacío")
             verdaderoFalso = False
         ElseIf Not validador.IsMatch(txtValidarTexto.Text) Then
             FormInfo.callFormWithMessage("El campo de texto debe ser solo alfanumérico y tiene que tener un mínimo de 7 carácteres")

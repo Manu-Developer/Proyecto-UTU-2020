@@ -14,11 +14,6 @@ Public Class Pagina1
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-
-    Private Sub Pagina2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Public Function getLocation()
         Return Me.Location
     End Function
@@ -29,11 +24,7 @@ Public Class Pagina1
         Pagina2.Location = getLocation()
     End Sub
 
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        Me.Close()
-    End Sub
-
-    Private Sub oficinistaSalir_Click(sender As Object, e As EventArgs) Handles oficinistaSalir.Click
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Me.Close()
     End Sub
 End Class

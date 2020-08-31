@@ -14,16 +14,8 @@ Public Class NuevoCliente
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-
-    Private Sub Pagina1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Me.Close()
     End Sub
 
-    Private Sub oficinistaSalir_Click(sender As Object, e As EventArgs) Handles oficinistaSalir.Click
-        Me.Close()
-    End Sub
 End Class

@@ -46,10 +46,10 @@ Partial Class VentanaGerente
         Me.phototrasparent = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.horayfecha = New System.Windows.Forms.Timer(Me.components)
         Me.PanelDesktop = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.BunifuSeparator5 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.lblfecha = New System.Windows.Forms.Label()
         Me.lblhora = New System.Windows.Forms.Label()
         Me.pbLogoEmpresa = New System.Windows.Forms.PictureBox()
-        Me.BunifuSeparator5 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.PanelMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -290,6 +290,16 @@ Partial Class VentanaGerente
         Me.PanelDesktop.Name = "PanelDesktop"
         Me.PanelDesktop.Quality = 10
         '
+        'BunifuSeparator5
+        '
+        resources.ApplyResources(Me.BunifuSeparator5, "BunifuSeparator5")
+        Me.BunifuSeparator5.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuSeparator5.LineThickness = 3
+        Me.BunifuSeparator5.Name = "BunifuSeparator5"
+        Me.BunifuSeparator5.Transparency = 255
+        Me.BunifuSeparator5.Vertical = True
+        '
         'lblfecha
         '
         resources.ApplyResources(Me.lblfecha, "lblfecha")
@@ -311,16 +321,6 @@ Partial Class VentanaGerente
         Me.pbLogoEmpresa.Image = Global.ProyectoProgramacion.My.Resources.Resources.Logo_HotelCanino
         Me.pbLogoEmpresa.Name = "pbLogoEmpresa"
         Me.pbLogoEmpresa.TabStop = False
-        '
-        'BunifuSeparator5
-        '
-        resources.ApplyResources(Me.BunifuSeparator5, "BunifuSeparator5")
-        Me.BunifuSeparator5.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuSeparator5.LineThickness = 3
-        Me.BunifuSeparator5.Name = "BunifuSeparator5"
-        Me.BunifuSeparator5.Transparency = 255
-        Me.BunifuSeparator5.Vertical = True
         '
         'VentanaGerente
         '

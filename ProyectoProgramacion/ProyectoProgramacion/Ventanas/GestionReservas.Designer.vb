@@ -29,8 +29,8 @@ Partial Class GestionReservas
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GestionReservas))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.bntCancelarReserva = New FontAwesome.Sharp.IconButton()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
+        Me.btnAgregar = New FontAwesome.Sharp.IconButton()
+        Me.btnModificar = New FontAwesome.Sharp.IconButton()
         Me.image = New FontAwesome.Sharp.IconButton()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.btnnuevocliente = New FontAwesome.Sharp.IconButton()
@@ -116,49 +116,49 @@ Partial Class GestionReservas
         Me.bntCancelarReserva.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.bntCancelarReserva.UseVisualStyleBackColor = False
         '
-        'IconButton1
+        'btnAgregar
         '
-        Me.IconButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.IconButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.IconButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.IconButton1.FlatAppearance.BorderSize = 0
-        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton1.ForeColor = System.Drawing.Color.White
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Plus
-        Me.IconButton1.IconColor = System.Drawing.Color.White
-        Me.IconButton1.IconSize = 25
-        Me.IconButton1.Location = New System.Drawing.Point(38, 551)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Rotation = 0R
-        Me.IconButton1.Size = New System.Drawing.Size(174, 37)
-        Me.IconButton1.TabIndex = 8
-        Me.IconButton1.Text = "Agregar Reserva"
-        Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton1.UseVisualStyleBackColor = False
+        Me.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAgregar.FlatAppearance.BorderSize = 0
+        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.Color.White
+        Me.btnAgregar.IconChar = FontAwesome.Sharp.IconChar.Plus
+        Me.btnAgregar.IconColor = System.Drawing.Color.White
+        Me.btnAgregar.IconSize = 25
+        Me.btnAgregar.Location = New System.Drawing.Point(38, 551)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Rotation = 0R
+        Me.btnAgregar.Size = New System.Drawing.Size(174, 37)
+        Me.btnAgregar.TabIndex = 8
+        Me.btnAgregar.Text = "Agregar Reserva"
+        Me.btnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnAgregar.UseVisualStyleBackColor = False
         '
-        'IconButton2
+        'btnModificar
         '
-        Me.IconButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.IconButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.IconButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.IconButton2.FlatAppearance.BorderSize = 0
-        Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.IconButton2.ForeColor = System.Drawing.Color.White
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Edit
-        Me.IconButton2.IconColor = System.Drawing.Color.White
-        Me.IconButton2.IconSize = 25
-        Me.IconButton2.Location = New System.Drawing.Point(218, 551)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Rotation = 0R
-        Me.IconButton2.Size = New System.Drawing.Size(174, 37)
-        Me.IconButton2.TabIndex = 9
-        Me.IconButton2.Text = "Modificar Reserva"
-        Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton2.UseVisualStyleBackColor = False
+        Me.btnModificar.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnModificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificar.FlatAppearance.BorderSize = 0
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.btnModificar.ForeColor = System.Drawing.Color.White
+        Me.btnModificar.IconChar = FontAwesome.Sharp.IconChar.Edit
+        Me.btnModificar.IconColor = System.Drawing.Color.White
+        Me.btnModificar.IconSize = 25
+        Me.btnModificar.Location = New System.Drawing.Point(218, 551)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Rotation = 0R
+        Me.btnModificar.Size = New System.Drawing.Size(174, 37)
+        Me.btnModificar.TabIndex = 9
+        Me.btnModificar.Text = "Modificar Reserva"
+        Me.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnModificar.UseVisualStyleBackColor = False
         '
         'image
         '
@@ -220,8 +220,8 @@ Partial Class GestionReservas
         Me.Controls.Add(Me.btnnuevocliente)
         Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.image)
-        Me.Controls.Add(Me.IconButton2)
-        Me.Controls.Add(Me.IconButton1)
+        Me.Controls.Add(Me.btnModificar)
+        Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.bntCancelarReserva)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -236,8 +236,8 @@ Partial Class GestionReservas
 
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents bntCancelarReserva As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnAgregar As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnModificar As FontAwesome.Sharp.IconButton
     Friend WithEvents image As FontAwesome.Sharp.IconButton
     Friend WithEvents txtBuscar As TextBox
     Friend WithEvents btnnuevocliente As FontAwesome.Sharp.IconButton
