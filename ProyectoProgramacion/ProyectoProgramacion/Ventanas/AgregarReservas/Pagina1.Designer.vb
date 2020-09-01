@@ -23,7 +23,7 @@ Partial Class Pagina1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagina1))
-        Me.ipbSiguienteFoto = New FontAwesome.Sharp.IconPictureBox()
+        Me.ipbSiguienteVentana = New FontAwesome.Sharp.IconPictureBox()
         Me.lblAlimentacion = New System.Windows.Forms.Label()
         Me.txtAlimentacion = New System.Windows.Forms.TextBox()
         Me.lblRaza = New System.Windows.Forms.Label()
@@ -52,25 +52,25 @@ Partial Class Pagina1
         Me.btnCerrar = New FontAwesome.Sharp.IconPictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.cboHabitaciones = New System.Windows.Forms.ComboBox()
-        CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ipbSiguienteVentana, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'ipbSiguienteFoto
+        'ipbSiguienteVentana
         '
-        Me.ipbSiguienteFoto.BackColor = System.Drawing.Color.White
-        Me.ipbSiguienteFoto.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ipbSiguienteFoto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbSiguienteFoto.IconChar = FontAwesome.Sharp.IconChar.AngleRight
-        Me.ipbSiguienteFoto.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbSiguienteFoto.IconSize = 34
-        Me.ipbSiguienteFoto.Location = New System.Drawing.Point(405, 482)
-        Me.ipbSiguienteFoto.Name = "ipbSiguienteFoto"
-        Me.ipbSiguienteFoto.Size = New System.Drawing.Size(38, 34)
-        Me.ipbSiguienteFoto.TabIndex = 23
-        Me.ipbSiguienteFoto.TabStop = False
+        Me.ipbSiguienteVentana.BackColor = System.Drawing.Color.White
+        Me.ipbSiguienteVentana.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbSiguienteVentana.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbSiguienteVentana.IconChar = FontAwesome.Sharp.IconChar.AngleRight
+        Me.ipbSiguienteVentana.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbSiguienteVentana.IconSize = 34
+        Me.ipbSiguienteVentana.Location = New System.Drawing.Point(405, 482)
+        Me.ipbSiguienteVentana.Name = "ipbSiguienteVentana"
+        Me.ipbSiguienteVentana.Size = New System.Drawing.Size(38, 34)
+        Me.ipbSiguienteVentana.TabIndex = 23
+        Me.ipbSiguienteVentana.TabStop = False
         '
         'lblAlimentacion
         '
@@ -415,14 +415,14 @@ Partial Class Pagina1
         Me.Controls.Add(Me.lblNacimiento)
         Me.Controls.Add(Me.txtNacimiento)
         Me.Controls.Add(Me.lblNombreMascota)
-        Me.Controls.Add(Me.ipbSiguienteFoto)
+        Me.Controls.Add(Me.ipbSiguienteVentana)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Pagina1"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hotel Canino"
-        CType(Me.ipbSiguienteFoto, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ipbSiguienteVentana, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
@@ -431,7 +431,7 @@ Partial Class Pagina1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ipbSiguienteFoto As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents ipbSiguienteVentana As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents lblAlimentacion As Label
     Friend WithEvents txtAlimentacion As TextBox
     Friend WithEvents lblRaza As Label

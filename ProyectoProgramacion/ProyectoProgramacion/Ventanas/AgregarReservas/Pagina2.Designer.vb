@@ -23,7 +23,7 @@ Partial Class Pagina2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagina2))
-        Me.ipbAnteriorFoto = New FontAwesome.Sharp.IconPictureBox()
+        Me.ipbAnteriorVentana = New FontAwesome.Sharp.IconPictureBox()
         Me.lblDatosAdicionales = New System.Windows.Forms.Label()
         Me.lblHoraRetiro = New System.Windows.Forms.Label()
         Me.cboHoraRetiro = New System.Windows.Forms.ComboBox()
@@ -41,25 +41,25 @@ Partial Class Pagina2
         Me.lblTipoPago = New System.Windows.Forms.Label()
         Me.lblMonto = New System.Windows.Forms.Label()
         Me.cboTipoPago = New System.Windows.Forms.ComboBox()
-        CType(Me.ipbAnteriorFoto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ipbAnteriorVentana, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ipbAnteriorFoto
+        'ipbAnteriorVentana
         '
-        Me.ipbAnteriorFoto.BackColor = System.Drawing.Color.White
-        Me.ipbAnteriorFoto.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ipbAnteriorFoto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbAnteriorFoto.IconChar = FontAwesome.Sharp.IconChar.AngleLeft
-        Me.ipbAnteriorFoto.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.ipbAnteriorFoto.IconSize = 34
-        Me.ipbAnteriorFoto.Location = New System.Drawing.Point(12, 479)
-        Me.ipbAnteriorFoto.Name = "ipbAnteriorFoto"
-        Me.ipbAnteriorFoto.Size = New System.Drawing.Size(38, 34)
-        Me.ipbAnteriorFoto.TabIndex = 25
-        Me.ipbAnteriorFoto.TabStop = False
+        Me.ipbAnteriorVentana.BackColor = System.Drawing.Color.White
+        Me.ipbAnteriorVentana.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ipbAnteriorVentana.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbAnteriorVentana.IconChar = FontAwesome.Sharp.IconChar.AngleLeft
+        Me.ipbAnteriorVentana.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.ipbAnteriorVentana.IconSize = 34
+        Me.ipbAnteriorVentana.Location = New System.Drawing.Point(12, 479)
+        Me.ipbAnteriorVentana.Name = "ipbAnteriorVentana"
+        Me.ipbAnteriorVentana.Size = New System.Drawing.Size(38, 34)
+        Me.ipbAnteriorVentana.TabIndex = 25
+        Me.ipbAnteriorVentana.TabStop = False
         '
         'lblDatosAdicionales
         '
@@ -287,13 +287,13 @@ Partial Class Pagina2
         Me.Controls.Add(Me.cboHoraEntrega)
         Me.Controls.Add(Me.lblModoRetiro)
         Me.Controls.Add(Me.lblModoEntrega)
-        Me.Controls.Add(Me.ipbAnteriorFoto)
+        Me.Controls.Add(Me.ipbAnteriorVentana)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Pagina2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hotel Canino"
-        CType(Me.ipbAnteriorFoto, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ipbAnteriorVentana, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
@@ -303,7 +303,7 @@ Partial Class Pagina2
 
     End Sub
 
-    Friend WithEvents ipbAnteriorFoto As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents ipbAnteriorVentana As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents lblDatosAdicionales As Label
     Friend WithEvents lblHoraRetiro As Label
     Friend WithEvents cboHoraRetiro As ComboBox

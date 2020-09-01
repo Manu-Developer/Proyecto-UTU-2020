@@ -18,13 +18,13 @@ Public Class Pagina1
         Return Me.Location
     End Function
 
-    Private Sub ipbSiguienteFoto_Click(sender As Object, e As EventArgs) Handles ipbSiguienteFoto.Click
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        Me.Close()
+    End Sub
+
+    Private Sub ipbSiguienteVentana_Click(sender As Object, e As EventArgs) Handles ipbSiguienteVentana.Click
         Me.Visible = False
         Pagina2.ShowDialog()
         Pagina2.Location = getLocation()
-    End Sub
-
-    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
-        Me.Close()
     End Sub
 End Class

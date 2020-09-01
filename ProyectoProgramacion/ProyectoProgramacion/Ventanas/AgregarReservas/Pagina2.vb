@@ -21,13 +21,14 @@ Public Class Pagina2
         Return Me.Location
     End Function
 
-    Private Sub ipbAnteriorFoto_Click(sender As Object, e As EventArgs) Handles ipbAnteriorFoto.Click
-        Me.Visible = False
-        Pagina1.Visible = True
-        Pagina1.Location = getLocation()
-    End Sub
 
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Me.Close()
+    End Sub
+
+    Private Sub ipbAnteriorVentana_Click(sender As Object, e As EventArgs) Handles ipbAnteriorVentana.Click
+        Me.Visible = False
+        Pagina1.Visible = True
+        Pagina1.Location = getLocation()
     End Sub
 End Class
