@@ -35,15 +35,20 @@ Public Class Login
                 If txtUsuario.Text = "gerente" And txtContraseña.Text = "123456789" Then
                     Dim ventana As VentanaGerente = New VentanaGerente
                     Me.Visible = False
+                    txtUsuario.Text = ""
+                    txtContraseña.Text = ""
                     ventana.Show()
-
                 ElseIf txtUsuario.Text = "oficinista" And txtContraseña.Text = "12345678" Then
                     Dim ventana As VentanaOficinista = New VentanaOficinista
                     Me.Visible = False
+                    txtUsuario.Text = ""
+                    txtContraseña.Text = ""
                     ventana.Show()
                 ElseIf txtUsuario.Text = "recepcionista" And txtContraseña.Text = "1234567" Then
                     Dim ventana As VentanaReceptionista = New VentanaReceptionista
                     Me.Visible = False
+                    txtUsuario.Text = ""
+                    txtContraseña.Text = ""
                     ventana.Show()
                 Else
                     FormInfo.callFormWithMessage("Contraseña o Usuario incorrectos!")
