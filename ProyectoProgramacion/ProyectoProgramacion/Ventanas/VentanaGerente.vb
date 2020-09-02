@@ -72,7 +72,6 @@ Public Class VentanaGerente
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
-        currentChildForm = childForm
         'end'
         childForm.TopLevel = False
         childForm.FormBorderStyle = FormBorderStyle.None
@@ -95,6 +94,10 @@ Public Class VentanaGerente
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
+        PanelDesktop.Controls.Clear()
+        PanelDesktop.Controls.Add(pbLogoEmpresa)
+        PanelDesktop.Controls.Add(lblhora)
+        PanelDesktop.Controls.Add(lblfecha)
         Reset()
     End Sub
 

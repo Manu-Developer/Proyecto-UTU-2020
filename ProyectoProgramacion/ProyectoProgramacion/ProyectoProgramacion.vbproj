@@ -253,20 +253,12 @@
     <EmbeddedResource Include="Ventanas\ReservasConfirmadas.resx">
       <DependentUpon>ReservasConfirmadas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\VentanaReceptionista.aa.resx">
-      <DependentUpon>VentanaReceptionista.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\VentanaReceptionista.resx">
       <DependentUpon>VentanaReceptionista.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\VentanaOficinista.aa.resx">
-      <DependentUpon>VentanaOficinista.vb</DependentUpon>
-    </EmbeddedResource>
+  
     <EmbeddedResource Include="Ventanas\VentanaOficinista.resx">
       <DependentUpon>VentanaOficinista.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\VentanaGerente.aa.resx">
-      <DependentUpon>VentanaGerente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\VentanaGerente.resx">
       <DependentUpon>VentanaGerente.vb</DependentUpon>
