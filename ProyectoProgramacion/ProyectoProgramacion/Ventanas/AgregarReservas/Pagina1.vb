@@ -23,7 +23,6 @@ Public Class Pagina1
     End Sub
 
     Private Sub ipbSiguienteVentana_Click(sender As Object, e As EventArgs) Handles ipbSiguienteVentana.Click
-        Me.Visible = False
         Pagina2.ShowDialog()
         Pagina2.Location = getLocation()
     End Sub

@@ -81,6 +81,7 @@ Public Class VentanaGerente
         childForm.BringToFront()
         childForm.Show()
         lblGeneral.Text = currentBtn.Text
+        PanelDesktop.Controls.Remove(pbLogoEmpresa)
     End Sub
     Private Sub Reset()
         IconCurrentForm.IconChar = IconChar.Home
@@ -93,6 +94,9 @@ Public Class VentanaGerente
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
+        End If
+        If (PanelDesktop.Controls.Contains(pbLogoEmpresa)) Then
+            Return
         End If
         PanelDesktop.Controls.Clear()
         PanelDesktop.Controls.Add(pbLogoEmpresa)

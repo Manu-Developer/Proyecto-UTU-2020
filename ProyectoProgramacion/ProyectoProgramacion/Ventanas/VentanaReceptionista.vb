@@ -72,7 +72,6 @@ Public Class VentanaReceptionista
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
-        currentChildForm = childForm
         'end'
         childForm.TopLevel = False
         childForm.FormBorderStyle = FormBorderStyle.None
@@ -82,6 +81,7 @@ Public Class VentanaReceptionista
         childForm.BringToFront()
         childForm.Show()
         lblGeneral.Text = currentBtn.Text
+        PanelDesktop.Controls.Remove(pbLogoEmpresa)
     End Sub
     Private Sub Reset()
         IconCurrentForm.IconChar = IconChar.Home
@@ -94,6 +94,9 @@ Public Class VentanaReceptionista
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
+        End If
+        If (PanelDesktop.Controls.Contains(pbLogoEmpresa)) Then
+            Return
         End If
         PanelDesktop.Controls.Clear()
         PanelDesktop.Controls.Add(pbLogoEmpresa)

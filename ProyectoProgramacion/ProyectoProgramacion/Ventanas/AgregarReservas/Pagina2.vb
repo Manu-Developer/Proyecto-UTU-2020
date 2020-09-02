@@ -14,9 +14,6 @@ Public Class Pagina2
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub Pagina3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    End Sub
-
     Public Function getLocation()
         Return Me.Location
     End Function
@@ -27,8 +24,9 @@ Public Class Pagina2
     End Sub
 
     Private Sub ipbAnteriorVentana_Click(sender As Object, e As EventArgs) Handles ipbAnteriorVentana.Click
-        Me.Visible = False
-        Pagina1.Visible = True
+        Me.Close()
+        Pagina1.Visible = False
         Pagina1.Location = getLocation()
+        Pagina1.Show()
     End Sub
 End Class
