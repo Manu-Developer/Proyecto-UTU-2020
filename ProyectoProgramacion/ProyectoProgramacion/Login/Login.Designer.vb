@@ -26,13 +26,13 @@ Partial Class Login
         Me.panelPrincipal = New System.Windows.Forms.Panel()
         Me.txtContraseña = New System.Windows.Forms.TextBox()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
-        Me.btnIniciar = New System.Windows.Forms.Button()
+        Me.btnIniciar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.lblContraseña = New System.Windows.Forms.Label()
         Me.lblUsuario = New System.Windows.Forms.Label()
         Me.panelDebajo = New System.Windows.Forms.Panel()
         Me.panelBienvenido = New System.Windows.Forms.Panel()
         Me.lblBienvenido = New System.Windows.Forms.Label()
-        Me.btnLogin = New System.Windows.Forms.Button()
+        Me.btnLogin = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.ipbMinimizar = New FontAwesome.Sharp.IconPictureBox()
         Me.ipbSalir = New FontAwesome.Sharp.IconPictureBox()
         Me.pcbImagen = New System.Windows.Forms.PictureBox()
@@ -56,7 +56,7 @@ Partial Class Login
         Me.panelPrincipal.Location = New System.Drawing.Point(479, 38)
         Me.panelPrincipal.Name = "panelPrincipal"
         Me.panelPrincipal.Size = New System.Drawing.Size(282, 390)
-        Me.panelPrincipal.TabIndex = 2
+        Me.panelPrincipal.TabIndex = 30
         '
         'txtContraseña
         '
@@ -66,7 +66,7 @@ Partial Class Login
         Me.txtContraseña.Location = New System.Drawing.Point(48, 255)
         Me.txtContraseña.Name = "txtContraseña"
         Me.txtContraseña.Size = New System.Drawing.Size(181, 24)
-        Me.txtContraseña.TabIndex = 13
+        Me.txtContraseña.TabIndex = 2
         Me.txtContraseña.UseSystemPasswordChar = True
         '
         'txtUsuario
@@ -77,23 +77,34 @@ Partial Class Login
         Me.txtUsuario.Location = New System.Drawing.Point(49, 137)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(181, 24)
-        Me.txtUsuario.TabIndex = 12
+        Me.txtUsuario.TabIndex = 1
         '
         'btnIniciar
         '
+        Me.btnIniciar.ActiveBorderThickness = 1
+        Me.btnIniciar.ActiveCornerRadius = 20
+        Me.btnIniciar.ActiveFillColor = System.Drawing.SystemColors.Control
+        Me.btnIniciar.ActiveForecolor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnIniciar.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnIniciar.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange
         Me.btnIniciar.BackColor = System.Drawing.SystemColors.Control
         Me.btnIniciar.BackgroundImage = CType(resources.GetObject("btnIniciar.BackgroundImage"), System.Drawing.Image)
+        Me.btnIniciar.ButtonText = "Login"
         Me.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIniciar.ForeColor = System.Drawing.Color.White
+        Me.btnIniciar.IdleBorderThickness = 1
+        Me.btnIniciar.IdleCornerRadius = 20
+        Me.btnIniciar.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnIniciar.IdleForecolor = System.Drawing.SystemColors.Control
+        Me.btnIniciar.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.btnIniciar.Location = New System.Drawing.Point(49, 313)
         Me.btnIniciar.Margin = New System.Windows.Forms.Padding(5)
         Me.btnIniciar.Name = "btnIniciar"
         Me.btnIniciar.Size = New System.Drawing.Size(181, 41)
-        Me.btnIniciar.TabIndex = 11
-        Me.btnIniciar.Text = "Iniciar Sesión"
-        Me.btnIniciar.UseVisualStyleBackColor = False
+        Me.btnIniciar.TabIndex = 0
+        Me.btnIniciar.TabStop = False
+        Me.btnIniciar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblContraseña
         '
@@ -143,24 +154,34 @@ Partial Class Login
         Me.lblBienvenido.Location = New System.Drawing.Point(66, 24)
         Me.lblBienvenido.Name = "lblBienvenido"
         Me.lblBienvenido.Size = New System.Drawing.Size(144, 29)
-        Me.lblBienvenido.TabIndex = 1
+        Me.lblBienvenido.TabIndex = 29
         Me.lblBienvenido.Text = "Bienvenido"
         '
         'btnLogin
         '
-        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnLogin.ActiveBorderThickness = 1
+        Me.btnLogin.ActiveCornerRadius = 20
+        Me.btnLogin.ActiveFillColor = System.Drawing.Color.SeaGreen
+        Me.btnLogin.ActiveForecolor = System.Drawing.Color.White
+        Me.btnLogin.ActiveLineColor = System.Drawing.Color.SeaGreen
+        Me.btnLogin.BackColor = System.Drawing.SystemColors.Control
+        Me.btnLogin.BackgroundImage = CType(resources.GetObject("btnLogin.BackgroundImage"), System.Drawing.Image)
+        Me.btnLogin.ButtonText = "ThinButton"
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLogin.FlatAppearance.BorderSize = 0
-        Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
+        Me.btnLogin.IdleBorderThickness = 1
+        Me.btnLogin.IdleCornerRadius = 20
+        Me.btnLogin.IdleFillColor = System.Drawing.Color.White
+        Me.btnLogin.IdleForecolor = System.Drawing.Color.SeaGreen
+        Me.btnLogin.IdleLineColor = System.Drawing.Color.SeaGreen
         Me.btnLogin.Location = New System.Drawing.Point(239, 281)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(192, 36)
         Me.btnLogin.TabIndex = 2
         Me.btnLogin.TabStop = False
-        Me.btnLogin.Text = "Iniciar Sesión"
-        Me.btnLogin.UseVisualStyleBackColor = False
+        Me.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ipbMinimizar
         '
@@ -230,11 +251,11 @@ Partial Class Login
     Friend WithEvents lblUsuario As Label
     Friend WithEvents panelDebajo As Panel
     Friend WithEvents panelBienvenido As Panel
-    Friend WithEvents btnLogin As Button
+    Friend WithEvents btnLogin As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents lblBienvenido As Label
     Friend WithEvents ipbMinimizar As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents ipbSalir As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents btnIniciar As Button
+    Friend WithEvents btnIniciar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents txtContraseña As TextBox
     Friend WithEvents txtUsuario As TextBox
 End Class

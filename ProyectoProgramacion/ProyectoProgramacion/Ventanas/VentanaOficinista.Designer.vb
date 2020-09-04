@@ -123,6 +123,7 @@ Partial Class VentanaOficinista
         Me.btnCerarSesion.IconSize = 32
         Me.btnCerarSesion.Name = "btnCerarSesion"
         Me.btnCerarSesion.Rotation = 0R
+        Me.btnCerarSesion.TabStop = False
         Me.btnCerarSesion.UseVisualStyleBackColor = True
         '
         'PictureBox1

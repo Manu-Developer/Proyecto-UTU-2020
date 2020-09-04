@@ -11,4 +11,9 @@
         Me.Close()
     End Sub
 
+    Private Sub BunifuFlatButton1_KeyDown(sender As Object, e As KeyEventArgs) Handles BunifuFlatButton1.KeyDown
+        If (e.KeyCode.Equals(Keys.Enter)) Then
+            Me.Close()
+        End If
+    End Sub
 End Class

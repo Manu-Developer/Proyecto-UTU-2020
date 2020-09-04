@@ -27,7 +27,7 @@ Partial Class FormSucess
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.message = New System.Windows.Forms.Label()
         Me.BunifuCustomLabel2 = New System.Windows.Forms.Label()
-        Me.BunifuFlatButton1 = New System.Windows.Forms.Button()
+        Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -73,19 +73,31 @@ Partial Class FormSucess
         Me.BunifuCustomLabel2.Text = "Acción completada exitosamente."
         Me.BunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'BunifuFlatButton1
+        'BunifuThinButton21
         '
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BunifuFlatButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuFlatButton1.ForeColor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(73, 440)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(241, 48)
-        Me.BunifuFlatButton1.TabIndex = 3
-        Me.BunifuFlatButton1.Text = "Aceptar"
-        Me.BunifuFlatButton1.UseVisualStyleBackColor = False
+        Me.BunifuThinButton21.ActiveBorderThickness = 1
+        Me.BunifuThinButton21.ActiveCornerRadius = 20
+        Me.BunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.BunifuThinButton21.ActiveForecolor = System.Drawing.Color.White
+        Me.BunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.BunifuThinButton21.BackColor = System.Drawing.Color.White
+        Me.BunifuThinButton21.BackgroundImage = CType(resources.GetObject("BunifuThinButton21.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuThinButton21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BunifuThinButton21.ButtonText = "Acceptar"
+        Me.BunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuThinButton21.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuThinButton21.ForeColor = System.Drawing.Color.White
+        Me.BunifuThinButton21.IdleBorderThickness = 1
+        Me.BunifuThinButton21.IdleCornerRadius = 20
+        Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.White
+        Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(84, 436)
+        Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.BunifuThinButton21.Name = "BunifuThinButton21"
+        Me.BunifuThinButton21.Size = New System.Drawing.Size(187, 58)
+        Me.BunifuThinButton21.TabIndex = 4
+        Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FormSucess
         '
@@ -95,7 +107,7 @@ Partial Class FormSucess
         Me.BackgroundImage = Global.ProyectoProgramacion.My.Resources.Resources.Shadow_Notificaciones
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(370, 500)
-        Me.Controls.Add(Me.BunifuFlatButton1)
+        Me.Controls.Add(Me.BunifuThinButton21)
         Me.Controls.Add(Me.BunifuCustomLabel2)
         Me.Controls.Add(Me.message)
         Me.Controls.Add(Me.Panel1)
@@ -103,6 +115,8 @@ Partial Class FormSucess
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormSucess"
+        Me.Opacity = 0.8R
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Correcto"
         Me.Panel1.ResumeLayout(False)
@@ -110,9 +124,9 @@ Partial Class FormSucess
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents BunifuFlatButton1 As Button
     Friend WithEvents BunifuCustomLabel2 As Label
     Friend WithEvents message As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BunifuThinButton21 As Bunifu.Framework.UI.BunifuThinButton2
 End Class

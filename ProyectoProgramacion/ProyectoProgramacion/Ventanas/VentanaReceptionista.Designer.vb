@@ -93,6 +93,7 @@ Partial Class VentanaReceptionista
         Me.btnHSalida.IconSize = 32
         Me.btnHSalida.Name = "btnHSalida"
         Me.btnHSalida.Rotation = 0R
+        Me.btnHSalida.TabStop = False
         Me.btnHSalida.UseVisualStyleBackColor = True
         '
         'btnHEntrada
@@ -107,6 +108,7 @@ Partial Class VentanaReceptionista
         Me.btnHEntrada.IconSize = 32
         Me.btnHEntrada.Name = "btnHEntrada"
         Me.btnHEntrada.Rotation = 0R
+        Me.btnHEntrada.TabStop = False
         Me.btnHEntrada.UseVisualStyleBackColor = True
         '
         'btnReservas
@@ -121,6 +123,7 @@ Partial Class VentanaReceptionista
         Me.btnReservas.IconSize = 32
         Me.btnReservas.Name = "btnReservas"
         Me.btnReservas.Rotation = 0R
+        Me.btnReservas.TabStop = False
         Me.btnReservas.UseVisualStyleBackColor = True
         '
         'btnInicio
@@ -135,6 +138,7 @@ Partial Class VentanaReceptionista
         Me.btnInicio.IconSize = 32
         Me.btnInicio.Name = "btnInicio"
         Me.btnInicio.Rotation = 0R
+        Me.btnInicio.TabStop = False
         Me.btnInicio.UseVisualStyleBackColor = True
         '
         'txtNombreUsuario
@@ -155,6 +159,7 @@ Partial Class VentanaReceptionista
         Me.btnCerarSesion.IconSize = 32
         Me.btnCerarSesion.Name = "btnCerarSesion"
         Me.btnCerarSesion.Rotation = 0R
+        Me.btnCerarSesion.TabStop = False
         Me.btnCerarSesion.UseVisualStyleBackColor = True
         '
         'PictureBox1
