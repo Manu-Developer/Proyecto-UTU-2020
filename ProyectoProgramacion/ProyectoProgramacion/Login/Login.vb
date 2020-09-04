@@ -33,27 +33,33 @@ Public Class Login
 
     Private Sub login()
         Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
-
         If Validaciones.validarTexto(txtUsuario) Then
-            If Validaciones.validarContraseña(txtContraseña) = True Then
+            If Validaciones.validarContraseña(txtContraseña) Then
                 If txtUsuario.Text = "gerente" And txtContraseña.Text = "123456789" Then
-                    Dim ventana As VentanaGerente = New VentanaGerente
                     Me.Visible = False
                     txtUsuario.Text = ""
                     txtContraseña.Text = ""
-                    ventana.Show()
+                    VentanaGerente.Show()
                 ElseIf txtUsuario.Text = "oficinista" And txtContraseña.Text = "12345678" Then
-                    Dim ventana As VentanaOficinista = New VentanaOficinista
                     Me.Visible = False
                     txtUsuario.Text = ""
                     txtContraseña.Text = ""
-                    ventana.Show()
+                    Dim oficinista As VentanaGerente = New VentanaGerente
+                    oficinista.PanelMenu.Controls.Remove(oficinista.btnModificarPrecio)
+                    oficinista.PanelMenu.Controls.Remove(oficinista.btnReservas)
+                    oficinista.PanelMenu.Controls.Remove(oficinista.btnHEntrada)
+                    oficinista.PanelMenu.Controls.Remove(oficinista.btnHSalida)
+                    oficinista.btnModificarPrecio.Enabled = False
+                    oficinista.btnReservas.Enabled = False
+                    oficinista.btnHEntrada.Enabled = False
+                    oficinista.btnHSalida.Enabled = False
+
+                    oficinista.Show()
                 ElseIf txtUsuario.Text = "recepcionista" And txtContraseña.Text = "1234567" Then
-                    Dim ventana As VentanaReceptionista = New VentanaReceptionista
                     Me.Visible = False
                     txtUsuario.Text = ""
                     txtContraseña.Text = ""
-                    ventana.Show()
+                    VentanaReceptionista.Show()
                 Else
                     FormInfo.callFormWithMessage("Contraseña o Usuario incorrectos!")
                     txtUsuario.Text = ""
