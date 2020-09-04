@@ -190,4 +190,8 @@ Public Class VentanaGerente
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
         OpenChildForm(New ReservasSalidaConfirmada)
     End Sub
+
+    Private Sub PanelDesktop_Paint(sender As Object, e As PaintEventArgs) Handles PanelDesktop.Paint
+
+    End Sub
 End Class

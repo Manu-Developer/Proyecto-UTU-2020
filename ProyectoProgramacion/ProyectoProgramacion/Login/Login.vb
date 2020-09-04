@@ -33,11 +33,9 @@ Public Class Login
 
     Private Sub login()
         Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
-
         If Validaciones.validarTexto(txtUsuario) Then
             If Validaciones.validarContraseña(txtContraseña) Then
                 If txtUsuario.Text = "gerente" And txtContraseña.Text = "123456789" Then
-
                     Me.Visible = False
                     txtUsuario.Text = ""
                     txtContraseña.Text = ""
@@ -46,9 +44,18 @@ Public Class Login
                     Me.Visible = False
                     txtUsuario.Text = ""
                     txtContraseña.Text = ""
-                    VentanaOficinista.Show()
-                ElseIf txtUsuario.Text = "recepcionista" And txtContraseña.Text = "1234567" Then
+                    Dim oficinista As VentanaGerente = New VentanaGerente
+                    oficinista.PanelMenu.Controls.Remove(oficinista.btnModificarPrecio)
+                    oficinista.PanelMenu.Controls.Remove(oficinista.btnReservas)
+                    oficinista.PanelMenu.Controls.Remove(oficinista.btnHEntrada)
+                    oficinista.PanelMenu.Controls.Remove(oficinista.btnHSalida)
+                    oficinista.btnModificarPrecio.Enabled = False
+                    oficinista.btnReservas.Enabled = False
+                    oficinista.btnHEntrada.Enabled = False
+                    oficinista.btnHSalida.Enabled = False
 
+                    oficinista.Show()
+                ElseIf txtUsuario.Text = "recepcionista" And txtContraseña.Text = "1234567" Then
                     Me.Visible = False
                     txtUsuario.Text = ""
                     txtContraseña.Text = ""

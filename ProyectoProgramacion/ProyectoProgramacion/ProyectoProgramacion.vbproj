@@ -256,7 +256,6 @@
     <EmbeddedResource Include="Ventanas\VentanaReceptionista.resx">
       <DependentUpon>VentanaReceptionista.vb</DependentUpon>
     </EmbeddedResource>
-  
     <EmbeddedResource Include="Ventanas\VentanaOficinista.resx">
       <DependentUpon>VentanaOficinista.vb</DependentUpon>
     </EmbeddedResource>
