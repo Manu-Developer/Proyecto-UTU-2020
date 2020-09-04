@@ -28,9 +28,13 @@ Public Class Login
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click, btnIniciar.Click
+        login()
+    End Sub
+
+    Private Sub login()
         Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
 
-        If Validaciones.validarTexto(txtUsuario) = True Then
+        If Validaciones.validarTexto(txtUsuario) Then
             If Validaciones.validarContraseña(txtContraseña) = True Then
                 If txtUsuario.Text = "gerente" And txtContraseña.Text = "123456789" Then
                     Dim ventana As VentanaGerente = New VentanaGerente
@@ -56,10 +60,12 @@ Public Class Login
                     txtContraseña.Text = ""
                 End If
             End If
-
         End If
+    End Sub
 
-
-
+    Private Sub txtUsuario_KeyDown(sender As Object, e As KeyEventArgs) Handles txtUsuario.KeyDown, txtContraseña.KeyDown
+        If (e.KeyCode.Equals(Keys.Enter)) Then
+            login()
+        End If
     End Sub
 End Class

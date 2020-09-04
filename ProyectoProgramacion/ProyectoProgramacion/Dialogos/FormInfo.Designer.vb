@@ -25,8 +25,8 @@ Partial Class FormInfo
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormInfo))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.message = New Label()
-        Me.BunifuFlatButton1 = New Button()
+        Me.message = New System.Windows.Forms.Label()
+        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -63,18 +63,29 @@ Partial Class FormInfo
         '
         'BunifuFlatButton1
         '
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuFlatButton1.ActiveBorderThickness = 1
+        Me.BunifuFlatButton1.ActiveCornerRadius = 20
+        Me.BunifuFlatButton1.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.BunifuFlatButton1.ActiveForecolor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.BackgroundImage = CType(resources.GetObject("BunifuFlatButton1.BackgroundImage"), System.Drawing.Image)
         Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.BunifuFlatButton1.Text = "Aceptar"
+        Me.BunifuFlatButton1.ButtonText = "Acceptar"
         Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(105, 376)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(153, 48)
-        Me.BunifuFlatButton1.TabIndex = 3
-        Me.BunifuFlatButton1.Text = "Aceptar"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton1.ForeColor = System.Drawing.Color.White
         Me.BunifuFlatButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton1.ForeColor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.IdleBorderThickness = 1
+        Me.BunifuFlatButton1.IdleCornerRadius = 20
+        Me.BunifuFlatButton1.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.BunifuFlatButton1.IdleForecolor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(87, 374)
+        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(187, 58)
+        Me.BunifuFlatButton1.TabIndex = 3
+        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FormInfo
         '
@@ -91,6 +102,8 @@ Partial Class FormInfo
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormInfo"
+        Me.Opacity = 0.8R
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Informacion"
         Me.Panel1.ResumeLayout(False)
@@ -98,7 +111,7 @@ Partial Class FormInfo
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents BunifuFlatButton1 As Button
+    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents message As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
