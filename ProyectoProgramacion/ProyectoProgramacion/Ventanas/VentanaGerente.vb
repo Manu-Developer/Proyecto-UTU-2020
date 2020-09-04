@@ -67,7 +67,7 @@ Public Class VentanaGerente
             currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText
         End If
     End Sub
-    Private Sub OpenChildForm(childForm As Form, textoDeseado As String)
+    Private Sub OpenChildForm(childForm As Form)
         'Open only form'
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
@@ -125,12 +125,12 @@ Public Class VentanaGerente
 
     Private Sub btnModificarPrecio_Click(sender As Object, e As EventArgs) Handles btnModificarPrecio.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ModificarPrecioHabitacion, "Gestionar Reservas")
+        OpenChildForm(New ModificarPrecioHabitacion)
     End Sub
 
     Private Sub btnDelivery_Click(sender As Object, e As EventArgs) Handles btnReservas.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ReservasConfirmadas, "Gestionar Reservas")
+        OpenChildForm(New ReservasConfirmadas)
     End Sub
 
     Private Sub btnCerarSesion_Click(sender As Object, e As EventArgs) Handles btnCerarSesion.Click
@@ -178,16 +178,16 @@ Public Class VentanaGerente
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnGestion.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New GestionReservas, "Gestionar Reservas")
+        OpenChildForm(New GestionReservas)
     End Sub
 
     Private Sub btnHEntrada_Click(sender As Object, e As EventArgs) Handles btnHEntrada.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ReservasEntradaConfirmada, "Entradas Confirmadas")
+        OpenChildForm(New ReservasEntradaConfirmada)
     End Sub
 
     Private Sub btnHSalida_Click(sender As Object, e As EventArgs) Handles btnHSalida.Click
         ActivateButton(sender, Color.FromArgb(255, 255, 255))
-        OpenChildForm(New ReservasSalidaConfirmada, "Salidas Confirmadas")
+        OpenChildForm(New ReservasSalidaConfirmada)
     End Sub
 End Class

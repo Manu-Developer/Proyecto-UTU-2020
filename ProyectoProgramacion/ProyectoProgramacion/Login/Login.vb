@@ -35,7 +35,7 @@ Public Class Login
         Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
 
         If Validaciones.validarTexto(txtUsuario) Then
-            If Validaciones.validarContraseña(txtContraseña) = True Then
+            If Validaciones.validarContraseña(txtContraseña) Then
                 If txtUsuario.Text = "gerente" And txtContraseña.Text = "123456789" Then
                     Dim ventana As VentanaGerente = New VentanaGerente
                     Me.Visible = False
