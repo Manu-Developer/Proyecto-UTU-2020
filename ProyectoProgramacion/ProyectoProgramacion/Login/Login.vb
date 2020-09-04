@@ -39,27 +39,31 @@ Public Class Login
                     Me.Visible = False
                     txtUsuario.Text = ""
                     txtContraseña.Text = ""
-                    VentanaGerente.Show()
+                    General.Show()
                 ElseIf txtUsuario.Text = "oficinista" And txtContraseña.Text = "12345678" Then
                     Me.Visible = False
                     txtUsuario.Text = ""
                     txtContraseña.Text = ""
-                    Dim oficinista As VentanaGerente = New VentanaGerente
-                    oficinista.PanelMenu.Controls.Remove(oficinista.btnModificarPrecio)
-                    oficinista.PanelMenu.Controls.Remove(oficinista.btnReservas)
-                    oficinista.PanelMenu.Controls.Remove(oficinista.btnHEntrada)
-                    oficinista.PanelMenu.Controls.Remove(oficinista.btnHSalida)
+                    Dim oficinista As General = New General
+                    oficinista.btnModificarPrecio.Visible = False
+                    oficinista.btnReservas.Visible = False
+                    oficinista.btnHEntrada.Visible = False
+                    oficinista.btnHSalida.Visible = False
                     oficinista.btnModificarPrecio.Enabled = False
                     oficinista.btnReservas.Enabled = False
                     oficinista.btnHEntrada.Enabled = False
                     oficinista.btnHSalida.Enabled = False
-
                     oficinista.Show()
                 ElseIf txtUsuario.Text = "recepcionista" And txtContraseña.Text = "1234567" Then
                     Me.Visible = False
                     txtUsuario.Text = ""
                     txtContraseña.Text = ""
-                    VentanaReceptionista.Show()
+                    Dim recepcionista As General = New General
+                    recepcionista.btnModificarPrecio.Visible = False
+                    recepcionista.btnModificarPrecio.Enabled = False
+                    recepcionista.btnReservas.Visible = False
+                    recepcionista.btnReservas.Enabled = False
+                    recepcionista.Show()
                 Else
                     FormInfo.callFormWithMessage("Contraseña o Usuario incorrectos!")
                     txtUsuario.Text = ""

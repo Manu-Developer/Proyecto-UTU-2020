@@ -2,7 +2,7 @@
 Imports System.Runtime.InteropServices
 Imports FontAwesome.Sharp
 
-Public Class VentanaGerente
+Public Class General
     Private currentBtn As IconButton
     Private leftBorderBtn As Panel
     Private currentChildForm As Form

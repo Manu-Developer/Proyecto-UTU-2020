@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class VentanaReceptionista
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class General
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,17 @@ Partial Class VentanaReceptionista
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VentanaReceptionista))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(General))
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnHSalida = New FontAwesome.Sharp.IconButton()
         Me.btnHEntrada = New FontAwesome.Sharp.IconButton()
         Me.btnReservas = New FontAwesome.Sharp.IconButton()
+        Me.btnModificarPrecio = New FontAwesome.Sharp.IconButton()
+        Me.btnGestion = New FontAwesome.Sharp.IconButton()
         Me.btnInicio = New FontAwesome.Sharp.IconButton()
         Me.txtNombreUsuario = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnCerarSesion = New FontAwesome.Sharp.IconButton()
@@ -37,8 +39,8 @@ Partial Class VentanaReceptionista
         Me.edit = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.nombre = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.receptionistaSalir = New FontAwesome.Sharp.IconPictureBox()
-        Me.receptionistaMinimizar = New FontAwesome.Sharp.IconPictureBox()
+        Me.gerenteSalir = New FontAwesome.Sharp.IconPictureBox()
+        Me.gerenteMinimizar = New FontAwesome.Sharp.IconPictureBox()
         Me.lblGeneral = New System.Windows.Forms.Label()
         Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.phototrasparent = New Bunifu.Framework.UI.BunifuElipse(Me.components)
@@ -55,8 +57,8 @@ Partial Class VentanaReceptionista
         CType(Me.photo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.photo.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.receptionistaSalir, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.receptionistaMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gerenteSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gerenteMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelDesktop.SuspendLayout()
         CType(Me.pbLogoEmpresa, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -77,6 +79,8 @@ Partial Class VentanaReceptionista
         Me.Panel1.Controls.Add(Me.btnHSalida)
         Me.Panel1.Controls.Add(Me.btnHEntrada)
         Me.Panel1.Controls.Add(Me.btnReservas)
+        Me.Panel1.Controls.Add(Me.btnModificarPrecio)
+        Me.Panel1.Controls.Add(Me.btnGestion)
         Me.Panel1.Controls.Add(Me.btnInicio)
         resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
@@ -125,6 +129,36 @@ Partial Class VentanaReceptionista
         Me.btnReservas.Rotation = 0R
         Me.btnReservas.TabStop = False
         Me.btnReservas.UseVisualStyleBackColor = True
+        '
+        'btnModificarPrecio
+        '
+        Me.btnModificarPrecio.Cursor = System.Windows.Forms.Cursors.Hand
+        resources.ApplyResources(Me.btnModificarPrecio, "btnModificarPrecio")
+        Me.btnModificarPrecio.FlatAppearance.BorderSize = 0
+        Me.btnModificarPrecio.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnModificarPrecio.ForeColor = System.Drawing.Color.White
+        Me.btnModificarPrecio.IconChar = FontAwesome.Sharp.IconChar.Edit
+        Me.btnModificarPrecio.IconColor = System.Drawing.Color.White
+        Me.btnModificarPrecio.IconSize = 32
+        Me.btnModificarPrecio.Name = "btnModificarPrecio"
+        Me.btnModificarPrecio.Rotation = 0R
+        Me.btnModificarPrecio.TabStop = False
+        Me.btnModificarPrecio.UseVisualStyleBackColor = True
+        '
+        'btnGestion
+        '
+        Me.btnGestion.Cursor = System.Windows.Forms.Cursors.Hand
+        resources.ApplyResources(Me.btnGestion, "btnGestion")
+        Me.btnGestion.FlatAppearance.BorderSize = 0
+        Me.btnGestion.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnGestion.ForeColor = System.Drawing.Color.White
+        Me.btnGestion.IconChar = FontAwesome.Sharp.IconChar.AddressBook
+        Me.btnGestion.IconColor = System.Drawing.Color.White
+        Me.btnGestion.IconSize = 32
+        Me.btnGestion.Name = "btnGestion"
+        Me.btnGestion.Rotation = 0R
+        Me.btnGestion.TabStop = False
+        Me.btnGestion.UseVisualStyleBackColor = True
         '
         'btnInicio
         '
@@ -193,35 +227,35 @@ Partial Class VentanaReceptionista
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.receptionistaSalir)
-        Me.Panel3.Controls.Add(Me.receptionistaMinimizar)
+        Me.Panel3.Controls.Add(Me.gerenteSalir)
+        Me.Panel3.Controls.Add(Me.gerenteMinimizar)
         Me.Panel3.Controls.Add(Me.lblGeneral)
         Me.Panel3.Controls.Add(Me.IconCurrentForm)
         Me.Panel3.Cursor = System.Windows.Forms.Cursors.Arrow
         resources.ApplyResources(Me.Panel3, "Panel3")
         Me.Panel3.Name = "Panel3"
         '
-        'receptionistaSalir
+        'gerenteSalir
         '
-        resources.ApplyResources(Me.receptionistaSalir, "receptionistaSalir")
-        Me.receptionistaSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.receptionistaSalir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.receptionistaSalir.IconChar = FontAwesome.Sharp.IconChar.Times
-        Me.receptionistaSalir.IconColor = System.Drawing.Color.White
-        Me.receptionistaSalir.IconSize = 34
-        Me.receptionistaSalir.Name = "receptionistaSalir"
-        Me.receptionistaSalir.TabStop = False
+        resources.ApplyResources(Me.gerenteSalir, "gerenteSalir")
+        Me.gerenteSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.gerenteSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.gerenteSalir.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.gerenteSalir.IconColor = System.Drawing.Color.White
+        Me.gerenteSalir.IconSize = 34
+        Me.gerenteSalir.Name = "gerenteSalir"
+        Me.gerenteSalir.TabStop = False
         '
-        'receptionistaMinimizar
+        'gerenteMinimizar
         '
-        resources.ApplyResources(Me.receptionistaMinimizar, "receptionistaMinimizar")
-        Me.receptionistaMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.receptionistaMinimizar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.receptionistaMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
-        Me.receptionistaMinimizar.IconColor = System.Drawing.Color.White
-        Me.receptionistaMinimizar.IconSize = 34
-        Me.receptionistaMinimizar.Name = "receptionistaMinimizar"
-        Me.receptionistaMinimizar.TabStop = False
+        resources.ApplyResources(Me.gerenteMinimizar, "gerenteMinimizar")
+        Me.gerenteMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.gerenteMinimizar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.gerenteMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
+        Me.gerenteMinimizar.IconColor = System.Drawing.Color.White
+        Me.gerenteMinimizar.IconSize = 34
+        Me.gerenteMinimizar.Name = "gerenteMinimizar"
+        Me.gerenteMinimizar.TabStop = False
         '
         'lblGeneral
         '
@@ -295,16 +329,16 @@ Partial Class VentanaReceptionista
         Me.pbLogoEmpresa.Name = "pbLogoEmpresa"
         Me.pbLogoEmpresa.TabStop = False
         '
-        'VentanaReceptionista
+        'VentanaGerente
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.PanelDesktop)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.PanelMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "VentanaReceptionista"
+        Me.Name = "VentanaGerente"
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelMenu.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -315,8 +349,8 @@ Partial Class VentanaReceptionista
         Me.photo.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.receptionistaSalir, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.receptionistaMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gerenteSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gerenteMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelDesktop.ResumeLayout(False)
         Me.PanelDesktop.PerformLayout()
@@ -326,6 +360,7 @@ Partial Class VentanaReceptionista
     End Sub
 
     Friend WithEvents PanelMenu As Panel
+    Friend WithEvents btnGestion As FontAwesome.Sharp.IconButton
     Friend WithEvents btnInicio As FontAwesome.Sharp.IconButton
     Friend WithEvents btnCerarSesion As FontAwesome.Sharp.IconButton
     Friend WithEvents pbLogoEmpresa As PictureBox
@@ -333,20 +368,21 @@ Partial Class VentanaReceptionista
     Friend WithEvents lblGeneral As Label
     Friend WithEvents IconCurrentForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnModificarPrecio As FontAwesome.Sharp.IconButton
     Friend WithEvents PanelDesktop As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents edit As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents photo As PictureBox
     Friend WithEvents nombre As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents phototrasparent As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents txtNombreUsuario As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuSeparator5 As Bunifu.Framework.UI.BunifuSeparator
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblfecha As Label
     Friend WithEvents lblhora As Label
     Friend WithEvents btnReservas As FontAwesome.Sharp.IconButton
     Friend WithEvents horayfecha As Timer
-    Friend WithEvents receptionistaMinimizar As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents receptionistaSalir As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents gerenteMinimizar As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents gerenteSalir As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents btnHSalida As FontAwesome.Sharp.IconButton
     Friend WithEvents btnHEntrada As FontAwesome.Sharp.IconButton
+    Friend WithEvents BunifuSeparator5 As Bunifu.Framework.UI.BunifuSeparator
 End Class
