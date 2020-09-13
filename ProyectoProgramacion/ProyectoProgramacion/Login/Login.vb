@@ -33,42 +33,40 @@ Public Class Login
 
     Private Sub login()
         Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
-        If Validaciones.validarTexto(txtUsuario) Then
-            If Validaciones.validarContraseña(txtContraseña) Then
-                If txtUsuario.Text = "gerente" And txtContraseña.Text = "123456789" Then
-                    Me.Visible = False
-                    txtUsuario.Text = ""
-                    txtContraseña.Text = ""
-                    General.Show()
-                ElseIf txtUsuario.Text = "oficinista" And txtContraseña.Text = "12345678" Then
-                    Me.Visible = False
-                    txtUsuario.Text = ""
-                    txtContraseña.Text = ""
-                    Dim oficinista As General = New General
-                    oficinista.btnModificarPrecio.Visible = False
-                    oficinista.btnReservas.Visible = False
-                    oficinista.btnHEntrada.Visible = False
-                    oficinista.btnHSalida.Visible = False
-                    oficinista.btnModificarPrecio.Enabled = False
-                    oficinista.btnReservas.Enabled = False
-                    oficinista.btnHEntrada.Enabled = False
-                    oficinista.btnHSalida.Enabled = False
-                    oficinista.Show()
-                ElseIf txtUsuario.Text = "recepcionista" And txtContraseña.Text = "1234567" Then
-                    Me.Visible = False
-                    txtUsuario.Text = ""
-                    txtContraseña.Text = ""
-                    Dim recepcionista As General = New General
-                    recepcionista.btnModificarPrecio.Visible = False
-                    recepcionista.btnModificarPrecio.Enabled = False
-                    recepcionista.btnReservas.Visible = False
-                    recepcionista.btnReservas.Enabled = False
-                    recepcionista.Show()
-                Else
-                    FormInfo.callFormWithMessage("Contraseña o Usuario incorrectos!")
-                    txtUsuario.Text = ""
-                    txtContraseña.Text = ""
-                End If
+        If Validaciones.validarTexto(txtUsuario) And Validaciones.validarContraseña(txtContraseña) Then
+            If txtUsuario.Text = "gerente" And txtContraseña.Text = "123456789" Then
+                Me.Visible = False
+                txtUsuario.Text = ""
+                txtContraseña.Text = ""
+                General.Show()
+            ElseIf txtUsuario.Text = "oficinista" And txtContraseña.Text = "12345678" Then
+                Me.Visible = False
+                txtUsuario.Text = ""
+                txtContraseña.Text = ""
+                Dim oficinista As General = New General
+                oficinista.btnModificarPrecio.Visible = False
+                oficinista.btnReservas.Visible = False
+                oficinista.btnHEntrada.Visible = False
+                oficinista.btnHSalida.Visible = False
+                oficinista.btnModificarPrecio.Enabled = False
+                oficinista.btnReservas.Enabled = False
+                oficinista.btnHEntrada.Enabled = False
+                oficinista.btnHSalida.Enabled = False
+                oficinista.Show()
+            ElseIf txtUsuario.Text = "recepcionista" And txtContraseña.Text = "1234567" Then
+                Me.Visible = False
+                txtUsuario.Text = ""
+                txtContraseña.Text = ""
+                Dim recepcionista As General = New General
+                recepcionista.btnModificarPrecio.Visible = False
+                recepcionista.btnModificarPrecio.Enabled = False
+                recepcionista.btnReservas.Visible = False
+                recepcionista.btnReservas.Enabled = False
+                recepcionista.Show()
+            Else
+                FormInfo.callFormWithMessage("Contraseña o Usuario incorrectos!")
+                txtUsuario.Text = ""
+                txtContraseña.Text = ""
             End If
         End If
     End Sub

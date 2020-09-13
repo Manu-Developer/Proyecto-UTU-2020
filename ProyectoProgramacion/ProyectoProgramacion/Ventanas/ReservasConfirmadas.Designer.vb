@@ -28,9 +28,10 @@ Partial Class ReservasConfirmadas
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ReservasConfirmadas))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.txtBuscar = New System.Windows.Forms.TextBox()
-        Me.image = New FontAwesome.Sharp.IconButton()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.BunifuMaterialTextbox1 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -87,34 +88,35 @@ Partial Class ReservasConfirmadas
         Me.DataGridView1.Size = New System.Drawing.Size(836, 417)
         Me.DataGridView1.TabIndex = 12
         '
-        'txtBuscar
+        'PictureBox2
         '
-        Me.txtBuscar.BackColor = System.Drawing.Color.White
-        Me.txtBuscar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.txtBuscar.Location = New System.Drawing.Point(47, 22)
-        Me.txtBuscar.Multiline = True
-        Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(654, 32)
-        Me.txtBuscar.TabIndex = 14
+        Me.PictureBox2.BackgroundImage = Global.ProyectoProgramacion.My.Resources.Resources.Buscar
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Location = New System.Drawing.Point(650, 10)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(45, 40)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 19
+        Me.PictureBox2.TabStop = False
         '
-        'image
+        'BunifuMaterialTextbox1
         '
-        Me.image.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(180, Byte), Integer))
-        Me.image.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.image.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.image.IconChar = FontAwesome.Sharp.IconChar.Search
-        Me.image.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.image.IconSize = 26
-        Me.image.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.image.Location = New System.Drawing.Point(17, 22)
-        Me.image.Name = "image"
-        Me.image.Rotation = 0R
-        Me.image.Size = New System.Drawing.Size(31, 32)
-        Me.image.TabIndex = 13
-        Me.image.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.image.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.image.UseVisualStyleBackColor = True
+        Me.BunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuMaterialTextbox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.BunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.BunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuMaterialTextbox1.HintText = "Buscar"
+        Me.BunifuMaterialTextbox1.isPassword = False
+        Me.BunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuMaterialTextbox1.LineThickness = 3
+        Me.BunifuMaterialTextbox1.Location = New System.Drawing.Point(13, 13)
+        Me.BunifuMaterialTextbox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuMaterialTextbox1.Name = "BunifuMaterialTextbox1"
+        Me.BunifuMaterialTextbox1.Size = New System.Drawing.Size(682, 40)
+        Me.BunifuMaterialTextbox1.TabIndex = 20
+        Me.BunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'ReservasConfirmadas
         '
@@ -122,19 +124,19 @@ Partial Class ReservasConfirmadas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(860, 548)
-        Me.Controls.Add(Me.txtBuscar)
-        Me.Controls.Add(Me.image)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.BunifuMaterialTextbox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ReservasConfirmadas"
         Me.Text = "Hotel Canino"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents txtBuscar As TextBox
-    Friend WithEvents image As FontAwesome.Sharp.IconButton
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents BunifuMaterialTextbox1 As Bunifu.Framework.UI.BunifuMaterialTextbox
 End Class

@@ -127,22 +127,28 @@
     <Compile Include="Login\Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\AgregarReservas\NuevoCliente.Designer.vb">
+    <Compile Include="Ventanas\Cliente\ModificarCliente.Designer.vb">
+      <DependentUpon>ModificarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\Cliente\ModificarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\Cliente\NuevoCliente.Designer.vb">
       <DependentUpon>NuevoCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\AgregarReservas\NuevoCliente.vb">
+    <Compile Include="Ventanas\Cliente\NuevoCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\AgregarReservas\Pagina1.Designer.vb">
+    <Compile Include="Ventanas\Cliente\Pagina1.Designer.vb">
       <DependentUpon>Pagina1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\AgregarReservas\Pagina1.vb">
+    <Compile Include="Ventanas\Cliente\Pagina1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\AgregarReservas\Pagina2.Designer.vb">
+    <Compile Include="Ventanas\Cliente\Pagina2.Designer.vb">
       <DependentUpon>Pagina2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\AgregarReservas\Pagina2.vb">
+    <Compile Include="Ventanas\Cliente\Pagina2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventanas\GestionReservas.Designer.vb">
@@ -211,13 +217,16 @@
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\AgregarReservas\NuevoCliente.resx">
+    <EmbeddedResource Include="Ventanas\Cliente\ModificarCliente.resx">
+      <DependentUpon>ModificarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\Cliente\NuevoCliente.resx">
       <DependentUpon>NuevoCliente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\AgregarReservas\Pagina1.resx">
+    <EmbeddedResource Include="Ventanas\Cliente\Pagina1.resx">
       <DependentUpon>Pagina1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\AgregarReservas\Pagina2.resx">
+    <EmbeddedResource Include="Ventanas\Cliente\Pagina2.resx">
       <DependentUpon>Pagina2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\GestionReservas.resx">
@@ -303,6 +312,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hnet.com-image.ico" />
+    <None Include="Resources\añadir.png" />
+    <None Include="Resources\Nuevo.png" />
+    <None Include="Resources\CajaTexto.png" />
+    <None Include="Resources\Buscar.png" />
+    <None Include="Resources\SombraPanel.png" />
+    <None Include="Resources\reserva.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\eliminar.png" />
     <None Include="Resources\instalaciones25.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
