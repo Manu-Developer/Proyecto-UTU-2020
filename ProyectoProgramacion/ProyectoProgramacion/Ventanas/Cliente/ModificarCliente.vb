@@ -33,22 +33,11 @@ Public Class ModificarCliente
         Dim age As Integer
         age = Year(Date.Now) - Year(fechaNac.Value)
         Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
-        If Validaciones.validarCedula(txtCI) Then
-            If Validaciones.validarTexto(txtNombre) Then
-                If Validaciones.validarTexto(txtApellido) Then
-                    If Validaciones.validarTexto(txtDireccion) Then
-                        If Validaciones.validarNumeroTelefono(txtTelefono) Then
-                            If age > 18 Then
-
-                                Me.Close()
-                                FormSucess.callFormWithMessage("Se ha modificado con exito!")
-                            Else
-                                FormInfo.callFormWithMessage("La Fecha de nacimiento es incorrecta")
-                            End If
-                        End If
-                    End If
-                End If
-            End If
+        If Validaciones.validarCedula(txtCI) And Validaciones.validarTexto(txtNombre) And Validaciones.validarTexto(txtApellido) And Validaciones.validarTexto(txtDireccion) And Validaciones.validarNumeroTelefono(txtTelefono) And age > 18 Then
+            Me.Close()
+            FormSucess.callFormWithMessage("Se ha modificado con exito!")
+        Else
+            FormInfo.callFormWithMessage("La Fecha de nacimiento es incorrecta")
         End If
     End Sub
 
