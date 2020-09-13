@@ -28,8 +28,8 @@ Partial Class ReservasConfirmadas
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ReservasConfirmadas))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.txtBuscar = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.BunifuMaterialTextbox1 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -88,35 +88,35 @@ Partial Class ReservasConfirmadas
         Me.DataGridView1.Size = New System.Drawing.Size(836, 417)
         Me.DataGridView1.TabIndex = 12
         '
+        'txtBuscar
+        '
+        Me.txtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.txtBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.txtBuscar.HintForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.txtBuscar.HintText = "Buscar"
+        Me.txtBuscar.isPassword = False
+        Me.txtBuscar.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.txtBuscar.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.txtBuscar.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.txtBuscar.LineThickness = 3
+        Me.txtBuscar.Location = New System.Drawing.Point(17, 14)
+        Me.txtBuscar.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(682, 40)
+        Me.txtBuscar.TabIndex = 20
+        Me.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
         'PictureBox2
         '
         Me.PictureBox2.BackgroundImage = Global.ProyectoProgramacion.My.Resources.Resources.Buscar
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox2.Location = New System.Drawing.Point(650, 10)
+        Me.PictureBox2.Location = New System.Drawing.Point(662, 14)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(45, 40)
+        Me.PictureBox2.Size = New System.Drawing.Size(37, 37)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 19
+        Me.PictureBox2.TabIndex = 24
         Me.PictureBox2.TabStop = False
-        '
-        'BunifuMaterialTextbox1
-        '
-        Me.BunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMaterialTextbox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.BunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.BunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuMaterialTextbox1.HintText = "Buscar"
-        Me.BunifuMaterialTextbox1.isPassword = False
-        Me.BunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuMaterialTextbox1.LineThickness = 3
-        Me.BunifuMaterialTextbox1.Location = New System.Drawing.Point(13, 13)
-        Me.BunifuMaterialTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMaterialTextbox1.Name = "BunifuMaterialTextbox1"
-        Me.BunifuMaterialTextbox1.Size = New System.Drawing.Size(682, 40)
-        Me.BunifuMaterialTextbox1.TabIndex = 20
-        Me.BunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'ReservasConfirmadas
         '
@@ -125,7 +125,7 @@ Partial Class ReservasConfirmadas
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(860, 548)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.BunifuMaterialTextbox1)
+        Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -137,6 +137,6 @@ Partial Class ReservasConfirmadas
 
     End Sub
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents txtBuscar As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents BunifuMaterialTextbox1 As Bunifu.Framework.UI.BunifuMaterialTextbox
 End Class

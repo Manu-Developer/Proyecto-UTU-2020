@@ -30,7 +30,7 @@ Public Class NuevoCliente
                     If Validaciones.validarTexto(txtDireccion) Then
                         If Validaciones.validarNumeroTelefono(txtTelefono) Then
                             If age > 18 Then
-                                GestionReservas.clientes.Rows.Add(txtCI.Text, txtNombre.Text, txtApellido.Text, txtDireccion.Text, txtTelefono.Text, fechaNac)
+                                GestionReservas.dgvClientes.Rows.Add(txtCI.Text, txtNombre.Text, txtApellido.Text, txtDireccion.Text, txtTelefono.Text, fechaNac)
                                 Me.Close()
                                 FormSucess.callFormWithMessage("Se ha guardado con exito!")
                             Else
