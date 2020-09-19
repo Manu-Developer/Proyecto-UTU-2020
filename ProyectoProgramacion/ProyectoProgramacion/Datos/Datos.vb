@@ -21,18 +21,18 @@ Public Class Datos
 
     Public Function login(username As TextBox, password As TextBox)
         getConnection().open
-        Dim command = New MySqlCommand("SELECT * from login where Username=@user", getConnection())
+        Dim command = New MySqlCommand("SELECT * from usuarios where Username=@user", getConnection())
         command.Parameters.AddWithValue("@user", username.Text)
         command.CommandType = CommandType.Text
 
         Dim reader = command.ExecuteReader()
         If reader.Read Then
             If reader("Username").Equals(username.Text) And reader("Password").Equals(password.Text) Then
-                If reader("ROL").Equals("Gerente") Then
+                If reader("Rol").Equals("Gerente") Then
                     username.Text = ""
                     password.Text = ""
                     General.Show()
-                ElseIf reader("ROL").Equals("Oficinista") Then
+                ElseIf reader("Rol").Equals("Oficinista") Then
                     username.Text = ""
                     password.Text = ""
                     Dim oficinista As General = New General
@@ -45,7 +45,7 @@ Public Class Datos
                     oficinista.btnHEntrada.Enabled = False
                     oficinista.btnHSalida.Enabled = False
                     oficinista.Show()
-                ElseIf reader("ROL").Equals("Recepcionista") Then
+                ElseIf reader("Rol").Equals("Recepcionista") Then
                     username.Text = ""
                     password.Text = ""
                     Dim recepcionista As General = New General

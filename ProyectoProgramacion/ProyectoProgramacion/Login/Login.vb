@@ -32,7 +32,6 @@ Public Class Login
     End Sub
 
     Private Sub login()
-        Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
         If Validaciones.validarTexto(txtUsuario) And Validaciones.validarContraseña(txtContraseña) Then
             Dim datos = New Datos
             If datos.login(txtUsuario, txtContraseña) Then
@@ -44,6 +43,13 @@ Public Class Login
     Private Sub txtUsuario_KeyDown(sender As Object, e As KeyEventArgs) Handles txtUsuario.KeyDown, txtContraseña.KeyDown
         If (e.KeyCode.Equals(Keys.Enter)) Then
             login()
+        End If
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim datos = New Datos
+        If Not datos.checkConnection() Then
+            Application.Exit()
         End If
     End Sub
 End Class

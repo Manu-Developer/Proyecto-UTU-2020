@@ -1,6 +1,6 @@
 ﻿Imports System.Text.RegularExpressions
 
-Friend Class ValidacionesBasicas
+Module Validaciones
     Public Function validarContraseña(txtValidarContraseña As TextBox) As Boolean
         Dim validador As New Regex("^\d{7,}$")
 
@@ -103,4 +103,4 @@ Friend Class ValidacionesBasicas
             Return True
         End If
     End Function
-End Class
+End Module
