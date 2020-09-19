@@ -23,12 +23,11 @@ Public Class NuevoCliente
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles registrar.Click
         Dim age As Integer
         age = Year(Date.Now) - Year(fechaNac.Value)
-        Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
-        If Validaciones.validarCedula(txtCI) Then
-            If Validaciones.validarTexto(txtNombre) Then
-                If Validaciones.validarTexto(txtApellido) Then
-                    If Validaciones.validarTexto(txtDireccion) Then
-                        If Validaciones.validarNumeroTelefono(txtTelefono) Then
+        If validarCedula(txtCI) Then
+            If validarTexto(txtNombre) Then
+                If validarTexto(txtApellido) Then
+                    If validarTexto(txtDireccion) Then
+                        If validarNumeroTelefono(txtTelefono) Then
                             If age > 18 Then
                                 GestionReservas.dgvClientes.Rows.Add(txtCI.Text, txtNombre.Text, txtApellido.Text, txtDireccion.Text, txtTelefono.Text, fechaNac)
                                 Me.Close()

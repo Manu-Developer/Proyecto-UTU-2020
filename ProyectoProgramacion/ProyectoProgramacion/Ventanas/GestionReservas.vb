@@ -39,7 +39,12 @@ Public Class GestionReservas
                 FormSucess.callFormWithMessage("La Eliminacion ha sido exitosa!")
             End If
         ElseIf e.ColumnIndex.Equals(8) Then
-            'Ver Reserva'
+            'SI NO TIENE RESERVA'
+            Dim result As DialogResult = New DialogResult()
+            result = FormNewReserva.callForm()
+            If result = DialogResult.OK Then
+                'NEW RESERVA'
+            End If
         End If
     End Sub
 End Class

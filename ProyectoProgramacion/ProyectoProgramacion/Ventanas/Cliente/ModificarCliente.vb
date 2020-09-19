@@ -32,7 +32,6 @@ Public Class ModificarCliente
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles modificar.Click
         Dim age As Integer
         age = Year(Date.Now) - Year(fechaNac.Value)
-        Dim Validaciones As ValidacionesBasicas = New ValidacionesBasicas
         If Validaciones.validarCedula(txtCI) And Validaciones.validarTexto(txtNombre) And Validaciones.validarTexto(txtApellido) And Validaciones.validarTexto(txtDireccion) And Validaciones.validarNumeroTelefono(txtTelefono) And age > 18 Then
             Me.Close()
             FormSucess.callFormWithMessage("Se ha modificado con exito!")

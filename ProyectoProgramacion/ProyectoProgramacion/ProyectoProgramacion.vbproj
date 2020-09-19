@@ -164,6 +164,12 @@
     <Compile Include="Dialogos\FormSucess.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dialogos\FormNewReserva.Designer.vb">
+      <DependentUpon>FormNewReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\FormNewReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dialogos\FormWarn.Designer.vb">
       <DependentUpon>FormWarn.vb</DependentUpon>
     </Compile>
@@ -252,6 +258,18 @@
     <Compile Include="Ventanas\General.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ventanas\Reserva\NuevaReserva.Designer.vb">
+      <DependentUpon>NuevaReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\Reserva\NuevaReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\Reserva\VerReserva.Designer.vb">
+      <DependentUpon>VerReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\Reserva\VerReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dialogos\FormInfo.resx">
@@ -259,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogos\FormSucess.resx">
       <DependentUpon>FormSucess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\FormNewReserva.resx">
+      <DependentUpon>FormNewReserva.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogos\FormWarn.resx">
       <DependentUpon>FormWarn.vb</DependentUpon>
@@ -302,6 +323,12 @@
     <EmbeddedResource Include="Ventanas\General.resx">
       <DependentUpon>General.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\Reserva\NuevaReserva.resx">
+      <DependentUpon>NuevaReserva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\Reserva\VerReserva.resx">
+      <DependentUpon>VerReserva.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\app.manifest" />
@@ -338,9 +365,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ventanas\Reserva\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\instalaciones6.jpg" />
   </ItemGroup>
