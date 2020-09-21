@@ -201,12 +201,6 @@
     <Compile Include="Ventanas\Cliente\Pagina1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\Cliente\Pagina2.Designer.vb">
-      <DependentUpon>Pagina2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ventanas\Cliente\Pagina2.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Ventanas\GestionReservas.Designer.vb">
       <DependentUpon>GestionReservas.vb</DependentUpon>
     </Compile>
@@ -296,9 +290,6 @@
     <EmbeddedResource Include="Ventanas\Cliente\Pagina1.resx">
       <DependentUpon>Pagina1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\Cliente\Pagina2.resx">
-      <DependentUpon>Pagina2.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\GestionReservas.resx">
       <DependentUpon>GestionReservas.vb</DependentUpon>
     </EmbeddedResource>
@@ -386,6 +377,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hnet.com-image.ico" />
+    <None Include="Resources\rervaeditar.png" />
     <None Include="Resources\añadir.png" />
     <None Include="Resources\Nuevo.png" />
     <None Include="Resources\CajaTexto.png" />

@@ -24,19 +24,19 @@ Partial Class VerReserva
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VerReserva))
         Me.info = New System.Windows.Forms.Label()
-        Me.LateralPanel = New System.Windows.Forms.Panel()
-        Me.fechaReserva = New System.Windows.Forms.Label()
-        Me.fechaSalida = New System.Windows.Forms.Label()
-        Me.modoDeEntrega = New System.Windows.Forms.Label()
-        Me.modoDeRetiro = New System.Windows.Forms.Label()
-        Me.horaDeEntrega = New System.Windows.Forms.Label()
-        Me.btnIniciar = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.horaDeSalida = New System.Windows.Forms.Label()
-        Me.monto = New System.Windows.Forms.Label()
-        Me.tipoDePago = New System.Windows.Forms.Label()
+        Me.Top = New System.Windows.Forms.Panel()
         Me.estado = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.LateralPanel.SuspendLayout()
+        Me.monto = New System.Windows.Forms.Label()
+        Me.btnNuevoCliente = New System.Windows.Forms.Button()
+        Me.btnIniciar = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.fechaNac = New Bunifu.Framework.UI.BunifuDatepicker()
+        Me.BunifuDatepicker1 = New Bunifu.Framework.UI.BunifuDatepicker()
+        Me.BunifuDropdown2 = New Bunifu.Framework.UI.BunifuDropdown()
+        Me.BunifuDropdown3 = New Bunifu.Framework.UI.BunifuDropdown()
+        Me.BunifuDropdown4 = New Bunifu.Framework.UI.BunifuDropdown()
+        Me.BunifuDropdown1 = New Bunifu.Framework.UI.BunifuDropdown()
+        Me.BunifuDropdown5 = New Bunifu.Framework.UI.BunifuDropdown()
+        Me.Top.SuspendLayout()
         Me.SuspendLayout()
         '
         'info
@@ -44,92 +44,73 @@ Partial Class VerReserva
         Me.info.AutoSize = True
         Me.info.BackColor = System.Drawing.Color.Transparent
         Me.info.Font = New System.Drawing.Font("Palatino Linotype", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.info.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.info.Location = New System.Drawing.Point(226, 9)
+        Me.info.ForeColor = System.Drawing.Color.White
+        Me.info.Location = New System.Drawing.Point(25, 3)
         Me.info.Name = "info"
         Me.info.Size = New System.Drawing.Size(261, 36)
         Me.info.TabIndex = 1
         Me.info.Text = "Viendo la Reserva De"
         '
-        'LateralPanel
+        'Top
         '
-        Me.LateralPanel.Controls.Add(Me.Panel1)
-        Me.LateralPanel.Controls.Add(Me.info)
-        Me.LateralPanel.Controls.Add(Me.estado)
-        Me.LateralPanel.Controls.Add(Me.tipoDePago)
-        Me.LateralPanel.Controls.Add(Me.monto)
-        Me.LateralPanel.Controls.Add(Me.horaDeSalida)
-        Me.LateralPanel.Controls.Add(Me.btnIniciar)
-        Me.LateralPanel.Controls.Add(Me.horaDeEntrega)
-        Me.LateralPanel.Controls.Add(Me.modoDeRetiro)
-        Me.LateralPanel.Controls.Add(Me.modoDeEntrega)
-        Me.LateralPanel.Controls.Add(Me.fechaSalida)
-        Me.LateralPanel.Controls.Add(Me.fechaReserva)
-        Me.LateralPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LateralPanel.Location = New System.Drawing.Point(0, 0)
-        Me.LateralPanel.Name = "LateralPanel"
-        Me.LateralPanel.Size = New System.Drawing.Size(967, 384)
-        Me.LateralPanel.TabIndex = 2
+        Me.Top.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.Top.Controls.Add(Me.info)
+        Me.Top.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Top.Location = New System.Drawing.Point(0, 0)
+        Me.Top.Name = "Top"
+        Me.Top.Size = New System.Drawing.Size(466, 46)
+        Me.Top.TabIndex = 2
         '
-        'fechaReserva
+        'estado
         '
-        Me.fechaReserva.AutoSize = True
-        Me.fechaReserva.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fechaReserva.Location = New System.Drawing.Point(12, 73)
-        Me.fechaReserva.Name = "fechaReserva"
-        Me.fechaReserva.Size = New System.Drawing.Size(170, 26)
-        Me.fechaReserva.TabIndex = 2
-        Me.fechaReserva.Text = "Fecha de Reserva:"
+        Me.estado.AutoSize = True
+        Me.estado.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.estado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.estado.Location = New System.Drawing.Point(10, 269)
+        Me.estado.Name = "estado"
+        Me.estado.Size = New System.Drawing.Size(77, 26)
+        Me.estado.TabIndex = 12
+        Me.estado.Text = "Estado:"
         '
-        'fechaSalida
+        'monto
         '
-        Me.fechaSalida.AutoSize = True
-        Me.fechaSalida.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fechaSalida.Location = New System.Drawing.Point(12, 100)
-        Me.fechaSalida.Name = "fechaSalida"
-        Me.fechaSalida.Size = New System.Drawing.Size(156, 26)
-        Me.fechaSalida.TabIndex = 3
-        Me.fechaSalida.Text = "Fecha de Salida:"
+        Me.monto.AutoSize = True
+        Me.monto.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.monto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.monto.Location = New System.Drawing.Point(321, 269)
+        Me.monto.Name = "monto"
+        Me.monto.Size = New System.Drawing.Size(77, 26)
+        Me.monto.TabIndex = 10
+        Me.monto.Text = "Monto:"
         '
-        'modoDeEntrega
+        'btnNuevoCliente
         '
-        Me.modoDeEntrega.AutoSize = True
-        Me.modoDeEntrega.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.modoDeEntrega.Location = New System.Drawing.Point(12, 126)
-        Me.modoDeEntrega.Name = "modoDeEntrega"
-        Me.modoDeEntrega.Size = New System.Drawing.Size(172, 26)
-        Me.modoDeEntrega.TabIndex = 4
-        Me.modoDeEntrega.Text = "Modo de Entrega:"
-        '
-        'modoDeRetiro
-        '
-        Me.modoDeRetiro.AutoSize = True
-        Me.modoDeRetiro.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.modoDeRetiro.Location = New System.Drawing.Point(12, 151)
-        Me.modoDeRetiro.Name = "modoDeRetiro"
-        Me.modoDeRetiro.Size = New System.Drawing.Size(158, 26)
-        Me.modoDeRetiro.TabIndex = 5
-        Me.modoDeRetiro.Text = "Modo de Retiro:"
-        '
-        'horaDeEntrega
-        '
-        Me.horaDeEntrega.AutoSize = True
-        Me.horaDeEntrega.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.horaDeEntrega.Location = New System.Drawing.Point(12, 178)
-        Me.horaDeEntrega.Name = "horaDeEntrega"
-        Me.horaDeEntrega.Size = New System.Drawing.Size(164, 26)
-        Me.horaDeEntrega.TabIndex = 6
-        Me.horaDeEntrega.Text = "Hora de Entrega:"
+        Me.btnNuevoCliente.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnNuevoCliente.BackColor = System.Drawing.Color.White
+        Me.btnNuevoCliente.FlatAppearance.BorderSize = 0
+        Me.btnNuevoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevoCliente.Font = New System.Drawing.Font("Franklin Gothic Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNuevoCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnNuevoCliente.Image = Global.ProyectoProgramacion.My.Resources.Resources.rervaeditar
+        Me.btnNuevoCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnNuevoCliente.Location = New System.Drawing.Point(127, 455)
+        Me.btnNuevoCliente.Name = "btnNuevoCliente"
+        Me.btnNuevoCliente.Size = New System.Drawing.Size(189, 59)
+        Me.btnNuevoCliente.TabIndex = 16
+        Me.btnNuevoCliente.TabStop = False
+        Me.btnNuevoCliente.Text = "Modificar Rerserva"
+        Me.btnNuevoCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnNuevoCliente.UseVisualStyleBackColor = False
         '
         'btnIniciar
         '
         Me.btnIniciar.ActiveBorderThickness = 1
         Me.btnIniciar.ActiveCornerRadius = 20
-        Me.btnIniciar.ActiveFillColor = System.Drawing.SystemColors.Control
+        Me.btnIniciar.ActiveFillColor = System.Drawing.Color.White
         Me.btnIniciar.ActiveForecolor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.btnIniciar.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.btnIniciar.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange
-        Me.btnIniciar.BackColor = System.Drawing.SystemColors.Control
+        Me.btnIniciar.BackColor = System.Drawing.Color.White
         Me.btnIniciar.BackgroundImage = CType(resources.GetObject("btnIniciar.BackgroundImage"), System.Drawing.Image)
         Me.btnIniciar.ButtonText = "Ver Mascotas"
         Me.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand
@@ -138,9 +119,9 @@ Partial Class VerReserva
         Me.btnIniciar.IdleBorderThickness = 1
         Me.btnIniciar.IdleCornerRadius = 20
         Me.btnIniciar.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnIniciar.IdleForecolor = System.Drawing.SystemColors.Control
+        Me.btnIniciar.IdleForecolor = System.Drawing.Color.White
         Me.btnIniciar.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnIniciar.Location = New System.Drawing.Point(330, 329)
+        Me.btnIniciar.Location = New System.Drawing.Point(135, 351)
         Me.btnIniciar.Margin = New System.Windows.Forms.Padding(5)
         Me.btnIniciar.Name = "btnIniciar"
         Me.btnIniciar.Size = New System.Drawing.Size(181, 41)
@@ -148,79 +129,140 @@ Partial Class VerReserva
         Me.btnIniciar.TabStop = False
         Me.btnIniciar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'horaDeSalida
+        'fechaNac
         '
-        Me.horaDeSalida.AutoSize = True
-        Me.horaDeSalida.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.horaDeSalida.Location = New System.Drawing.Point(12, 204)
-        Me.horaDeSalida.Name = "horaDeSalida"
-        Me.horaDeSalida.Size = New System.Drawing.Size(150, 26)
-        Me.horaDeSalida.TabIndex = 9
-        Me.horaDeSalida.Text = "Hora de Salida:"
+        Me.fechaNac.BackColor = System.Drawing.Color.White
+        Me.fechaNac.BorderRadius = 2
+        Me.fechaNac.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.fechaNac.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.fechaNac.FormatCustom = Nothing
+        Me.fechaNac.Location = New System.Drawing.Point(12, 65)
+        Me.fechaNac.Name = "fechaNac"
+        Me.fechaNac.Size = New System.Drawing.Size(192, 29)
+        Me.fechaNac.TabIndex = 22
+        Me.fechaNac.Value = New Date(2000, 1, 1, 0, 0, 0, 0)
         '
-        'monto
+        'BunifuDatepicker1
         '
-        Me.monto.AutoSize = True
-        Me.monto.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.monto.Location = New System.Drawing.Point(12, 281)
-        Me.monto.Name = "monto"
-        Me.monto.Size = New System.Drawing.Size(77, 26)
-        Me.monto.TabIndex = 10
-        Me.monto.Text = "Monto:"
+        Me.BunifuDatepicker1.BackColor = System.Drawing.Color.White
+        Me.BunifuDatepicker1.BorderRadius = 2
+        Me.BunifuDatepicker1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
+        Me.BunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.BunifuDatepicker1.FormatCustom = Nothing
+        Me.BunifuDatepicker1.Location = New System.Drawing.Point(249, 65)
+        Me.BunifuDatepicker1.Name = "BunifuDatepicker1"
+        Me.BunifuDatepicker1.Size = New System.Drawing.Size(192, 29)
+        Me.BunifuDatepicker1.TabIndex = 23
+        Me.BunifuDatepicker1.Value = New Date(2000, 1, 1, 0, 0, 0, 0)
         '
-        'tipoDePago
+        'BunifuDropdown2
         '
-        Me.tipoDePago.AutoSize = True
-        Me.tipoDePago.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tipoDePago.Location = New System.Drawing.Point(12, 230)
-        Me.tipoDePago.Name = "tipoDePago"
-        Me.tipoDePago.Size = New System.Drawing.Size(134, 26)
-        Me.tipoDePago.TabIndex = 11
-        Me.tipoDePago.Text = "Tipo de Pago:"
+        Me.BunifuDropdown2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuDropdown2.BorderRadius = 50
+        Me.BunifuDropdown2.ForeColor = System.Drawing.Color.White
+        Me.BunifuDropdown2.Items = New String(-1) {}
+        Me.BunifuDropdown2.Location = New System.Drawing.Point(249, 115)
+        Me.BunifuDropdown2.Name = "BunifuDropdown2"
+        Me.BunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown2.selectedIndex = -1
+        Me.BunifuDropdown2.Size = New System.Drawing.Size(189, 26)
+        Me.BunifuDropdown2.TabIndex = 25
         '
-        'estado
+        'BunifuDropdown3
         '
-        Me.estado.AutoSize = True
-        Me.estado.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.estado.Location = New System.Drawing.Point(12, 256)
-        Me.estado.Name = "estado"
-        Me.estado.Size = New System.Drawing.Size(77, 26)
-        Me.estado.TabIndex = 12
-        Me.estado.Text = "Estado:"
+        Me.BunifuDropdown3.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuDropdown3.BorderRadius = 50
+        Me.BunifuDropdown3.ForeColor = System.Drawing.Color.White
+        Me.BunifuDropdown3.Items = New String(-1) {}
+        Me.BunifuDropdown3.Location = New System.Drawing.Point(249, 157)
+        Me.BunifuDropdown3.Name = "BunifuDropdown3"
+        Me.BunifuDropdown3.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown3.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown3.selectedIndex = -1
+        Me.BunifuDropdown3.Size = New System.Drawing.Size(189, 26)
+        Me.BunifuDropdown3.TabIndex = 26
         '
-        'Panel1
+        'BunifuDropdown4
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel1.Location = New System.Drawing.Point(580, 56)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(375, 314)
-        Me.Panel1.TabIndex = 13
+        Me.BunifuDropdown4.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuDropdown4.BorderRadius = 50
+        Me.BunifuDropdown4.ForeColor = System.Drawing.Color.White
+        Me.BunifuDropdown4.Items = New String(-1) {}
+        Me.BunifuDropdown4.Location = New System.Drawing.Point(15, 157)
+        Me.BunifuDropdown4.Name = "BunifuDropdown4"
+        Me.BunifuDropdown4.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown4.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown4.selectedIndex = -1
+        Me.BunifuDropdown4.Size = New System.Drawing.Size(189, 26)
+        Me.BunifuDropdown4.TabIndex = 27
+        '
+        'BunifuDropdown1
+        '
+        Me.BunifuDropdown1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuDropdown1.BorderRadius = 50
+        Me.BunifuDropdown1.ForeColor = System.Drawing.Color.White
+        Me.BunifuDropdown1.Items = New String(-1) {}
+        Me.BunifuDropdown1.Location = New System.Drawing.Point(15, 115)
+        Me.BunifuDropdown1.Name = "BunifuDropdown1"
+        Me.BunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown1.selectedIndex = -1
+        Me.BunifuDropdown1.Size = New System.Drawing.Size(189, 26)
+        Me.BunifuDropdown1.TabIndex = 28
+        '
+        'BunifuDropdown5
+        '
+        Me.BunifuDropdown5.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuDropdown5.BorderRadius = 50
+        Me.BunifuDropdown5.ForeColor = System.Drawing.Color.White
+        Me.BunifuDropdown5.Items = New String(-1) {}
+        Me.BunifuDropdown5.Location = New System.Drawing.Point(135, 200)
+        Me.BunifuDropdown5.Name = "BunifuDropdown5"
+        Me.BunifuDropdown5.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown5.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.BunifuDropdown5.selectedIndex = -1
+        Me.BunifuDropdown5.Size = New System.Drawing.Size(189, 26)
+        Me.BunifuDropdown5.TabIndex = 29
         '
         'VerReserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(967, 384)
-        Me.Controls.Add(Me.LateralPanel)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(466, 526)
+        Me.Controls.Add(Me.btnNuevoCliente)
+        Me.Controls.Add(Me.BunifuDropdown5)
+        Me.Controls.Add(Me.BunifuDropdown1)
+        Me.Controls.Add(Me.BunifuDropdown4)
+        Me.Controls.Add(Me.BunifuDropdown3)
+        Me.Controls.Add(Me.BunifuDropdown2)
+        Me.Controls.Add(Me.BunifuDatepicker1)
+        Me.Controls.Add(Me.fechaNac)
+        Me.Controls.Add(Me.Top)
+        Me.Controls.Add(Me.estado)
+        Me.Controls.Add(Me.monto)
+        Me.Controls.Add(Me.btnIniciar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "VerReserva"
         Me.Text = "VerReserva"
-        Me.LateralPanel.ResumeLayout(False)
-        Me.LateralPanel.PerformLayout()
+        Me.Top.ResumeLayout(False)
+        Me.Top.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents info As Label
-    Friend WithEvents LateralPanel As Panel
-    Friend WithEvents fechaReserva As Label
-    Friend WithEvents horaDeEntrega As Label
-    Friend WithEvents modoDeRetiro As Label
-    Friend WithEvents modoDeEntrega As Label
-    Friend WithEvents fechaSalida As Label
-    Friend WithEvents tipoDePago As Label
+    Friend WithEvents Top As Panel
     Friend WithEvents monto As Label
-    Friend WithEvents horaDeSalida As Label
     Friend WithEvents btnIniciar As Bunifu.Framework.UI.BunifuThinButton2
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents estado As Label
+    Friend WithEvents btnNuevoCliente As Button
+    Friend WithEvents fechaNac As Bunifu.Framework.UI.BunifuDatepicker
+    Friend WithEvents BunifuDatepicker1 As Bunifu.Framework.UI.BunifuDatepicker
+    Friend WithEvents BunifuDropdown2 As Bunifu.Framework.UI.BunifuDropdown
+    Friend WithEvents BunifuDropdown3 As Bunifu.Framework.UI.BunifuDropdown
+    Friend WithEvents BunifuDropdown4 As Bunifu.Framework.UI.BunifuDropdown
+    Friend WithEvents BunifuDropdown1 As Bunifu.Framework.UI.BunifuDropdown
+    Friend WithEvents BunifuDropdown5 As Bunifu.Framework.UI.BunifuDropdown
 End Class
