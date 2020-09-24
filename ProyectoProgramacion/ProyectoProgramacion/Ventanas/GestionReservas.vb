@@ -39,11 +39,13 @@ Public Class GestionReservas
                 FormSucess.callFormWithMessage("La Eliminacion ha sido exitosa!")
             End If
         ElseIf e.ColumnIndex.Equals(8) Then
+            'SELECT FROM MYSQL PARA SABER SI TIENE RESERVAS'
+            General.OpenChildForm(New VerReserva)
             'SI NO TIENE RESERVA'
             Dim result As DialogResult = New DialogResult()
             result = FormNewReserva.callForm()
             If result = DialogResult.OK Then
-                'NEW RESERVA'
+                General.OpenChildForm(New NuevaReserva)
             End If
         End If
     End Sub

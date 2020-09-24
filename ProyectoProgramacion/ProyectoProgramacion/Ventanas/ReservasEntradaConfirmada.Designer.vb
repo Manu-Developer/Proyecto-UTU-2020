@@ -28,7 +28,6 @@ Partial Class ReservasEntradaConfirmada
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ReservasEntradaConfirmada))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.btnConfirmar = New FontAwesome.Sharp.IconButton()
         Me.txtBuscar = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,29 +85,8 @@ Partial Class ReservasEntradaConfirmada
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(836, 367)
+        Me.DataGridView1.Size = New System.Drawing.Size(836, 449)
         Me.DataGridView1.TabIndex = 12
-        '
-        'btnConfirmar
-        '
-        Me.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnConfirmar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnConfirmar.FlatAppearance.BorderSize = 0
-        Me.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConfirmar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.btnConfirmar.ForeColor = System.Drawing.Color.White
-        Me.btnConfirmar.IconChar = FontAwesome.Sharp.IconChar.Check
-        Me.btnConfirmar.IconColor = System.Drawing.Color.White
-        Me.btnConfirmar.IconSize = 25
-        Me.btnConfirmar.Location = New System.Drawing.Point(17, 479)
-        Me.btnConfirmar.Name = "btnConfirmar"
-        Me.btnConfirmar.Rotation = 0R
-        Me.btnConfirmar.Size = New System.Drawing.Size(174, 37)
-        Me.btnConfirmar.TabIndex = 15
-        Me.btnConfirmar.Text = "Confirmar horarios"
-        Me.btnConfirmar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnConfirmar.UseVisualStyleBackColor = False
         '
         'txtBuscar
         '
@@ -148,7 +126,6 @@ Partial Class ReservasEntradaConfirmada
         Me.ClientSize = New System.Drawing.Size(860, 548)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.txtBuscar)
-        Me.Controls.Add(Me.btnConfirmar)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -160,7 +137,6 @@ Partial Class ReservasEntradaConfirmada
 
     End Sub
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents btnConfirmar As FontAwesome.Sharp.IconButton
     Friend WithEvents txtBuscar As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents PictureBox2 As PictureBox
 End Class

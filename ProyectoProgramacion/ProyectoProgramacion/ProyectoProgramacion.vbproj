@@ -195,12 +195,6 @@
     <Compile Include="Ventanas\Cliente\NuevoCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\Cliente\Pagina1.Designer.vb">
-      <DependentUpon>Pagina1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ventanas\Cliente\Pagina1.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Ventanas\GestionReservas.Designer.vb">
       <DependentUpon>GestionReservas.vb</DependentUpon>
     </Compile>
@@ -286,9 +280,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\Cliente\NuevoCliente.resx">
       <DependentUpon>NuevoCliente.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\Cliente\Pagina1.resx">
-      <DependentUpon>Pagina1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\GestionReservas.resx">
       <DependentUpon>GestionReservas.vb</DependentUpon>

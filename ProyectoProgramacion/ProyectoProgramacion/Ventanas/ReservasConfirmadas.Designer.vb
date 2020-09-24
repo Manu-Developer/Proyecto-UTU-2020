@@ -85,7 +85,7 @@ Partial Class ReservasConfirmadas
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(836, 417)
+        Me.DataGridView1.Size = New System.Drawing.Size(836, 449)
         Me.DataGridView1.TabIndex = 12
         '
         'txtBuscar

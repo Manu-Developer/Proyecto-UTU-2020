@@ -22,247 +22,338 @@ Partial Class VerReserva
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VerReserva))
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.info = New System.Windows.Forms.Label()
-        Me.Top = New System.Windows.Forms.Panel()
+        Me.dgvClientes = New System.Windows.Forms.DataGridView()
+        Me.Mascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medicamentos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dosis = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HorMedicina = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Peso = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Raza = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AlimentacionHabitual = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaReserv = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaDeSalida = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HabitacionReserv = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Modificar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.estado = New System.Windows.Forms.Label()
         Me.monto = New System.Windows.Forms.Label()
-        Me.btnNuevoCliente = New System.Windows.Forms.Button()
-        Me.btnIniciar = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.fechaNac = New Bunifu.Framework.UI.BunifuDatepicker()
-        Me.BunifuDatepicker1 = New Bunifu.Framework.UI.BunifuDatepicker()
-        Me.BunifuDropdown2 = New Bunifu.Framework.UI.BunifuDropdown()
-        Me.BunifuDropdown3 = New Bunifu.Framework.UI.BunifuDropdown()
-        Me.BunifuDropdown4 = New Bunifu.Framework.UI.BunifuDropdown()
-        Me.BunifuDropdown1 = New Bunifu.Framework.UI.BunifuDropdown()
-        Me.BunifuDropdown5 = New Bunifu.Framework.UI.BunifuDropdown()
-        Me.Top.SuspendLayout()
+        CType(Me.dgvClientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'info
         '
+        Me.info.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.info.AutoSize = True
         Me.info.BackColor = System.Drawing.Color.Transparent
         Me.info.Font = New System.Drawing.Font("Palatino Linotype", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.info.ForeColor = System.Drawing.Color.White
-        Me.info.Location = New System.Drawing.Point(25, 3)
+        Me.info.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.info.Location = New System.Drawing.Point(377, 9)
         Me.info.Name = "info"
         Me.info.Size = New System.Drawing.Size(261, 36)
         Me.info.TabIndex = 1
         Me.info.Text = "Viendo la Reserva De"
         '
-        'Top
+        'dgvClientes
         '
-        Me.Top.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Top.Controls.Add(Me.info)
-        Me.Top.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Top.Location = New System.Drawing.Point(0, 0)
-        Me.Top.Name = "Top"
-        Me.Top.Size = New System.Drawing.Size(466, 46)
-        Me.Top.TabIndex = 2
+        Me.dgvClientes.AllowUserToAddRows = False
+        Me.dgvClientes.AllowUserToDeleteRows = False
+        Me.dgvClientes.AllowUserToResizeColumns = False
+        Me.dgvClientes.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.dgvClientes.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvClientes.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvClientes.BackgroundColor = System.Drawing.Color.White
+        Me.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal
+        Me.dgvClientes.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
+        Me.dgvClientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvClientes.ColumnHeadersHeight = 27
+        Me.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dgvClientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Mascota, Me.DataGridViewTextBoxColumn1, Me.Medicamentos, Me.Dosis, Me.HorMedicina, Me.Peso, Me.Raza, Me.AlimentacionHabitual, Me.FechaReserv, Me.FechaDeSalida, Me.HabitacionReserv, Me.Modificar, Me.Eliminar})
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Transparent
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvClientes.DefaultCellStyle = DataGridViewCellStyle11
+        Me.dgvClientes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.dgvClientes.EnableHeadersVisualStyles = False
+        Me.dgvClientes.GridColor = System.Drawing.Color.White
+        Me.dgvClientes.Location = New System.Drawing.Point(16, 152)
+        Me.dgvClientes.MultiSelect = False
+        Me.dgvClientes.Name = "dgvClientes"
+        Me.dgvClientes.ReadOnly = True
+        Me.dgvClientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClientes.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+        Me.dgvClientes.RowHeadersVisible = False
+        Me.dgvClientes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Transparent
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.dgvClientes.RowsDefaultCellStyle = DataGridViewCellStyle13
+        Me.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
+        Me.dgvClientes.ShowEditingIcon = False
+        Me.dgvClientes.Size = New System.Drawing.Size(948, 434)
+        Me.dgvClientes.TabIndex = 30
+        Me.dgvClientes.TabStop = False
+        '
+        'Mascota
+        '
+        Me.Mascota.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Mascota.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Mascota.HeaderText = "Nombre de la Mascota"
+        Me.Mascota.Name = "Mascota"
+        Me.Mascota.ReadOnly = True
+        Me.Mascota.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Mascota.Width = 202
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle4
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Fecha de Nacimiento"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        Me.DataGridViewTextBoxColumn1.Width = 190
+        '
+        'Medicamentos
+        '
+        Me.Medicamentos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Medicamentos.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Medicamentos.HeaderText = "Medicamentos"
+        Me.Medicamentos.Name = "Medicamentos"
+        Me.Medicamentos.ReadOnly = True
+        Me.Medicamentos.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Medicamentos.Width = 141
+        '
+        'Dosis
+        '
+        Me.Dosis.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Dosis.DefaultCellStyle = DataGridViewCellStyle6
+        Me.Dosis.HeaderText = "Dosis"
+        Me.Dosis.Name = "Dosis"
+        Me.Dosis.ReadOnly = True
+        Me.Dosis.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Dosis.Width = 75
+        '
+        'HorMedicina
+        '
+        Me.HorMedicina.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.HorMedicina.DefaultCellStyle = DataGridViewCellStyle7
+        Me.HorMedicina.HeaderText = "Horario de Medicina"
+        Me.HorMedicina.Name = "HorMedicina"
+        Me.HorMedicina.ReadOnly = True
+        Me.HorMedicina.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.HorMedicina.Width = 183
+        '
+        'Peso
+        '
+        Me.Peso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Peso.DefaultCellStyle = DataGridViewCellStyle8
+        Me.Peso.HeaderText = "Peso"
+        Me.Peso.Name = "Peso"
+        Me.Peso.ReadOnly = True
+        Me.Peso.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Peso.Width = 70
+        '
+        'Raza
+        '
+        Me.Raza.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Raza.HeaderText = "Raza"
+        Me.Raza.Name = "Raza"
+        Me.Raza.ReadOnly = True
+        Me.Raza.Width = 70
+        '
+        'AlimentacionHabitual
+        '
+        Me.AlimentacionHabitual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.AlimentacionHabitual.HeaderText = "Alimentacion Habitual"
+        Me.AlimentacionHabitual.Name = "AlimentacionHabitual"
+        Me.AlimentacionHabitual.ReadOnly = True
+        Me.AlimentacionHabitual.Width = 193
+        '
+        'FechaReserv
+        '
+        Me.FechaReserv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.FechaReserv.HeaderText = "Fecha a Reservar"
+        Me.FechaReserv.Name = "FechaReserv"
+        Me.FechaReserv.ReadOnly = True
+        Me.FechaReserv.Width = 164
+        '
+        'FechaDeSalida
+        '
+        Me.FechaDeSalida.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.FechaDeSalida.HeaderText = "Fecha de Salida"
+        Me.FechaDeSalida.Name = "FechaDeSalida"
+        Me.FechaDeSalida.ReadOnly = True
+        Me.FechaDeSalida.Width = 151
+        '
+        'HabitacionReserv
+        '
+        Me.HabitacionReserv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.HabitacionReserv.HeaderText = "Habitacion a Reservar"
+        Me.HabitacionReserv.Name = "HabitacionReserv"
+        Me.HabitacionReserv.ReadOnly = True
+        Me.HabitacionReserv.Width = 179
+        '
+        'Modificar
+        '
+        Me.Modificar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle9.NullValue = CType(resources.GetObject("DataGridViewCellStyle9.NullValue"), Object)
+        Me.Modificar.DefaultCellStyle = DataGridViewCellStyle9
+        Me.Modificar.HeaderText = "Modificar"
+        Me.Modificar.Image = Global.ProyectoProgramacion.My.Resources.Resources.editar
+        Me.Modificar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Modificar.Name = "Modificar"
+        Me.Modificar.ReadOnly = True
+        Me.Modificar.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Modificar.Width = 82
+        '
+        'Eliminar
+        '
+        Me.Eliminar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle10.NullValue = CType(resources.GetObject("DataGridViewCellStyle10.NullValue"), Object)
+        Me.Eliminar.DefaultCellStyle = DataGridViewCellStyle10
+        Me.Eliminar.HeaderText = "Eliminar"
+        Me.Eliminar.Image = Global.ProyectoProgramacion.My.Resources.Resources.eliminar
+        Me.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Eliminar.Name = "Eliminar"
+        Me.Eliminar.ReadOnly = True
+        Me.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Eliminar.Width = 73
+        '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.IconPictureBox1.BackColor = System.Drawing.Color.White
+        Me.IconPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.IconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.IconPictureBox1.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.IconPictureBox1.IconSize = 34
+        Me.IconPictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.IconPictureBox1.Location = New System.Drawing.Point(932, 3)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.IconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.IconPictureBox1.TabIndex = 38
+        Me.IconPictureBox1.TabStop = False
         '
         'estado
         '
+        Me.estado.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.estado.AutoSize = True
         Me.estado.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.estado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.estado.Location = New System.Drawing.Point(10, 269)
+        Me.estado.Location = New System.Drawing.Point(783, 71)
         Me.estado.Name = "estado"
         Me.estado.Size = New System.Drawing.Size(77, 26)
-        Me.estado.TabIndex = 12
+        Me.estado.TabIndex = 40
         Me.estado.Text = "Estado:"
         '
         'monto
         '
+        Me.monto.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.monto.AutoSize = True
         Me.monto.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.monto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.monto.Location = New System.Drawing.Point(321, 269)
+        Me.monto.Location = New System.Drawing.Point(783, 109)
         Me.monto.Name = "monto"
         Me.monto.Size = New System.Drawing.Size(77, 26)
-        Me.monto.TabIndex = 10
+        Me.monto.TabIndex = 39
         Me.monto.Text = "Monto:"
-        '
-        'btnNuevoCliente
-        '
-        Me.btnNuevoCliente.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnNuevoCliente.BackColor = System.Drawing.Color.White
-        Me.btnNuevoCliente.FlatAppearance.BorderSize = 0
-        Me.btnNuevoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNuevoCliente.Font = New System.Drawing.Font("Franklin Gothic Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevoCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnNuevoCliente.Image = Global.ProyectoProgramacion.My.Resources.Resources.rervaeditar
-        Me.btnNuevoCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnNuevoCliente.Location = New System.Drawing.Point(127, 455)
-        Me.btnNuevoCliente.Name = "btnNuevoCliente"
-        Me.btnNuevoCliente.Size = New System.Drawing.Size(189, 59)
-        Me.btnNuevoCliente.TabIndex = 16
-        Me.btnNuevoCliente.TabStop = False
-        Me.btnNuevoCliente.Text = "Modificar Rerserva"
-        Me.btnNuevoCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnNuevoCliente.UseVisualStyleBackColor = False
-        '
-        'btnIniciar
-        '
-        Me.btnIniciar.ActiveBorderThickness = 1
-        Me.btnIniciar.ActiveCornerRadius = 20
-        Me.btnIniciar.ActiveFillColor = System.Drawing.Color.White
-        Me.btnIniciar.ActiveForecolor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnIniciar.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnIniciar.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange
-        Me.btnIniciar.BackColor = System.Drawing.Color.White
-        Me.btnIniciar.BackgroundImage = CType(resources.GetObject("btnIniciar.BackgroundImage"), System.Drawing.Image)
-        Me.btnIniciar.ButtonText = "Ver Mascotas"
-        Me.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnIniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIniciar.ForeColor = System.Drawing.Color.White
-        Me.btnIniciar.IdleBorderThickness = 1
-        Me.btnIniciar.IdleCornerRadius = 20
-        Me.btnIniciar.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnIniciar.IdleForecolor = System.Drawing.Color.White
-        Me.btnIniciar.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnIniciar.Location = New System.Drawing.Point(135, 351)
-        Me.btnIniciar.Margin = New System.Windows.Forms.Padding(5)
-        Me.btnIniciar.Name = "btnIniciar"
-        Me.btnIniciar.Size = New System.Drawing.Size(181, 41)
-        Me.btnIniciar.TabIndex = 8
-        Me.btnIniciar.TabStop = False
-        Me.btnIniciar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'fechaNac
-        '
-        Me.fechaNac.BackColor = System.Drawing.Color.White
-        Me.fechaNac.BorderRadius = 2
-        Me.fechaNac.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.fechaNac.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.fechaNac.FormatCustom = Nothing
-        Me.fechaNac.Location = New System.Drawing.Point(12, 65)
-        Me.fechaNac.Name = "fechaNac"
-        Me.fechaNac.Size = New System.Drawing.Size(192, 29)
-        Me.fechaNac.TabIndex = 22
-        Me.fechaNac.Value = New Date(2000, 1, 1, 0, 0, 0, 0)
-        '
-        'BunifuDatepicker1
-        '
-        Me.BunifuDatepicker1.BackColor = System.Drawing.Color.White
-        Me.BunifuDatepicker1.BorderRadius = 2
-        Me.BunifuDatepicker1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.BunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.BunifuDatepicker1.FormatCustom = Nothing
-        Me.BunifuDatepicker1.Location = New System.Drawing.Point(249, 65)
-        Me.BunifuDatepicker1.Name = "BunifuDatepicker1"
-        Me.BunifuDatepicker1.Size = New System.Drawing.Size(192, 29)
-        Me.BunifuDatepicker1.TabIndex = 23
-        Me.BunifuDatepicker1.Value = New Date(2000, 1, 1, 0, 0, 0, 0)
-        '
-        'BunifuDropdown2
-        '
-        Me.BunifuDropdown2.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuDropdown2.BorderRadius = 50
-        Me.BunifuDropdown2.ForeColor = System.Drawing.Color.White
-        Me.BunifuDropdown2.Items = New String(-1) {}
-        Me.BunifuDropdown2.Location = New System.Drawing.Point(249, 115)
-        Me.BunifuDropdown2.Name = "BunifuDropdown2"
-        Me.BunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown2.selectedIndex = -1
-        Me.BunifuDropdown2.Size = New System.Drawing.Size(189, 26)
-        Me.BunifuDropdown2.TabIndex = 25
-        '
-        'BunifuDropdown3
-        '
-        Me.BunifuDropdown3.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuDropdown3.BorderRadius = 50
-        Me.BunifuDropdown3.ForeColor = System.Drawing.Color.White
-        Me.BunifuDropdown3.Items = New String(-1) {}
-        Me.BunifuDropdown3.Location = New System.Drawing.Point(249, 157)
-        Me.BunifuDropdown3.Name = "BunifuDropdown3"
-        Me.BunifuDropdown3.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown3.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown3.selectedIndex = -1
-        Me.BunifuDropdown3.Size = New System.Drawing.Size(189, 26)
-        Me.BunifuDropdown3.TabIndex = 26
-        '
-        'BunifuDropdown4
-        '
-        Me.BunifuDropdown4.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuDropdown4.BorderRadius = 50
-        Me.BunifuDropdown4.ForeColor = System.Drawing.Color.White
-        Me.BunifuDropdown4.Items = New String(-1) {}
-        Me.BunifuDropdown4.Location = New System.Drawing.Point(15, 157)
-        Me.BunifuDropdown4.Name = "BunifuDropdown4"
-        Me.BunifuDropdown4.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown4.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown4.selectedIndex = -1
-        Me.BunifuDropdown4.Size = New System.Drawing.Size(189, 26)
-        Me.BunifuDropdown4.TabIndex = 27
-        '
-        'BunifuDropdown1
-        '
-        Me.BunifuDropdown1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuDropdown1.BorderRadius = 50
-        Me.BunifuDropdown1.ForeColor = System.Drawing.Color.White
-        Me.BunifuDropdown1.Items = New String(-1) {}
-        Me.BunifuDropdown1.Location = New System.Drawing.Point(15, 115)
-        Me.BunifuDropdown1.Name = "BunifuDropdown1"
-        Me.BunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown1.selectedIndex = -1
-        Me.BunifuDropdown1.Size = New System.Drawing.Size(189, 26)
-        Me.BunifuDropdown1.TabIndex = 28
-        '
-        'BunifuDropdown5
-        '
-        Me.BunifuDropdown5.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuDropdown5.BorderRadius = 50
-        Me.BunifuDropdown5.ForeColor = System.Drawing.Color.White
-        Me.BunifuDropdown5.Items = New String(-1) {}
-        Me.BunifuDropdown5.Location = New System.Drawing.Point(135, 200)
-        Me.BunifuDropdown5.Name = "BunifuDropdown5"
-        Me.BunifuDropdown5.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown5.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuDropdown5.selectedIndex = -1
-        Me.BunifuDropdown5.Size = New System.Drawing.Size(189, 26)
-        Me.BunifuDropdown5.TabIndex = 29
         '
         'VerReserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(466, 526)
-        Me.Controls.Add(Me.btnNuevoCliente)
-        Me.Controls.Add(Me.BunifuDropdown5)
-        Me.Controls.Add(Me.BunifuDropdown1)
-        Me.Controls.Add(Me.BunifuDropdown4)
-        Me.Controls.Add(Me.BunifuDropdown3)
-        Me.Controls.Add(Me.BunifuDropdown2)
-        Me.Controls.Add(Me.BunifuDatepicker1)
-        Me.Controls.Add(Me.fechaNac)
-        Me.Controls.Add(Me.Top)
+        Me.ClientSize = New System.Drawing.Size(970, 598)
         Me.Controls.Add(Me.estado)
         Me.Controls.Add(Me.monto)
-        Me.Controls.Add(Me.btnIniciar)
+        Me.Controls.Add(Me.IconPictureBox1)
+        Me.Controls.Add(Me.info)
+        Me.Controls.Add(Me.dgvClientes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "VerReserva"
+        Me.ShowInTaskbar = False
         Me.Text = "VerReserva"
-        Me.Top.ResumeLayout(False)
-        Me.Top.PerformLayout()
+        CType(Me.dgvClientes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents info As Label
-    Friend WithEvents Top As Panel
-    Friend WithEvents monto As Label
-    Friend WithEvents btnIniciar As Bunifu.Framework.UI.BunifuThinButton2
+    Public WithEvents dgvClientes As DataGridView
+    Friend WithEvents Mascota As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents Medicamentos As DataGridViewTextBoxColumn
+    Friend WithEvents Dosis As DataGridViewTextBoxColumn
+    Friend WithEvents HorMedicina As DataGridViewTextBoxColumn
+    Friend WithEvents Peso As DataGridViewTextBoxColumn
+    Friend WithEvents Raza As DataGridViewTextBoxColumn
+    Friend WithEvents AlimentacionHabitual As DataGridViewTextBoxColumn
+    Friend WithEvents FechaReserv As DataGridViewTextBoxColumn
+    Friend WithEvents FechaDeSalida As DataGridViewTextBoxColumn
+    Friend WithEvents HabitacionReserv As DataGridViewImageColumn
+    Friend WithEvents Modificar As DataGridViewImageColumn
+    Friend WithEvents Eliminar As DataGridViewImageColumn
+    Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents estado As Label
-    Friend WithEvents btnNuevoCliente As Button
-    Friend WithEvents fechaNac As Bunifu.Framework.UI.BunifuDatepicker
-    Friend WithEvents BunifuDatepicker1 As Bunifu.Framework.UI.BunifuDatepicker
-    Friend WithEvents BunifuDropdown2 As Bunifu.Framework.UI.BunifuDropdown
-    Friend WithEvents BunifuDropdown3 As Bunifu.Framework.UI.BunifuDropdown
-    Friend WithEvents BunifuDropdown4 As Bunifu.Framework.UI.BunifuDropdown
-    Friend WithEvents BunifuDropdown1 As Bunifu.Framework.UI.BunifuDropdown
-    Friend WithEvents BunifuDropdown5 As Bunifu.Framework.UI.BunifuDropdown
+    Friend WithEvents monto As Label
 End Class

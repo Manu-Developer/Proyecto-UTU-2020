@@ -67,7 +67,7 @@ Public Class General
             currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText
         End If
     End Sub
-    Private Sub OpenChildForm(childForm As Form)
+    Public Sub OpenChildForm(childForm As Form)
         'Open only form'
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
