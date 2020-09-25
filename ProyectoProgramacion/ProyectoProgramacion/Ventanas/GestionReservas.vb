@@ -27,7 +27,7 @@ Public Class GestionReservas
 
     Private Sub clientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvClientes.CellContentClick
         If e.ColumnIndex.Equals(6) Then
-            Dim openModify As ModificarCliente = New ModificarCliente
+            Dim openModify As ModificarMascota = New ModificarMascota
             openModify.setDataGridView(dgvClientes.Rows(e.RowIndex).Cells(0).Value, dgvClientes.Rows(e.RowIndex).Cells(1).Value, dgvClientes.Rows(e.RowIndex).Cells(2).Value,
          dgvClientes.Rows(e.RowIndex).Cells(3).Value, dgvClientes.Rows(e.RowIndex).Cells(4).Value, Date.Parse(dgvClientes.Rows(e.RowIndex).Cells(5).Value))
             openModify.ShowDialog()
@@ -40,7 +40,7 @@ Public Class GestionReservas
             End If
         ElseIf e.ColumnIndex.Equals(8) Then
             'SELECT FROM MYSQL PARA SABER SI TIENE RESERVAS'
-            General.OpenChildForm(New VerReserva)
+
             'SI NO TIENE RESERVA'
             Dim result As DialogResult = New DialogResult()
             result = FormNewReserva.callForm()

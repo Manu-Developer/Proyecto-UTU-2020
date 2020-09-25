@@ -2,7 +2,7 @@
 
 Public Class Datos
 
-    Private connection As MySqlConnection = New MySqlConnection("datasource=localhost; username=root; password=; database=hotelcanino")
+    Private connection As MySqlConnection = New MySqlConnection("datasource=localhost; username=root; password=52059150; database=utu")
 
     Public Function checkConnection()
         Try

@@ -22,7 +22,7 @@ Partial Class ModificarCliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarCliente))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarMascota))
         Me.lblDatosCliente = New System.Windows.Forms.Label()
         Me.lblNacimiento = New System.Windows.Forms.Label()
         Me.btnSalir = New FontAwesome.Sharp.IconPictureBox()

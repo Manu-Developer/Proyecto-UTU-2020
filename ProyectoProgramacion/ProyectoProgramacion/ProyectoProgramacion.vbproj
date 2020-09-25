@@ -246,6 +246,12 @@
     <Compile Include="Ventanas\General.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ventanas\Reserva\ModificarMascota.Designer.vb">
+      <DependentUpon>ModificarMascota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\Reserva\ModificarMascota.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventanas\Reserva\NuevaReserva.Designer.vb">
       <DependentUpon>NuevaReserva.vb</DependentUpon>
     </Compile>
@@ -304,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\General.resx">
       <DependentUpon>General.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\Reserva\ModificarMascota.resx">
+      <DependentUpon>ModificarMascota.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\Reserva\NuevaReserva.resx">
       <DependentUpon>NuevaReserva.vb</DependentUpon>
