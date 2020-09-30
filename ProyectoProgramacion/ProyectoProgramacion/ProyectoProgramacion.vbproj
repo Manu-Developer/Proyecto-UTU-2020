@@ -183,6 +183,11 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulos\Validaciones.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Ventanas\Cliente\ModificarCliente.Designer.vb">
       <DependentUpon>ModificarCliente.vb</DependentUpon>
     </Compile>
@@ -205,11 +210,6 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -292,9 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\ModificarPrecioHabitacion.resx">
       <DependentUpon>ModificarPrecioHabitacion.vb</DependentUpon>
@@ -378,7 +378,7 @@
   <ItemGroup>
     <Content Include="hnet.com-image.ico" />
     <None Include="Resources\rervaeditar.png" />
-    <None Include="Resources\añadir.png" />
+    <None Include="Resources\anadir.png" />
     <None Include="Resources\Nuevo.png" />
     <None Include="Resources\CajaTexto.png" />
     <None Include="Resources\Buscar.png" />

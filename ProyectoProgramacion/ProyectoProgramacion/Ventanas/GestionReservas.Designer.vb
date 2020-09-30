@@ -306,7 +306,7 @@ Partial Class GestionReservas
         Me.btnNuevoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNuevoCliente.Font = New System.Drawing.Font("Franklin Gothic Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNuevoCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnNuevoCliente.Image = Global.ProyectoProgramacion.My.Resources.Resources.añadir
+        Me.btnNuevoCliente.Image = Global.ProyectoProgramacion.My.Resources.Resources.anadir
         Me.btnNuevoCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnNuevoCliente.Location = New System.Drawing.Point(784, 14)
         Me.btnNuevoCliente.Name = "btnNuevoCliente"

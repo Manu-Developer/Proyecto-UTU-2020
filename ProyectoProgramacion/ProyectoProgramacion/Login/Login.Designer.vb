@@ -213,7 +213,7 @@ Partial Class Login
         '
         'pcbImagen
         '
-        Me.pcbImagen.Image = Global.ProyectoProgramacion.My.Resources.Resources.Diseño_Login
+        Me.pcbImagen.Image = Global.ProyectoProgramacion.My.Resources.Resources.Diseno_Login
         Me.pcbImagen.Location = New System.Drawing.Point(-2, 0)
         Me.pcbImagen.Name = "pcbImagen"
         Me.pcbImagen.Size = New System.Drawing.Size(831, 471)
