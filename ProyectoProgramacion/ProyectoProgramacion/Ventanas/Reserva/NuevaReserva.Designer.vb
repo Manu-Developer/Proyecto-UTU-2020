@@ -419,7 +419,7 @@ Partial Class NuevaReserva
         Me.info.BackColor = System.Drawing.Color.Transparent
         Me.info.Font = New System.Drawing.Font("Palatino Linotype", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.info.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.info.Location = New System.Drawing.Point(457, 9)
+        Me.info.Location = New System.Drawing.Point(370, 5)
         Me.info.Name = "info"
         Me.info.Size = New System.Drawing.Size(187, 36)
         Me.info.TabIndex = 1
