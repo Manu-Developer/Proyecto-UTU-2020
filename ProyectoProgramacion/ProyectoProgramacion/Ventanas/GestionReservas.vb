@@ -3,15 +3,15 @@ Imports System.IO
 
 Public Class GestionReservas
     Private Sub nuevocliente_Click(sender As Object, e As EventArgs) Handles btnNuevoCliente.Click
+        Dim datos = New Datos
+        If datos.checkConnection() Then
+            Return
+        End If
         Dim newClient As NuevoCliente = New NuevoCliente
         newClient.ShowDialog()
 
     End Sub
 
-    Private Sub image_Click(sender As Object, e As EventArgs)
-
-
-    End Sub
 
     Private Sub GestionReservas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dgvClientes.Rows.Add("0", "Martin", "No", "No", "096394345", "1/1/2000")
@@ -26,6 +26,10 @@ Public Class GestionReservas
     End Sub
 
     Private Sub clientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvClientes.CellContentClick
+        Dim datos = New Datos
+        If datos.checkConnection() Then
+            Return
+        End If
         If e.ColumnIndex.Equals(6) Then
             Dim openModify As ModificarCliente = New ModificarCliente
             openModify.setDataGridView(dgvClientes.Rows(e.RowIndex).Cells(0).Value, dgvClientes.Rows(e.RowIndex).Cells(1).Value, dgvClientes.Rows(e.RowIndex).Cells(2).Value,

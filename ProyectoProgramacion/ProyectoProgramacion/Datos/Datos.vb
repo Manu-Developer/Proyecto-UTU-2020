@@ -9,7 +9,7 @@ Public Class Datos
             connection.Open()
             Return True
         Catch ex As Exception
-            FormInfo.callFormWithMessage("Error al Conectar a la Base de Datos")
+            FormInfo.callFormWithMessage("Compruebe su conectividad a internet")
             Return False
         End Try
     End Function

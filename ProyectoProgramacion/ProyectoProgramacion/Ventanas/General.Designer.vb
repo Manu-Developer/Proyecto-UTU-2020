@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class General
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class General
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(General))
@@ -46,7 +46,6 @@ Partial Class General
         Me.phototrasparent = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.horayfecha = New System.Windows.Forms.Timer(Me.components)
         Me.PanelDesktop = New Bunifu.Framework.UI.BunifuGradientPanel()
-        Me.BunifuSeparator5 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.lblfecha = New System.Windows.Forms.Label()
         Me.lblhora = New System.Windows.Forms.Label()
         Me.pbLogoEmpresa = New System.Windows.Forms.PictureBox()
@@ -286,7 +285,6 @@ Partial Class General
         'PanelDesktop
         '
         resources.ApplyResources(Me.PanelDesktop, "PanelDesktop")
-        Me.PanelDesktop.Controls.Add(Me.BunifuSeparator5)
         Me.PanelDesktop.Controls.Add(Me.lblfecha)
         Me.PanelDesktop.Controls.Add(Me.lblhora)
         Me.PanelDesktop.Controls.Add(Me.pbLogoEmpresa)
@@ -296,16 +294,6 @@ Partial Class General
         Me.PanelDesktop.GradientTopRight = System.Drawing.Color.White
         Me.PanelDesktop.Name = "PanelDesktop"
         Me.PanelDesktop.Quality = 10
-        '
-        'BunifuSeparator5
-        '
-        resources.ApplyResources(Me.BunifuSeparator5, "BunifuSeparator5")
-        Me.BunifuSeparator5.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuSeparator5.LineThickness = 3
-        Me.BunifuSeparator5.Name = "BunifuSeparator5"
-        Me.BunifuSeparator5.Transparency = 255
-        Me.BunifuSeparator5.Vertical = True
         '
         'lblfecha
         '
@@ -329,7 +317,7 @@ Partial Class General
         Me.pbLogoEmpresa.Name = "pbLogoEmpresa"
         Me.pbLogoEmpresa.TabStop = False
         '
-        'VentanaGerente
+        'General
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -338,7 +326,7 @@ Partial Class General
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.PanelMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "VentanaGerente"
+        Me.Name = "General"
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelMenu.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -384,5 +372,4 @@ Partial Class General
     Friend WithEvents gerenteSalir As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents btnHSalida As FontAwesome.Sharp.IconButton
     Friend WithEvents btnHEntrada As FontAwesome.Sharp.IconButton
-    Friend WithEvents BunifuSeparator5 As Bunifu.Framework.UI.BunifuSeparator
 End Class
