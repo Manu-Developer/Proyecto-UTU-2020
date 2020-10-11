@@ -4,12 +4,11 @@ Imports System.IO
 Public Class GestionReservas
     Private Sub nuevocliente_Click(sender As Object, e As EventArgs) Handles btnNuevoCliente.Click
         Dim datos = New Datos
-        If datos.checkConnection() Then
+        If Not datos.checkConnection() Then
             Return
         End If
         Dim newClient As NuevoCliente = New NuevoCliente
         newClient.ShowDialog()
-
     End Sub
 
 
@@ -27,13 +26,13 @@ Public Class GestionReservas
 
     Private Sub clientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvClientes.CellContentClick
         Dim datos = New Datos
-        If datos.checkConnection() Then
+        If Not datos.checkConnection() Then
             Return
         End If
         If e.ColumnIndex.Equals(6) Then
             Dim openModify As ModificarCliente = New ModificarCliente
             openModify.setDataGridView(dgvClientes.Rows(e.RowIndex).Cells(0).Value, dgvClientes.Rows(e.RowIndex).Cells(1).Value, dgvClientes.Rows(e.RowIndex).Cells(2).Value,
-         dgvClientes.Rows(e.RowIndex).Cells(3).Value, dgvClientes.Rows(e.RowIndex).Cells(4).Value, Date.Parse(dgvClientes.Rows(e.RowIndex).Cells(5).Value))
+            dgvClientes.Rows(e.RowIndex).Cells(3).Value, dgvClientes.Rows(e.RowIndex).Cells(4).Value, Date.Parse(dgvClientes.Rows(e.RowIndex).Cells(5).Value))
             openModify.ShowDialog()
         ElseIf e.ColumnIndex.Equals(7) Then
             Dim result As DialogResult = New DialogResult()

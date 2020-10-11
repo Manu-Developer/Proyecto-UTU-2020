@@ -129,7 +129,7 @@ Partial Class NuevaReserva
         Me.dgvClientes.RowsDefaultCellStyle = DataGridViewCellStyle13
         Me.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgvClientes.ShowEditingIcon = False
-        Me.dgvClientes.Size = New System.Drawing.Size(948, 361)
+        Me.dgvClientes.Size = New System.Drawing.Size(945, 363)
         Me.dgvClientes.TabIndex = 42
         Me.dgvClientes.TabStop = False
         '
@@ -279,7 +279,7 @@ Partial Class NuevaReserva
         Me.btnNuevoCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.btnNuevoCliente.Image = Global.ProyectoProgramacion.My.Resources.Resources.rervaeditar
         Me.btnNuevoCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnNuevoCliente.Location = New System.Drawing.Point(748, 24)
+        Me.btnNuevoCliente.Location = New System.Drawing.Point(745, 24)
         Me.btnNuevoCliente.Name = "btnNuevoCliente"
         Me.btnNuevoCliente.Size = New System.Drawing.Size(181, 48)
         Me.btnNuevoCliente.TabIndex = 34
@@ -295,7 +295,7 @@ Partial Class NuevaReserva
         Me.BunifuDropdown5.BorderRadius = 50
         Me.BunifuDropdown5.ForeColor = System.Drawing.Color.White
         Me.BunifuDropdown5.Items = New String(-1) {}
-        Me.BunifuDropdown5.Location = New System.Drawing.Point(264, 169)
+        Me.BunifuDropdown5.Location = New System.Drawing.Point(262, 169)
         Me.BunifuDropdown5.Name = "BunifuDropdown5"
         Me.BunifuDropdown5.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.BunifuDropdown5.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
@@ -310,7 +310,7 @@ Partial Class NuevaReserva
         Me.BunifuDropdown1.BorderRadius = 50
         Me.BunifuDropdown1.ForeColor = System.Drawing.Color.White
         Me.BunifuDropdown1.Items = New String(-1) {}
-        Me.BunifuDropdown1.Location = New System.Drawing.Point(456, 98)
+        Me.BunifuDropdown1.Location = New System.Drawing.Point(454, 98)
         Me.BunifuDropdown1.Name = "BunifuDropdown1"
         Me.BunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.BunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
@@ -325,7 +325,7 @@ Partial Class NuevaReserva
         Me.BunifuDropdown4.BorderRadius = 50
         Me.BunifuDropdown4.ForeColor = System.Drawing.Color.White
         Me.BunifuDropdown4.Items = New String(-1) {}
-        Me.BunifuDropdown4.Location = New System.Drawing.Point(654, 169)
+        Me.BunifuDropdown4.Location = New System.Drawing.Point(652, 169)
         Me.BunifuDropdown4.Name = "BunifuDropdown4"
         Me.BunifuDropdown4.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.BunifuDropdown4.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
@@ -340,7 +340,7 @@ Partial Class NuevaReserva
         Me.BunifuDropdown3.BorderRadius = 50
         Me.BunifuDropdown3.ForeColor = System.Drawing.Color.White
         Me.BunifuDropdown3.Items = New String(-1) {}
-        Me.BunifuDropdown3.Location = New System.Drawing.Point(459, 169)
+        Me.BunifuDropdown3.Location = New System.Drawing.Point(457, 169)
         Me.BunifuDropdown3.Name = "BunifuDropdown3"
         Me.BunifuDropdown3.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.BunifuDropdown3.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
@@ -355,7 +355,7 @@ Partial Class NuevaReserva
         Me.BunifuDropdown2.BorderRadius = 50
         Me.BunifuDropdown2.ForeColor = System.Drawing.Color.White
         Me.BunifuDropdown2.Items = New String(-1) {}
-        Me.BunifuDropdown2.Location = New System.Drawing.Point(651, 98)
+        Me.BunifuDropdown2.Location = New System.Drawing.Point(649, 98)
         Me.BunifuDropdown2.Name = "BunifuDropdown2"
         Me.BunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.BunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
@@ -371,7 +371,7 @@ Partial Class NuevaReserva
         Me.BunifuDatepicker1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
         Me.BunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.BunifuDatepicker1.FormatCustom = Nothing
-        Me.BunifuDatepicker1.Location = New System.Drawing.Point(66, 166)
+        Me.BunifuDatepicker1.Location = New System.Drawing.Point(64, 166)
         Me.BunifuDatepicker1.Name = "BunifuDatepicker1"
         Me.BunifuDatepicker1.Size = New System.Drawing.Size(192, 29)
         Me.BunifuDatepicker1.TabIndex = 36
@@ -385,7 +385,7 @@ Partial Class NuevaReserva
         Me.fechaNac.ForeColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(206, Byte), Integer))
         Me.fechaNac.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.fechaNac.FormatCustom = Nothing
-        Me.fechaNac.Location = New System.Drawing.Point(254, 95)
+        Me.fechaNac.Location = New System.Drawing.Point(252, 95)
         Me.fechaNac.Name = "fechaNac"
         Me.fechaNac.Size = New System.Drawing.Size(192, 29)
         Me.fechaNac.TabIndex = 35
@@ -404,7 +404,7 @@ Partial Class NuevaReserva
         Me.NombreMascota.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.NombreMascota.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.NombreMascota.LineThickness = 3
-        Me.NombreMascota.Location = New System.Drawing.Point(62, 80)
+        Me.NombreMascota.Location = New System.Drawing.Point(60, 80)
         Me.NombreMascota.Margin = New System.Windows.Forms.Padding(4)
         Me.NombreMascota.Name = "NombreMascota"
         Me.NombreMascota.Size = New System.Drawing.Size(185, 44)
@@ -435,7 +435,7 @@ Partial Class NuevaReserva
         Me.gerenteSalir.IconColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.gerenteSalir.IconSize = 34
         Me.gerenteSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.gerenteSalir.Location = New System.Drawing.Point(935, 2)
+        Me.gerenteSalir.Location = New System.Drawing.Point(932, 2)
         Me.gerenteSalir.Name = "gerenteSalir"
         Me.gerenteSalir.Size = New System.Drawing.Size(32, 32)
         Me.gerenteSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -447,7 +447,7 @@ Partial Class NuevaReserva
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(970, 598)
+        Me.ClientSize = New System.Drawing.Size(967, 600)
         Me.Controls.Add(Me.gerenteSalir)
         Me.Controls.Add(Me.info)
         Me.Controls.Add(Me.NombreMascota)

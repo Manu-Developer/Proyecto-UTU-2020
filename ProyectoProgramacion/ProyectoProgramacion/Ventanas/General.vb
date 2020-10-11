@@ -67,12 +67,13 @@ Public Class General
             currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText
         End If
     End Sub
+
     Public Sub OpenChildForm(childForm As Form)
-        'Open only form'
+
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
-        'end'
+
         childForm.TopLevel = False
         childForm.FormBorderStyle = FormBorderStyle.None
         childForm.Dock = DockStyle.Fill
@@ -80,7 +81,10 @@ Public Class General
         PanelDesktop.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
-        lblGeneral.Text = currentBtn.Text
+        If currentBtn IsNot Nothing Then
+            lblGeneral.Text = currentBtn.Text
+        End If
+
         PanelDesktop.Controls.Remove(pbLogoEmpresa)
     End Sub
     Private Sub Reset()

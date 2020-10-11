@@ -2,9 +2,9 @@
 
 Public Class Datos
 
-    Private connection As MySqlConnection = New MySqlConnection("datasource=localhost; username=root; password=52059150; database=utu")
+    Private connection As MySqlConnection = New MySqlConnection("datasource=localhost; username=root; password=52059150; database=fbravo") 'Conexion con la Base de Datos'
 
-    Public Function checkConnection()
+    Public Function checkConnection() 'Comprueba la Conexion con la Base de datos'
         Try
             connection.Open()
             Return True
@@ -14,14 +14,14 @@ Public Class Datos
         End Try
     End Function
 
-    Private Function getConnection()
+    Private Function getConnection() 'Metodo para Obtener la Conexion'
         Return connection
     End Function
 
 
-    Public Function login(username As TextBox, password As TextBox)
+    Public Function login(username As TextBox, password As TextBox) 'Funcion Login'
         getConnection().open
-        Dim command = New MySqlCommand("SELECT * from Empleado where Username=@user", getConnection())
+        Dim command = New MySqlCommand("SELECT * from empleado where Username=@user", getConnection())
         command.Parameters.AddWithValue("@user", username.Text)
         command.CommandType = CommandType.Text
 
@@ -29,11 +29,11 @@ Public Class Datos
         If reader.Read Then
             If reader("Username").Equals(username.Text) And reader("Password").Equals(password.Text) Then
                 Dim general As General = New General
-                If reader("RolPrograma").Equals("Gerente") Then
+                If reader("RolPrograma").Equals("G") Then
                     username.Text = ""
                     password.Text = ""
                     general.Show()
-                ElseIf reader("RolPrograma").Equals("Oficinista") Then
+                ElseIf reader("RolPrograma").Equals("O") Then
                     username.Text = ""
                     password.Text = ""
                     general.btnModificarPrecio.Visible = False
@@ -41,7 +41,7 @@ Public Class Datos
                     general.btnModificarPrecio.Enabled = False
                     general.btnReservas.Enabled = False
                     general.Show()
-                ElseIf reader("RolPrograma").Equals("Recepcionista") Then
+                ElseIf reader("RolPrograma").Equals("R") Then
                     username.Text = ""
                     password.Text = ""
                     general.btnModificarPrecio.Visible = False

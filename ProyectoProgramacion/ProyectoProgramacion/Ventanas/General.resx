@@ -442,13 +442,13 @@
     <value>36, 158</value>
   </data>
   <data name="txtNombreUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 20</value>
+    <value>138, 20</value>
   </data>
   <data name="txtNombreUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="txtNombreUsuario.Text" xml:space="preserve">
-    <value>Nora Alejandra</value>
+    <value>Employee Name</value>
   </data>
   <data name="&gt;&gt;txtNombreUsuario.Name" xml:space="preserve">
     <value>txtNombreUsuario</value>
