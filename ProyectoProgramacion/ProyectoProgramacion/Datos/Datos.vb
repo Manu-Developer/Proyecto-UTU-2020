@@ -21,39 +21,34 @@ Public Class Datos
 
     Public Function login(username As TextBox, password As TextBox)
         getConnection().open
-        Dim command = New MySqlCommand("SELECT * from usuarios where Username=@user", getConnection())
+        Dim command = New MySqlCommand("SELECT * from Empleado where Username=@user", getConnection())
         command.Parameters.AddWithValue("@user", username.Text)
         command.CommandType = CommandType.Text
 
         Dim reader = command.ExecuteReader()
         If reader.Read Then
             If reader("Username").Equals(username.Text) And reader("Password").Equals(password.Text) Then
-                If reader("Rol").Equals("Gerente") Then
+                Dim general As General = New General
+                If reader("RolPrograma").Equals("Gerente") Then
                     username.Text = ""
                     password.Text = ""
-                    General.Show()
-                ElseIf reader("Rol").Equals("Oficinista") Then
+                    general.Show()
+                ElseIf reader("RolPrograma").Equals("Oficinista") Then
                     username.Text = ""
                     password.Text = ""
-                    Dim oficinista As General = New General
-                    oficinista.btnModificarPrecio.Visible = False
-                    oficinista.btnReservas.Visible = False
-                    oficinista.btnHEntrada.Visible = False
-                    oficinista.btnHSalida.Visible = False
-                    oficinista.btnModificarPrecio.Enabled = False
-                    oficinista.btnReservas.Enabled = False
-                    oficinista.btnHEntrada.Enabled = False
-                    oficinista.btnHSalida.Enabled = False
-                    oficinista.Show()
-                ElseIf reader("Rol").Equals("Recepcionista") Then
+                    general.btnModificarPrecio.Visible = False
+                    general.btnReservas.Visible = False
+                    general.btnModificarPrecio.Enabled = False
+                    general.btnReservas.Enabled = False
+                    general.Show()
+                ElseIf reader("RolPrograma").Equals("Recepcionista") Then
                     username.Text = ""
                     password.Text = ""
-                    Dim recepcionista As General = New General
-                    recepcionista.btnModificarPrecio.Visible = False
-                    recepcionista.btnModificarPrecio.Enabled = False
-                    recepcionista.btnReservas.Visible = False
-                    recepcionista.btnReservas.Enabled = False
-                    recepcionista.Show()
+                    general.btnModificarPrecio.Visible = False
+                    general.btnModificarPrecio.Enabled = False
+                    general.btnGestion.Visible = False
+                    general.btnGestion.Enabled = False
+                    general.Show()
                 Else
                     FormInfo.callFormWithMessage("Tu Rol es incorrecto o no existe")
                     reader.Close()
